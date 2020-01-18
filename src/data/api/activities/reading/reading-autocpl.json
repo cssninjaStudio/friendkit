@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Foundation",
+        "desc": "by Isac Asimov",
+        "pic": "assets/img/icons/activities/reading/fondation.jpg"
+    },
+    {
+        "name": "The Trial",
+        "desc": "by Franz Kafka",
+        "pic": "assets/img/icons/activities/reading/trial.jpg"
+    },
+    {
+        "name": "Dune Messiah",
+        "desc": "by Franck Herbert",
+        "pic": "assets/img/icons/activities/reading/dune.jpg"
+    },
+    {
+        "name": "The Call of Cthulhu",
+        "desc": "by Franck Herbert",
+        "pic": "assets/img/icons/activities/reading/cthulhu.jpg"
+    },
+    {
+        "name": "The Lord of the Rings",
+        "desc": "by Franck Herbert",
+        "pic": "assets/img/icons/activities/reading/lord.jpg"
+    },
+    {
+        "name": "Les Misérables",
+        "desc": "by Victor Hugo",
+        "pic": "assets/img/icons/activities/reading/hugo.jpg"
+    }
+]

@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Narcos",
+        "desc": "TV Show",
+        "pic": "https://via.placeholder.com/150x150"
+    },
+    {
+        "name": "Alien Covenant",
+        "desc": "Movie",
+        "pic": "https://via.placeholder.com/150x150"
+    },
+    {
+        "name": "Prometheus",
+        "desc": "Movie",
+        "pic": "https://via.placeholder.com/150x150"
+    },
+    {
+        "name": "Predator",
+        "desc": "Movie",
+        "pic": "https://via.placeholder.com/150x150"
+    },
+    {
+        "name": "Stranger Things",
+        "desc": "TV Show",
+        "pic": "https://via.placeholder.com/150x150"
+    },
+    {
+        "name": "Casa de Papel",
+        "desc": "TV Show",
+        "pic": "https://via.placeholder.com/150x150"
+    },
+    {
+        "name": "Godzilla",
+        "desc": "Animation",
+        "pic": "https://via.placeholder.com/150x150"
+    }
+]
