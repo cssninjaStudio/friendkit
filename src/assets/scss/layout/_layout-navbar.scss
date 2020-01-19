@@ -112,6 +112,12 @@ Navbar styles
         margin-left: 70px;
     }
 
+    .container {
+        &.is-fluid {
+            padding: 0;
+        }
+    }
+
     //Brand
     .navbar-brand {
         height: 58px;

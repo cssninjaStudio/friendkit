@@ -1,43 +1,43 @@
 [
     {
-        "name": "Domino's Pizza",
+        "name": "Fast Pizza",
         "activity": "Pizza & Fast Food",
         "followers": "150K",
         "page_id": "0",
-        "profile_picture": "assets/img/icons/logos/domino.jpg",
-        "cover_image": "assets/img/demo/unsplash/popovers/pages/dominos.jpg"
+        "profile_picture": "assets/img/icons/logos/fastpizza.svg",
+        "cover_image": "assets/img/demo/unsplash/popovers/pages/fastpizza.jpg"
     },
     {
-        "name": "Android Studio",
+        "name": "Lonely Droid",
         "activity": "Technology",
         "followers": "75K",
         "page_id": "1",
-        "profile_picture": "assets/img/icons/logos/android.svg",
-        "cover_image": "assets/img/demo/unsplash/popovers/pages/android.png"
+        "profile_picture": "assets/img/icons/logos/lonelydroid.svg",
+        "cover_image": "assets/img/demo/unsplash/popovers/pages/lonelydroid.jpg"
     },
     {
-        "name": "IMDB",
+        "name": "Meta movies",
         "activity": "Movies / Entertainment",
         "followers": "29K",
         "page_id": "2",
-        "profile_picture": "assets/img/icons/logos/imdb.png",
+        "profile_picture": "assets/img/icons/logos/metamovies.svg",
         "cover_image": "assets/img/demo/unsplash/popovers/pages/imdb.jpg"
     },
     {
-        "name": "Vuejs",
+        "name": "Nuclearjs",
         "activity": "Technology",
         "followers": "3K",
         "page_id": "3",
-        "profile_picture": "assets/img/icons/logos/vuejs.svg",
-        "cover_image": "assets/img/demo/unsplash/popovers/pages/vuejs.png"
+        "profile_picture": "assets/img/icons/logos/nuclearjs.svg",
+        "cover_image": "assets/img/demo/unsplash/popovers/pages/nuclearjs.jpg"
     },
     {
-        "name": "WordPress",
+        "name": "Slicer",
         "activity": "Web / Design",
         "followers": "130K",
         "page_id": "4",
-        "profile_picture": "assets/img/icons/logos/wordpress.svg",
-        "cover_image": "assets/img/demo/unsplash/popovers/pages/wordpress.jpg"
+        "profile_picture": "assets/img/icons/logos/slicer.svg",
+        "cover_image": "assets/img/demo/unsplash/popovers/pages/slicer.jpg"
     },
     {
         "name": "Css Ninja",
@@ -48,99 +48,75 @@
         "cover_image": "assets/img/demo/unsplash/popovers/pages/cssninja.png"
     },
     {
-        "name": "Georgetown University",
+        "name": "Brent University",
         "activity": "Education",
         "followers": "230K",
         "page_id": "6",
-        "profile_picture": "assets/img/demo/brands/georgetown.jpg",
-        "cover_image": "assets/img/demo/unsplash/popovers/pages/georgetown.jpg"
-    },
-    {
-        "name": "Richard Bland College",
-        "activity": "Education",
-        "followers": "3K",
-        "page_id": "7",
-        "profile_picture": "assets/img/demo/brands/college.png",
-        "cover_image": "assets/img/demo/unsplash/popovers/pages/college.jpg"
+        "profile_picture": "assets/img/icons/logos/brent.svg",
+        "cover_image": "assets/img/demo/unsplash/popovers/pages/brent.jpg"
     },
     {
         "name": "Los Angeles, CA",
         "activity": "Cities & Travel",
         "followers": "15M",
         "page_id": "8",
-        "profile_picture": "assets/img/demo/icons/city.png",
+        "profile_picture": "assets/img/icons/logos/la.svg",
         "cover_image": "assets/img/demo/unsplash/popovers/pages/la.jpg"
     },
     {
-        "name": "Vogue",
+        "name": "Lipflow",
         "activity": "Fashion",
         "followers": "800K",
         "page_id": "9",
-        "profile_picture": "assets/img/demo/brands/vogue.jpg",
-        "cover_image": "assets/img/demo/unsplash/popovers/pages/vogue.jpg"
+        "profile_picture": "assets/img/icons/logos/lipflow.svg",
+        "cover_image": "assets/img/demo/unsplash/popovers/pages/lipflow.jpg"
     },
     {
-        "name": "Channel",
+        "name": "Drop Cosmetics",
         "activity": "Fashion",
         "followers": "800K",
         "page_id": "10",
-        "profile_picture": "assets/img/demo/brands/channel.png",
-        "cover_image": "assets/img/demo/unsplash/popovers/pages/channel.jpg"
+        "profile_picture": "assets/img/icons/logos/drop.svg",
+        "cover_image": "assets/img/demo/unsplash/popovers/pages/drop.jpg"
     },
     {
-        "name": "Dolce & Gabbana",
+        "name": "Quick Fashion",
         "activity": "Fashion",
         "followers": "220K",
         "page_id": "11",
-        "profile_picture": "assets/img/demo/brands/dg.jpg",
-        "cover_image": "assets/img/demo/unsplash/popovers/pages/dg.jpg"
+        "profile_picture": "assets/img/icons/logos/quick-fashion.svg",
+        "cover_image": "assets/img/demo/unsplash/popovers/pages/quick-fashion.jpg"
     },
     {
-        "name": "Havas",
-        "activity": "Branding Agency",
-        "followers": "990K",
-        "page_id": "12",
-        "profile_picture": "assets/img/icons/logos/havas.svg",
-        "cover_image": "assets/img/demo/unsplash/popovers/pages/havas.jpg"
-    },
-    {
-        "name": "Pizza Hut",
+        "name": "Go Pizza",
         "activity": "Pizza & Fast Food",
         "followers": "135K",
         "page_id": "13",
-        "profile_picture": "assets/img/icons/logos/pizzahut.png",
-        "cover_image": "assets/img/demo/unsplash/popovers/pages/pizzahut.jpg"
+        "profile_picture": "assets/img/icons/logos/gopizza.svg",
+        "cover_image": "assets/img/demo/unsplash/popovers/pages/gopizza.jpg"
     },
     {
-        "name": "Mc Donalds",
+        "name": "O' Reilly's",
         "activity": "Burgers & Fast Food",
         "followers": "320K",
         "page_id": "14",
-        "profile_picture": "assets/img/icons/logos/mcdonalds.png",
-        "cover_image": "assets/img/demo/unsplash/popovers/pages/mcdonalds.jpg"
+        "profile_picture": "assets/img/icons/logos/oreilly.svg",
+        "cover_image": "assets/img/demo/unsplash/popovers/pages/oreilly.jpg"
     },
     {
-        "name": "Burger King",
+        "name": "Epic Burger",
         "activity": "Burgers & Fast Food",
         "followers": "45K",
         "page_id": "15",
-        "profile_picture": "assets/img/icons/logos/bk.png",
-        "cover_image": "assets/img/demo/unsplash/popovers/pages/bk.jpg"
+        "profile_picture": "assets/img/icons/logos/epicburger.svg",
+        "cover_image": "assets/img/demo/unsplash/popovers/pages/epicburger.jpg"
     },
     {
-        "name": "Subway",
+        "name": "Downtown Subs",
         "activity": "Fast Food",
         "followers": "30K",
         "page_id": "16",
-        "profile_picture": "assets/img/icons/logos/subway.png",
-        "cover_image": "assets/img/demo/unsplash/popovers/pages/subway.jpg"
-    },
-    {
-        "name": "KFC",
-        "activity": "Fast Food",
-        "followers": "78K",
-        "page_id": "17",
-        "profile_picture": "assets/img/icons/logos/kfc.svg",
-        "cover_image": "assets/img/demo/unsplash/popovers/pages/kfc.jpg"
+        "profile_picture": "assets/img/icons/logos/subs.svg",
+        "cover_image": "assets/img/demo/unsplash/popovers/pages/subs.jpg"
     }
 ]

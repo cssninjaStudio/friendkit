@@ -66,6 +66,7 @@ Form controls styles
 ========================================================================== */
 
 .input {
+    height: 36px;
     transition: all .3s;
 
     &:focus {
@@ -151,6 +152,7 @@ Form controls styles
         }
 
         .input {
+            height: 36px;
             padding-left: 40px;
 
             &:focus {
@@ -950,5 +952,26 @@ Form controls styles
                 border-radius: 50%;
             }
         }
+    }
+}
+
+
+/* ==========================================================================
+6. Autocomplete with tag input
+========================================================================== */
+
+.tokenize {
+    border: 1px solid darken($fade-grey, 3%);
+    border-radius: 4px;
+    transition: all .3s;
+
+    &.focus {
+        .tokens-container {
+            box-shadow: $light-box-shadow;
+        }
+    }
+
+    .tokens-container {
+        transition: all .3s;
     }
 }

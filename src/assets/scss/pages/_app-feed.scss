@@ -425,8 +425,8 @@ Main feed styles
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            height: 32px;
-                            width: 32px;
+                            height: 36px;
+                            width: 36px;
 
                             svg {
                                 height: 18px;
@@ -1646,8 +1646,8 @@ Main feed styles
         //Location and GIF modfiers
         &.is-location-wrapper, &.is-gif-wrapper {
             input {
-                height: 32px;
-                padding-left: 34px;
+                height: 36px;
+                padding-left: 36px;
                 font-size: .9rem;
                 box-shadow: none;
                 color: $muted-grey;
@@ -1731,8 +1731,8 @@ Main feed styles
             position: absolute;
             top: 0;
             left: 0;
-            height: 32px;
-            width: 32px;
+            height: 36px;
+            width: 36px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -1767,7 +1767,7 @@ Main feed styles
             font-size: .8rem;
             color: $white-light;
             padding: 0 10px;
-            height: 32px;
+            height: 36px;
             width: auto;
             border-radius: 4px 0 0 4px;
             background: $medium-text;
@@ -1785,8 +1785,8 @@ Main feed styles
 
             //Input styles
             input {
-                height: 32px;
-                padding-left: 34px;
+                height: 36px;
+                padding-left: 36px;
                 font-size: .9rem;
                 box-shadow: none;
                 color: $muted-grey;

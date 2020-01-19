@@ -79,11 +79,11 @@ Modal styles
     //Modal card
     .card {
         animation: modalScale .3s;
+        margin-bottom: 0;
 
         //Header
         .card-heading {
             display: flex;
-            justify-content: space-between;
             align-items: center;
             padding: 8px 12px;
 
@@ -97,6 +97,7 @@ Modal styles
             .close-wrap {
                 height: 30px;
                 width: 30px;
+                margin-left: auto;
 
                 .close-modal {
                     display: flex;
@@ -1522,13 +1523,34 @@ Modal styles
 6. Change cover and profile picture modals
 ========================================================================== */
 
-.change-cover-modal, .change-profile-pic-modal {
+.change-cover-modal, .change-profile-pic-modal, .new-story-modal {
     .card {
         .card-heading {
             padding: 16px 28px;
 
             h3 {
                 font-size: 1rem;
+            }
+
+            .small-avatar {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 8px;
+                height: 32px;
+                width: 32px;
+                border-radius: 50%;
+                border: 1px solid $placeholder;
+                transition: all .3s;
+
+                img {
+                    display: block;
+                    height: 24px;
+                    width: 24px;
+                    border-radius: 50%;
+                    box-shadow: $light-box-shadow;
+                }
             }
         }
 
@@ -2057,6 +2079,123 @@ Modal styles
                     .button {
                         max-width: 180px;
                         margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Video story modal
+.video-story-modal {
+    .modal-content {
+        .card {
+            .card-heading {
+                padding: 16px 28px;
+
+                h3 {
+                    font-size: 1rem;
+                }
+
+                .small-avatar {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 8px;
+                    height: 32px;
+                    width: 32px;
+                    border-radius: 50%;
+                    border: 1px solid $placeholder;
+                    transition: all .3s;
+
+                    img {
+                        display: block;
+                        height: 24px;
+                        width: 24px;
+                        border-radius: 50%;
+                        box-shadow: $light-box-shadow;
+                    }
+                }
+            }
+
+            .card-body {
+                padding: 10px 30px 30px 30px;
+
+                .story-meta {
+                    p {
+                        font-family: 'Roboto', sans-serif;
+                        font-size: .75rem;
+                        color: lighten($dark-text, 12%);
+                        margin-bottom: 1.5rem;
+                    }
+
+                    select {
+                        width: 100%;
+                    }
+                }
+
+                .story-upload {
+                    label {
+                        font-size: 18px;
+                        font-weight: 400;
+                        margin: 10px 0px;
+                        padding: 0;
+                        text-transform: uppercase;
+                    }
+
+                    input[type="file"] {
+                        cursor: pointer !important;
+                    }
+
+                    input[type="file"]::-webkit-file-upload-button {
+                        background: #E62163;
+                        border: 0;
+                        padding: 1em 2em;
+                        cursor: pointer;
+                        color: #fff;
+                        border-radius: .2em;
+                    }
+
+                    input[type="file"]::-ms-browse {
+                        background: #E62163;
+                        border: 0;
+                        padding: 1em 2em;
+                        cursor: pointer;
+                        color: #fff;
+                        border-radius: .2em;
+                    }
+
+                    img {
+                        max-width: 300px;
+                        padding: 5px;
+                        vertical-align: middle;
+                        text-align: center;
+                    }
+
+                    @supports (object-fit: cover) {
+                        img {
+                            width: 300px;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .bottom_btn {
+                        background-color: #333333;
+                        color: #ffffff;
+                        display: table;
+                        font-size: 28px;
+                        margin: 60px auto 20px;
+                        padding: 10px 25px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                    }
+
+                    .bottom_btn:hover {
+                        background-color: #333;
+                        color: #FFF;
+                        text-decoration: underline;
                     }
                 }
             }

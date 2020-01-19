@@ -1,37 +1,37 @@
 [
     {
-        "name": "Narcos",
+        "name": "Traffic Flow",
         "desc": "TV Show",
-        "pic": "assets/img/icons/activities/watching/narcos.jpg"
+        "pic": "assets/img/icons/feed/movie.svg"
     },
     {
-        "name": "Alien Covenant",
+        "name": "Alien Parasit",
         "desc": "Movie",
-        "pic": "assets/img/icons/activities/watching/covenant.jpg"
+        "pic": "assets/img/icons/feed/movie.svg"
     },
     {
-        "name": "Prometheus",
+        "name": "Galaxy Wars",
         "desc": "Movie",
-        "pic": "assets/img/icons/activities/watching/prometheus.jpg"
+        "pic": "assets/img/icons/feed/movie.svg"
     },
     {
-        "name": "Predator",
+        "name": "The Great Invasion",
         "desc": "Movie",
-        "pic": "assets/img/icons/activities/watching/predator.jpg"
+        "pic": "assets/img/icons/feed/movie.svg"
     },
     {
-        "name": "Stranger Things",
+        "name": "The Dark Ages",
         "desc": "TV Show",
-        "pic": "assets/img/icons/activities/watching/stranger-things.jpg"
+        "pic": "assets/img/icons/feed/movie.svg"
     },
     {
-        "name": "Casa de Papel",
+        "name": "Freaking Holdup",
         "desc": "TV Show",
-        "pic": "assets/img/icons/activities/watching/papel.jpg"
+        "pic": "assets/img/icons/feed/movie.svg"
     },
     {
-        "name": "Godzilla",
+        "name": "King of Monsters",
         "desc": "Animation",
-        "pic": "assets/img/icons/activities/watching/godzilla.jpg"
+        "pic": "assets/img/icons/feed/movie.svg"
     }
 ]

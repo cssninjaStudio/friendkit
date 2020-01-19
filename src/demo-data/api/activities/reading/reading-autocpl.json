@@ -1,32 +1,32 @@
 [
     {
-        "name": "Foundation",
-        "desc": "by Isac Asimov",
-        "pic": "https://via.placeholder.com/150x150"
+        "name": "The Colony",
+        "desc": "by Isac Galinov",
+        "pic": "assets/img/icons/feed/book.svg"
     },
     {
-        "name": "The Trial",
-        "desc": "by Franz Kafka",
-        "pic": "https://via.placeholder.com/150x150"
+        "name": "My Trial",
+        "desc": "by Franz Fafka",
+        "pic": "assets/img/icons/feed/book.svg"
     },
     {
-        "name": "Dune Messiah",
-        "desc": "by Franck Herbert",
-        "pic": "https://via.placeholder.com/150x150"
+        "name": "The Sand Planet",
+        "desc": "by Franck Ferbet",
+        "pic": "assets/img/icons/feed/book.svg"
     },
     {
-        "name": "The Call of Cthulhu",
-        "desc": "by Franck Herbert",
-        "pic": "https://via.placeholder.com/150x150"
+        "name": "The Call of Gods",
+        "desc": "by John Belcks",
+        "pic": "assets/img/icons/feed/book.svg"
     },
     {
-        "name": "The Lord of the Rings",
-        "desc": "by Franck Herbert",
-        "pic": "https://via.placeholder.com/150x150"
+        "name": "The Lord Of Time",
+        "desc": "by Franck Bright",
+        "pic": "assets/img/icons/feed/book.svg"
     },
     {
-        "name": "Les Misérables",
-        "desc": "by Victor Hugo",
-        "pic": "https://via.placeholder.com/150x150"
+        "name": "Les Miséreux",
+        "desc": "by Victor Hugues",
+        "pic": "assets/img/icons/feed/book.svg"
     }
 ]

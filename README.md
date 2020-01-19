@@ -1,4 +1,4 @@
-# Bulkit | Landing Kit 1
+# Friendkit | Social Media UI Kit
 
 ### Note
 

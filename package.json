@@ -1,7 +1,7 @@
 {
-  "name": "bulkit",
-  "version": "3.0.0",
-  "description": "Sass landing pages",
+  "name": "friendkit",
+  "version": "1.1.0",
+  "description": "Social media UI kit",
   "main": "index.js",
   "scripts": {},
   "author": "Css Ninja",

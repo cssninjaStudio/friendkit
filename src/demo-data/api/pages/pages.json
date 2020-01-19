@@ -1,6 +1,6 @@
 [
     {
-        "name": "Domino's Pizza",
+        "name": "Fast Pizza",
         "activity": "Pizza & Fast Food",
         "followers": "150K",
         "page_id": "0",
@@ -8,7 +8,7 @@
         "cover_image": "https://via.placeholder.com/400x150"
     },
     {
-        "name": "Android Studio",
+        "name": "Lonely Droid",
         "activity": "Technology",
         "followers": "75K",
         "page_id": "1",
@@ -16,7 +16,7 @@
         "cover_image": "https://via.placeholder.com/400x150"
     },
     {
-        "name": "IMDB",
+        "name": "Meta movies",
         "activity": "Movies / Entertainment",
         "followers": "29K",
         "page_id": "2",
@@ -24,7 +24,7 @@
         "cover_image": "https://via.placeholder.com/400x150"
     },
     {
-        "name": "Vuejs",
+        "name": "Nuclearjs",
         "activity": "Technology",
         "followers": "3K",
         "page_id": "3",
@@ -32,7 +32,7 @@
         "cover_image": "https://via.placeholder.com/400x150"
     },
     {
-        "name": "WordPress",
+        "name": "Slicer",
         "activity": "Web / Design",
         "followers": "130K",
         "page_id": "4",
@@ -48,18 +48,10 @@
         "cover_image": "https://via.placeholder.com/400x150"
     },
     {
-        "name": "Georgetown University",
+        "name": "Brent University",
         "activity": "Education",
         "followers": "230K",
         "page_id": "6",
-        "profile_picture": "https://via.placeholder.com/150x150",
-        "cover_image": "https://via.placeholder.com/400x150"
-    },
-    {
-        "name": "Richard Bland College",
-        "activity": "Education",
-        "followers": "3K",
-        "page_id": "7",
         "profile_picture": "https://via.placeholder.com/150x150",
         "cover_image": "https://via.placeholder.com/400x150"
     },
@@ -72,7 +64,7 @@
         "cover_image": "https://via.placeholder.com/400x150"
     },
     {
-        "name": "Vogue",
+        "name": "Lipflow",
         "activity": "Fashion",
         "followers": "800K",
         "page_id": "9",
@@ -80,7 +72,7 @@
         "cover_image": "https://via.placeholder.com/400x150"
     },
     {
-        "name": "Channel",
+        "name": "Drop Cosmetics",
         "activity": "Fashion",
         "followers": "800K",
         "page_id": "10",
@@ -88,7 +80,7 @@
         "cover_image": "https://via.placeholder.com/400x150"
     },
     {
-        "name": "Dolce & Gabbana",
+        "name": "Quick Fashion",
         "activity": "Fashion",
         "followers": "220K",
         "page_id": "11",
@@ -96,15 +88,7 @@
         "cover_image": "https://via.placeholder.com/400x150"
     },
     {
-        "name": "Havas",
-        "activity": "Branding Agency",
-        "followers": "990K",
-        "page_id": "12",
-        "profile_picture": "https://via.placeholder.com/150x150",
-        "cover_image": "https://via.placeholder.com/400x150"
-    },
-    {
-        "name": "Pizza Hut",
+        "name": "Go Pizza",
         "activity": "Pizza & Fast Food",
         "followers": "135K",
         "page_id": "13",
@@ -112,7 +96,7 @@
         "cover_image": "https://via.placeholder.com/400x150"
     },
     {
-        "name": "Mc Donalds",
+        "name": "O' Reilly's",
         "activity": "Burgers & Fast Food",
         "followers": "320K",
         "page_id": "14",
@@ -120,7 +104,7 @@
         "cover_image": "https://via.placeholder.com/400x150"
     },
     {
-        "name": "Burger King",
+        "name": "Epic Burger",
         "activity": "Burgers & Fast Food",
         "followers": "45K",
         "page_id": "15",
@@ -128,18 +112,10 @@
         "cover_image": "https://via.placeholder.com/400x150"
     },
     {
-        "name": "Subway",
+        "name": "Downtown Subs",
         "activity": "Fast Food",
         "followers": "30K",
         "page_id": "16",
-        "profile_picture": "https://via.placeholder.com/150x150",
-        "cover_image": "https://via.placeholder.com/400x150"
-    },
-    {
-        "name": "KFC",
-        "activity": "Fast Food",
-        "followers": "78K",
-        "page_id": "17",
         "profile_picture": "https://via.placeholder.com/150x150",
         "cover_image": "https://via.placeholder.com/400x150"
     }

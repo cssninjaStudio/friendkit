@@ -250,5 +250,53 @@
         "second_friend": null,
         "profile_picture": "assets/img/avatars/azzouz.jpg",
         "cover_image": "assets/img/demo/unsplash/popovers/7.jpg"
+    },
+    {
+        "first_name": "Cathy",
+        "last_name": "Smith",
+        "title": "",
+        "location": "Seattle",
+        "user_id": "21",
+        "common_friends": "0",
+        "first_friend": null,
+        "second_friend": null,
+        "profile_picture": "assets/img/avatars/cathy.png",
+        "cover_image": "assets/img/demo/unsplash/popovers/4.jpg"
+    },
+    {
+        "first_name": "Bob",
+        "last_name": "Barker",
+        "title": "",
+        "location": "Tijuana",
+        "user_id": "22",
+        "common_friends": "0",
+        "first_friend": null,
+        "second_friend": null,
+        "profile_picture": "assets/img/avatars/bob.png",
+        "cover_image": "assets/img/demo/unsplash/popovers/8.jpg"
+    },
+    {
+        "first_name": "Greg",
+        "last_name": "Patel",
+        "title": "",
+        "location": "Bogota",
+        "user_id": "23",
+        "common_friends": "0",
+        "first_friend": null,
+        "second_friend": null,
+        "profile_picture": "assets/img/avatars/greg.png",
+        "cover_image": "assets/img/demo/unsplash/popovers/7.jpg"
+    },
+    {
+        "first_name": "Hisashi",
+        "last_name": "Yokida",
+        "title": "",
+        "location": "Tokyo",
+        "user_id": "24",
+        "common_friends": "0",
+        "first_friend": null,
+        "second_friend": null,
+        "profile_picture": "assets/img/avatars/hisashi.jpg",
+        "cover_image": "assets/img/demo/unsplash/popovers/9.jpg"
     }
 ]

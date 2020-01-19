@@ -102,6 +102,7 @@ function compileJS() {
     'src/assets/js/events.js',
     'src/assets/js/explorer.js',
     'src/assets/js/feed.js',
+    'src/assets/js/stories.js',
     'src/assets/js/friends.js',
     'src/assets/js/go-live.js',
     'src/assets/js/inbox.js',
