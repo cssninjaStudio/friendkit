@@ -13,11 +13,13 @@ Core SCSS file
 ========================================================================== */
 
 @import "abstracts/variables";
+
 @import "layout/layout-pageloader";
 @import "layout/layout-layout";
 @import "layout/layout-navbar";
 @import "layout/layout-sidebar";
 @import "layout/layout-placeholders";
+
 @import "components/components-cards";
 @import "components/components-widgets";
 @import "components/components-buttons";
@@ -35,6 +37,7 @@ Core SCSS file
 @import "components/components-checkboxes";
 @import "components/components-animations";
 @import "components/components-utils";
+
 @import "pages/app-chat";
 @import "pages/app-feed";
 @import "pages/app-inbox";
@@ -45,10 +48,12 @@ Core SCSS file
 @import "pages/app-questions";
 @import "pages/app-videos";
 @import "pages/app-stories";
+@import "pages/app-commerce";
 @import "pages/app-landing";
 @import "pages/app-signup";
 @import "pages/app-login";
 @import "pages/app-demo";
+
 @import "layout/layout-responsive";
 
 $slick-font-path: "/assets/fonts/";

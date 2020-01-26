@@ -769,6 +769,7 @@ Navbar styles
 
             &:focus {
                 background: $white;
+                box-shadow: $light-box-shadow !important;
                 border-color: darken($fade-grey, 2%);
             }
         }

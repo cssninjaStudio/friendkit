@@ -114,6 +114,7 @@ function compileJS() {
     'src/assets/js/popovers-users.js',
     'src/assets/js/profile.js',
     'src/assets/js/questions.js',
+    'src/assets/js/shop.js',
     'src/assets/js/signup.js',
     'src/assets/js/touch.js',
     'src/assets/js/tour.js',

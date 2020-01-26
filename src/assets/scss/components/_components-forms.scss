@@ -66,6 +66,7 @@ Form controls styles
 ========================================================================== */
 
 .input {
+    font-size: .9rem;
     height: 36px;
     transition: all .3s;
 
@@ -83,8 +84,14 @@ Form controls styles
     }
 
     &.is-fade {
+
+        &:hover {
+            border: 1px solid darken($fade-grey, 2%);
+        }
+
         &:focus {
-            border: 1px solid lighten($fade-grey, 2%);
+            border: 1px solid darken($fade-grey, 2%);
+            box-shadow: $light-box-shadow !important;
         }
     }
 
@@ -100,6 +107,9 @@ Form controls styles
 ========================================================================== */
 
 .textarea {
+    font-size: .9rem;
+    transition: all .3s;
+
     &.is-sm {
         font-size: .9rem;
         resize: none;
@@ -110,8 +120,13 @@ Form controls styles
     }
 
     &.is-fade {
+        &:hover {
+            border: 1px solid darken($fade-grey, 2%);
+        }
+
         &:focus {
-            border: 1px solid lighten($fade-grey, 2%);
+            border: 1px solid darken($fade-grey, 2%);
+            box-shadow: $light-box-shadow !important;
         }
     }
 }
@@ -293,8 +308,7 @@ Form controls styles
                 //icon
                 i {
                     color: $muted-grey;
-                    font-size: 20px;
-                    margin-right: 8px;
+                    font-size: 18px;
                 }
 
                 .fa {
@@ -322,8 +336,6 @@ Form controls styles
                     display: block;
                     height: 22px;
                     width: 22px;
-
-                    //border-radius: 50%;
                     object-fit: contain;
                     margin-right: 8px;
 

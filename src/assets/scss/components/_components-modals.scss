@@ -2087,7 +2087,7 @@ Modal styles
 }
 
 //Video story modal
-.video-story-modal {
+.video-story-modal, .image-story-modal {
     .modal-content {
         .card {
             .card-heading {
@@ -2136,12 +2136,55 @@ Modal styles
                 }
 
                 .story-upload {
-                    label {
-                        font-size: 18px;
-                        font-weight: 400;
-                        margin: 10px 0px;
-                        padding: 0;
-                        text-transform: uppercase;
+                    .preview-block {
+                        .upload-placeholder {
+                            display: block;
+                            width: 100%;
+                            max-width: 220px;
+                            margin: 0 auto;
+                        }
+
+                        .image-upload-placeholder {
+                            display: block;
+                            width: 100%;
+                            max-width: 140px;
+                            margin: 0 auto;
+                        }
+
+                        .preview-image-container {
+                            position: relative;
+                            max-width: 260px;
+                            margin: 0 auto;
+
+                            .delete {
+                                position: absolute;
+                                top: 4px;
+                                right: 4px;
+                            }
+
+                            .preview-image {
+                                display: block;
+                                max-width: 260px;
+                                min-height: 160px;
+                                margin: 0 auto;
+                                border-radius: 12px;
+                                box-shadow: $light-box-shadow;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+
+                    .input-block {
+                        padding: 16px 0;
+                        max-width: 260px;
+                        margin: 0 auto;
+
+                        input {
+                            width: 100%;
+                            background: $fade-grey;
+                            outline: none !important;
+                            border-radius: 6px;
+                        }
                     }
 
                     input[type="file"] {
@@ -2149,55 +2192,86 @@ Modal styles
                     }
 
                     input[type="file"]::-webkit-file-upload-button {
-                        background: #E62163;
+                        background: $white;
                         border: 0;
                         padding: 1em 2em;
                         cursor: pointer;
-                        color: #fff;
-                        border-radius: .2em;
+                        color: $dark-text;
+                        border-radius: 6px;
+                        border: 1px solid darken($fade-grey, 3%);
+                        box-shadow: $light-box-shadow;
+                        outline: none !important;
+                        margin-right: 12px;
                     }
 
                     input[type="file"]::-ms-browse {
-                        background: #E62163;
+                        background: $white;
                         border: 0;
                         padding: 1em 2em;
                         cursor: pointer;
-                        color: #fff;
-                        border-radius: .2em;
-                    }
-
-                    img {
-                        max-width: 300px;
-                        padding: 5px;
-                        vertical-align: middle;
-                        text-align: center;
-                    }
-
-                    @supports (object-fit: cover) {
-                        img {
-                            width: 300px;
-                            object-fit: cover;
-                        }
-                    }
-
-                    .bottom_btn {
-                        background-color: #333333;
-                        color: #ffffff;
-                        display: table;
-                        font-size: 28px;
-                        margin: 60px auto 20px;
-                        padding: 10px 25px;
-                        text-align: center;
-                        text-transform: uppercase;
-                        text-decoration: none;
-                    }
-
-                    .bottom_btn:hover {
-                        background-color: #333;
-                        color: #FFF;
-                        text-decoration: underline;
+                        color: $dark-text;
+                        border-radius: 6px;
+                        border: 1px solid darken($fade-grey, 3%);
+                        box-shadow: $light-box-shadow;
+                        outline: none !important;
+                        margin-right: 12px;
                     }
                 }
+            }
+        }
+    }
+}
+
+.tokenize {
+    .tokens-container {
+        .token {
+            span {
+                font-size: .75rem;
+                line-height: 2;
+            }
+
+            .dismiss {
+                top: 1px;
+            }
+        }
+    }
+}
+
+.tokenize-dropdown {
+    .dropdown-menu {
+        background: $white !important;
+        border-radius: 6px !important;
+        border: 1px solid darken($fade-grey, 3%) !important;
+        box-shadow: $light-box-shadow !important;
+        height: 144px;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            width: 6px !important;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            border-radius: 10px !important;
+            background: rgba(0, 0, 0, 0.2) !important;
+        }
+
+        li {
+            margin: 0 8px;
+            padding: 6px 10px;
+            border-radius: 6px;
+
+            &:hover {
+                background: lighten($fade-grey, 4%);
+
+                a {
+                    color: $accent;
+                }
+            }
+
+            a {
+                color: $muted-grey;
+                font-size: .85rem !important;
+                font-weight: 400;
             }
         }
     }

@@ -1,0 +1,578 @@
+---
+layout: full-white
+title: Stories Home
+---
+
+<div class="stories-wrapper is-home">
+
+    <!-- /html/includes/pages/stories/stories-sidebar.html -->
+    {{> stories-sidebar}}
+
+    <!-- Stories -->
+    <div class="inner-wrapper">
+        <a class="mobile-sidebar-trigger is-story-post is-home-v2">
+            <i data-feather="menu"></i>
+        </a>
+
+        <!-- Story -->
+        <div class="story-post-wrapper">
+            <div class="story-post">
+                <div class="post-title">
+                    <h2>Hello from Sunset Beach</h2>
+                    <!--Dropdown-->
+                    <div class="dropdown is-spaced is-right is-accent dropdown-trigger">
+                        <div>
+                            <div class="button is-rounded">
+                                @Stella &#x25BE
+                            </div>
+                        </div>
+                        <div class="dropdown-menu" role="menu">
+                            <div class="dropdown-content">
+                                <a href="#" class="dropdown-item">
+                                    <div class="media">
+                                        <i data-feather="wind"></i>
+                                        <div class="media-content">
+                                            <h3>Today</h3>
+                                            <small>View today's posts.</small>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item">
+                                    <div class="media">
+                                        <i data-feather="calendar"></i>
+                                        <div class="media-content">
+                                            <h3>This Week</h3>
+                                            <small>View this week's posts.</small>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item">
+                                    <div class="media">
+                                        <i data-feather="archive"></i>
+                                        <div class="media-content">
+                                            <h3>This Month</h3>
+                                            <small>View this month's posts.</small>
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr class="dropdown-divider">
+                                <a href="#" class="dropdown-item">
+                                    <div class="media">
+                                        <i data-feather="users"></i>
+                                        <div class="media-content">
+                                            <h3>Close Friends</h3>
+                                            <small>Restrict to close friends.</small>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <div class="media">
+                                        <i data-feather="heart"></i>
+                                        <div class="media-content">
+                                            <h3>Popular</h3>
+                                            <small>Show popular posts.</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-image-wrap">
+                    <img class="post-image" src="https://via.placeholder.com/1600x900"
+                        data-demo-src="assets/img/demo/unsplash/3.jpg" alt="">
+                </div>
+                <div class="post-meta">
+                    <div class="post-author">
+                        <div class="story-avatar">
+                            <img class="avatar" src="https://via.placeholder.com/150x150"
+                                data-demo-src="assets/img/avatars/stella.jpg" data-user-popover="2" alt="">
+                        </div>
+                        <div class="meta">
+                            <span>Stella Bergmann</span>
+                            <span>2 hours ago</span>
+                        </div>
+                    </div>
+
+                    <div class="post-stats">
+                        <div class="stat-item">
+                            <i data-feather="heart"></i>
+                            <span>265</span>
+                        </div>
+                        <div class="stat-item">
+                            <i data-feather="message-circle"></i>
+                            <span>56</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-text content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid de Pythagora? Quae est igitur
+                            causa istarum angustiarum? Non risu potius quam oratione eiciendum? Duo Reges:
+                        constructio interrete. An haec ab eo non dicuntur? Quae cum essent dicta, discessimus.
+                    </p>
+
+                    <p>At enim hic etiam dolore. Idem iste, inquam, de voluptate quid sentit? At enim sequor
+                            utilitatem. Iam in altera philosophiae parte. Ut optime, secundum naturam affectum esse
+                        possit. Hoc sic expositum dissimile est superiori. <b>#holidays</b> <b>#friends</b> <b>#chillout</b></p>
+                </div>
+                <div class="post-tags">
+                    <div class="tags">
+                        <span class="tag" data-user-popover="1">@Dan Walker</span>
+                        <span class="tag" data-user-popover="6">@Elise Walker</span>
+                        <span class="tag" data-user-popover="8">@Bobby Brown</span>
+                    </div>
+                </div>
+                <div class="post-compose">
+                    <div class="control">
+                        <textarea class="textarea" placeholder="Post a comment..."></textarea>
+                    </div>
+                    <div class="compose-controls">
+                        <img class="avatar" src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/jenna.png" data-user-popover="0" alt="">
+                        <div class="compose-actions">
+                            <a class="action">
+                                <i data-feather="at-sign"></i>
+                            </a>
+                            <a class="action">
+                                <i data-feather="image"></i>
+                            </a>
+                            <a class="action">
+                                <i data-feather="paperclip"></i>
+                            </a>
+                        </div>
+                        <a class="button is-solid accent-button raised">Post Comment</a>
+                    </div>
+                </div>
+
+                <div class="comments-wrap">
+                    <div class="comments-count">
+                        <h3>Comments (9)</h3>
+                    </div>
+    
+                    <div class="media is-comment">
+                        <div class="media-left">
+                            <div class="avatar-wrap is-smaller">
+                                <img src="assets/img/avatars/dan.jpg" data-demo-src="assets/img/avatars/dan.jpg" data-user-popover="1" alt="">
+                                <div class="badge">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media-content">
+                            <div class="comment-meta">
+                                <h4><a>Dan Walker</a> <small> · 3 hours ago</small></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec
+                                ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit
+                                rutrum. Nunc in tempus turpis.</p>
+                            </div>
+                            <div class="comment-stats-wrap">
+                                <div class="comment-stats">
+                                    <div class="stat is-likes">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                                        <span>23</span>
+                                    </div>
+                                    <div class="stat is-dislikes">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-down"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path></svg>
+                                        <span>3</span>
+                                    </div>
+                                </div>
+                                <div class="comment-actions">
+                                    <a class="comment-action is-like">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                                    </a>
+                                    <a class="comment-action is-dislike">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-down"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path></svg>
+                                    </a>
+                                    <a class="comment-action is-reply">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="nested-replies">
+                                <a class="header">
+                                    <span>5 Replies</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                </a>
+                                <div class="nested-comments">
+                                    <!--Nested comment -->
+                                    <div class="media is-comment is-nested">
+                                        <figure class="media-left">
+                                            <div class="avatar-wrap is-smaller">
+                                                <img src="assets/img/avatars/gaelle.jpeg" data-demo-src="assets/img/avatars/gaelle.jpeg" data-user-popover="11" alt="">
+                                            </div>
+                                        </figure>
+                                        <div class="media-content">
+                                            <div class="comment-meta">
+                                                <h4><a>Gaelle Morris</a> <small> · 30 minutes ago</small></h4>
+                                                <p><span class="mention">@Dan Walker</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.</p>
+                                            </div>
+                                            <div class="comment-stats-wrap">
+                                                <div class="comment-stats">
+                                                    <div class="stat is-likes">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                                                        <span>2</span>
+                                                    </div>
+                                                    <div class="stat is-dislikes">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-down"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path></svg>
+                                                        <span>0</span>
+                                                    </div>
+                                                </div>
+                                                <div class="comment-actions">
+                                                    <a class="comment-action is-like">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                                                    </a>
+                                                    <a class="comment-action is-dislike">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-down"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path></svg>
+                                                    </a>
+                                                    <a class="comment-action is-reply">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Nested comment -->
+                                    <div class="media is-comment is-nested">
+                                        <figure class="media-left">
+                                            <div class="avatar-wrap is-smaller">
+                                                <img src="assets/img/avatars/rolf.jpg" data-demo-src="assets/img/avatars/rolf.jpg" data-user-popover="13" alt="">
+                                                <div class="badge">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                                </div>
+                                            </div>
+                                        </figure>
+                                        <div class="media-content">
+                                            <div class="comment-meta">
+                                                <h4><a>Rolf Krupp</a> <small> · 50 minutes ago</small></h4>
+                                                <p><span class="mention">@Gaelle Morris</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non.</p>
+                                            </div>
+                                            <div class="comment-stats-wrap">
+                                                <div class="comment-stats">
+                                                    <div class="stat is-likes">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                                                        <span>1</span>
+                                                    </div>
+                                                    <div class="stat is-dislikes">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-down"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path></svg>
+                                                        <span>0</span>
+                                                    </div>
+                                                </div>
+                                                <div class="comment-actions">
+                                                    <a class="comment-action is-like">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                                                    </a>
+                                                    <a class="comment-action is-dislike">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-down"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path></svg>
+                                                    </a>
+                                                    <a class="comment-action is-reply">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Nested comment -->
+                                    <div class="media is-comment is-nested">
+                                        <figure class="media-left">
+                                            <div class="avatar-wrap is-smaller">
+                                                <img src="assets/img/avatars/bobby.jpg" data-demo-src="assets/img/avatars/bobby.jpg" data-user-popover="8" alt="">
+                                            </div>
+                                        </figure>
+                                        <div class="media-content">
+                                            <div class="comment-meta">
+                                                <h4><a>Bobby Brown</a> <small> · 1 hour ago</small></h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                            <div class="comment-stats-wrap">
+                                                <div class="comment-stats">
+                                                    <div class="stat is-likes">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                                                        <span>5</span>
+                                                    </div>
+                                                    <div class="stat is-dislikes">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-down"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path></svg>
+                                                        <span>1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="comment-actions">
+                                                    <a class="comment-action is-like">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                                                    </a>
+                                                    <a class="comment-action is-dislike">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-down"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path></svg>
+                                                    </a>
+                                                    <a class="comment-action is-reply">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Nested comment -->
+                                    <div class="media is-comment is-nested">
+                                        <figure class="media-left">
+                                            <div class="avatar-wrap is-smaller">
+                                                <img src="assets/img/avatars/stella.jpg" data-demo-src="assets/img/avatars/stella.jpg" data-user-popover="2" alt="">
+                                            </div>
+                                        </figure>
+                                        <div class="media-content">
+                                            <div class="comment-meta">
+                                                <h4><a>Stella Bergmann</a> <small> · 2 hours ago</small></h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec
+                                                    ultricies elit blandit non.</p>
+                                            </div>
+                                            <div class="comment-stats-wrap">
+                                                <div class="comment-stats">
+                                                    <div class="stat is-likes">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                                                        <span>0</span>
+                                                    </div>
+                                                    <div class="stat is-dislikes">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-down"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path></svg>
+                                                        <span>0</span>
+                                                    </div>
+                                                </div>
+                                                <div class="comment-actions">
+                                                    <a class="comment-action is-like">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                                                    </a>
+                                                    <a class="comment-action is-dislike">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-down"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path></svg>
+                                                    </a>
+                                                    <a class="comment-action is-reply">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Nested comment -->
+                                    <div class="media is-comment is-nested">
+                                        <figure class="media-left">
+                                            <div class="avatar-wrap is-smaller">
+                                                <img src="assets/img/avatars/edward.jpeg" data-demo-src="assets/img/avatars/edward.jpeg" data-user-popover="5" alt="">
+                                            </div>
+                                        </figure>
+                                        <div class="media-content">
+                                            <div class="comment-meta">
+                                                <h4><a>Edward Mayers</a> <small> · 3 hours ago</small></h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec
+                                                    ultricies elit blandit non.</p>
+                                            </div>
+                                            <div class="comment-stats-wrap">
+                                                <div class="comment-stats">
+                                                    <div class="stat is-likes">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                                                        <span>6</span>
+                                                    </div>
+                                                    <div class="stat is-dislikes">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-down"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path></svg>
+                                                        <span>0</span>
+                                                    </div>
+                                                </div>
+                                                <div class="comment-actions">
+                                                    <a class="comment-action is-like">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                                                    </a>
+                                                    <a class="comment-action is-dislike">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-down"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path></svg>
+                                                    </a>
+                                                    <a class="comment-action is-reply">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Comment -->
+                    <div class="media is-comment">
+                        <figure class="media-left">
+                            <div class="avatar-wrap is-smaller">
+                                <img src="assets/img/avatars/milly.jpg" data-demo-src="assets/img/avatars/milly.jpg" data-user-popover="7" alt="">
+                            </div>
+                        </figure>
+                        <div class="media-content">
+                            <div class="comment-meta">
+                                <h4><a>Milly Augutine</a> <small> · 4 hours ago</small></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="comment-stats-wrap">
+                                <div class="comment-stats">
+                                    <div class="stat is-likes">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                                        <span>8</span>
+                                    </div>
+                                    <div class="stat is-dislikes">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-down"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path></svg>
+                                        <span>0</span>
+                                    </div>
+                                </div>
+                                <div class="comment-actions">
+                                    <a class="comment-action is-like">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                                    </a>
+                                    <a class="comment-action is-dislike">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-down"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path></svg>
+                                    </a>
+                                    <a class="comment-action is-reply">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="media is-comment">
+                        <figure class="media-left">
+                            <div class="avatar-wrap is-smaller">
+                                <img src="assets/img/avatars/elise.jpg" data-demo-src="assets/img/avatars/elise.jpg" data-user-popover="6" alt="">
+                            </div>
+                        </figure>
+                        <div class="media-content">
+                            <div class="comment-meta">
+                                <h4><a>Elise Walker</a> <small> · 5 hours ago</small></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec
+                                    ultricies elit blandit non.</p>
+                            </div>
+                            <div class="comment-stats-wrap">
+                                <div class="comment-stats">
+                                    <div class="stat is-likes">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                                        <span>3</span>
+                                    </div>
+                                    <div class="stat is-dislikes">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-down"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path></svg>
+                                        <span>0</span>
+                                    </div>
+                                </div>
+                                <div class="comment-actions">
+                                    <a class="comment-action is-like">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                                    </a>
+                                    <a class="comment-action is-dislike">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-down"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path></svg>
+                                    </a>
+                                    <a class="comment-action is-reply">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="media is-comment">
+                        <figure class="media-left">
+                            <div class="avatar-wrap is-smaller">
+                                <img src="assets/img/avatars/placeholder-m.jpg" data-demo-src="assets/img/avatars/placeholder-m.jpg" alt="">
+                            </div>
+                        </figure>
+                        <div class="media-content">
+                            <div class="comment-meta">
+                                <h4><a>John Doe</a> <small> · 5 hours ago</small></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec
+                                    ultricies elit blandit non.</p>
+                            </div>
+                            <div class="comment-stats-wrap">
+                                <div class="comment-stats">
+                                    <div class="stat is-likes">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                                        <span>12</span>
+                                    </div>
+                                    <div class="stat is-dislikes">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-down"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path></svg>
+                                        <span>4</span>
+                                    </div>
+                                </div>
+                                <div class="comment-actions">
+                                    <a class="comment-action is-like">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                                    </a>
+                                    <a class="comment-action is-dislike">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-down"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path></svg>
+                                    </a>
+                                    <a class="comment-action is-reply">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Story post sidebar-->
+        <div class="story-post-sidebar">
+            <div class="header">
+                <h2>You might like</h2>
+            </div>
+            <div class="related-posts">
+                <!--Related post-->
+                <a class="related-post">
+                    <img class="post-image" src="https://via.placeholder.com/250x250"
+                        data-demo-src="assets/img/demo/unsplash/4.jpg" alt="">
+                    <div class="meta">
+                        <h3>Beaches you want to discover and experiment in 2020</h3>
+                        <div class="user-line">
+                            <img src="https://via.placeholder.com/250x250" data-demo-src="assets/img/avatars/elise.jpg" data-user-popover="6" alt="">
+                            <span>Elise Walker</span>
+                        </div>
+                    </div>
+                </a>
+                <!--Related post-->
+                <a class="related-post">
+                    <img class="post-image" src="https://via.placeholder.com/250x250"
+                        data-demo-src="assets/img/demo/unsplash/17.jpg" alt="">
+                    <div class="meta">
+                        <h3>Those shoes will make you feel so happy</h3>
+                        <div class="user-line">
+                            <img src="https://via.placeholder.com/250x250" data-demo-src="assets/img/avatars/dan.jpg" data-user-popover="1" alt="">
+                            <span>Dan Walker</span>
+                        </div>
+                    </div>
+                </a>
+                <!--Related post-->
+                <a class="related-post">
+                    <img class="post-image" src="https://via.placeholder.com/250x250"
+                        data-demo-src="assets/img/demo/unsplash/32.jpg" alt="">
+                    <div class="meta">
+                        <h3>Life is all about happiness, it's up to you to go for it</h3>
+                        <div class="user-line">
+                            <img src="https://via.placeholder.com/250x250" data-demo-src="assets/img/avatars/milly.jpg" data-user-popover="7" alt="">
+                            <span>Milly Augustine</span>
+                        </div>
+                    </div>
+                </a>
+                <!--Related post-->
+                <a class="related-post">
+                    <img class="post-image" src="https://via.placeholder.com/250x250"
+                        data-demo-src="assets/img/demo/unsplash/18.jpg" alt="">
+                    <div class="meta">
+                        <h3>My winter trip was absolutely fantastic</h3>
+                        <div class="user-line">
+                            <img src="https://via.placeholder.com/250x250" data-demo-src="assets/img/avatars/jenna.png" data-user-popover="0" alt="">
+                            <span>Jenna Davis</span>
+                        </div>
+                    </div>
+                </a>
+                <!--Related post-->
+                <a class="related-post">
+                    <img class="post-image" src="https://via.placeholder.com/250x250"
+                        data-demo-src="assets/img/demo/unsplash/26.jpg" alt="">
+                    <div class="meta">
+                        <h3>8 Headsets of 2020 compared, check it out before buying</h3>
+                        <div class="user-line">
+                            <img src="https://via.placeholder.com/250x250" data-demo-src="assets/img/avatars/azzouz.jpg" data-user-popover="20" alt="">
+                            <span>Azzouz El Paytoun</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
