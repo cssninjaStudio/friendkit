@@ -178,6 +178,26 @@ function initNavDropdowns() {
     });
 };
 
+//Init Cart dropdown
+function initNavbarCart() {
+    $('.is-cart .cart-button').on('click', function () {
+        $(this).closest('.is-cart').find('.shopping-cart').addClass('is-active');
+        setTimeout(function() {
+            $('.navbar-cart-loader').removeClass('is-active');
+        }, 800);
+    })
+
+    $(document).click(function (e) {
+        var target = e.target;
+        if (!$(target).is('.is-cart .cart-button') && !$(target).parents().is('.is-cart')) {
+            $('.shopping-cart').removeClass('is-active');
+            setTimeout(function() {
+                $('.navbar-cart-loader').addClass('is-active');
+            }, 300);
+        }
+    });
+}
+
 //Init dropdowns
 function initDropdowns() {
     $('.dropdown-trigger').click(function () {

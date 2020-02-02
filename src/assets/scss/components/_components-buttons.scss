@@ -9,6 +9,7 @@ Friendkit button styles
     2. Like button
     3. Circle button
     4. Load more button
+    5. Spinner button
 */
 
 /* ==========================================================================
@@ -443,5 +444,54 @@ button.button {
 
     to {
         transform: rotate(360deg);
+    }
+}
+
+
+/* ==========================================================================
+5. Spinner button
+========================================================================== */
+
+.spinner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 38px;
+    min-width: 110px;
+    border: 1px solid $fade-grey;
+    border-radius: 100px;
+    box-shadow: $light-box-shadow;
+    padding: 0 4px;
+
+    .add, .remove {
+        height: 38px;
+        width: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background: none;
+        cursor: pointer;
+        outline: none !important;
+
+        &:hover {
+            svg {
+                stroke: $dark-text;
+            }
+        }
+
+        svg {
+            height: 14px;
+            width: 14px;
+            stroke: $med-grey;
+            transition: stroke .3s;
+        }
+    }
+
+    .value {
+        font-size: .9rem;
+        font-weight: 500;
+        color: $dark-text;
+        user-select: none;
     }
 }

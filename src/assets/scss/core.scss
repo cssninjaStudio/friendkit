@@ -35,6 +35,7 @@ Core SCSS file
 @import "components/components-popovers";
 @import "components/components-tooltips";
 @import "components/components-checkboxes";
+@import "components/components-tables";
 @import "components/components-animations";
 @import "components/components-utils";
 
@@ -52,6 +53,7 @@ Core SCSS file
 @import "pages/app-landing";
 @import "pages/app-signup";
 @import "pages/app-login";
+@import "pages/app-settings";
 @import "pages/app-demo";
 
 @import "layout/layout-responsive";

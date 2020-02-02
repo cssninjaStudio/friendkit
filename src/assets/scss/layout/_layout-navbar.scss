@@ -170,6 +170,244 @@ Navbar styles
     .navbar-item {
         position: relative;
 
+        //Cart
+        &.is-cart {
+            margin-left: 16px;
+
+            .cart-button {
+                position: relative;
+                height: 36px;
+                width: 36px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                svg {
+                    height: 20px;
+                    width: 20px;
+                    stroke: $med-grey;
+                }
+
+                .cart-count {
+                    position: absolute;
+                    top: -3px;
+                    right: -3px;
+                    height: 20px;
+                    min-width: 20px;
+                    background: $med-grey;
+                    border: 2px solid $white;
+                    border-radius: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    span {
+                        display: block;
+                        font-size: .55rem;
+                        color: $white-light;
+                        padding: 0 5px;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .shopping-cart {
+                position: absolute;
+                top: 60px;
+                right: -10px;
+                background: $white;
+                width: 320px;
+                border-radius: 3px;
+                padding: 20px;
+                box-shadow: $light-box-shadow;
+                border: 1px solid darken($fade-grey, 3%);
+                opacity: 0;
+                transform: translateY(10px);
+                pointer-events: none;
+                transition: transform .3s, opacity .3s;
+
+                &.is-active {
+                    opacity: 1;
+                    transform: translateY(0);
+                    pointer-events: all;
+                }
+
+                &:after {
+                    bottom: 100%;
+                    left: 89%;
+                    border: solid transparent;
+                    content: " ";
+                    height: 0;
+                    width: 0;
+                    position: absolute;
+                    pointer-events: none;
+                    border-bottom-color: white;
+                    border-width: 8px;
+                    margin-left: -8px;
+                    z-index: 1;
+                }
+
+                &:before {
+                    bottom: 100%;
+                    left: 89%;
+                    border: solid transparent;
+                    content: " ";
+                    height: 0;
+                    width: 0;
+                    position: absolute;
+                    pointer-events: none;
+                    border-bottom-color: $fade-grey;
+                    border-width: 10px;
+                    margin-left: -10px;
+                    z-index: 0;
+                }
+
+                .cart-inner {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+
+                    .navbar-cart-loader {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: $white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        opacity: 0;
+                        pointer-events: none;
+                        z-index: 1;
+                        transition: all .3s;
+
+                        &.is-active {
+                            opacity: 1;
+                        }
+
+                        .loader {
+                            height: 3.5rem;
+                            width: 3.5rem;
+                        }
+                    }
+                }
+
+                .button {
+                    background: $accent;
+                    border-color: $accent;
+                    color: $white;
+                    font-weight: 400;
+                    text-align: center;
+                    text-decoration: none;
+                    display: block;
+                    border-radius: 3px;
+                    font-size: .9rem;
+                    margin: 20px 0 0 0;
+                    line-height: 0;
+
+                    &:hover {
+                        background: lighten($accent, 3%);
+                        box-shadow: $accent-box-shadow;
+                    }
+                }
+
+                .shopping-cart-header {
+                    border-bottom: 1px solid #E8E8E8;
+                    padding-bottom: 15px;
+
+                    .cart-link {
+                        font-size: .75rem;
+                        color: $muted-grey;
+                        padding: 7px 10px;
+                        border: 1px solid $fade-grey;
+                        border-radius: 100px;
+                        box-shadow: $light-box-shadow;
+                        transition: all .3s;
+
+                        &:hover {
+                            border-color: $accent;
+                            color: $accent;
+                        }
+                    }
+
+                    .shopping-cart-total {
+                        float: right;
+
+                        span {
+                            &:first-child {
+                                color: $light-text;
+                                font-size: .9rem;
+                            }
+
+                            &:nth-child(2) {
+                                color: $dark-text;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+
+                .shopping-cart-items {
+                    padding-top: 20px;
+
+                    .cart-row {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    li {
+                        margin-bottom: 6px;
+                        padding-bottom: 12px;
+                        border-bottom: 1px solid #E8E8E8;
+                    }
+
+                    img {
+                        display: block;
+                        height: 54px;
+                        width: 54px;
+                        min-width: 54px;
+                        min-height: 54px;
+                        margin-right: 12px;
+                    }
+
+                    .meta-info {
+                        position: relative;
+                        top: -4px;
+                    }
+
+                    .item-name {
+                        display: block;
+                        padding-top: 10px;
+                        font-size: .9rem;
+                        font-weight: 600;
+                        color: $dark-text;
+                        font-family: 'Open Sans', sans-serif;
+                    }
+
+                    .item-price {
+                        color: $med-grey;
+                        margin-right: 8px;
+                        font-size: .8rem;
+                        line-height: 1;
+                    }
+
+                    .item-quantity {
+                        color: $light-text;
+                        font-size: .8rem;
+                        line-height: 1;
+                    }
+                }
+            }
+
+            .clearfix:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        }
+
         //Plus Menu
         &.is-plus-menu {
             position: relative;
@@ -343,7 +581,6 @@ Navbar styles
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            margin-left: 16px;
             cursor: pointer;
 
             //Avatar

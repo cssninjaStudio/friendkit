@@ -116,6 +116,7 @@ function compileJS() {
     'src/assets/js/questions.js',
     'src/assets/js/shop.js',
     'src/assets/js/signup.js',
+    'src/assets/js/settings.js',
     'src/assets/js/touch.js',
     'src/assets/js/tour.js',
     'src/assets/js/videos.js',

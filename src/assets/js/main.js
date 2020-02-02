@@ -45,6 +45,9 @@ $(document).ready(function(){
     //Navbar dropdown
     initNavDropdowns();
 
+    //Navbar Cart
+    initNavbarCart();
+
     //Common Dropdown
     initDropdowns();
 
