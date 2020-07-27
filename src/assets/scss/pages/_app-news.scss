@@ -348,6 +348,18 @@ News / Blogging layout styles
                     }
 
                     .button-wrap {
+
+                        .button {
+                            background: darken($sidebar, 16%);
+                            border-color: darken($sidebar, 16%);
+                            color: $white;
+
+                            &:hover {
+                                background: $primary;
+                                border-color: $primary;
+                            }
+                        }
+
                         .actions {
                             .action {
                                 &:hover {
@@ -445,6 +457,14 @@ News / Blogging layout styles
                     justify-content: space-between;
                     align-items: flex-end;
 
+                    .button {
+                        &:hover {
+                            background: $primary !important;
+                            border-color: $primary !important;
+                            color: $white !important;
+                        }
+                    }
+
                     .actions {
                         height: 38px;
                         display: flex;
@@ -536,6 +556,14 @@ News / Blogging layout styles
                         display: flex;
                         justify-content: space-between;
                         align-items: flex-end;
+
+                        .button {
+                            &:hover {
+                                background: $primary !important;
+                                border-color: $primary !important;
+                                color: $white !important;
+                            }
+                        }
 
                         .actions {
                             height: 38px;

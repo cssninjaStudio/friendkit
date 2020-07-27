@@ -268,7 +268,75 @@ function initSimplePopover() {
 };
 
 //Init Emojis
-function initEmojis() {
+function initEmojiPicker() {
+    var id = 0;
+    $('.post-comment.has-emojis').each(function(){
+        id = id + 1
+        var $this = $(this);
+        var wrapper = $this.find('.card-footer');
+        var textarea = $this.find('textarea');
+        var action = $this.find('.is-emoji');
+
+        wrapper.attr('id', 'post-comment-wrapper-' + id);
+        textarea.attr('id', 'post-comment-textarea-' + id);
+        action.attr('id', 'post-comment-button-' + id);
+
+        const container = document.getElementById('post-comment-wrapper-' + id);
+        const messageInput = document.getElementById('post-comment-textarea-' + id);
+        const button = document.getElementById('post-comment-button-' + id);
+
+        const picker = new EmojiButton({
+            position: 'top-end',
+            rootElement: container,
+            autoHide: false,
+        });
+    
+        picker.on('emoji', emoji => {
+            messageInput.value += emoji;
+            messageInput.dispatchEvent(new Event('keyup'));
+        });
+    
+        button.addEventListener('click', () => {
+            picker.pickerVisible ? picker.hidePicker() : picker.showPicker(button);
+        });
+    }) 
+}
+
+function initLightboxEmojis() {
+    var id = 0;
+    $('.has-lightbox-emojis').each(function(){
+        id = id + 1
+        var $this = $(this);
+        var wrapper = $this.find('.controls-inner');
+        var textarea = $this.find('textarea');
+        var action = $this.find('.emoji-button');
+
+        wrapper.attr('id', 'lightbox-post-comment-wrapper-' + id);
+        textarea.attr('id', 'lightbox-post-comment-textarea-' + id);
+        action.attr('id', 'lightbox-post-comment-button-' + id);
+
+        const container = document.getElementById('lightbox-post-comment-wrapper-' + id);
+        const messageInput = document.getElementById('lightbox-post-comment-textarea-' + id);
+        const button = document.getElementById('lightbox-post-comment-button-' + id);
+
+        const picker = new EmojiButton({
+            position: 'top-end',
+            rootElement: container,
+            autoHide: false,
+        });
+    
+        picker.on('emoji', emoji => {
+            messageInput.value += emoji;
+            messageInput.dispatchEvent(new Event('keyup'));
+        });
+    
+        button.addEventListener('click', () => {
+            picker.pickerVisible ? picker.hidePicker() : picker.showPicker(button);
+        });
+    }) 
+}
+
+/*function initEmojis() {
     $(".comment-textarea").emojioneArea({
         pickerPosition: "bottom",
         filtersPosition: "top",
@@ -279,7 +347,7 @@ function initEmojis() {
         buttonTitle: "Use the TAB key to insert emoji faster",
         //container: $(".emoji-picker")
     });
-};
+};*/
 
 //Load more buttons
 function initLoadMore() {

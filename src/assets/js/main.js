@@ -4,6 +4,9 @@
 Main js file
 ========================================================================== */
 
+//Pageloader
+initPageloader();
+
 $(document).ready(function(){
 
     "use strict";
@@ -32,10 +35,7 @@ $(document).ready(function(){
     $('.highlight-block code').each(function (i, block) {
         hljs.highlightBlock(block);
     });
-
-    //Pageloader
-    initPageloader();
-
+    
     //Init navbar
     initNavbar();
 
@@ -70,7 +70,10 @@ $(document).ready(function(){
     feather.replace();
 
     //Emojis
-    initEmojis();
+    ////initEmojis();
+    initEmojiPicker();
+
+    initLightboxEmojis();
 
     //Load More
     initLoadMore();

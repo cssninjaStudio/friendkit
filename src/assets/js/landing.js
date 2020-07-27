@@ -92,17 +92,17 @@ $(document).ready(function(){
                         }
                     },
                     "color": {
-                        "value": ["#1a72ff"]
+                        "value": ["#5596e6"]
                     },
 
                     "shape": {
                         "type": "circle",
                         "stroke": {
                             "width": 5,
-                            "color": "#1a72ff"
+                            "color": "#5596e6"
                         },
                         "fill": {
-                            "color": "#1a72ff"
+                            "color": "#5596e6"
                         },
                         "polygon": {
                             "nb_sides": 5

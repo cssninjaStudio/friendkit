@@ -276,6 +276,22 @@ Responsive styles
             width: calc(100% - 8px) !important;
         }
     }
+
+    //Footer
+    .footer-light-medium {
+        .footer-head {
+            flex-direction: column;
+            text-align: center;
+
+            .head-text {
+                padding-bottom: 20px;
+            }
+        }
+
+        .footer-body {
+            padding: 1rem !important;
+        }
+    }
 }
 
 /* ==========================================================================
@@ -505,6 +521,28 @@ Responsive styles
 
         .right-content {
             padding: 0;
+        }
+    }
+
+    //Footer
+    .footer-light-medium {
+        .footer-head {
+            padding: 1rem !important;
+        }
+
+        .footer-body {
+            display: flex;
+            padding: 2rem 1rem !important;
+
+            .column.is-4 {
+                width: 42%;
+                max-width: 42%;
+                flex-shrink: 1;
+            }
+
+            .is-offset-2 .columns {
+                display: flex !important;
+            }
         }
     }
 }

@@ -150,6 +150,7 @@ Dropdown styles
             h3 {
                 font-weight: 500;
                 font-size: .85rem;
+                color: $dark-text;
                 transition: all .3s;
                 line-height: 1.2;
             }
@@ -172,7 +173,7 @@ Dropdown styles
             }
 
             small {
-                color: $medium-text;
+                color: $light-text;
             }
 
             .checkmark {

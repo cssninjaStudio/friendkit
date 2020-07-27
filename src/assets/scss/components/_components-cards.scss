@@ -52,9 +52,9 @@ Card styles
             border-bottom: 1px solid $fade-grey;
 
             h4 {
-                font-size: .95rem;
+                font-size: .9rem;
                 color: $medium-text;
-                font-weight: 500;
+                font-weight: 400;
             }
         }
     }
@@ -211,14 +211,14 @@ Card styles
 
     //Birthday card modifier
     &.is-birthday-card {
-        background-color: lighten($primary, 1%);
+        background-color: lighten($secondary, 1%);
 
         .card-heading {
             padding: 16px 16px 0 16px;
 
             .dropdown.is-spaced > div {
                 .button:hover {
-                    background: darken($primary, 24%) !important;
+                    background: darken($secondary, 24%) !important;
                 }
             }
 
@@ -259,7 +259,7 @@ Card styles
                     height: 26px;
                     width: 26px;
                     border-radius: 50%;
-                    border: 2px solid lighten($primary, 1%);
+                    border: 2px solid lighten($secondary, 1%);
                     font-size: .7rem;
                     color: $white;
                     font-weight: 500;

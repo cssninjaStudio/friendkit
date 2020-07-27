@@ -485,6 +485,11 @@ Modal styles
 .albums-modal {
     .modal-content {
         max-width: calc(100% - 40px);
+        max-height: calc(100vh - 20px) !important;
+
+        .modal-card {
+            max-height: calc(100vh - 20px) !important;
+        }
     }
 
     //Header
@@ -502,6 +507,10 @@ Modal styles
             i {
                 font-size: 18px;
             }
+        }
+
+        .close-wrap {
+            margin-left: 0 !important;
         }
     }
 
@@ -561,7 +570,7 @@ Modal styles
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    margin-bottom: 6px;
+                    margin-bottom: 3px;
 
                     h4 {
                         font-weight: 500;
@@ -570,13 +579,21 @@ Modal styles
                     }
 
                     .button {
-                        height: 28px;
-                        width: 28px;
+                        height: 22px;
+                        width: 22px;
+                        outline: none;
+
+                        svg {
+                            height: 12px !important;
+                            width: 12px !important;
+                            stroke-width: 2.6px;
+                        }
                     }
                 }
 
                 p {
-                    font-size: .8rem;
+                    font-size: .75rem;
+                    max-width: 250px;
                     color: $muted-grey;
                     margin-bottom: 8px;
                 }
@@ -653,22 +670,38 @@ Modal styles
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    margin-bottom: 6px;
+                    margin-bottom: 3px;
 
                     h4 {
                         font-weight: 500;
                         font-size: .85rem;
                         color: $dark-text;
                     }
+                    
+                    .basic-checkbox {
+                        label {
+                            &:before {
+                                margin-right: 0;
+                            }
+                        }
+                    }
 
                     .button {
-                        height: 28px;
-                        width: 28px;
+                        height: 22px;
+                        width: 22px;
+                        outline: none;
+
+                        svg {
+                            height: 12px !important;
+                            width: 12px !important;
+                            stroke-width: 2.6px;
+                        }
                     }
                 }
 
                 p {
-                    font-size: .8rem;
+                    font-size: .75rem;
+                    max-width: 250px;
                     color: $muted-grey;
                     margin-bottom: 8px;
                 }
@@ -730,6 +763,7 @@ Modal styles
 .videos-modal {
     .modal-content {
         max-width: calc(100% - 40px);
+        max-height: calc(100vh - 20px) !important;
     }
 
     //Modal card
@@ -754,6 +788,10 @@ Modal styles
                 margin-right: 4px;
             }
         }
+
+        .close-wrap {
+            margin-left: 0 !important;
+        }
     }
 
     //Body
@@ -762,6 +800,7 @@ Modal styles
 
         .inner {
             display: flex;
+            align-items: stretch;
 
             //Left side
             .left-section {
@@ -801,6 +840,7 @@ Modal styles
 
                         //Input area
                         .control {
+                            position: relative;
                             width: 100%;
 
                             .textarea, .emojionearea-editor {
@@ -814,6 +854,35 @@ Modal styles
                                 font-size: .8rem;
                                 padding-left: 16px;
                                 margin: 0 6px;
+                            }
+
+                            .emoji-button {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                height: 36px;
+                                width: 36px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background: none;
+                                border: none;
+                                outline: none;
+                                transition: all .3s;
+                                cursor: pointer;
+        
+                                &:hover {
+                                    svg {
+                                        stroke: $primary;
+                                    }
+                                }
+        
+                                svg {
+                                    height: 16px;
+                                    width: 16px;
+                                    stroke: $light-text;
+                                    transition: all .3s;
+                                }
                             }
                         }
 
@@ -1077,7 +1146,7 @@ Modal styles
                     //tab content
                     .tab-content {
                         background: $light-grey;
-                        height: 310px;
+                        height: 320px;
                         padding: 20px 14px;
                         overflow-y: auto;
 
@@ -1301,17 +1370,43 @@ Modal styles
     //Body
     .card-body {
         //Emojis
-        .emojionearea {
-            margin-top: 10px;
-            max-height: 32px;
-            min-height: 32px;
-            height: 32px;
-            resize: none;
-            border: none;
-        }
+        > .control {
+            position: relative;
 
-        .emojionearea-picker {
-            right: -10px !important;
+            .textarea {
+                resize: none;
+                border: none;
+                padding-right: 42px;
+            }
+
+            .emoji-button {
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 41px;
+                width: 41px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: none;
+                border: none;
+                outline: none;
+                transition: all .3s;
+                cursor: pointer;
+    
+                &:hover {
+                    svg {
+                        stroke: $primary;
+                    }
+                }
+    
+                svg {
+                    height: 16px;
+                    width: 16px;
+                    stroke: $light-text;
+                    transition: all .3s;
+                }
+            }
         }
 
         //Publication
@@ -2292,11 +2387,11 @@ Modal styles
                     }
 
                     .button {
-                        margin-left: 0;
+                        margin-left: auto;
                     }
 
                     .close-wrap {
-                        margin-left: auto;
+                        //margin-left: auto;
                     }
                 }
 
@@ -2318,6 +2413,12 @@ Modal styles
         &.albums-help-modal, &.videos-help-modal {
             img {
                 height: 110px !important;
+            }
+        }
+
+        &.albums-modal {
+            .modal-content, .modal-card {
+                max-height: calc(100vh - 20px);
             }
         }
 

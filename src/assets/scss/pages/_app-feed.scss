@@ -1085,11 +1085,12 @@ Main feed styles
                     h3 {
                         margin-top: 10px;
                         font-weight: 500;
-                        font-size: 1.3rem;
+                        font-size: 1.1rem;
                         color: $dark-text;
                     }
 
                     p {
+                        font-size: .9rem;
                         color: $muted-grey;
                     }
                 }
@@ -1101,8 +1102,9 @@ Main feed styles
                     //Avatar
                     .media-left {
                         img {
-                            height: 42px;
-                            width: 42px;
+                            height: 36px;
+                            width: 36px;
+                            min-width: 36px;
                             border-radius: 50%;
                         }
                     }
@@ -1110,10 +1112,11 @@ Main feed styles
                     //Content
                     .media-content {
                         a {
-                            font-size: .9rem;
+                            font-size: .85rem;
                             font-weight: 500 !important;
                             display: block;
                             color: $dark-text;
+                            line-height: 1.2;
 
                             &:hover {
                                 color: $primary;
@@ -1122,7 +1125,7 @@ Main feed styles
 
                         .time {
                             display: block;
-                            font-size: .8rem;
+                            font-size: .7rem;
                             color: $grey-text;
                             margin-bottom: 10px;
                         }
@@ -1148,7 +1151,7 @@ Main feed styles
 
                                 span {
                                     display: block;
-                                    font-size: .9rem;
+                                    font-size: .8rem;
                                     color: $grey-text;
                                     margin: 0 5px;
                                 }
@@ -1156,8 +1159,8 @@ Main feed styles
                                 svg {
                                     position: relative;
                                     top: -1px;
-                                    height: 14px;
-                                    width: 14px;
+                                    height: 12px;
+                                    width: 12px;
                                     stroke: $grey-text;
                                 }
 
@@ -1177,7 +1180,7 @@ Main feed styles
                                 margin: 0 5px;
 
                                 a {
-                                    font-size: .8rem;
+                                    font-size: .75rem;
                                     color: $grey-text;
 
                                     &:hover {
@@ -1293,7 +1296,7 @@ Main feed styles
                         }
 
                         .textarea {
-                            border-color: $fade-grey;
+                            border-color: darken($fade-grey, 3%);
                             border-bottom: none;
                             border-radius: 4px 4px 0 0;
                             resize: none;
@@ -1303,13 +1306,19 @@ Main feed styles
                     //Post Actions
                     .actions {
                         display: flex;
-                        justify-content: flex-start;
+                        justify-content: space-between;
                         align-items: center;
                         padding: 8px;
                         border-left: 1px solid $fade-grey;
                         border-right: 1px solid $fade-grey;
                         border-bottom: 1px solid $fade-grey;
                         border-radius: 0 0 4px 4px;
+
+                        .toolbar {
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: center;
+                        }
 
                         .action {
                             margin-right: 15px;
@@ -1843,10 +1852,10 @@ Main feed styles
                     .avatar-badge {
                         position: absolute;
                         bottom: 0;
-                        right: -7px;
+                        right: -3px;
                         width: 18px;
                         height: 18px;
-                        border: 2px solid $white;
+                        border: 1.4px solid $white;
                         border-radius: 50%;
                     }
                 }

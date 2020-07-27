@@ -282,14 +282,7 @@
 
             <!-- Comments footer -->
             <div class="card-footer">
-                <div class="media post-comment">
-                    <!-- User image -->
-                    <div class="media-left">
-                        <p class="image is-48x48">
-                            <img src="https://via.placeholder.com/300x300"
-                                data-demo-src="assets/img/avatars/jenna.png" data-user-popover="0" alt="">
-                        </p>
-                    </div>
+                <div class="media post-comment has-emojis">
                     <!-- Textarea -->
                     <div class="media-content">
                         <div class="field">
@@ -300,14 +293,22 @@
                         </div>
                         <!-- Additional actions -->
                         <div class="actions">
-                            <div class="action is-auto">
-                                <i data-feather="at-sign"></i>
+                            <div class="image is-32x32">
+                                <img class="is-rounded" src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" data-user-popover="0" alt="">
                             </div>
-                            <div class="action is-upload">
-                                <i data-feather="camera"></i>
-                                <input type="file">
+                            <div class="toolbar">
+                                <div class="action is-auto">
+                                    <i data-feather="at-sign"></i>
+                                </div>
+                                <div class="action is-emoji">
+                                    <i data-feather="smile"></i>
+                                </div>
+                                <div class="action is-upload">
+                                    <i data-feather="camera"></i>
+                                    <input type="file">
+                                </div>
+                                <a class="button is-solid primary-button raised">Post Comment</a>
                             </div>
-                            <a class="button is-solid primary-button raised">Post Comment</a>
                         </div>
                     </div>
                 </div>

@@ -160,98 +160,136 @@ body {
 6. Footer
 ========================================================================== */
 
-.footer {
-    background: lighten($fade-grey, 7%);
-    padding-bottom: 6rem !important;
-    padding-top: 6rem !important;
+.footer-light-medium {
+    padding-bottom: 0 !important;
+    padding-top: 4rem !important;
+    background: lighten($fade-grey, 5%);
 
-    .social-links {
+    .footer-head {
+        padding-bottom: 3rem;
         display: flex;
-        justify-content: flex-start;
         align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid darken($fade-grey, 4%);
 
-        a {
-            color: $muted-grey;
-            margin: 0 5px;
+        .head-text {
+            h3 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.6rem;
+                color: $dark-text;
+            }
 
-            &:hover {
-                color: $accent;
+            p {
+                font-size: 1rem;
+                color: $muted-grey;
             }
         }
-    }
 
-    .footer-description {
-        color: $muted-grey;
-    }
+        .head-action {
+            .buttons {
+                .button {
+                    &.action-button {
+                        height: 36px;
+                        min-width: 140px;
+                    }
 
-    .footer-column {
-        padding-top: 20px;
-
-        .column-header {
-            font-family: Montserrat, sans-serif;
-            text-transform: uppercase;
-            color: $accent;
-            font-size: 1rem;
-            font-weight: 700;
-            margin: 10px 0;
-        }
-
-        .column-item {
-            padding-bottom: 10px;
-
-            a {
-                color: $muted-grey;
-
-                &:hover {
-                    color: $primary;
+                    &.chat-button {
+                        background: transparent;
+                        border: none;
+                        outline: none;
+                        box-shadow: none;
+                        color: $primary;
+                        font-weight: 500;
+                    }
                 }
             }
         }
     }
 
-    .moto {
-        display: block;
+    .footer-body {
+        padding-top: 3rem;
+
+        .footer-column {
+            padding-top: 20px;
+
+            .column-header {
+                font-family: 'Montserrat', sans-serif;
+                text-transform: uppercase;
+                color: $dark-text;
+                font-size: .9rem;
+                font-weight: 700;
+                margin: 10px 0;
+            }
+
+            .column-item {
+                padding-bottom: 10px;
+
+                a {
+                    font-size: .9rem;
+                    color: $muted-grey;
+
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px 0;
+
+            a {
+                color: $muted-grey;
+                margin: 0 5px;
+
+                &:hover {
+                    color: $primary;
+                }
+
+                svg {
+                    height: 18px;
+                    width: 18px;
+                    stroke-width: 1.4px;
+                }
+            }
+        }
+
+        .footer-description {
+            color: $muted-grey;
+            padding: 10px 0;
+        }
+
+        .moto {
+            color: $muted-grey;
+            font-size: .85rem;
+
+            svg {
+                height: 14px;
+                width: 14px;
+                fill: $red;
+                stroke: $red;
+                margin: 0 2px;
+            }
+        }
+
+        .small-footer-logo {
+            height: 30px;
+        }
+    }
+
+    .footer-copyright {
         color: $muted-grey;
-        margin-top: 12px;
+        padding: 4rem 0 2rem 0;
         font-size: .9rem;
 
-        svg {
-            display: inline-block;
-            height: 14px;
-            width: 14px;
-            stroke: $red;
-            fill: $red;
-        }
-    }
-
-    .small-footer-logo {
-        height: 55px;
-    }
-}
-
-/* ==========================================================================
-7. Copyright
-========================================================================== */
-
-.copyright {
-    background: lighten($fade-grey, 7%);
-
-    .inner {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px 0;
-
-        .left {
-            font-size: .9rem;
+        a {
             color: $muted-grey;
-        }
 
-        .right {
-            img {
-                display: block;
-                width: 108px;
-                margin-left: 20px;
+            &:hover {
+                color: $primary;
             }
         }
     }

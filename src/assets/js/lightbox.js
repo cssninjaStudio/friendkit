@@ -26,6 +26,7 @@ $(document).ready(function(){
         var usersIcon = feather.icons.users.toSvg();
         var globeIcon = feather.icons.globe.toSvg();
         var heartIcon = feather.icons.heart.toSvg();
+        var smileIcon = feather.icons.smile.toSvg();
         var messageIcon = feather.icons['message-circle'].toSvg();
 
         var lightboxContent = ''
@@ -265,11 +266,14 @@ $(document).ready(function(){
 
             </div>
 
-            <div class="comment-controls">
+            <div class="comment-controls has-lightbox-emojis">
                 <div class="controls-inner">
                     <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
                     <div class="control">
-                        <textarea class="textarea comment-textarea is-rounded" rows="1"></textarea>
+                        <textarea class="textarea is-rounded" rows="1"></textarea>
+                        <button class="emoji-button">
+                            ${smileIcon}
+                        </button>
                     </div>
                 </div>
             </div>
@@ -470,11 +474,14 @@ $(document).ready(function(){
 
             </div>
 
-            <div class="comment-controls">
+            <div class="comment-controls has-lightbox-emojis">
                 <div class="controls-inner">
                     <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
                     <div class="control">
                         <textarea class="textarea comment-textarea is-rounded" rows="1"></textarea>
+                        <button class="emoji-button">
+                            ${smileIcon}
+                        </button>
                     </div>
                 </div>
             </div>
@@ -755,11 +762,14 @@ $(document).ready(function(){
 
             </div>
 
-            <div class="comment-controls">
+            <div class="comment-controls has-lightbox-emojis">
                 <div class="controls-inner">
                     <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
                     <div class="control">
                         <textarea class="textarea comment-textarea is-rounded" rows="1"></textarea>
+                        <button class="emoji-button">
+                            ${smileIcon}
+                        </button>
                     </div>
                 </div>
             </div>
@@ -965,6 +975,9 @@ $(document).ready(function(){
                     <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
                     <div class="control">
                         <textarea class="textarea comment-textarea is-rounded" rows="1"></textarea>
+                        <button class="emoji-button">
+                            ${smileIcon}
+                        </button>
                     </div>
                 </div>
             </div>
@@ -1125,11 +1138,14 @@ $(document).ready(function(){
 
             </div>
 
-            <div class="comment-controls">
+            <div class="comment-controls has-lightbox-emojis">
                 <div class="controls-inner">
                     <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
                     <div class="control">
                         <textarea class="textarea comment-textarea is-rounded" rows="1"></textarea>
+                        <button class="emoji-button">
+                            ${smileIcon}
+                        </button>
                     </div>
                 </div>
             </div>
@@ -1410,11 +1426,14 @@ $(document).ready(function(){
 
             </div>
 
-            <div class="comment-controls">
+            <div class="comment-controls has-lightbox-emojis">
                 <div class="controls-inner">
                     <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
                     <div class="control">
                         <textarea class="textarea comment-textarea is-rounded" rows="1"></textarea>
+                        <button class="emoji-button">
+                            ${smileIcon}
+                        </button>
                     </div>
                 </div>
             </div>
@@ -1675,11 +1694,14 @@ $(document).ready(function(){
 
             </div>
 
-            <div class="comment-controls">
+            <div class="comment-controls has-lightbox-emojis">
                 <div class="controls-inner">
                     <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
                     <div class="control">
                         <textarea class="textarea comment-textarea is-rounded" rows="1"></textarea>
+                        <button class="emoji-button">
+                            ${smileIcon}
+                        </button>
                     </div>
                 </div>
             </div>
@@ -1733,7 +1755,9 @@ $(document).ready(function(){
                     },
                     afterShow : function( instance, current ) {
                         initDropdowns();
-                        initEmojis();
+                        //initEmojis();
+
+                        initLightboxEmojis();
                         changeLightboxImages();
                     }
                 });
@@ -1764,7 +1788,7 @@ $(document).ready(function(){
             },
             afterShow : function( instance, current ) {
                 initDropdowns();
-                initEmojis();
+                //initEmojis();
             }
         });
 
@@ -1791,7 +1815,7 @@ $(document).ready(function(){
             },
             afterShow : function( instance, current ) {
                 initDropdowns();
-                initEmojis();
+                //initEmojis();
             }
         });
 
@@ -1818,7 +1842,7 @@ $(document).ready(function(){
             },
             afterShow : function( instance, current ) {
                 initDropdowns();
-                initEmojis();
+                //initEmojis();
             }
         });*/
 

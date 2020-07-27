@@ -155,7 +155,7 @@ Chat window styles
                         svg {
                             height: 20px;
                             width: 20px;
-                            stroke: $grey-text;
+                            stroke: $light-text;
                         }
                     }
 
@@ -180,6 +180,7 @@ Chat window styles
                     .input {
                         &:focus {
                             border-color: $accent;
+                            box-shadow: $light-box-shadow !important;
 
                             + .form-icon svg {
                                 stroke: $accent;
@@ -265,15 +266,15 @@ Chat window styles
                         border: 2px solid $white;
 
                         &.is-online {
-                            background: $green;
+                            background: $secondary;
                         }
 
                         &.is-busy {
-                            background: $orange;
+                            background: $primary;
                         }
 
                         &.is-away {
-                            background: $red;
+                            background: $light-text;
                         }
                     }
                 }
@@ -468,11 +469,11 @@ Chat window styles
 
                             .message-text {
                                 color: $white-light;
-                                background-color: lighten($accent, 7%);
+                                background-color: lighten($primary, 7%);
 
                                 &:before {
                                     left: -5px;
-                                    border-top: 5px solid lighten($accent, 7%);
+                                    border-top: 5px solid lighten($primary, 7%);
                                 }
                             }
                         }
@@ -519,6 +520,7 @@ Chat window styles
                         height: 44px;
                         max-height: 44px;
                         min-height: 44px;
+                        line-height: 2.1;
                         padding: 5px 9px;
                         padding-left: 54px;
                         transition: all .3s;
@@ -551,17 +553,17 @@ Chat window styles
                             min-height: 34px;
                             width: 34px;
                             max-width: 34px;
-                            border: 1px solid $accent;
+                            border: 1px solid $primary;
                             border-radius: 4px;
-                            background: $accent;
+                            background: $primary;
                             transition: all .3s;
                             cursor: pointer;
                         }
 
                         //Hover state
                         &:hover .button-inner {
-                            border-color: $primary;
-                            background-color: $primary;
+                            border-color: $secondary;
+                            background-color: $secondary;
 
                             svg {
                                 stroke: $white-light;
@@ -639,7 +641,7 @@ Chat window styles
                         svg {
                             height: 20px;
                             width: 20px;
-                            stroke: $muted-grey;
+                            stroke: $light-text;
                             transition: inherit;
                         }
                     }
@@ -680,7 +682,7 @@ Chat window styles
 
                                     i {
                                         font-size: 22px;
-                                        color: $grey-text;
+                                        color: $light-text;
                                     }
 
                                     &:hover {
@@ -739,7 +741,7 @@ Chat window styles
 
                                 h4 {
                                     font-size: .95rem;
-                                    color: $muted-grey;
+                                    color: $light-text;
                                 }
                             }
 
@@ -887,7 +889,7 @@ Chat window styles
 
                                     .mdi {
                                         position: relative;
-                                        top: -2px;
+                                        top: 1px;
                                         color: white;
                                         font-size: 18px;
                                         line-height: 16px;
@@ -924,7 +926,7 @@ Chat window styles
 
                                     i {
                                         font-size: 22px;
-                                        color: $medium-text;
+                                        color: $light-text;
                                     }
 
                                     //Content

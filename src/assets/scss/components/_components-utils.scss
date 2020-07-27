@@ -315,9 +315,18 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
         right: 44px;
         top: 0;
         width: 350px;
+        text-align: left;
 
         &:before {
             display: none;
+        }
+
+        .fancybox-caption__body {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            padding-bottom: 50px;
         }
 
         a {
@@ -355,6 +364,7 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
                 }
 
                 .control {
+                    position: relative;
                     width: 100%;
 
                     .textarea, .emojionearea-editor {
@@ -368,6 +378,36 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
                         font-size: .8rem;
                         padding-left: 16px;
                         margin: 0 6px;
+                        text-align: left;
+                    }
+
+                    .emoji-button {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        height: 36px;
+                        width: 36px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: none;
+                        border: none;
+                        outline: none;
+                        transition: all .3s;
+                        cursor: pointer;
+
+                        &:hover {
+                            svg {
+                                stroke: $primary;
+                            }
+                        }
+
+                        svg {
+                            height: 16px;
+                            width: 16px;
+                            stroke: $light-text;
+                            transition: all .3s;
+                        }
                     }
                 }
 
@@ -600,7 +640,7 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
         //Comments List
         .comments-list {
             background: $light-grey;
-            height: calc(100% - 200px);
+            height: calc(100% - 162px);
             padding: 20px 14px;
             overflow-y: auto;
 
