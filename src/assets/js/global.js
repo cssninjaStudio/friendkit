@@ -349,6 +349,13 @@ function initLightboxEmojis() {
     });
 };*/
 
+//Video Embed
+function initVideoEmbed() {
+    if ($('#video-embed').length) {
+        embedVideo('#video-embed');
+    }
+}
+
 //Load more buttons
 function initLoadMore() {
     var t;

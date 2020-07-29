@@ -120,7 +120,7 @@ button.button {
         &.primary-button {
             background: $primary;
             border-color: $primary;
-            color: $white !important;
+            color: $white;
 
             &.raised:hover {
                 box-shadow: $primary-box-shadow;
@@ -132,6 +132,7 @@ button.button {
         &.secondary-button {
             background: $secondary;
             border-color: $secondary;
+            color: $white;
 
             &.raised:hover {
                 box-shadow: $secondary-box-shadow;

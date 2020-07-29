@@ -6,7 +6,8 @@ Login styles
 
 /*
     0. Login page layout
-    1. Media Queries
+    1. Minimal login page layout
+    2. Media Queries
 */
 
 /* ==========================================================================
@@ -181,6 +182,90 @@ Login styles
 }
 
 /* ==========================================================================
+1. Minimal login page layout
+========================================================================== */
+
+.login-container {
+    height: calc(100vh - 100px);
+    padding: 20px;
+
+    .login-image {
+        display: block;
+        max-width: 620px;
+        margin: 0 auto;
+    }
+
+    .form-title {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+        color: $dark-text;
+        font-weight: 300;
+    }
+
+    .form-subtitle {
+        font-family: 'Roboto', sans-serif;
+        font-size: .9rem;
+        color: $light-text;
+        margin-bottom: 1rem;
+    }
+
+    .login-form {
+        max-width: 380px;
+
+        .field {
+            &.is-flex {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 0 16px 0;
+
+                .switch-block {
+                    display: flex;
+                    align-items: center;
+
+                    .f-switch {
+                        transform: scale(0.9);
+                    }
+
+                    .meta {
+                        margin-left: 6px;
+
+                        p {
+                            font-size: .9rem;
+                            color: $muted-grey;
+                        }
+                    }
+                }
+
+                a {
+                    font-family: 'Roboto', sans-serif;
+                    font-size: .9rem;
+                    color: $light-text;
+                    transition: color .3s;
+
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+
+        .account-link {
+            a {
+                font-family: 'Roboto', sans-serif;
+                font-size: .8rem;
+                color: $light-text;
+                transition: color .3s;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
 2. Media Queries
 ========================================================================== */
 
@@ -194,6 +279,20 @@ Login styles
             min-width: 320px !important;
         }
     }
+
+    .login-container {
+        .image-column {
+            display: none;
+        }
+
+        .form-title, .form-subtitle {
+            text-align: center;
+        }
+
+        .form-title {
+            padding-top: 60px;
+        }
+    }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -204,12 +303,41 @@ Login styles
             }
         }
     }
+
+    .login-container {
+        .columns {
+            padding-top: 60px;
+        }
+    }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
     .login-wrapper {
         .logo-wrap {
             display: none !important;
+        }
+    }
+
+    .login-container {
+        .image-column {
+            display: none;
+        }
+
+        .column {
+            min-width: 50%;
+        }
+
+        .form-title, .form-subtitle {
+            text-align: center;
+        }
+
+        .form-title {
+            padding-top: 60px;
+        }
+
+        .login-form {
+            max-width: 360px;
+            margin: 0 auto;
         }
     }
 }

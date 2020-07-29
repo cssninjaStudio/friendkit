@@ -10,7 +10,7 @@ $(document).ready(function () {
 
     "use strict";
 
-    $('.progress-wrap .dot').on('click', function(){
+    $('.progress-wrap .dot').on('click', function () {
         var $this = $(this);
         var stepValue = $this.attr('data-step');
         $this.closest('.progress-wrap').find('.bar').css('width', stepValue + '%');
@@ -43,17 +43,18 @@ $(document).ready(function () {
         }
     })
 
-    $('.process-button').on('click', function(){
+    $('.process-button').on('click', function () {
         var $this = $(this);
         var targetStepDot = $this.attr('data-step');
         $this.addClass('is-loading');
-        setTimeout(function(){
+        setTimeout(function () {
             $this.removeClass('is-loading');
             $('#' + targetStepDot).trigger('click');
         }, 800);
     })
 
-    var myDropzone = new Dropzone("#profile-pic-dz", {
+    if ($("#profile-pic-dz").length) {
+        var myDropzone = new Dropzone("#profile-pic-dz", {
             maxFilesize: 8, // MB
             acceptedFiles: ".jpeg,.jpg,.png",
             clickable: ".upload-button",
@@ -136,27 +137,27 @@ $(document).ready(function () {
                                 previewReader.readAsDataURL(file);
                             });
 
-                            var reader = new FileReader();
+                        var reader = new FileReader();
 
-                            reader.addEventListener("loadend", function (event) {
-                                // put picture in a holding var
-                                /*pictures.push({
-                                    binaryData: btoa(reader.result),
-                                    filePath: file.name,
-                                    seoFilename: file.name.substring(0, file.name.lastIndexOf(".")),
-                                    titleAttribute: file.name,
-                                    altAttribute: file.name,
-                                    mimeType: file.type,
-                                    isNew: true
-                                });*/
+                        reader.addEventListener("loadend", function (event) {
+                            // put picture in a holding var
+                            /*pictures.push({
+                                binaryData: btoa(reader.result),
+                                filePath: file.name,
+                                seoFilename: file.name.substring(0, file.name.lastIndexOf(".")),
+                                titleAttribute: file.name,
+                                altAttribute: file.name,
+                                mimeType: file.type,
+                                isNew: true
+                            });*/
 
-                                // accept the file
-                                //done();
-                                //console.log('THIS IS THE RESULT', reader.result);
-                                //console.log('THIS IS THE ARRAY', pictures);
-                            });
-                            //reader.readAsBinaryString(file);
-                            reader.readAsBinaryString(blob);
+                            // accept the file
+                            //done();
+                            //console.log('THIS IS THE RESULT', reader.result);
+                            //console.log('THIS IS THE ARRAY', pictures);
+                        });
+                        //reader.readAsBinaryString(file);
+                        reader.readAsBinaryString(blob);
                     });
 
                     // Remove the editor from the view
@@ -172,13 +173,14 @@ $(document).ready(function () {
                 // Create Cropper.js
                 var cropper = new Cropper(image, { aspectRatio: 1 });
             },
-    });
+        });
+    }
 
-    $('#signup-finish').on('click', function(){
+    $('#signup-finish').on('click', function () {
         var $this = $(this);
         var url = '/feed.html';
         $this.addClass('is-loading');
-        setTimeout(function(){
+        setTimeout(function () {
             window.location = url;
         }, 800)
     })

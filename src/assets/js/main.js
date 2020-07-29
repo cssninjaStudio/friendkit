@@ -75,6 +75,9 @@ $(document).ready(function(){
 
     initLightboxEmojis();
 
+    //Video Embed
+    initVideoEmbed();
+
     //Load More
     initLoadMore();
 

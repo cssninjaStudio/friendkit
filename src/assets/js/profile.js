@@ -286,7 +286,7 @@ $(document).ready(function(){
             }
             if (result.src) {
                 html = '<img src="' + result.src + '" />';
-                $('.cover-bg .avatar .avatar-image').attr('src', result.src);
+                $('.cover-bg .avatar .avatar-image, #user-avatar-minimal').attr('src', result.src);
                 $('#submit-profile-picture').removeClass('is-loading');
                 $('#upload-crop-profile-modal').removeClass('is-active');
             }
