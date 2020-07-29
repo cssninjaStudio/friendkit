@@ -4,7 +4,7 @@
         "name": "Jenna Davis",
         "position": "Influencer",
         "location": "Melbourne",
-        "pic": "assets/img/avatars/jenna.png",
+        "pic": "https://via.placeholder.com/150x150",
         "badge": "assets/img/icons/flags/australia.svg"
     },
     {
@@ -12,7 +12,7 @@
         "name": "Dan Walker",
         "position": "Developer",
         "location": "New York",
-        "pic": "assets/img/avatars/dan.jpg",
+        "pic": "https://via.placeholder.com/150x150",
         "badge": "assets/img/icons/flags/united-states-of-america.svg"
     },
     {
@@ -20,7 +20,7 @@
         "name": "Stella Bergmann",
         "position": "Student",
         "location": "Berlin",
-        "pic": "assets/img/avatars/stella.jpg",
+        "pic": "https://via.placeholder.com/150x150",
         "badge": "assets/img/icons/flags/germany.svg"
     },
     {
@@ -28,7 +28,7 @@
         "name": "Daniel Wellington",
         "position": "Teacher",
         "location": "London",
-        "pic": "assets/img/avatars/daniel.jpg",
+        "pic": "https://via.placeholder.com/150x150",
         "badge": "assets/img/icons/flags/united-kingdom.svg"
     },
     {
@@ -36,7 +36,7 @@
         "name": "David Kim",
         "position": "Developer",
         "location": "Los Angeles",
-        "pic": "assets/img/avatars/david.jpg",
+        "pic": "https://via.placeholder.com/150x150",
         "badge": "assets/img/icons/flags/united-states-of-america.svg"
     },
     {
@@ -44,7 +44,7 @@
         "name": "Edward Mayers",
         "position": "Doctor",
         "location": "Dublin",
-        "pic": "assets/img/avatars/edward.jpeg",
+        "pic": "https://via.placeholder.com/150x150",
         "badge": "assets/img/icons/flags/ireland.svg"
     },
     {
@@ -52,7 +52,7 @@
         "name": "Elise Walker",
         "position": "Influencer",
         "location": "London",
-        "pic": "assets/img/avatars/elise.jpg",
+        "pic": "https://via.placeholder.com/150x150",
         "badge": "assets/img/icons/flags/united-kingdom.svg"
     },
     {
@@ -60,7 +60,7 @@
         "name": "Milly Augustine",
         "position": "Lawyer",
         "location": "Rome",
-        "pic": "assets/img/avatars/milly.jpg",
+        "pic": "https://via.placeholder.com/150x150",
         "badge": "assets/img/icons/flags/italy.svg"
     },
     {
@@ -68,7 +68,7 @@
         "name": "Bobby Brown",
         "position": "Designer",
         "location": "Paris",
-        "pic": "assets/img/avatars/bobby.jpg",
+        "pic": "https://via.placeholder.com/150x150",
         "badge": "assets/img/icons/flags/france.svg"
     },
     {
@@ -76,7 +76,7 @@
         "name": "Nelly Schwartz",
         "position": "CFO",
         "location": "Melbourne",
-        "pic": "assets/img/avatars/nelly.png",
+        "pic": "https://via.placeholder.com/150x150",
         "badge": "assets/img/icons/flags/australia.svg"
     },
     {
@@ -84,7 +84,7 @@
         "name": "Lana Henrikssen",
         "position": "Student",
         "location": "Helsinki",
-        "pic": "assets/img/avatars/lana.jpeg",
+        "pic": "https://via.placeholder.com/150x150",
         "badge": "assets/img/icons/flags/finland.svg"
     },
     {
@@ -92,7 +92,7 @@
         "name": "Gaelle Morris",
         "position": "Merchant",
         "location": "Lyon",
-        "pic": "assets/img/avatars/gaelle.jpeg",
+        "pic": "https://via.placeholder.com/150x150",
         "badge": "assets/img/icons/flags/france.svg"
     },
     {
@@ -100,7 +100,7 @@
         "name": "Mike Lasalle",
         "position": "Businessman",
         "location": "Toronto",
-        "pic": "assets/img/avatars/mike.jpg",
+        "pic": "https://via.placeholder.com/150x150",
         "badge": "assets/img/icons/flags/canada.svg"
     },
     {
@@ -108,7 +108,7 @@
         "name": "Rolf Krupp",
         "position": "Accountant",
         "location": "Berlin",
-        "pic": "assets/img/avatars/rolf.jpg",
+        "pic": "https://via.placeholder.com/150x150",
         "badge": "assets/img/icons/flags/germany.svg"
     }
 ]
