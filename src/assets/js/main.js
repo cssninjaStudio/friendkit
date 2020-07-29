@@ -4,32 +4,30 @@
 Main js file
 ========================================================================== */
 
+"use strict";
+
+//Set environment variable (Used for development)
+
+/* 
+    Possible values:
+    1. development
+    2. customization
+*/
+
+var env = 'development';
+
 //Pageloader
 initPageloader();
 
 $(document).ready(function(){
 
-    "use strict";
+    if (env === 'development') {
+		//Demo images
+        changeDemoHrefs();
 
-    //Change demo images
-    function changeDemoImages(){
-        $('*[data-demo-src]').each(function () {
-            var newSrc = $(this).attr('data-demo-src');
-            $(this).attr('src', newSrc);
-        });
-
-        $('*[data-demo-background]').each(function () {
-            var newBg = $(this).attr('data-demo-background');
-            $(this).attr('data-background', newBg);
-        });
-    }
-
-    $('*[data-demo-href]').each(function () {
-        var newHref = $(this).attr('data-demo-href');
-        $(this).attr('href', newHref);
-    });
-
-    changeDemoImages();
+        //Demo hrefs
+        changeDemoImages();
+	}
 
     //Code highlight init
     $('.highlight-block code').each(function (i, block) {

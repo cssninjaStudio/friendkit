@@ -6,6 +6,27 @@ Project wide reusable functions
 
 "use strict";
 
+//Change demo images
+function changeDemoImages(){
+    $('*[data-demo-src]').each(function () {
+        var newSrc = $(this).attr('data-demo-src');
+        $(this).attr('src', newSrc);
+    });
+
+    $('*[data-demo-background]').each(function () {
+        var newBg = $(this).attr('data-demo-background');
+        $(this).attr('data-background', newBg);
+    });
+}
+
+//Change demo hrefs
+function changeDemoHrefs() {
+    $('*[data-demo-href]').each(function () {
+        var newHref = $(this).attr('data-demo-href');
+        $(this).attr('href', newHref);
+    });
+}
+
 //The following functions help trigger the autocompletes dropdowns
 
 function openFriendsDrop() {
@@ -335,19 +356,6 @@ function initLightboxEmojis() {
         });
     }) 
 }
-
-/*function initEmojis() {
-    $(".comment-textarea").emojioneArea({
-        pickerPosition: "bottom",
-        filtersPosition: "top",
-        tones: false,
-        autocomplete: false,
-        inline: false,
-        hidePickerOnBlur: true,
-        buttonTitle: "Use the TAB key to insert emoji faster",
-        //container: $(".emoji-picker")
-    });
-};*/
 
 //Video Embed
 function initVideoEmbed() {

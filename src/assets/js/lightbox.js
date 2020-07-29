@@ -1755,96 +1755,17 @@ $(document).ready(function(){
                     },
                     afterShow : function( instance, current ) {
                         initDropdowns();
-                        //initEmojis();
 
                         initLightboxEmojis();
-                        changeLightboxImages();
+
+                        if (env === 'development') {
+                            changeLightboxImages();
+                        }
+                        
                     }
                 });
             }
         })
-
-
-        /*$('[data-fancybox="post1"]').fancybox({
-            baseClass: "fancybox-custom-layout",
-            keyboard: false,
-            infobar: false,
-            touch: {
-              vertical: false
-            },
-            buttons: [
-                "close",
-                "thumbs",
-                "share"
-            ],
-            animationEffect: "fade",
-            transitionEffect: "fade",
-            preventCaptionOverlap: false,
-            idleTime: false,
-            gutter: 0,
-            // Customize caption area
-            caption: function(instance) {
-                return lightboxComments1;
-            },
-            afterShow : function( instance, current ) {
-                initDropdowns();
-                //initEmojis();
-            }
-        });
-
-        $('[data-fancybox="post2"]').fancybox({
-            baseClass: "fancybox-custom-layout",
-            infobar: false,
-            keyboard: false,
-            touch: {
-              vertical: false
-            },
-            buttons: [
-                "close",
-                "thumbs",
-                "share"
-            ],
-            animationEffect: "fade",
-            transitionEffect: "fade",
-            preventCaptionOverlap: false,
-            idleTime: false,
-            gutter: 0,
-            // Customize caption area
-            caption: function(instance) {
-                return lightboxComments2;
-            },
-            afterShow : function( instance, current ) {
-                initDropdowns();
-                //initEmojis();
-            }
-        });
-
-        $('[data-fancybox="post3"]').fancybox({
-            baseClass: "fancybox-custom-layout",
-            infobar: false,
-            keyboard: false,
-            touch: {
-              vertical: false
-            },
-            buttons: [
-                "close",
-                "thumbs",
-                "share"
-            ],
-            animationEffect: "fade",
-            transitionEffect: "fade",
-            preventCaptionOverlap: false,
-            idleTime: false,
-            gutter: 0,
-            // Customize caption area
-            caption: function(instance) {
-                return lightboxComments3;
-            },
-            afterShow : function( instance, current ) {
-                initDropdowns();
-                //initEmojis();
-            }
-        });*/
 
     }
 
