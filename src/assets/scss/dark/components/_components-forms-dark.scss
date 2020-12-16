@@ -1,0 +1,298 @@
+/*! _forms-dark.scss | Friendkit | © Css Ninja. 2019-2020 */
+
+/* ==========================================================================
+Form controls dark styles
+========================================================================== */
+
+/*
+    0. Input and textarea shared styles
+    1. Input styles
+    2. Textarea styles
+    3. Control wrappers
+    4. Combo Box
+    5. Custom select
+    6. Datepicker dark
+*/
+
+/* ==========================================================================
+1. Input and textarea shared styles
+========================================================================== */
+
+body {
+    &.is-dark {
+        .field {
+            > label {
+                color: $light-text;
+            }
+        }
+
+        .input, .textarea {
+            background: lighten($dark, 4%);
+            border-color: lighten($dark, 6%);
+            color: $white-light;
+
+            &::placeholder {
+                color: lighten($dark, 24%);
+            }
+
+            &:focus {
+                border-color: lighten($dark, 14%);
+            }
+        }
+
+        .select {
+            select {
+                background: lighten($dark, 2%);
+                border-color: lighten($dark, 2%);
+                color: $white-light;
+
+                &::placeholder {
+                    color: lighten($dark, 24%);
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+6. Datepicker dark
+========================================================================== */
+
+body {
+    &.is-dark {
+        .datepicker-container {
+            background: darken($dark, 4%);
+            border-color: lighten($dark, 4%);
+
+            &:before {
+                border-bottom-color: lighten($dark, 4%);
+            }
+
+            &:after {
+                border-bottom-color: darken($dark, 4%);
+            }
+
+            .datepicker-panel {
+                background: darken($dark, 4%);
+
+                ul {
+                    &.days {
+                        li {
+                            &:not(.picked):not(.highlighted) {
+                                &:hover {
+                                    color: $white !important;
+                                    background: lighten($dark, 4%) !important;
+                                }
+                            }
+
+                            &:hover {
+                                color: $white !important;
+                                background: lighten($dark, 4%) !important;
+                            }
+                        }
+                    }
+
+                    li {
+                        &:not(.picked):not(.highlighted) {
+                            background: darken($dark, 4%);
+                        }
+
+                        &:hover {
+                            color: $white !important;
+                            background: lighten($dark, 4%) !important;
+                        }
+
+                        &.muted {
+                            color: lighten($dark, 12%) !important;
+                        }
+
+                        &.highlighted {
+                            background: lighten($dark, 4%) !important;
+                        }
+
+                        color: $white-light !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+4. Combo Box
+========================================================================== */
+
+body {
+    &.is-dark {
+        .combo-box, .image-combo-box, .stacked-combo-box {
+            background: lighten($dark, 2%);
+            border-color: lighten($dark, 8%);
+
+            &.is-active {
+                border-color: lighten($dark, 10%);
+            }
+
+            .box-inner {
+                color: $white-light;
+
+                .combo-item {
+                    .selected-item {
+                        color: $white-light;
+                    }
+                }
+            }
+
+            .box-chevron {
+                svg {
+                    stroke: $light-text;
+                }
+            }
+
+            .box-dropdown {
+                .dropdown-inner {
+                    background: darken($dark, 4%);
+                    border-color: lighten($dark, 4%);
+
+                    ul {
+                        li {
+                            &:hover {
+                                background: lighten($dark, 4%);
+                            }
+
+                            span {
+                                color: $light-text;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+14. Switch Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .f-switch {
+            &.is-primary {
+                input {
+                    &:checked + i {
+                        background-color: $primary !important;
+
+                        &:after {
+                            background: $white !important;
+                        }
+                    }
+                }
+            }
+
+            &.is-accent {
+                input {
+                    &:checked + i {
+                        background-color: $accent !important;
+
+                        &:after {
+                            background: $white !important;
+                        }
+                    }
+                }
+            }
+
+            &.is-blue {
+                input {
+                    &:checked + i {
+                        background-color: $blue !important;
+
+                        &:after {
+                            background: $white !important;
+                        }
+                    }
+                }
+            }
+
+            &.is-red {
+                input {
+                    &:checked + i {
+                        background-color: $red !important;
+
+                        &:after {
+                            background: $white !important;
+                        }
+                    }
+                }
+            }
+
+            i {
+                background: lighten($dark, 10%);
+
+                &:before {
+                    background: $dark !important;
+                }
+
+                &:after {
+                    background: lighten($dark, 14%) !important;
+                }
+            }
+
+            input {
+                &:checked + i {
+                    background-color: $green;
+
+                    &:after {
+                        background: $white !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+2. Material Radio buttons
+========================================================================== */
+
+body {
+    &.is-dark {
+        .material-radio {
+            .radio-label {
+                color: $light-text;
+            }
+
+            input:not(:checked) {
+                border-color: lighten($dark, 16%);
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. Checkboxes
+========================================================================== */
+
+body {
+    &.is-dark {
+        .round-checkbox {
+            input:not(:checked) {
+                + label {
+                    background: lighten($dark, 6%);
+                    border-color: lighten($dark, 16%);
+                }
+            }
+        }
+
+        .basic-checkbox {
+            .styled-checkbox:not(:checked) {
+                + label {
+                    &:before {
+                        background: lighten($dark, 6%);
+                        border-color: lighten($dark, 16%);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -222,7 +222,7 @@ Form controls styles
 
         &.has-error {
             input {
-                border-color: $red;
+                border-color: $red !important;
 
                 + label {
                     font-size: .75rem;
@@ -241,7 +241,7 @@ Form controls styles
 
         &.has-success {
             input {
-                border-color: $green;
+                border-color: $green !important;
             }
 
             .error-icon {

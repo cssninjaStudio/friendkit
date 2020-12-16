@@ -1,0 +1,67 @@
+/*! _tables.scss | Friendkit | © Css Ninja. 2019-2020 */
+
+/* ==========================================================================
+Switches and toggles styles
+========================================================================== */
+
+/*
+    1. Flex Table
+*/
+
+/* ==========================================================================
+1. Flex Table
+========================================================================== */
+
+body {
+    &.is-dark {
+        .flex-table {
+            .flex-table-header {
+                span {
+                    color: $light-text;
+                }
+            }
+
+            .flex-table-item {
+                background: $dark;
+                border-color: lighten($dark, 14%);
+
+                > div {
+                    border-color: lighten($dark, 14%);
+                }
+
+                .product {
+                    span {
+                        color: $white-light;
+                    }
+                }
+
+                .quantity {
+                    &.has-spinner {
+                        .spinner {
+                            background: darken($dark, 4%);
+                            border-color: lighten($dark, 4%);
+
+                            .remove, .add {
+                                &:hover {
+                                    svg {
+                                        stroke: $accent;
+                                    }
+                                }
+                            }
+
+                            .value {
+                                color: $white-light;
+                            }
+                        }
+                    }
+                }
+
+                .price, .discount, .total {
+                    .has-price {
+                        color: $white-light;
+                    }
+                }
+            }
+        }
+    }
+}

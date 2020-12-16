@@ -47,7 +47,8 @@ title: Sign Up
             <div class="columns">
                 <div class="column is-4">
                     <div class="account-type">
-                        <img src="assets/img/illustrations/signup/company.svg" alt="">
+                        <img class="light-image" src="assets/img/illustrations/signup/company.svg" alt="">
+                        <img class="dark-image" src="assets/img/illustrations/signup/company-dark.svg" alt="">
                         <h3>Company</h3>
                         <p>Create a company account to be able to do some awesome things.</p>
                         <a class="button is-fullwidth is-rounded process-button" data-step="step-dot-2">
@@ -57,7 +58,8 @@ title: Sign Up
                 </div>
                 <div class="column is-4">
                     <div class="account-type">
-                        <img src="assets/img/illustrations/signup/public.svg" alt="">
+                        <img class="light-image" src="assets/img/illustrations/signup/public.svg" alt="">
+                        <img class="dark-image" src="assets/img/illustrations/signup/public-dark.svg" alt="">
                         <h3>Public Person</h3>
                         <p>Create a company account to be able to do some awesome things.</p>
                         <a class="button is-fullwidth is-rounded process-button" data-step="step-dot-2">
@@ -67,7 +69,8 @@ title: Sign Up
                 </div>
                 <div class="column is-4">
                     <div class="account-type">
-                        <img src="assets/img/illustrations/signup/personal.svg" alt="">
+                        <img class="light-image" src="assets/img/illustrations/signup/personal.svg" alt="">
+                        <img class="dark-image" src="assets/img/illustrations/signup/personal-dark.svg" alt="">
                         <h3>Personal</h3>
                         <p>Create a company account to be able to do some awesome things.</p>
                         <a class="button is-fullwidth is-rounded process-button" data-step="step-dot-2">
@@ -173,17 +176,17 @@ title: Sign Up
 
 
 <!--Edit Credit card Modal-->
-<div id="crop-modal" class="modal mdl-modal is-small crop-modal is-animated">
+<div id="crop-modal" class="modal is-small crop-modal is-animated">
     <div class="modal-background"></div>
     <div class="modal-content">
         <div class="modal-card">
             <header class="modal-card-head">
-                <div class="modal-card-title">
-                    <span>Crop your picture</span>
+                <h3>Crop your picture</h3>
+                <div class="close-wrap">
+                    <button class="close-modal" aria-label="close">
+                        <i data-feather="x"></i>
+                    </button>
                 </div>
-                <button class="mdl-modal-close" aria-label="close">
-                    <i data-feather="x"></i>
-                </button>
             </header>
             <div class="modal-card-body">
                 <div id="cropper-wrapper" class="cropper-wrapper">

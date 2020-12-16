@@ -101,6 +101,47 @@ Main feed styles
                 align-items: stretch;
             }
 
+            .feed-upload {
+                .upload-wrap {
+                    position: relative;
+                    height: auto;
+                    width: 140px;
+
+                    .remove-file {
+                        position: absolute;
+                        top: -4px;
+                        right: -4px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 30px;
+                        width: 30px;
+                        border-radius: 50%;
+                        background: $white;
+                        cursor: pointer;
+                        transition: background .3s;
+
+                        &:hover {
+                            background: lighten($placeholder, 10%);
+                        }
+
+                        svg {
+                            height: 16px;
+                            width: 16px;
+                            stroke: $medium-text;
+                        }
+                    }
+
+                    img {
+                        display: inline-block;
+                        width: 100%;
+                        height: auto;
+                        object-fit: cover;
+                        border-radius: .5rem;
+                    }
+                }
+            }
+
             //Small avatar
             img {
                 height: 42px;
@@ -1556,7 +1597,7 @@ Main feed styles
     }
 
     span {
-        padding: 2px;
+        padding: 2px 8px;
 
         a {
             font-size: .8rem;

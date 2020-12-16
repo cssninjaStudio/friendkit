@@ -332,8 +332,8 @@ Modal styles
 
                             .checked-badge {
                                 position: absolute;
-                                bottom: 3px;
-                                right: -3px;
+                                bottom: 6px;
+                                right: -1px;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
@@ -543,8 +543,8 @@ Modal styles
                     position: absolute;
                     top: 0;
                     left: 0;
-                    height: 32px;
-                    width: 32px;
+                    height: 36px;
+                    width: 36px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -1327,7 +1327,7 @@ Modal styles
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                height: 32px;
+                height: 36px;
                 width: 70px;
                 padding: 0 6px;
                 background: $muted-grey;
@@ -1520,7 +1520,7 @@ Modal styles
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                height: 32px;
+                height: 36px;
                 width: 70px;
                 padding: 0 6px;
                 background: $muted-grey;

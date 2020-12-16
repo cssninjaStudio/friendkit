@@ -20,7 +20,7 @@ var tour = {
         },
         {
             title: "Made with Bulma",
-            content: "Friendkit is built on top of Bulma 0.7.5, a very popular mobile first CSS framework.",
+            content: "Friendkit is built on top of Bulma 0.9.1, a very popular mobile first CSS framework.",
             target: document.querySelector("#made-with-bulma"),
             placement: "top",
             xOffset : 40

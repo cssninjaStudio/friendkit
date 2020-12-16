@@ -23,7 +23,6 @@ Signup styles
     background: $white;
 
     img {
-        display: block;
         max-width: 48px;
     }
 }
@@ -190,7 +189,6 @@ Signup styles
             text-align: center;
 
             img {
-                display: block;
                 margin: 0 auto 20px auto;
                 max-height: 140px;
             }
@@ -375,6 +373,44 @@ Signup styles
 .crop-modal {
     .modal-card {
         max-width: 100%;
+    }
+
+    .modal-card-head {
+
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .close-wrap {
+            height: 30px;
+            width: 30px;
+            margin-left: auto;
+
+            .close-modal {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                border: none;
+                background: transparent;
+                cursor: pointer;
+                transition: background .3s;
+
+                &:hover {
+                    background: lighten($placeholder, 10%);
+                }
+
+                svg {
+                    height: 18px;
+                    width: 18px;
+                    stroke: $medium-text;
+                }
+            }
+        }
     }
 
     .modal-card-body {

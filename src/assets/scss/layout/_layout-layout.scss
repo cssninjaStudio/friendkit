@@ -20,7 +20,7 @@ Main layout styles
 ========================================================================== */
 
 body {
-    background: lighten(#eaeaea, 4%) !important;
+    background: lighten(#eaeaea, 4%);
     height: 100%;
     width: 100%;
     min-height: 100vh;
@@ -35,9 +35,11 @@ body {
     }
 
     &.is-white {
-        background: $white !important;
+        background: $white;
     }
 }
+
+
 
 /* ==========================================================================
 2. Global Overlay

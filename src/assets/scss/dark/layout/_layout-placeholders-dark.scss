@@ -1,0 +1,174 @@
+/*! _layout-placeholders-dark.scss | Friendkit | © Css Ninja. 2019-2020 */
+
+/* ==========================================================================
+Placeholder dark styles
+========================================================================== */
+
+/*
+    0. Base styles
+    1. Compose placeload
+    2. Post placeholder
+    3. List Placeloads
+    4. Square widget Placeload
+    5. Weather widget placeload
+*/
+
+/* ==========================================================================
+0. Base styles
+========================================================================== */
+
+body {
+    &.is-dark {
+        .loads {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-name: placeload;
+            animation-name: placeload;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+            background: #191c26;
+            background: #31374a;
+            background: -webkit-gradient(linear, left top, right top, #31374a 8%, #191c26 18%, #31374a 33%);
+            background: -webkit-linear-gradient(left, #31374a 8%, #191c26 18%, #31374a 33%);
+            background: linear-gradient(to right, #31374a 8%, #191c26 18%, #31374a 33%);
+            -webkit-background-size: 800px 104px;
+            background-size: 1200px 104px;
+            position: relative;
+        }
+    }
+}
+
+/* ==========================================================================
+1. Compose placeload
+========================================================================== */
+
+body {
+    &.is-dark {
+        .compose-placeload {
+            border-color: lighten($dark, 4%);
+            background: $dark;
+        }
+    }
+}
+
+/* ==========================================================================
+2. Post placeholder
+========================================================================== */
+
+body {
+    &.is-dark {
+        .post-placeload {
+            border-color: lighten($dark, 4%) !important;
+            background: $dark !important;
+        }
+    }
+}
+
+/* ==========================================================================
+3. List Placeloads
+========================================================================== */
+
+body {
+    &.is-dark {
+        .stories-placeload, .list-placeload {
+            border-color: lighten($dark, 4%) !important;
+            background: $dark !important;
+        }
+    }
+}
+
+/* ==========================================================================
+4. Square widget Placeload
+========================================================================== */
+
+body {
+    &.is-dark {
+        .mini-widget-placeload {
+            border-color: lighten($dark, 4%) !important;
+            background: $dark !important;
+        }
+    }
+}
+
+/* ==========================================================================
+5. Weather widget placeload
+========================================================================== */
+
+body {
+    &.is-dark {
+        .weather-widget-placeload {
+            border-color: lighten($dark, 4%) !important;
+            background: $dark !important;
+        }
+    }
+}
+
+/* ==========================================================================
+9. Questions single placeload
+========================================================================== */
+
+body {
+    &.is-dark {
+        .questions-single-placeload {
+            &.is-card {
+                border-color: lighten($dark, 8%) !important;
+                background: lighten($dark, 8%) !important;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+10. Questions categories placeload
+========================================================================== */
+
+body {
+    &.is-dark {
+        .questions-categories-placeload {
+            .is-tile-placeload {
+                border-color: lighten($dark, 14%) !important;
+                background: $dark !important;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+9. Questions stats placeload
+========================================================================== */
+
+body {
+    &.is-dark {
+        .questions-stats-placeload {
+            &.is-header {
+                border-color: lighten($dark, 14%) !important;
+                background: $dark !important;
+            }
+
+            &.is-carousel {
+                .placeload-grid {
+                    .grid-item {
+                        border-color: lighten($dark, 14%) !important;
+                        background: $dark !important;
+                    }
+                }
+            }
+        }
+
+        .questions-side-placeload {
+            border-color: lighten($dark, 14%) !important;
+            background: $dark !important;
+        }
+
+        .questions-settings-placeload {
+            &.is-card {
+                border-color: lighten($dark, 14%) !important;
+                background: $dark !important;
+            }
+        }
+    }
+}

@@ -7,7 +7,7 @@ Project wide reusable functions
 "use strict";
 
 //Change demo images
-function changeDemoImages(){
+function changeDemoImages() {
     $('*[data-demo-src]').each(function () {
         var newSrc = $(this).attr('data-demo-src');
         $(this).attr('src', newSrc);
@@ -24,6 +24,40 @@ function changeDemoHrefs() {
     $('*[data-demo-href]').each(function () {
         var newHref = $(this).attr('data-demo-href');
         $(this).attr('href', newHref);
+    });
+}
+
+//Get Theme
+function setThemeToLocalStorage(value) {
+    window.localStorage.setItem('theme', value);
+    if (!$('#friendkit-demo-landing').length) {
+        if (value === 'dark') {
+            $('body').addClass('is-dark');
+        } else {
+            $('body').removeClass('is-dark');
+        }
+    }
+}
+
+function toggleTheme() {
+    var theme = window.localStorage.getItem('theme');
+    console.log(theme);
+    if (theme != null && theme != undefined) {
+        setThemeToLocalStorage(theme);
+
+        if (theme === 'dark') {
+            $('#toggle-theme').prop('checked', true);
+        }
+    }
+
+    $('#toggle-theme').on('change', function(){
+        if ($(this).prop('checked') === true) {
+            console.log('checked');
+            setThemeToLocalStorage('dark');
+        }
+        else {
+            setThemeToLocalStorage('light');
+        }
     });
 }
 
@@ -149,21 +183,21 @@ function initNavbar() {
     })
 
     //Show navbar search options
-    $('.drop-icon').on('click', function () {
+    /*$('.drop-icon').on('click', function () {
         $(this).toggleClass('is-active');
         $('.search-options').toggleClass('is-active');
-    })
+    })*/
 
     //Toggle selected state on click for search options
-    $('.options-list li').on('click', function () {
+    /*$('.options-list li').on('click', function () {
         $('.options-list li.is-selected').removeClass('is-selected');
         $(this).addClass('is-selected');
-    })
+    })*/
 
     //Close search options
-    $('#close-search-options').on('click', function () {
+    /*$('#close-search-options').on('click', function () {
         $(this).closest('.search-options').toggleClass('is-active');
-    })
+    })*/
 };
 
 //Init navbar dropdowns
@@ -203,7 +237,7 @@ function initNavDropdowns() {
 function initNavbarCart() {
     $('.is-cart .cart-button').on('click', function () {
         $(this).closest('.is-cart').find('.shopping-cart').addClass('is-active');
-        setTimeout(function() {
+        setTimeout(function () {
             $('.navbar-cart-loader').removeClass('is-active');
         }, 800);
     })
@@ -212,7 +246,7 @@ function initNavbarCart() {
         var target = e.target;
         if (!$(target).is('.is-cart .cart-button') && !$(target).parents().is('.is-cart')) {
             $('.shopping-cart').removeClass('is-active');
-            setTimeout(function() {
+            setTimeout(function () {
                 $('.navbar-cart-loader').addClass('is-active');
             }, 300);
         }
@@ -291,7 +325,7 @@ function initSimplePopover() {
 //Init Emojis
 function initEmojiPicker() {
     var id = 0;
-    $('.post-comment.has-emojis').each(function(){
+    $('.post-comment.has-emojis').each(function () {
         id = id + 1
         var $this = $(this);
         var wrapper = $this.find('.card-footer');
@@ -311,21 +345,21 @@ function initEmojiPicker() {
             rootElement: container,
             autoHide: false,
         });
-    
+
         picker.on('emoji', emoji => {
             messageInput.value += emoji;
             messageInput.dispatchEvent(new Event('keyup'));
         });
-    
+
         button.addEventListener('click', () => {
             picker.pickerVisible ? picker.hidePicker() : picker.showPicker(button);
         });
-    }) 
+    })
 }
 
 function initLightboxEmojis() {
     var id = 0;
-    $('.has-lightbox-emojis').each(function(){
+    $('.has-lightbox-emojis').each(function () {
         id = id + 1
         var $this = $(this);
         var wrapper = $this.find('.controls-inner');
@@ -345,16 +379,16 @@ function initLightboxEmojis() {
             rootElement: container,
             autoHide: false,
         });
-    
+
         picker.on('emoji', emoji => {
             messageInput.value += emoji;
             messageInput.dispatchEvent(new Event('keyup'));
         });
-    
+
         button.addEventListener('click', () => {
             picker.pickerVisible ? picker.hidePicker() : picker.showPicker(button);
         });
-    }) 
+    })
 }
 
 //Video Embed
@@ -387,7 +421,7 @@ function initPostComments() {
         console.log(new_position);
         $('html, body').stop().animate({ scrollTop: new_position.top - 70 }, 500);
         e.preventDefault();
-        setTimeout(function(){
+        setTimeout(function () {
             $('.emojionearea-editor').val('');
         }, 400);
     })
@@ -396,7 +430,7 @@ function initPostComments() {
 //Options nav subsearch
 function initSubSearch() {
     //Toggle comments
-    $('#show-subsearch, #hide-subsearch').on('click', function(){
+    $('#show-subsearch, #hide-subsearch').on('click', function () {
         $('#show-subsearch, #hide-subsearch, #subsearch').toggleClass('is-hidden');
         $('#subsearch input').focus();
     })
@@ -666,18 +700,18 @@ function initTextFilter() {
                         return true;
                     })
                     .show().removeClass('is-not-match').addClass('is-match');
-                    //Friends
-                    if ($('#friends-page').length) {
-                        var cardCount = $('.card-row-wrap.is-active').find('.friend-card.is-match').length;
-                        console.log(cardCount);
-                        if (cardCount == 0){
-                            $('.card-row-wrap.is-active').find('.card-row').addClass('is-hidden');
-                            $('.card-row-wrap.is-active').find('.card-row-placeholder').removeClass('is-hidden');
-                        } else {
-                            $('.card-row-wrap.is-active').find('.card-row-placeholder').addClass('is-hidden');
-                            $('.card-row-wrap.is-active').find('.card-row').removeClass('is-hidden');
-                        }
+                //Friends
+                if ($('#friends-page').length) {
+                    var cardCount = $('.card-row-wrap.is-active').find('.friend-card.is-match').length;
+                    console.log(cardCount);
+                    if (cardCount == 0) {
+                        $('.card-row-wrap.is-active').find('.card-row').addClass('is-hidden');
+                        $('.card-row-wrap.is-active').find('.card-row-placeholder').removeClass('is-hidden');
+                    } else {
+                        $('.card-row-wrap.is-active').find('.card-row-placeholder').addClass('is-hidden');
+                        $('.card-row-wrap.is-active').find('.card-row').removeClass('is-hidden');
                     }
+                }
             });
 
     })();
@@ -725,7 +759,7 @@ function initShareModal() {
 //Init About Page slider
 function initAboutGlider() {
     $('.about-glider').each(function () {
-        if ($(this).is(":visible")){
+        if ($(this).is(":visible")) {
             var element = $(this).attr('id');
             new Glider(document.querySelector('#' + element), {
                 slidesToShow: 3,

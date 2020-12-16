@@ -125,6 +125,18 @@ Dropdown styles
         padding-right: 1rem !important;
         padding: 0.5rem 1rem;
 
+        &:hover {
+            background: lighten($fade-grey, 7%);
+
+            h3 {
+                color: $primary;
+            }
+
+            svg {
+                stroke: $primary;
+            }
+        }
+
         &.is-selected {
             .checkmark {
                 display: block !important;
@@ -205,17 +217,7 @@ Dropdown styles
             }
         }
 
-        &:hover {
-            background: lighten($fade-grey, 7%);
-
-            h3 {
-                color: $primary;
-            }
-
-            svg {
-                stroke: $primary;
-            }
-        }
+        
     }
 
     //Accent color modifier
@@ -247,6 +249,131 @@ Dropdown styles
 
                 svg {
                     stroke: $medium-text !important;
+                }
+            }
+        }
+    }
+}
+
+
+body {
+    &.is-dark {
+
+        .dropdown {
+            &.is-spaced {
+                &:hover, &.is-active {
+                    > div .button {
+                        background: lighten($dark, 2%) !important;
+
+                        svg {
+                            stroke: $white-light;
+                        }
+                    }
+                }
+
+                .dropdown-menu {
+                    .dropdown-content {
+                        background: darken($dark, 5%) !important;
+                        border-color: lighten($dark, 8%) !important;
+
+                        .heading {
+                            border-color: lighten($dark, 8%) !important;
+
+                            &:hover, *:hover {
+                                background: $dark !important;
+                            }
+
+                            .heading-right {
+                                .notification-link {
+                                    color: $accent !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.is-neutral {
+                .dropdown-menu {
+                    .dropdown-content {
+                        .dropdown-item {
+                            &:hover {
+                
+                                h3 {
+                                    color: $white-light !important;
+                                }
+                
+                                svg {
+                                    stroke: $white-light !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .dropdown-menu {
+                .dropdown-content {
+                    background: $dark;
+                    border-color: lighten($dark, 8%) !important;
+
+                    .dropdown-item {
+                        color: $light-text;
+
+                        &.is-active {
+                            background: $accent !important;
+                        }
+
+                        &:hover {
+                            .media {
+                                .media-content {
+                                    h3 {
+                                        color: $primary;
+                                    }
+                                }
+                            }
+                        }
+
+                        .media {
+                            .media-content {
+                                h3 {
+                                    color: $white-light;
+                                }
+                            }
+                        }
+                    }
+
+                    .dropdown-divider {
+                        background: lighten($dark, 5%);
+                    }
+
+                    a:hover {
+                        background: lighten($dark, 3%) !important;
+                    }
+                }
+            }
+        }
+
+        .child-dropdown {
+            .inner {
+                background: $dark !important;
+                border-color: lighten($dark, 4%) !important;
+
+                &:hover {
+                    background: $dark !important;
+                    border-color: lighten($dark, 4%) !important;
+                }
+
+                ul {
+                    li {
+                        .text {
+                            span {
+                                &:first-child {
+                                    color: $white-light !important;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

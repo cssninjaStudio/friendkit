@@ -1,0 +1,169 @@
+/*! _app-signup-dark.scss | Friendkit | © Css Ninja. 2019-2020 */
+
+/* ==========================================================================
+Signup dark styles
+========================================================================== */
+
+/*
+    0. Signup page layout
+    1. Crop Modal
+    2. Media Queries
+*/
+
+/* ==========================================================================
+0. Signup page layout
+========================================================================== */
+
+body {
+    &.is-dark {
+        .signup-wrapper {
+            .process-bar {
+                background: lighten($dark, 16%);
+
+                .progress-wrap {
+                    .track {
+                        background: lighten($dark, 6%);
+                    }
+
+                    .bar {}
+
+                    .dot {
+                        background: lighten($dark, 2%);
+
+                        &:not(.is-active) {
+                            border-color: lighten($dark, 10%);
+                        }
+                    }
+                }
+            }
+
+            .outer-panel {
+                .outer-panel-inner {
+                    .process-title {
+                        color: $white-light;
+                    }
+
+                    .process-panel-wrap {
+                        .account-type {
+                            border-color: lighten($dark, 4%);
+                            background: $dark;
+
+                            h3 {
+                                color: $white-light;
+                            }
+
+                            p {
+                                color: $light-text;
+                            }
+
+                            .button {
+                                &:hover, &.is-loading {
+                                    background: $accent;
+                                    color: $white;
+                                }
+                            }
+                        }
+
+                        .form-panel {
+                            border-color: lighten($dark, 4%);
+                            background: $dark;
+
+                            .field {
+                                background: lighten($dark, 2%);
+                                border-color: lighten($dark, 10%);
+
+                                > label {
+                                    color: $light-text;
+                                }
+
+                                .control {
+                                    .input {
+                                        background: lighten($dark, 2%);
+                                        border-color: lighten($dark, 2%);
+                                        color: $white-light;
+                                    }
+
+                                    .easy-autocomplete {
+                                        .input {
+                                            background: lighten($dark, 2%) !important;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .photo-upload {
+                                .preview {
+                                    border-color: lighten($dark, 10%);
+
+                                    .upload-button {
+                                        border-color: $dark;
+                                    }
+                                }
+
+                                .limitation {
+                                    small {
+                                        color: $light-text;
+                                    }
+                                }
+                            }
+
+                            .success-text {
+                                h3 {
+                                    color: $white-light;
+                                }
+
+                                p {
+                                    color: $light-text;
+                                }
+
+                                .button {
+                                    &:hover, &.is-loading {
+                                        background: $accent;
+                                        border-color: $accent;
+                                    }
+                                }
+                            }
+                        }
+
+                        .buttons {
+                            .is-next {
+                                &:hover, &.is-loading {
+                                    background: $accent;
+                                    border-color: $accent;
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+1. Crop Modal
+========================================================================== */
+
+body {
+    &.is-dark {
+        .crop-modal {
+            .modal-card-head {
+                background: $dark;
+                border-color: lighten($dark, 10%);
+
+                h3 {
+                    color: $white-light;
+                }
+
+                .close-wrap {
+                    .close-modal {
+                        &:hover {
+                            background: lighten($dark, 4%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

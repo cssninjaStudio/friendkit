@@ -229,6 +229,7 @@ function concatPlugins() {
   return src([
     nodepath + 'jquery/dist/jquery.min.js',
     nodepath + 'feather-icons/dist/feather.min.js',
+    nodepath + 'lozad/dist/lozad.min.js',
     nodepath + 'vivid-icons/dist/vivid-icons.min.js',
     nodepath + 'slick-carousel/slick/slick.min.js',
     nodepath + 'emojionearea/dist/emojionearea.min.js',

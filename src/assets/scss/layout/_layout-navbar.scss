@@ -177,7 +177,7 @@ Navbar styles
 
         //Cart
         &.is-cart {
-            margin-left: 16px;
+            //margin-left: 16px;
 
             .cart-button {
                 position: relative;
@@ -225,7 +225,6 @@ Navbar styles
                 background: $white;
                 width: 320px;
                 border-radius: 3px;
-                padding: 20px;
                 box-shadow: $light-box-shadow;
                 border: 1px solid darken($fade-grey, 3%);
                 opacity: 0;
@@ -248,7 +247,7 @@ Navbar styles
                     width: 0;
                     position: absolute;
                     pointer-events: none;
-                    border-bottom-color: white;
+                    border-bottom-color: $white;
                     border-width: 8px;
                     margin-left: -8px;
                     z-index: 1;
@@ -273,6 +272,7 @@ Navbar styles
                     position: relative;
                     width: 100%;
                     height: 100%;
+                    padding: 20px;
 
                     .navbar-cart-loader {
                         position: absolute;
@@ -506,18 +506,18 @@ Navbar styles
                 align-items: center;
                 width: 38px;
                 height: 38px;
-                border-radius: 6px;
+                border-radius: 8px;
                 transition: all .3s;
 
                 &.is-bold {
                     &:hover, &.is-active {
                         background: darken($accent, 6%);
                         box-shadow: $accent-box-shadow;
-    
+
                         svg {
                             stroke: $white-light;
                         }
-    
+
                         .mdi {
                             color: $white-light;
                         }
@@ -576,14 +576,17 @@ Navbar styles
                             color: $white-light;
                         }
                     }
+                }
 
-                    &.is-friends {
-                        &:hover, &.is-active {
-                            svg {
-                                fill: $white;
-                                -webkit-animation: pulse 1s infinite;
-                                animation: pulse 1s infinite;
-                            }
+                &.is-friends {
+                    &:hover, &.is-active {
+                        background: #e6122f;
+                        box-shadow: $red-box-shadow;
+
+                        svg {
+                            fill: $white;
+                            -webkit-animation: pulse 1s infinite;
+                            animation: pulse 1s infinite;
                         }
                     }
                 }
@@ -890,7 +893,7 @@ Navbar styles
 
                                 span {
                                     font-size: .75rem;
-                                    color: $muted-grey;
+                                    color: $light-text;
 
                                     a {
                                         color: $sidebar;
@@ -901,14 +904,14 @@ Navbar styles
 
                             //icon
                             .added-icon {
-                                width: 20px;
-                                height: 20px;
+                                width: 18px;
+                                height: 18px;
                                 margin: 0 15px;
 
                                 svg {
-                                    height: 20px;
-                                    width: 20px;
-                                    stroke: $placeholder;
+                                    height: 18px;
+                                    width: 18px;
+                                    stroke: $light-text;
                                     stroke-width: 1.6px;
                                 }
                             }
@@ -921,7 +924,6 @@ Navbar styles
                                 }
 
                                 .icon-button {
-
                                     &:hover {
                                         svg {
                                             stroke: $accent !important;
@@ -949,6 +951,7 @@ Navbar styles
 
                         hr {
                             margin: .4rem 0 !important;
+                            height: 1px;
                         }
 
                         //List item
@@ -1137,7 +1140,7 @@ Navbar styles
             }
         }
 
-        .drop-icon {
+        /*.drop-icon {
             position: absolute;
             top: 0;
             right: -40px;
@@ -1163,10 +1166,10 @@ Navbar styles
                 transform: rotate(0);
                 transition: all .3s;
             }
-        }
+        }*/
 
         //Search options
-        .search-options {
+        /*.search-options {
             position: absolute;
             top: 100%;
             left: 0;
@@ -1282,7 +1285,7 @@ Navbar styles
                     width: 100%;
                 }
             }
-        }
+        }*/
     }
 }
 

@@ -41,6 +41,10 @@
                     </div>
                 </div>
 
+                <div id="feed-upload" class="feed-upload">
+
+                </div>
+
                 <div id="options-summary" class="options-summary"></div>
 
                 <div id="tag-suboption" class="is-autocomplete is-suboption is-hidden">
@@ -222,7 +226,7 @@
                         <div class="compose-option is-centered">
                             <i data-feather="camera"></i>
                             <span>Photo/Video</span>
-                            <input type="file">
+                            <input id="feed-upload-input-1" type="file" accept=".png, .jpg, .jpeg" onchange="readURL(this)">
                         </div>
                     </div>
                     <!-- Mood action -->
@@ -270,7 +274,7 @@
                 <div class="compose-option">
                     <i data-feather="camera"></i>
                     <span>Media</span>
-                    <input type="file">
+                    <input id="feed-upload-input-2" type="file" type="file" accept=".png, .jpg, .jpeg" onchange="readURL(this)">
                 </div>
                 <!-- Mood action -->
                 <div id="show-activities" class="compose-option">

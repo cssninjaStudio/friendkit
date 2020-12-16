@@ -1,0 +1,360 @@
+/*! _app-videos-dark.scss | Friendkit | © Css Ninja. 2019-2020 */
+
+/* ==========================================================================
+Videos dark styles
+========================================================================== */
+
+/*
+    0. Videos Sidebar (Desktop)
+    1. Videos Home Layout
+    2. Player Layout
+    3. Media Queries
+*/
+
+/* ==========================================================================
+0. Videos Sidebar (Desktop)
+========================================================================== */
+
+body {
+    &.is-dark {
+        .videos-wrapper {
+            .videos-sidebar {
+                background: darken($dark, 2%);
+                border-color: lighten($dark, 4%);
+
+                .videos-sidebar-inner {
+                    border-color: lighten($dark, 4%);
+
+                    .user-block {
+                        border-color: lighten($dark, 8%);
+
+                        .avatar-wrap {
+                            border-color: lighten($dark, 18%);
+
+                            .badge {
+                                border-color: darken($dark, 2%);
+                            }
+                        }
+
+                        > h4 {
+                            color: $white-light;
+                        }
+
+                        > p {
+                            color: $light-text;
+                        }
+                    }
+
+                    .user-stats {
+                        .stat-block {
+                            span {
+                                &:first-child {
+                                    color: $white-light;
+                                    font-weight: 500;
+                                }
+
+                                &:nth-child(2) {
+                                    color: $light-text;
+                                }
+                            }
+                        }
+                    }
+
+                    .user-menu {
+                        .user-menu-inner {
+                            .menu-block {
+                                ul {
+                                    li {
+                                        a span {
+                                            color: $light-text;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .separator {
+                                border-color: lighten($dark, 8%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+1. Videos Home Layout
+========================================================================== */
+
+body {
+    &.is-dark {
+        .videos-wrapper {
+            .home-content {
+                .collections-header {
+                    > a {
+                        &.is-active {
+                            color: $white-light;
+                        }
+                    }
+                }
+
+                .collections-wrap {
+                    .collection {
+                        .header {
+                            h4 {
+                                color: $white-light;
+                            }
+
+                            a {
+                                color: $accent;
+                            }
+                        }
+
+                        .video-collection {
+                            .episode {
+                                .episode-meta {
+                                    .info {
+                                        span {
+                                            &:first-child {
+                                                color: $white-light;
+                                            }
+
+                                            &:nth-child(2) {
+                                                color: $light-text;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+2. Player Layout
+========================================================================== */
+
+body {
+    &.is-dark {
+        .videos-wrapper {
+            .player-wrapper {
+                .video-side {
+                    .meta-box {
+                        background: lighten($dark, 8%);
+
+                        &.video-meta {
+                            .video-title {
+                                color: $white-light;
+                            }
+
+                            .video-subtitle {
+                                .views-count {
+                                    color: $light-text;
+                                }
+
+                                .quick-actions {
+                                    .quick-action {
+                                        &:hover {
+                                            background: lighten($dark, 3%);
+                                        }
+
+                                        svg {
+                                            stroke: $light-text;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .video-owner {
+                                .meta {
+                                    span {
+                                        &:first-child {
+                                            color: $white-light;
+                                        }
+
+                                        &:nth-child(2) {
+                                            color: $light-text;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &.video-description {
+                            h4 {
+                                color: $white-light;
+                            }
+
+                            p {
+                                color: $light-text;
+                            }
+
+                            .additional-description {
+                                p, ul li {
+                                    color: $light-text;
+                                }
+                            }
+
+                            hr {
+                                height: 1px;
+                                background: lighten($dark, 18%);
+                            }
+
+                            .video-description-more {
+                                &:not(:hover) {
+                                    color: $light-text;
+                                }
+                            }
+                        }
+                    }
+
+                    .comments-wrap {
+                        .comment-box {
+                            .media-content {
+                                .control {
+                                    .button {
+                                        &:not(:hover) {
+                                            background: lighten($dark, 8%);
+                                            border-color: lighten($dark, 16%);
+                                            color: $white-light;
+                                        }
+
+                                        &:hover {
+                                            background: $accent !important;
+                                            border-color: $accent !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .comments-count {
+                            h3 {
+                                color: $white-light;
+                            }
+                        }
+
+                        .media {
+                            &.is-comment {
+                                border-color: lighten($dark, 20%);
+
+                                .media-left {
+                                    .avatar-wrap {
+                                        border-color: lighten($dark, 20%);
+
+                                        .badge {
+                                            border-color: lighten($dark, 8%);
+                                        }
+                                    }
+                                }
+
+                                .media-content {
+                                    .comment-meta {
+                                        h4 {
+                                            a {
+                                                color: $white-light;
+                                                font-weight: 500;
+
+                                                &:hover {
+                                                    color: $accent;
+                                                }
+                                            }
+
+                                            small {
+                                                color: $light-text;
+                                            }
+                                        }
+
+                                        p {
+                                            color: $light-text;
+                                        }
+                                    }
+
+                                    .comment-stats-wrap {
+                                        .comment-stats {
+                                            .stat {
+                                                span {
+                                                    color: $light-text;
+                                                }
+
+                                                svg {
+                                                    stroke: $light-text;
+                                                }
+                                            }
+                                        }
+
+                                        .comment-actions {
+                                            .comment-action {
+                                                border-color: lighten($dark, 15%);
+                                                background: lighten($dark, 15%);
+
+                                                &.is-reply:hover {
+                                                    svg {
+                                                        stroke: $accent;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .related-side {
+                    .related-list {
+                        background: lighten($dark, 8%);
+
+                        .autoplay {
+                            .autoplay-title {
+                                color: $white-light;
+                            }
+
+                            .autoplay-toggle {
+                                > span {
+                                    color: $light-text;
+                                }
+                            }
+                        }
+
+                        .related-label {
+                            border-color: lighten($dark, 15%);
+
+                            h4 {
+                                color: $white-light;
+                            }
+                        }
+
+                        .related-card {
+                            .media-content {
+                                .video-meta {
+                                    > a {
+                                        color: $white-light;
+
+                                        &:hover {
+                                            color: $accent;
+                                        }
+                                    }
+
+                                    .submeta {
+                                        .info {
+                                            span {
+                                                color: $light-text;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

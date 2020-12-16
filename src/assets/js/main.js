@@ -27,7 +27,31 @@ $(document).ready(function(){
 
         //Demo hrefs
         changeDemoImages();
-	}
+    }
+
+    //Lazy Load
+    const el = document.querySelectorAll('[data-lazy-load]');
+    const observer = lozad(el, {
+        loaded: function(el) {
+            // Custom implementation on a loaded element
+            el.parentNode.classList.add('loaded');
+        }
+	});
+	
+    observer.observe();
+
+    //Demo links
+    $('.demo-link a').on('click', function(e){
+        e.preventDefault();
+        var theme = $(this).closest('.demo-link').attr('data-theme');
+        window.localStorage.setItem('theme', theme);
+        var href = $(this).attr('href');
+        
+        window.open(href);
+    });
+    
+    //Toggle Dark mode
+    toggleTheme(); 
 
     //Code highlight init
     $('.highlight-block code').each(function (i, block) {

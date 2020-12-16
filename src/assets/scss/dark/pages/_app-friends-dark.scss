@@ -1,0 +1,64 @@
+/*! _app-friends-dark.scss | Friendkit | © Css Ninja. 2019-2020 */
+
+/* ==========================================================================
+Friend lists
+========================================================================== */
+
+/*
+    0. Layout
+    1. Cards
+    3. Media Queries
+*/
+
+/* ==========================================================================
+0. Layout
+========================================================================== */
+
+body {
+    &.is-dark {
+        .card-row-wrap {
+            .friend-card {
+                border-color: lighten($dark, 4%);
+                background: $dark;
+
+                .star-friend {
+                    &:not(.is-active) {
+                        svg {
+                            fill: lighten($dark, 8%);
+                            stroke: lighten($dark, 8%);
+                        }
+                    }
+                }
+
+                .img-container {
+                    .country {
+                        border-color: $dark;
+                    }
+                }
+
+                .friend-info {
+                    h3 {
+                        color: $white-light;
+                    }
+
+                    p {
+                        color: $light-text;
+                    }
+                }
+
+                .friend-stats {
+                    .stat-block {
+
+                        label {
+                            color: $light-text;
+                        }
+
+                        .stat-number {
+                            color: $white-light;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

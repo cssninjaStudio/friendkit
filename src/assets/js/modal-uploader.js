@@ -8,7 +8,9 @@ Uploader used in the create album modal
 
 if ($('.modal-uploader').length) {
 
-        Dropzone.autoDiscover = false;
+    var uploadCount = 0;
+
+    Dropzone.autoDiscover = false;
 
     // Get the template HTML and remove it from the doument
     var previewNode = document.querySelector("#template");
@@ -31,8 +33,11 @@ if ($('.modal-uploader').length) {
     modalUploader.on("addedfile", function(file) {
         //Get the file count
         var count= modalUploader.files.length;
+        //Update global count variable
+        uploadCount = uploadCount + 1;
         // Hookup the start button
         file.previewElement.querySelector(".start").onclick = function() { modalUploader.enqueueFile(file); };
+        file.previewElement.id = 'uploaded-file-' + uploadCount;
         //Set the new file count
         $('#modal-uploader-file-count').html(count);
     });

@@ -1,0 +1,43 @@
+/*! _layout-sidebar-dark.scss | Friendkit | © Css Ninja. 2019-2020 */
+
+/* ==========================================================================
+Sidebar dark styles
+========================================================================== */
+
+/*
+    0. Filters panel
+*/
+
+/* ==========================================================================
+0. Filters panel
+========================================================================== */
+
+body {
+    &.is-dark {
+        .filters-panel {
+            background: darken($dark, 6%);
+            border-color: darken($dark, 6%);
+
+            .panel-inner {
+                .panel-title {
+                    color: $white-light;
+                    border-color: lighten($dark, 8%);
+                }
+
+                .filter-block {
+                    border-color: lighten($dark, 8%);
+
+                    label {
+                        color: $light-text;
+                    }
+
+                    .is-combo {
+                        .combo-label {
+                            color: $light-text;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

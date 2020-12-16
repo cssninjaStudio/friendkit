@@ -16,9 +16,17 @@ Core SCSS file
 
 @import "layout/layout-pageloader";
 @import "layout/layout-layout";
+
 @import "layout/layout-navbar";
+
 @import "layout/layout-sidebar";
 @import "layout/layout-placeholders";
+
+@import "dark/layout/layout-pageloader-dark";
+@import "dark/layout/layout-layout-dark";
+@import "dark/layout/layout-navbar-dark";
+@import "dark/layout/layout-sidebar-dark";
+@import "dark/layout/layout-placeholders-dark";
 
 @import "components/components-cards";
 @import "components/components-widgets";
@@ -40,6 +48,14 @@ Core SCSS file
 @import "components/components-animations";
 @import "components/components-utils";
 
+@import "dark/components/components-buttons-dark";
+@import "dark/components/components-forms-dark";
+@import "dark/components/components-modals-dark";
+@import "dark/components/components-popovers-dark";
+@import "dark/components/components-tables-dark";
+@import "dark/components/components-widgets-dark";
+@import "dark/components/components-utils-dark";
+
 @import "pages/app-chat";
 @import "pages/app-feed";
 @import "pages/app-posts-feed";
@@ -58,6 +74,23 @@ Core SCSS file
 @import "pages/app-login";
 @import "pages/app-settings";
 @import "pages/app-demo";
+
+@import "dark/pages/app-chat-dark";
+@import "dark/pages/app-feed-dark";
+@import "dark/pages/app-post-feeds-dark";
+@import "dark/pages/app-profile-dark";
+@import "dark/pages/app-stories-dark";
+@import "dark/pages/app-friends-dark";
+@import "dark/pages/app-inbox-dark";
+@import "dark/pages/app-commerce-dark";
+@import "dark/pages/app-videos-dark";
+@import "dark/pages/app-questions-dark";
+@import "dark/pages/app-events-dark";
+@import "dark/pages/app-news-dark";
+@import "dark/pages/app-settings-dark";
+@import "dark/pages/app-login-dark";
+@import "dark/pages/app-signup-dark";
+@import "dark/pages/app-demo-dark";
 
 @import "layout/layout-responsive";
 

@@ -381,3 +381,60 @@ Card styles
         }
     }
 }
+
+body {
+    &.is-dark {
+        .card:not(.is-new-job-card):not(.is-weather-card):not(.is-birthday-card) {
+            border-color: lighten($dark, 4%);
+            background: $dark;
+        }
+
+        .card {
+            &.is-weather-card, &.is-new-job-card {
+                border-color: $primary;
+            }
+
+            &.is-birthday-card {
+                border-color: $secondary;
+            }
+
+            .card-heading {
+                &.is-bordered {
+                    border-color: lighten($dark, 12%);
+                }
+
+                h4 {
+                    color: $white-light;
+                }
+            }
+
+            .card-body {
+                .ad-text {
+                    color: $white-light;
+                }
+
+                .page-block, .story-block, .add-friend-block {
+                    border-color: lighten($dark, 12%);
+
+                    .page-meta, .story-meta {
+                        span {
+                            &:first-child {
+                                color: $white-light;
+                            }
+
+                            &:nth-child(2) {
+                                color: lighten($medium-text, 10%);
+                            }
+                        }
+                    }
+
+                    .add-page, .add-friend {
+                        &:hover {
+                            background: lighten($dark, 8%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
