@@ -1,4 +1,4 @@
-# Friendkit | Social Media UI Kit
+# Friendkit | Social Media UI kit
 
 ### Note
 
