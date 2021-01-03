@@ -38,6 +38,8 @@ if ($('.modal-uploader').length) {
         // Hookup the start button
         file.previewElement.querySelector(".start").onclick = function() { modalUploader.enqueueFile(file); };
         file.previewElement.id = 'uploaded-file-' + uploadCount;
+        file.previewElement.querySelector("textarea").setAttribute('name', 'uploaded_file_textarea_' + uploadCount);
+        file.previewElement.querySelector("textarea").id = 'uploaded-file-textarea-' + uploadCount;
         //Set the new file count
         $('#modal-uploader-file-count').html(count);
     });
