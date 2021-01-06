@@ -1,9 +1,11 @@
 {
   "name": "friendkit",
-  "version": "1.4.0",
+  "version": "1.3.0",
   "description": "Social media UI kit",
   "main": "index.js",
   "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build",
     "preinstall": "npx npm-force-resolutions"
   },
   "author": "Css Ninja",
