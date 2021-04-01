@@ -78,17 +78,21 @@ http://www.tipue.com/drop
                               out += '</div></div>';               
                               $('#tipue_drop_content').html(out);
                               $('#tipue_drop_content').fadeIn(set.speed);
+                              $('#tipue_drop_content_mobile').html(out);
+                              $('#tipue_drop_content_mobile').fadeIn(set.speed);
                          }
                     }
                     else
                     {
                          $('#tipue_drop_content').fadeOut(set.speed);
+                         $('#tipue_drop_content_mobile').fadeOut(set.speed);
                     }
                }
                
                $('html').click(function()
                {
                     $('#tipue_drop_content').fadeOut(set.speed);
+                    $('#tipue_drop_content_mobile').fadeOut(set.speed);
                });
           
           });

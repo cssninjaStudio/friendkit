@@ -1,0 +1,226 @@
+/*! _posts-feed-dark.scss | Friendkit | © Css Ninja. 2020-2021 */
+
+/* ==========================================================================
+Posts feed styles
+========================================================================== */
+
+/*
+    0. Stories List
+    1. Posts Feed Style
+    2. Feed Profile
+    3. Feed Slider
+*/
+
+/* ==========================================================================
+0. Stories List
+========================================================================== */
+
+body {
+    &.is-dark {
+        .stories-list {
+            .container-inner {
+                .story {
+                    .story-avatar {
+                        background: lighten($dark, 16%);
+                        border-color: lighten($dark, 16%);
+
+                        &:hover {
+                            border-color: $accent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+1. Posts Feed Style
+========================================================================== */
+
+body {
+    &.is-dark {
+        .posts-feed-wrapper {
+            .post-feed-item {
+                background: transparent !important;
+
+                .card-content {
+                    .media {
+                        .media-left {
+                            .post-avatar {
+                                background: lighten($dark, 16%) !important;
+                                border-color: lighten($dark, 16%) !important;
+                            }
+                        }
+
+                        .media-content {
+                            span {
+                                &:first-child {
+                                    color: $white-light;
+                                }
+                            }
+                        }
+
+                        .media-right {
+                            > span {
+                                color: $light-text;
+                            }
+
+                            .button {
+                                background: lighten($dark, 8%);
+
+                                &:not(.is-liked) {
+                                    svg {
+                                        stroke: $light-text;
+                                    }
+                                }
+
+                                &:hover {
+                                    background: lighten($dark, 12%);
+                                    border-color: lighten($dark, 16%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+2. Feed Profile
+========================================================================== */
+
+body {
+    &.is-dark {
+        .feed-profile-wrapper {
+            .profile-wrapper {
+                .profile-avatar-wrapper {
+                    > .button {
+                        background: darken($dark, 5%);
+                        border-color: darken($dark, 5%);
+                        color: $light-text;
+
+                        &:hover {
+                            background: $accent;
+                            border-color: $accent;
+
+                            svg {
+                                stroke: $white;
+                            }
+                        }
+                    }
+
+                    .avatar-wrap {
+                        border-color: lighten($dark, 18%);
+
+                        .badge {
+                            border-color: lighten($dark, 8%);
+                        }
+                    }
+                }
+
+                .user-stats {
+                    .stat-block {
+                        span {
+                            &:first-child {
+                                color: $white-light;
+                                font-weight: 500;
+                            }
+
+                            &:nth-child(2) {
+                                color: $light-text;
+                            }
+                        }
+                    }
+                }
+
+                .connections {
+                    .connection {
+                        .connection-avatar {
+                            background: lighten($dark, 16%);
+                            border-color: lighten($dark, 24%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ==========================================================================
+3. Feed Slider
+========================================================================== */
+
+body {
+    &.is-dark {
+        .feed-slider-wrapper {
+            .feed-slider-inner {
+
+                .slick-custom {
+                    &:hover {
+                        i {
+                            color: $white-light;
+                        }
+                    }
+                }
+
+                .feed-slider-item {
+                    background: transparent !important;
+
+                    .card-header {
+                        .media {
+                            .media-left {
+                                .post-avatar {
+                                    background: lighten($dark, 16%);
+                                    border-color: lighten($dark, 16%);
+                                }
+                            }
+    
+                            .media-content {
+                                span {
+                                    &:first-child {
+                                        color: $white-light;
+                                    }
+                                }
+                            }
+    
+                            .media-right {
+                                > span {
+                                    color: $light-text;
+                                }
+    
+                                .button {
+                                    background: lighten($dark, 8%);
+    
+                                    &:not(.is-liked) {
+                                        svg {
+                                            stroke: $light-text;
+                                        }
+                                    }
+    
+                                    &:hover {
+                                        background: lighten($dark, 12%);
+                                        border-color: lighten($dark, 16%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .card-content {
+                        .liked-by {
+                            span {
+                                span {
+                                    color: $accent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

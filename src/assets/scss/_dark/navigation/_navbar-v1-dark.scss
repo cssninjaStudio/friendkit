@@ -1,0 +1,155 @@
+/*! _navbar-dark.scss | Friendkit | © Css Ninja. 2020-2021 */
+
+/* ==========================================================================
+Navbar dark styles
+========================================================================== */
+
+/*
+    1. Main Navbar
+    2. Tipue drop dark
+    3. Explorer Menu dark
+*/
+
+/* ==========================================================================
+1. Main Navbar
+========================================================================== */
+
+body {
+    &.is-dark {
+        .navbar {
+            background: darken($dark, 6%);
+            border-color: darken($dark, 6%);
+
+            .navbar-item {
+                
+
+                .control {
+                    .input {
+                        background: lighten($dark, 4%);
+                        border-color: lighten($dark, 4%);
+                        color: $white-light;
+
+                        &::placeholder {
+                            color: lighten($dark, 24%);
+                        }
+
+                        &:focus ~ .search-icon {
+                            svg {
+                                stroke: $primary !important;
+                            }
+                        }
+                    }
+
+                    .search-icon {
+                        svg {
+                            stroke: lighten($dark, 24%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+2. Tipue drop dark
+========================================================================== */
+
+body {
+    &.is-dark {
+        .tipue-drop-content {
+            .tipue_drop_box {
+                background: darken($dark, 5%) !important;
+                border-color: lighten($dark, 8%) !important;
+
+                &:before {
+                    border-bottom-color: lighten($dark, 8%) !important;
+                }
+
+                &:after {
+                    border-bottom-color: darken($dark, 5%) !important;
+                }
+
+                .tipue_drop_item {
+                    background: darken($dark, 5%) !important;
+                    border-color: lighten($dark, 8%) !important;
+                    transition: all .3s !important;
+
+                    &:hover {
+                        background: lighten($dark, 6%) !important;
+                    }
+
+                    .tipue_drop_right {
+                        color: darken($white-light, 10%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ==========================================================================
+3. Explorer Menu dark
+========================================================================== */
+
+body {
+    &.is-dark {
+        .explorer-menu {
+            background: darken($dark, 4%);
+            border-color: darken($dark, 4%);
+
+            .explorer-inner {
+                .explorer-container {
+                    .explorer-header {
+                        h3 {
+                            color: darken($white-light, 10%);
+                        }
+
+                        .control {
+                            .input {
+                                background: lighten($dark, 4%);
+                                border-color: lighten($dark, 4%);
+                                color: $white-light;
+
+                                &::placeholder {
+                                    color: lighten($dark, 24%);
+                                }
+
+                                &:focus ~ .form-icon {
+                                    svg {
+                                        stroke: $primary !important;
+                                    }
+                                }
+                            }
+
+                            .form-icon {
+                                svg {
+                                    stroke: lighten($dark, 24%);
+                                }
+                            }
+                        }
+                    }
+
+                    .explore-list {
+                        .explore-item {
+                            &:hover {
+                                background: lighten($dark, 4%);
+                                border-color: lighten($dark, 4%);
+                            }
+
+                            h4 {
+                                color: $light-text;
+                            }
+
+                            .coming-soon {
+                                background: $accent;
+                                color: darken($white-light, 2%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

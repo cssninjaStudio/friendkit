@@ -12,87 +12,35 @@ Core SCSS file
 0. Imports
 ========================================================================== */
 
+//Main variables
 @import "abstracts/variables";
 
-@import "layout/layout-pageloader";
-@import "layout/layout-layout";
+//Bulma source import
+@import "../sass/bulma.sass";
 
-@import "layout/layout-navbar";
+//Layout imports
+@import "layout/all";
 
-@import "layout/layout-sidebar";
-@import "layout/layout-placeholders";
+//Navigation imports
+@import "navigation/all";
 
-@import "dark/layout/layout-pageloader-dark";
-@import "dark/layout/layout-layout-dark";
-@import "dark/layout/layout-navbar-dark";
-@import "dark/layout/layout-sidebar-dark";
-@import "dark/layout/layout-placeholders-dark";
+//Components imports
+@import "components/all";
 
-@import "components/components-cards";
-@import "components/components-widgets";
-@import "components/components-buttons";
-@import "components/components-dropdowns";
-@import "components/components-emoji-picker";
-@import "components/components-tabs";
-@import "components/components-modals";
-@import "components/components-uploaders";
-@import "components/components-video";
-@import "components/components-datepicker";
-@import "components/components-forms";
-@import "components/components-radios";
-@import "components/components-switch";
-@import "components/components-popovers";
-@import "components/components-tooltips";
-@import "components/components-checkboxes";
-@import "components/components-tables";
-@import "components/components-animations";
-@import "components/components-utils";
+//Pages imports
+@import "pages/all";
 
-@import "dark/components/components-buttons-dark";
-@import "dark/components/components-forms-dark";
-@import "dark/components/components-modals-dark";
-@import "dark/components/components-popovers-dark";
-@import "dark/components/components-tables-dark";
-@import "dark/components/components-widgets-dark";
-@import "dark/components/components-utils-dark";
+//Layout imports dark
+@import "_dark/layout/all";
 
-@import "pages/app-chat";
-@import "pages/app-feed";
-@import "pages/app-posts-feed";
-@import "pages/app-inbox";
-@import "pages/app-profile";
-@import "pages/app-profile-minimal";
-@import "pages/app-friends";
-@import "pages/app-events";
-@import "pages/app-news";
-@import "pages/app-questions";
-@import "pages/app-videos";
-@import "pages/app-stories";
-@import "pages/app-commerce";
-@import "pages/app-landing";
-@import "pages/app-signup";
-@import "pages/app-login";
-@import "pages/app-settings";
-@import "pages/app-demo";
+//Navigation imports dark
+@import "_dark/navigation/all";
 
-@import "dark/pages/app-chat-dark";
-@import "dark/pages/app-feed-dark";
-@import "dark/pages/app-post-feeds-dark";
-@import "dark/pages/app-profile-dark";
-@import "dark/pages/app-stories-dark";
-@import "dark/pages/app-friends-dark";
-@import "dark/pages/app-inbox-dark";
-@import "dark/pages/app-commerce-dark";
-@import "dark/pages/app-videos-dark";
-@import "dark/pages/app-questions-dark";
-@import "dark/pages/app-events-dark";
-@import "dark/pages/app-news-dark";
-@import "dark/pages/app-settings-dark";
-@import "dark/pages/app-login-dark";
-@import "dark/pages/app-signup-dark";
-@import "dark/pages/app-demo-dark";
+//Components imports dark
+@import "_dark/components/all";
 
-@import "layout/layout-responsive";
+//Pages imports dark
+@import "_dark/pages/all";
 
 $slick-font-path: "/assets/fonts/";
 $slick-loader-path: "/assets/fonts/";

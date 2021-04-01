@@ -6,6 +6,11 @@ Project wide reusable functions
 
 "use strict";
 
+
+/* ==========================================================================
+Utility / Demo
+========================================================================== */
+
 //Change demo images
 function changeDemoImages() {
     $('*[data-demo-src]').each(function () {
@@ -27,6 +32,23 @@ function changeDemoHrefs() {
     });
 }
 
+//Init attribute background images
+function initBgImages() {
+    if ($('.has-background-image').length) {
+        $(".has-background-image").each(function () {
+            var bgImage = $(this).attr('data-background');
+            if (bgImage !== undefined) {
+                $(this).css('background-image', 'url(' + bgImage + ')');
+            }
+        }
+        )
+    }
+};
+
+/* ==========================================================================
+Dark mode
+========================================================================== */
+
 //Get Theme
 function setThemeToLocalStorage(value) {
     window.localStorage.setItem('theme', value);
@@ -46,80 +68,28 @@ function toggleTheme() {
         setThemeToLocalStorage(theme);
 
         if (theme === 'dark') {
-            $('#toggle-theme').prop('checked', true);
+            $('.theme-toggle input').prop('checked', true);
         }
     }
 
-    $('#toggle-theme').on('change', function(){
+    $('.theme-toggle input').on('change', function(){
         if ($(this).prop('checked') === true) {
             console.log('checked');
             setThemeToLocalStorage('dark');
+            $('.theme-toggle input').prop('checked', true);
         }
         else {
             setThemeToLocalStorage('light');
+            $('.theme-toggle input').prop('checked', false);
         }
     });
 }
 
-//The following functions help trigger the autocompletes dropdowns
 
-function openFriendsDrop() {
-    var e = $.Event("keyup", { keyCode: 65, which: 65 });
-    $("#users-autocpl").focus();
-    $("#users-autocpl").attr('value', '');
-    $("#users-autocpl").triggerHandler(e);
-};
+/* ==========================================================================
+Pageloader
+========================================================================== */
 
-function openActivitiesDrop() {
-    var e = $.Event("keyup", { keyCode: 65, which: 65 });
-    $("#activities-autocpl").focus();
-    $("#activities-autocpl").attr('value', '');
-    $("#activities-autocpl").triggerHandler(e);
-};
-
-function openMoodDrop() {
-    var e = $.Event("keyup", { keyCode: 65, which: 65 });
-    $("#mood-autocpl").focus();
-    $("#mood-autocpl").attr('value', '');
-    $("#mood-autocpl").triggerHandler(e);
-};
-
-function openDrinksDrop() {
-    var e = $.Event("keyup", { keyCode: 65, which: 65 });
-    $("#drinking-autocpl").focus();
-    $("#drinking-autocpl").attr('value', '');
-    $("#drinking-autocpl").triggerHandler(e);
-};
-
-function openEatsDrop() {
-    var e = $.Event("keyup", { keyCode: 65, which: 65 });
-    $("#eating-autocpl").focus();
-    $("#eating-autocpl").attr('value', '');
-    $("#eating-autocpl").triggerHandler(e);
-};
-
-function openReadsDrop() {
-    var e = $.Event("keyup", { keyCode: 65, which: 65 });
-    $("#reading-autocpl").focus();
-    $("#reading-autocpl").attr('value', '');
-    $("#reading-autocpl").triggerHandler(e);
-};
-
-function openWatchDrop() {
-    var e = $.Event("keyup", { keyCode: 65, which: 65 });
-    $("#watching-autocpl").focus();
-    $("#watching-autocpl").attr('value', '');
-    $("#watching-autocpl").triggerHandler(e);
-};
-
-function openTravelDrop() {
-    var e = $.Event("keyup", { keyCode: 65, which: 65 });
-    $("#travel-autocpl").focus();
-    $("#travel-autocpl").attr('value', '');
-    $("#travel-autocpl").triggerHandler(e);
-};
-
-//Init pageloader
 function initPageloader() {
     if ($('.pageloader').length) {
 
@@ -150,71 +120,17 @@ function initPageloader() {
     }
 };
 
-//Init navbar
-function initNavbar() {
-    $(window).on('scroll', function () {
-        var height = $(window).scrollTop();
-        if (height > 65) {
-            if ($('.options-nav').length) {
-                $(".navbar").addClass('no-shadow');
-                $('.options-nav').removeClass('no-shadow');
-            } else {
-                $(".navbar").removeClass('no-shadow');
-                if ($('.navbar.is-landing').length) {
-                    $(".navbar").removeClass('no-background');
-                }
-            }
-        } else {
-            if ($('.options-nav').length) {
-                $(".navbar").addClass('no-shadow');
-                $('.options-nav').addClass('no-shadow');
-            } else {
-                $(".navbar").addClass('no-shadow');
-                if ($('.navbar.is-landing').length) {
-                    $(".navbar").addClass('no-background');
-                }
-            }
-        }
-    });
 
-    //Clear navbar search input
-    $('#clear-search').on('click', function () {
-        $(this).siblings('input').val('');
-    })
+/* ==========================================================================
+UI Elements
+========================================================================== */
 
-    //Show navbar search options
-    /*$('.drop-icon').on('click', function () {
-        $(this).toggleClass('is-active');
-        $('.search-options').toggleClass('is-active');
-    })*/
+//init tipue search
+function initSuggestionSearch() {
+    $('#tipue_drop_input, #tipue_drop_input_mobile').tipuedrop();
+}
 
-    //Toggle selected state on click for search options
-    /*$('.options-list li').on('click', function () {
-        $('.options-list li.is-selected').removeClass('is-selected');
-        $(this).addClass('is-selected');
-    })*/
-
-    //Close search options
-    /*$('#close-search-options').on('click', function () {
-        $(this).closest('.search-options').toggleClass('is-active');
-    })*/
-};
-
-//Init navbar dropdowns
-function initResponsiveMenu() {
-    if ($('.navbar-burger').length) {
-        $('.navbar-burger').on("click", function () {
-            $(this).toggleClass('is-active');
-            if ($('.navbar-menu').hasClass('is-active')) {
-                $('.navbar-menu').removeClass('is-active');
-            } else {
-                $('.navbar-menu').addClass('is-active');
-            }
-        });
-    }
-};
-
-//Init navbar dropdowns
+//Init nav/toolbar dropdowns
 function initNavDropdowns() {
     $('.drop-trigger').click(function () {
         $('.nav-drop').removeClass('is-active');
@@ -295,33 +211,6 @@ function initModals() {
     }
 };
 
-//Init attribute background images
-function initBgImages() {
-    if ($('.has-background-image').length) {
-        $(".has-background-image").each(function () {
-            var bgImage = $(this).attr('data-background');
-            if (bgImage !== undefined) {
-                $(this).css('background-image', 'url(' + bgImage + ')');
-            }
-        }
-        )
-    }
-};
-
-//Simple popover
-function initSimplePopover() {
-    $('.has-tip').webuiPopover({
-        trigger: 'hover',
-        placement: 'auto',
-        width: 300,
-        padding: false,
-        offsetLeft: 0,
-        offsetTop: 0,
-        animation: 'pop',
-        cache: false,
-    });
-};
-
 //Init Emojis
 function initEmojiPicker() {
     var id = 0;
@@ -398,6 +287,13 @@ function initVideoEmbed() {
     }
 }
 
+//Init Like button
+function initLikeButton() {
+    $('.like-button').on('click', function () {
+        $(this).toggleClass('is-active');
+    })
+};
+
 //Load more buttons
 function initLoadMore() {
     var t;
@@ -413,7 +309,6 @@ function initLoadMore() {
 
 //Post Comment sections toggling
 function initPostComments() {
-    //Toggle comments
     $('.fab-wrapper.is-comment, .close-comments').on('click', function (e) {
         $(this).addClass('is-active').closest('.card').find('.content-wrap, .comments-wrap').toggleClass('is-hidden');
         var jump = $(this).closest('.is-post');
@@ -427,26 +322,21 @@ function initPostComments() {
     })
 };
 
-//Options nav subsearch
-function initSubSearch() {
-    //Toggle comments
-    $('#show-subsearch, #hide-subsearch').on('click', function () {
-        $('#show-subsearch, #hide-subsearch, #subsearch').toggleClass('is-hidden');
-        $('#subsearch input').focus();
-    })
+//Simple popover
+function initSimplePopover() {
+    $('.has-tip').webuiPopover({
+        trigger: 'hover',
+        placement: 'auto',
+        width: 300,
+        padding: false,
+        offsetLeft: 0,
+        offsetTop: 0,
+        animation: 'pop',
+        cache: false,
+    });
 };
 
-//Options nav subsearch
-function initSidebar() {
-    //Toggle comments
-    $('#show-filters, #hide-filters').on('click', function () {
-        $('#show-filters, #hide-filters').toggleClass('is-hidden');
-        $('.filters-panel').toggleClass('is-active');
-        $('.main-container').toggleClass('has-sidebar');
-    })
-};
-
-//Load more buttons
+//Tooltips
 function initTooltips() {
     $('.has-tooltip').ggtooltip({
         html: true,
@@ -455,6 +345,84 @@ function initTooltips() {
         bordercolor: '#444',
     });
 };
+
+
+/* ==========================================================================
+Combo boxes
+========================================================================== */
+
+function initUsersAutocomplete() {
+    //Friends autocomplete
+    if ($('#users-autocpl').length) {
+
+        var html = '';
+
+        var summary = '';
+
+        var usersOptions = {
+            url: "assets/data/api/users/user-autocpl.json",
+            getValue: "name",
+            template: {
+                type: "custom",
+                method: function (value, item) {
+                    return "<div class=" + 'template-wrapper' + "><div class=" + 'avatar-wrapper' + ">" + "<img class=" + 'autocpl-avatar' + " src='" + item.pic + "' /><img class=" + 'avatar-badge' + " src='" + item.badge + "' /></div><div class=" + 'entry-text' + ">" + value + "<br><span>" + item.location + "</span></div></div> ";
+                }
+            },
+            highlightPhrase: false,
+            list: {
+                maxNumberOfElements: 5,
+                showAnimation: {
+                    type: "fade", //normal|slide|fade
+                    time: 400,
+                    callback: function () { }
+                },
+                match: {
+                    enabled: true
+                },
+                onChooseEvent: function () {
+                    //Get the user name from the autocomplete
+                    var newRecipient = $('#users-autocpl').val();
+                    //empty the input for next use
+                    $('#users-autocpl').val('');
+
+                    html = `
+                        <div class="control tag-control">
+                            <div class="tags has-addons">
+                                <a class="tag is-link">${newRecipient}</a>
+                                <a class="tag is-delete is-inverted"></a>
+                            </div>
+                        </div>
+                    `
+
+                    summary = `
+                        <span class="tagged-friend"><small>&mdash; with</small> <a class="is-inverted" href="#">${newRecipient}</a>,</span>
+                    `
+
+                    //Append tag template in list
+                    $.when($('#tag-list').append(html)).done(function () {
+                        //Add the name to the tagged friends summary
+                        $('#options-summary').append(summary);
+                        //Make added tag removable
+                        $('.tag.is-delete').on('click', function () {
+                            var friendName = $(this).closest('.tags').find('.tag.is-link').text();
+                            $(this).closest('.tag-control').remove();
+                            $('.tagged-friend a').each(function () {
+                                var comparedName = $(this).text();
+                                if (friendName === comparedName) {
+                                    $(this).closest('.tagged-friend').remove();
+                                } else {
+                                    return false;
+                                }
+                            })
+                        })
+                    })
+                }
+            },
+        };
+
+        $("#users-autocpl").easyAutocomplete(usersOptions);
+    }
+}
 
 //Init custom select
 function initKSelect() {
@@ -477,7 +445,6 @@ function initKSelect() {
 //Init Combo boxes
 function initComboBox() {
     $('.is-combo .combo-box').on('click', function () {
-        //$('.image-combo-box.is-active, .combo-box.is-active').removeClass('is-active');
         $(this).toggleClass('is-active');
     })
 
@@ -529,7 +496,6 @@ function initComboBox() {
 //Init Combo boxes
 function initImageComboBox() {
     $('.is-combo .image-combo-box').on('click', function () {
-        //$('.image-combo-box.is-active, .combo-box.is-active').removeClass('is-active');
         $(this).toggleClass('is-active');
     })
 
@@ -669,6 +635,11 @@ function initBigComboBox() {
     })
 };
 
+
+/* ==========================================================================
+Text filter search
+========================================================================== */
+
 //Init text filter
 function initTextFilter() {
     (function () {
@@ -717,26 +688,10 @@ function initTextFilter() {
     })();
 };
 
-//Init Like button
-function initLikeButton() {
-    $('.like-button').on('click', function () {
-        $(this).toggleClass('is-active');
-    })
-};
 
-//Init Plus Menu
-function initPlusMenu() {
-    $('#plus-menu').on('click', function () {
-        $(this).closest('.navbar-item').toggleClass('is-active');
-    })
-
-    $(document).click(function (e) {
-        var target = e.target;
-        if (!$(target).is('#plus-menu') && !$(target).parents().is('.is-plus-menu')) {
-            $('.is-plus-menu').removeClass('is-active');
-        }
-    });
-};
+/* ==========================================================================
+Global Modals
+========================================================================== */
 
 //Init share modal demo
 function initShareModal() {
@@ -792,3 +747,67 @@ function initAboutGlider() {
         }
     })
 };
+
+
+/* ==========================================================================
+Toast Sercice
+========================================================================== */
+
+var toasts = {}
+
+toasts.service = {
+    info: function (title, icon, message, position, t) {
+        iziToast.show({
+            class: 'toast',
+            icon: icon,
+            title: title,
+            message: message,
+            titleColor: '#fff',
+            messageColor: '#fff',
+            iconColor: "#fff",
+            backgroundColor: '#0062ff',
+            progressBarColor: '#bc7aff',
+            position: position,
+            transitionIn: 'fadeInDown',
+            close: false,
+            timeout: t,
+            zindex: 99999,
+        });
+    },
+    success: function (title, icon, message, position, t) {
+        iziToast.show({
+            class: 'toast',
+            icon: icon,
+            title: title,
+            message: message,
+            titleColor: '#fff',
+            messageColor: '#fff',
+            iconColor: "#fff",
+            backgroundColor: '#0062ff',
+            progressBarColor: '#fafafa',
+            position: position,
+            transitionIn: 'fadeInDown',
+            close: false,
+            timeout: t,
+            zindex: 99999,
+        });
+    },
+    error: function (title, icon, message, position, t) {
+        iziToast.show({
+            class: 'toast',
+            icon: icon,
+            title: title,
+            message: message,
+            titleColor: '#fff',
+            messageColor: '#fff',
+            iconColor: "#fff",
+            backgroundColor: '#ff533d',
+            progressBarColor: '#fff',
+            position: position,
+            transitionIn: 'fadeInDown',
+            close: false,
+            timeout: t,
+            zindex: 99999,
+        });
+    }
+}

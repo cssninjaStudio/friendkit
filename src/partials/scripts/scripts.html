@@ -1,34 +1,160 @@
 <!-- Concatenated js plugins and jQuery -->
 <script src="{{ root }}assets/js/app.js"></script>
 <script src="https://js.stripe.com/v3/"></script>
+<script src="{{ root }}assets/data/tipuedrop_content.js"></script>
 
 <!-- Core js -->
-<script src="{{ root }}assets/data/tipuedrop_content.js"></script>
 <script src="{{ root }}assets/js/global.js"></script>
-<script src="{{ root }}assets/js/main.js"></script>
 
-<!-- Page and UI related js -->
-<script src="{{ root }}assets/js/feed.js"></script>
-<script src="{{ root }}assets/js/stories.js"></script>
+<script src="{{ root }}assets/js/navbar-v1.js"></script>
+<script src="{{ root }}assets/js/navbar-mobile.js"></script>
+<script src="{{ root }}assets/js/navbar-options.js"></script>
+<script src="{{ root }}assets/js/sidebar-v1.js"></script>
+
+<script src="{{ root }}assets/js/main.js"></script>
 <script src="{{ root }}assets/js/chat.js"></script>
-<script src="{{ root }}assets/js/inbox.js"></script>
-<script src="{{ root }}assets/js/profile.js"></script>
-<script src="{{ root }}assets/js/friends.js"></script>
-<script src="{{ root }}assets/js/events.js"></script>
-<script src="{{ root }}assets/js/explorer.js"></script>
-<script src="{{ root }}assets/js/news.js"></script>
-<script src="{{ root }}assets/js/questions.js"></script>
-<script src="{{ root }}assets/js/videos.js"></script>
-<script src="{{ root }}assets/js/shop.js"></script>
-<script src="{{ root }}assets/js/settings.js"></script>
+<script src="{{ root }}assets/js/touch.js"></script>
+<script src="{{ root }}assets/js/tour.js"></script>
 
 <!-- Components js -->
+<script src="{{ root }}assets/js/explorer.js"></script>
 <script src="{{ root }}assets/js/widgets.js"></script>
-<script src="{{ root }}assets/js/autocompletes.js"></script>
+
 <script src="{{ root }}assets/js/modal-uploader.js"></script>
 <script src="{{ root }}assets/js/popovers-users.js"></script>
 <script src="{{ root }}assets/js/popovers-pages.js"></script>
-<script src="{{ root }}assets/js/go-live.js"></script>
 <script src="{{ root }}assets/js/lightbox.js"></script>
-<script src="{{ root }}assets/js/touch.js"></script>
-<script src="{{ root }}assets/js/tour.js"></script>
+
+<!-- Landing page js -->
+{{#ifpage 'index'}}
+<script src="{{ root }}assets/js/landing.js"></script>
+{{/ifpage}}
+
+<!-- Signup page js -->
+{{#ifpage 'signup'}}
+<script src="{{ root }}assets/js/signup.js"></script>
+{{/ifpage}}
+
+<!-- Feed pages js -->
+{{#ifpage 
+    'navbar-v1-feed' 
+    'navbar-v1-feed-sidebar' 
+    'sidebar-v1-feed' 
+    'navbar-v1-profile-main' 
+    'navbar-v1-pages-main' 
+    'navbar-v1-feed-slider'
+}}
+<script src="{{ root }}assets/js/feed.js"></script>
+{{/ifpage}}
+
+{{#ifpage 
+    'navbar-v1-feed' 
+    'navbar-v1-feed-sidebar' 
+    'sidebar-v1-feed'
+}}
+<script src="{{ root }}assets/js/webcam.js"></script>
+<script src="{{ root }}assets/js/compose.js"></script>
+<script src="{{ root }}assets/js/autocompletes.js"></script>
+{{/ifpage}}
+
+<!-- profile js -->
+{{#ifpage 
+    'navbar-v1-profile-main' 
+    'navbar-v1-profile-about' 
+    'navbar-v1-profile-photos' 
+    'navbar-v1-pages-main'
+    'navbar-v1-pages-about' 
+    'navbar-v1-pages-community'  
+    'navbar-v1-pages-photos' 
+    'sidebar-v1-profile-about'
+    'sidebar-v1-profile-friends'
+    'sidebar-v1-profile-photos'
+    'sidebar-v1-profile-main'
+    'sidebar-v1-pages-about'
+    'sidebar-v1-pages-community'
+    'sidebar-v1-pages-photos'
+    'sidebar-v1-pages-main'
+}}
+<script src="{{ root }}assets/js/profile.js"></script>
+{{/ifpage}}
+
+<!-- stories js -->
+{{#ifpage 
+    'navbar-v1-stories-main' 
+    'navbar-v1-stories-story'
+    'sidebar-v1-stories-main' 
+    'sidebar-v1-stories-story'
+}}
+<script src="{{ root }}assets/js/stories.js"></script>
+{{/ifpage}}
+
+<!-- friends js -->
+{{#ifpage 
+    'navbar-v1-friends-grid-v1'
+    'sidebar-v1-friends-grid-v1'
+}}
+<script src="{{ root }}assets/js/friends.js"></script>
+{{/ifpage}}
+
+<!-- questions js -->
+{{#ifpage 
+    'navbar-v1-questions-categories' 
+    'navbar-v1-questions-home' 
+    'navbar-v1-questions-settings' 
+    'navbar-v1-questions-single' 
+    'navbar-v1-questions-stats'
+}}
+<script src="{{ root }}assets/js/questions.js"></script>
+{{/ifpage}}
+
+<!-- video js -->
+{{#ifpage 
+    'navbar-v1-videos-home' 
+    'navbar-v1-videos-home-v2' 
+    'navbar-v1-videos-player'
+    'sidebar-v1-videos-home' 
+}}
+<script src="{{ root }}assets/js/videos.js"></script>
+{{/ifpage}}
+
+<!-- events js -->
+{{#ifpage 
+    'navbar-v1-event' 
+    'navbar-v1-events'
+}}
+<script src="{{ root }}assets/js/events.js"></script>
+{{/ifpage}}
+
+<!-- news js -->
+{{#ifpage 'navbar-v1-news'}}
+<script src="{{ root }}assets/js/news.js"></script>
+{{/ifpage}}
+
+<!-- shop js -->
+{{#ifpage 
+    'navbar-v1-ecommerce-cart' 
+    'navbar-v1-ecommerce-checkout' 
+    'navbar-v1-ecommerce-payment' 
+    'navbar-v1-ecommerce-products'
+    'sidebar-v1-ecommerce-products'
+    'sidebar-v1-ecommerce-cart'
+    'sidebar-v1-ecommerce-checkout'
+    'sidebar-v1-ecommerce-payment'
+}}
+<script src="{{ root }}assets/js/shop.js"></script>
+{{/ifpage}}
+
+<!-- inbox js -->
+{{#ifpage 'inbox'}}
+<script src="{{ root }}assets/js/inbox.js"></script>
+{{/ifpage}}
+
+<!-- settings js -->
+{{#ifpage 
+    'navbar-v1-settings-v1'
+    'sidebar-v1-settings-v1'
+}}
+<script src="{{ root }}assets/js/settings.js"></script>
+{{/ifpage}}
+
+

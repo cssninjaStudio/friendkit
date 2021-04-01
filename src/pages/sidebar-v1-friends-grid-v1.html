@@ -1,0 +1,51 @@
+---
+layout: sidebar-v1
+title: Friends
+---
+
+<div class="toolbar-v1-fixed-wrap">
+	{{> toolbar-v1}}
+</div>
+
+<!-- Container -->
+<div id="posts-feed" class="container" data-open-sidebar data-page-title="Friends">
+
+	{{> toolbar-v1}}
+
+	<div id="friends-page" class="friends-wrapper is-static main-container">
+
+        <!--First tab-->
+        <div id="all-friends" class="card-row-wrap is-active">
+            <div class="card-row-placeholder is-hidden">
+                No matching results
+            </div>
+            <div class="card-row">
+                <!-- /partials/pages/friends/friend-lists/all-friends.html -->
+                {{> all-friends}}
+            </div>
+        </div>
+    
+        <!--Second tab-->
+        <div id="starred-friends" class="card-row-wrap">
+            <div class="card-row-placeholder is-hidden">
+                No matching results
+            </div>
+            <div class="card-row">
+                <!-- /partials/pages/friends/friend-lists/starred-friends.html -->
+                {{> starred-friends}}
+            </div>
+        </div>
+    
+        <!--third tab-->
+        <div id="new-friends" class="card-row-wrap">
+            <div class="card-row-placeholder is-hidden">
+                No matching results
+            </div>
+            <div class="card-row">
+                <!-- /partials/pages/friends/friend-lists/new-friends.html -->
+                {{> new-friends}}
+            </div>
+        </div>
+    </div>
+
+</div>

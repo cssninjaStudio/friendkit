@@ -1,0 +1,135 @@
+/*! _hamburger.scss | Friendkit | © Css Ninja. 2020-2021 */
+
+/* ==========================================================================
+Hamburger styles
+========================================================================== */
+
+/*
+    0. Friendkit hamburger
+*/
+
+/* ==========================================================================
+0. Friendkit hamburger
+========================================================================== */
+
+.friendkit-hamburger {
+    .menu-toggle {
+        font-size: 20px;
+        color: #666;
+        text-align: center;
+        background: transparent;
+        display: block;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        padding: 0;
+        transition: opacity 0.4s;
+        opacity: 1;
+        position: relative;
+    
+        &.has-chevron {
+            .icon-box-toggle {
+                &.active {
+                    .icon-line-top {
+                        width: 13px !important;
+                        top: 17px !important;
+                    }
+    
+                    .icon-line-bottom {
+                        width: 13px !important;
+                        top: 9px !important;
+                    }
+                }
+            }
+        }
+    
+        .icon-box-toggle {
+            height: 100%;
+            width: 100%;
+            background: transparent;
+            position: relative;
+            display: block;
+            width: 30px;
+            height: 30px;
+    
+            &.active > span.rotate {
+                -webkit-transform: rotate(90deg);
+                -moz-transform: translate(0px, 0px) rotate(90deg);
+                -ms-transform: translate(0px, 0px) rotate(90deg);
+                -o-transform: translate(0px, 0px) rotate(90deg);
+                transform: translate(0px, 0px) rotate(90deg);
+            }
+    
+            &.active > span > i.icon-line-center {
+                visibility: hidden;
+                width: 1px;
+                height: 3px;
+                left: 70%;
+            }
+    
+            &.active > span > i.icon-line-bottom {
+                margin: -2px 0 0 -10px;
+                left: 50%;
+                top: 12px;
+                -webkit-transform: rotate(135deg);
+                -moz-transform: translate(0px, 0px) rotate(135deg);
+                -ms-transform: translate(0px, 0px) rotate(135deg);
+                -o-transform: translate(0px, 0px) rotate(135deg);
+                transform: translate(0px, 0px) rotate(135deg);
+            }
+    
+            &.active > span > i.icon-line-top {
+                margin: -2px 0 0 -10px;
+                left: 50%;
+                top: 12px;
+                -webkit-transform: rotate(45deg);
+                -moz-transform: translate(0px, 0px) rotate(45deg);
+                -ms-transform: translate(0px, 0px) rotate(45deg);
+                -o-transform: translate(0px, 0px) rotate(45deg);
+                transform: translate(0px, 0px) rotate(45deg);
+            }
+        }
+    
+        .icon-line-center {
+            position: absolute;
+            width: 12px;
+            height: 2px;
+            background: $primary;
+            margin: -1px 0 0 -10px;
+            left: 50%;
+            top: 12px;
+            -webkit-transition: all 0.2s ease;
+            -moz-transition: all 0.2s ease;
+            -o-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+        }
+    
+        .icon-line-top {
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            background: $primary;
+            margin: -3px 0 0 -10px;
+            left: 50%;
+            top: 6px;
+            -webkit-transition: all 0.2s ease;
+            -moz-transition: all 0.2s ease;
+            -o-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+        }
+    
+        .icon-line-bottom {
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            background: $primary;
+            margin: 2px 0 0 -10px;
+            left: 50%;
+            top: 17px;
+            -webkit-transition: all 0.2s ease;
+            -moz-transition: all 0.2s ease;
+            -o-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+        }
+    }
+}

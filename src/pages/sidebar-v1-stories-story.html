@@ -1,0 +1,545 @@
+---
+layout: sidebar-v1
+title: Post
+---
+
+<div class="toolbar-v1-fixed-wrap">
+	{{> toolbar-v1}}
+</div>
+
+<!-- Container -->
+<div id="stories-feed" class="container sidebar-boxed" data-open-sidebar data-page-title="Story">
+    <div class="stories-wrapper is-home is-full">
+
+        {{> toolbar-v1}}
+    
+        <!-- Stories -->
+        <div class="inner-wrapper">
+            
+            <div class="columns">
+                <div class="column is-8">
+                    <!-- Story -->
+                    <div class="story-post-wrapper is-full">
+                        <div class="story-post mt-4">
+                            <div class="post-image-wrap">
+                                <img class="post-image" src="https://via.placeholder.com/1600x900"
+                                    data-demo-src="assets/img/demo/unsplash/3.jpg" alt="">
+                            </div>
+                            <div class="post-meta">
+                                <div class="post-author">
+                                    <div class="story-avatar">
+                                        <img class="avatar" src="https://via.placeholder.com/150x150"
+                                            data-demo-src="assets/img/avatars/stella.jpg" data-user-popover="2" alt="">
+                                    </div>
+                                    <div class="meta">
+                                        <span>Stella Bergmann</span>
+                                        <span>2 hours ago</span>
+                                    </div>
+                                </div>
+
+                                <div class="post-stats">
+                                    <div class="stat-item">
+                                        <i data-feather="heart"></i>
+                                        <span>265</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <i data-feather="message-circle"></i>
+                                        <span>56</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-text content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid de Pythagora? Quae est igitur
+                                        causa istarum angustiarum? Non risu potius quam oratione eiciendum? Duo Reges:
+                                    constructio interrete. An haec ab eo non dicuntur? Quae cum essent dicta, discessimus.
+                                </p>
+
+                                <p>At enim hic etiam dolore. Idem iste, inquam, de voluptate quid sentit? At enim sequor
+                                        utilitatem. Iam in altera philosophiae parte. Ut optime, secundum naturam affectum esse
+                                    possit. Hoc sic expositum dissimile est superiori. <b>#holidays</b> <b>#friends</b> <b>#chillout</b></p>
+                            </div>
+                            <div class="post-tags">
+                                <div class="tags">
+                                    <span class="tag" data-user-popover="1">@Dan Walker</span>
+                                    <span class="tag" data-user-popover="6">@Elise Walker</span>
+                                    <span class="tag" data-user-popover="8">@Bobby Brown</span>
+                                </div>
+                            </div>
+                            <div class="post-compose">
+                                <div class="control">
+                                    <textarea class="textarea" placeholder="Post a comment..."></textarea>
+                                </div>
+                                <div class="compose-controls">
+                                    <img class="avatar" src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/jenna.png" data-user-popover="0" alt="">
+                                    <div class="compose-actions">
+                                        <a class="action">
+                                            <i data-feather="at-sign"></i>
+                                        </a>
+                                        <a class="action">
+                                            <i data-feather="image"></i>
+                                        </a>
+                                        <a class="action">
+                                            <i data-feather="paperclip"></i>
+                                        </a>
+                                    </div>
+                                    <a class="button is-solid accent-button raised">Post Comment</a>
+                                </div>
+                            </div>
+
+                            <div class="comments-wrap">
+                                <div class="comments-count">
+                                    <h3>Comments (9)</h3>
+                                </div>
+                
+                                <div class="media is-comment">
+                                <div class="media-left">
+                                    <div class="avatar-wrap is-smaller">
+                                        <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/dan.jpg" data-user-popover="1" alt="">
+                                        <div class="badge">
+                                            <i data-feather="check"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="media-content">
+                                    <div class="comment-meta">
+                                        <h4><a>Dan Walker</a> <small> · 3 hours ago</small></h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec
+                                        ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit
+                                        rutrum. Nunc in tempus turpis.</p>
+                                    </div>
+                                    <div class="comment-stats-wrap">
+                                        <div class="comment-stats">
+                                            <div class="stat is-likes">
+                                                <i data-feather="thumbs-up"></i>
+                                                <span>23</span>
+                                            </div>
+                                            <div class="stat is-dislikes">
+                                                <i data-feather="thumbs-down"></i>
+                                                <span>3</span>
+                                            </div>
+                                        </div>
+                                        <div class="comment-actions">
+                                            <a class="comment-action is-like">
+                                                <i data-feather="thumbs-up"></i>
+                                            </a>
+                                            <a class="comment-action is-dislike">
+                                                <i data-feather="thumbs-down"></i>
+                                            </a>
+                                            <a class="comment-action is-reply">
+                                                <i data-feather="message-circle"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="nested-replies">
+                                        <a class="header">
+                                            <span>5 Replies</span>
+                                            <i data-feather="chevron-down"></i>
+                                        </a>
+                                        <div class="nested-comments">
+                                            <!--Nested comment -->
+                                            <div class="media is-comment is-nested">
+                                                <figure class="media-left">
+                                                    <div class="avatar-wrap is-smaller">
+                                                        <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/gaelle.jpeg"
+                                                            data-user-popover="11" alt="">
+                                                    </div>
+                                                </figure>
+                                                <div class="media-content">
+                                                    <div class="comment-meta">
+                                                        <h4><a>Gaelle Morris</a> <small> · 30 minutes ago</small></h4>
+                                                        <p><span class="mention">@Dan Walker</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.</p>
+                                                    </div>
+                                                    <div class="comment-stats-wrap">
+                                                        <div class="comment-stats">
+                                                            <div class="stat is-likes">
+                                                                <i data-feather="thumbs-up"></i>
+                                                                <span>2</span>
+                                                            </div>
+                                                            <div class="stat is-dislikes">
+                                                                <i data-feather="thumbs-down"></i>
+                                                                <span>0</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="comment-actions">
+                                                            <a class="comment-action is-like">
+                                                                <i data-feather="thumbs-up"></i>
+                                                            </a>
+                                                            <a class="comment-action is-dislike">
+                                                                <i data-feather="thumbs-down"></i>
+                                                            </a>
+                                                            <a class="comment-action is-reply">
+                                                                <i data-feather="message-circle"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Nested comment -->
+                                            <div class="media is-comment is-nested">
+                                                <figure class="media-left">
+                                                    <div class="avatar-wrap is-smaller">
+                                                        <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/rolf.jpg"
+                                                            data-user-popover="13" alt="">
+                                                        <div class="badge">
+                                                            <i data-feather="check"></i>
+                                                        </div>
+                                                    </div>
+                                                </figure>
+                                                <div class="media-content">
+                                                    <div class="comment-meta">
+                                                        <h4><a>Rolf Krupp</a> <small> · 50 minutes ago</small></h4>
+                                                        <p><span class="mention">@Gaelle Morris</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non.</p>
+                                                    </div>
+                                                    <div class="comment-stats-wrap">
+                                                        <div class="comment-stats">
+                                                            <div class="stat is-likes">
+                                                                <i data-feather="thumbs-up"></i>
+                                                                <span>1</span>
+                                                            </div>
+                                                            <div class="stat is-dislikes">
+                                                                <i data-feather="thumbs-down"></i>
+                                                                <span>0</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="comment-actions">
+                                                            <a class="comment-action is-like">
+                                                                <i data-feather="thumbs-up"></i>
+                                                            </a>
+                                                            <a class="comment-action is-dislike">
+                                                                <i data-feather="thumbs-down"></i>
+                                                            </a>
+                                                            <a class="comment-action is-reply">
+                                                                <i data-feather="message-circle"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Nested comment -->
+                                            <div class="media is-comment is-nested">
+                                                <figure class="media-left">
+                                                    <div class="avatar-wrap is-smaller">
+                                                        <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/bobby.jpg"
+                                                            data-user-popover="8" alt="">
+                                                    </div>
+                                                </figure>
+                                                <div class="media-content">
+                                                    <div class="comment-meta">
+                                                        <h4><a>Bobby Brown</a> <small> · 1 hour ago</small></h4>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                    </div>
+                                                    <div class="comment-stats-wrap">
+                                                        <div class="comment-stats">
+                                                            <div class="stat is-likes">
+                                                                <i data-feather="thumbs-up"></i>
+                                                                <span>5</span>
+                                                            </div>
+                                                            <div class="stat is-dislikes">
+                                                                <i data-feather="thumbs-down"></i>
+                                                                <span>1</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="comment-actions">
+                                                            <a class="comment-action is-like">
+                                                                <i data-feather="thumbs-up"></i>
+                                                            </a>
+                                                            <a class="comment-action is-dislike">
+                                                                <i data-feather="thumbs-down"></i>
+                                                            </a>
+                                                            <a class="comment-action is-reply">
+                                                                <i data-feather="message-circle"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Nested comment -->
+                                            <div class="media is-comment is-nested">
+                                                <figure class="media-left">
+                                                    <div class="avatar-wrap is-smaller">
+                                                        <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/stella.jpg"
+                                                            data-user-popover="2" alt="">
+                                                    </div>
+                                                </figure>
+                                                <div class="media-content">
+                                                    <div class="comment-meta">
+                                                        <h4><a>Stella Bergmann</a> <small> · 2 hours ago</small></h4>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec
+                                                            ultricies elit blandit non.</p>
+                                                    </div>
+                                                    <div class="comment-stats-wrap">
+                                                        <div class="comment-stats">
+                                                            <div class="stat is-likes">
+                                                                <i data-feather="thumbs-up"></i>
+                                                                <span>0</span>
+                                                            </div>
+                                                            <div class="stat is-dislikes">
+                                                                <i data-feather="thumbs-down"></i>
+                                                                <span>0</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="comment-actions">
+                                                            <a class="comment-action is-like">
+                                                                <i data-feather="thumbs-up"></i>
+                                                            </a>
+                                                            <a class="comment-action is-dislike">
+                                                                <i data-feather="thumbs-down"></i>
+                                                            </a>
+                                                            <a class="comment-action is-reply">
+                                                                <i data-feather="message-circle"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Nested comment -->
+                                            <div class="media is-comment is-nested">
+                                                <figure class="media-left">
+                                                    <div class="avatar-wrap is-smaller">
+                                                        <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/edward.jpeg"
+                                                            data-user-popover="5" alt="">
+                                                    </div>
+                                                </figure>
+                                                <div class="media-content">
+                                                    <div class="comment-meta">
+                                                        <h4><a>Edward Mayers</a> <small> · 3 hours ago</small></h4>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec
+                                                            ultricies elit blandit non.</p>
+                                                    </div>
+                                                    <div class="comment-stats-wrap">
+                                                        <div class="comment-stats">
+                                                            <div class="stat is-likes">
+                                                                <i data-feather="thumbs-up"></i>
+                                                                <span>6</span>
+                                                            </div>
+                                                            <div class="stat is-dislikes">
+                                                                <i data-feather="thumbs-down"></i>
+                                                                <span>0</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="comment-actions">
+                                                            <a class="comment-action is-like">
+                                                                <i data-feather="thumbs-up"></i>
+                                                            </a>
+                                                            <a class="comment-action is-dislike">
+                                                                <i data-feather="thumbs-down"></i>
+                                                            </a>
+                                                            <a class="comment-action is-reply">
+                                                                <i data-feather="message-circle"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Comment -->
+                            <div class="media is-comment">
+                                <figure class="media-left">
+                                    <div class="avatar-wrap is-smaller">
+                                        <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/milly.jpg"
+                                            data-user-popover="7" alt="">
+                                    </div>
+                                </figure>
+                                <div class="media-content">
+                                    <div class="comment-meta">
+                                        <h4><a>Milly Augutine</a> <small> · 4 hours ago</small></h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                    <div class="comment-stats-wrap">
+                                        <div class="comment-stats">
+                                            <div class="stat is-likes">
+                                                <i data-feather="thumbs-up"></i>
+                                                <span>8</span>
+                                            </div>
+                                            <div class="stat is-dislikes">
+                                                <i data-feather="thumbs-down"></i>
+                                                <span>0</span>
+                                            </div>
+                                        </div>
+                                        <div class="comment-actions">
+                                            <a class="comment-action is-like">
+                                                <i data-feather="thumbs-up"></i>
+                                            </a>
+                                            <a class="comment-action is-dislike">
+                                                <i data-feather="thumbs-down"></i>
+                                            </a>
+                                            <a class="comment-action is-reply">
+                                                <i data-feather="message-circle"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="media is-comment">
+                                <figure class="media-left">
+                                    <div class="avatar-wrap is-smaller">
+                                        <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/elise.jpg"
+                                            data-user-popover="6" alt="">
+                                    </div>
+                                </figure>
+                                <div class="media-content">
+                                    <div class="comment-meta">
+                                        <h4><a>Elise Walker</a> <small> · 5 hours ago</small></h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec
+                                            ultricies elit blandit non.</p>
+                                    </div>
+                                    <div class="comment-stats-wrap">
+                                        <div class="comment-stats">
+                                            <div class="stat is-likes">
+                                                <i data-feather="thumbs-up"></i>
+                                                <span>3</span>
+                                            </div>
+                                            <div class="stat is-dislikes">
+                                                <i data-feather="thumbs-down"></i>
+                                                <span>0</span>
+                                            </div>
+                                        </div>
+                                        <div class="comment-actions">
+                                            <a class="comment-action is-like">
+                                                <i data-feather="thumbs-up"></i>
+                                            </a>
+                                            <a class="comment-action is-dislike">
+                                                <i data-feather="thumbs-down"></i>
+                                            </a>
+                                            <a class="comment-action is-reply">
+                                                <i data-feather="message-circle"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="media is-comment">
+                                <figure class="media-left">
+                                    <div class="avatar-wrap is-smaller">
+                                        <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/placeholder-m.jpg" alt="">
+                                    </div>
+                                </figure>
+                                <div class="media-content">
+                                    <div class="comment-meta">
+                                        <h4><a>John Doe</a> <small> · 5 hours ago</small></h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec
+                                            ultricies elit blandit non.</p>
+                                    </div>
+                                    <div class="comment-stats-wrap">
+                                        <div class="comment-stats">
+                                            <div class="stat is-likes">
+                                                <i data-feather="thumbs-up"></i>
+                                                <span>12</span>
+                                            </div>
+                                            <div class="stat is-dislikes">
+                                                <i data-feather="thumbs-down"></i>
+                                                <span>4</span>
+                                            </div>
+                                        </div>
+                                        <div class="comment-actions">
+                                            <a class="comment-action is-like">
+                                                <i data-feather="thumbs-up"></i>
+                                            </a>
+                                            <a class="comment-action is-dislike">
+                                                <i data-feather="thumbs-down"></i>
+                                            </a>
+                                            <a class="comment-action is-reply">
+                                                <i data-feather="message-circle"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="column is-4">
+                    <!--Story post sidebar-->
+                    <div class="story-post-sidebar is-full">
+                        <div class="header">
+                            <h2>You might like</h2>
+                        </div>
+                        <div class="related-posts">
+                            <!--Related post-->
+                            <a class="related-post">
+                                <img class="post-image" src="https://via.placeholder.com/250x250"
+                                    data-demo-src="assets/img/demo/unsplash/4.jpg" alt="">
+                                <div class="meta">
+                                    <h3>Beaches you want to discover and experiment in 2020</h3>
+                                    <div class="user-line">
+                                        <img src="https://via.placeholder.com/250x250" data-demo-src="assets/img/avatars/elise.jpg" data-user-popover="6" alt="">
+                                        <span>Elise Walker</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <!--Related post-->
+                            <a class="related-post">
+                                <img class="post-image" src="https://via.placeholder.com/250x250"
+                                    data-demo-src="assets/img/demo/unsplash/17.jpg" alt="">
+                                <div class="meta">
+                                    <h3>Those shoes will make you feel so happy</h3>
+                                    <div class="user-line">
+                                        <img src="https://via.placeholder.com/250x250" data-demo-src="assets/img/avatars/dan.jpg" data-user-popover="1" alt="">
+                                        <span>Dan Walker</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <!--Related post-->
+                            <a class="related-post">
+                                <img class="post-image" src="https://via.placeholder.com/250x250"
+                                    data-demo-src="assets/img/demo/unsplash/32.jpg" alt="">
+                                <div class="meta">
+                                    <h3>Life is all about happiness, it's up to you to go for it</h3>
+                                    <div class="user-line">
+                                        <img src="https://via.placeholder.com/250x250" data-demo-src="assets/img/avatars/milly.jpg" data-user-popover="7" alt="">
+                                        <span>Milly Augustine</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <!--Related post-->
+                            <a class="related-post">
+                                <img class="post-image" src="https://via.placeholder.com/250x250"
+                                    data-demo-src="assets/img/demo/unsplash/18.jpg" alt="">
+                                <div class="meta">
+                                    <h3>My winter trip was absolutely fantastic</h3>
+                                    <div class="user-line">
+                                        <img src="https://via.placeholder.com/250x250" data-demo-src="assets/img/avatars/jenna.png" data-user-popover="0" alt="">
+                                        <span>Jenna Davis</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <!--Related post-->
+                            <a class="related-post">
+                                <img class="post-image" src="https://via.placeholder.com/250x250"
+                                    data-demo-src="assets/img/demo/unsplash/26.jpg" alt="">
+                                <div class="meta">
+                                    <h3>8 Headsets of 2020 compared, check it out before buying</h3>
+                                    <div class="user-line">
+                                        <img src="https://via.placeholder.com/250x250" data-demo-src="assets/img/avatars/azzouz.jpg" data-user-popover="20" alt="">
+                                        <span>Azzouz El Paytoun</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    
+    </div>
+</div>
+
+
+<!-- /html/partials/pages/stories/modals/new-story-modal.html -->
+{{> new-story-modal}}
+
+<!-- /html/partials/pages/stories/modals/video-story-modal.html -->
+{{> video-story-modal}}
+
+<!-- /html/partials/pages/stories/modals/image-story-modal.html -->
+{{> image-story-modal}}

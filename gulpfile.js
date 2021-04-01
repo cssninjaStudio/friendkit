@@ -26,6 +26,8 @@ const babel = require('gulp-babel');
 const nodepath = 'node_modules/';
 const assetspath = 'assets/';
 
+sass.compiler = require('sass');
+
 // File paths
 const files = {
   scssPath: 'app/scss/**/*.scss',
@@ -96,33 +98,38 @@ function compileHTML() {
 function compileJS() {
   console.log('---------------COMPILE CUSTOM JS---------------');
   return src([
+    'src/assets/js/components/compose.js',
+    'src/assets/js/components/autocompletes.js',
+    'src/assets/js/components/webcam.js',
+    'src/assets/js/components/widgets.js',
+    'src/assets/js/components/elements.js',
+    'src/assets/js/components/modal-uploader.js',
+    'src/assets/js/components/lightbox.js',
+    'src/assets/js/components/popovers-pages.js',
+    'src/assets/js/components/popovers-users.js',
+    'src/assets/js/navigation/navbar-v1.js',
+    'src/assets/js/navigation/navbar-mobile.js',
+    'src/assets/js/navigation/navbar-options.js',
+    'src/assets/js/navigation/sidebar-v1.js',
     'src/assets/js/global.js',
     'src/assets/js/main.js',
-    'src/assets/js/chat.js',
-    'src/assets/js/events.js',
-    'src/assets/js/explorer.js',
-    'src/assets/js/feed.js',
-    'src/assets/js/stories.js',
-    'src/assets/js/friends.js',
-    'src/assets/js/go-live.js',
-    'src/assets/js/inbox.js',
-    'src/assets/js/landing.js',
-    'src/assets/js/lightbox.js',
-    'src/assets/js/modal-uploader.js',
-    'src/assets/js/news.js',
-    'src/assets/js/popovers-pages.js',
-    'src/assets/js/popovers-users.js',
-    'src/assets/js/profile.js',
-    'src/assets/js/questions.js',
-    'src/assets/js/shop.js',
-    'src/assets/js/signup.js',
-    'src/assets/js/settings.js',
     'src/assets/js/touch.js',
     'src/assets/js/tour.js',
-    'src/assets/js/videos.js',
-    'src/assets/js/widgets.js',
-    'src/assets/js/autocompletes.js',
-    'src/assets/js/elements.js',
+    'src/assets/js/pages/chat.js',
+    'src/assets/js/pages/events.js',
+    'src/assets/js/pages/explorer.js',
+    'src/assets/js/pages/feed.js',
+    'src/assets/js/pages/stories.js',
+    'src/assets/js/pages/friends.js',
+    'src/assets/js/pages/inbox.js',
+    'src/assets/js/pages/landing.js',
+    'src/assets/js/pages/news.js',
+    'src/assets/js/pages/profile.js',
+    'src/assets/js/pages/questions.js',
+    'src/assets/js/pages/shop.js',
+    'src/assets/js/pages/signup.js',
+    'src/assets/js/pages/settings.js',
+    'src/assets/js/pages/videos.js',
   ])
     .pipe(babel())
     .pipe(dest('dist/assets/js/'))
@@ -175,8 +182,8 @@ function jsLint() {
 // WATCH FILES
 function watchFiles() {
   watch('src/**/*.html', compileHTML);
-  watch(['src/assets/scss/**/*', 'src/assets/scss/*'], compileSCSS);
-  watch('src/assets/js/*.js', compileJS);
+  watch(['src/assets/scss/**/*', 'src/assets/scss/**/*'], compileSCSS);
+  watch('src/assets/js/**/*.js', compileJS);
   watch('src/assets/img/**/*', copyImages);
 }
 
@@ -352,5 +359,5 @@ exports.accessibility = HTMLAccessibility;
 exports.setup = series(setupBulma);
 
 // DEV
-exports.dev = series(cleanDist, copyFont, copyData, jsVendor, cssVendor, copyImages, compileHTML, concatPlugins, concatCssPlugins, compileJS, resetPages, prettyHTML, compileSASS, compileSCSS, browserSyncInit, watchFiles);
+exports.dev = series(cleanDist, copyFont, copyData, jsVendor, cssVendor, copyImages, compileHTML, concatPlugins, concatCssPlugins, compileJS, resetPages, prettyHTML, compileSCSS, browserSyncInit, watchFiles);
 

@@ -1,0 +1,51 @@
+/*! _layout-dark.scss | Friendkit | © Css Ninja. 2020-2021 */
+
+/* ==========================================================================
+Main layout dark styles
+========================================================================== */
+
+/*
+    1. Body
+*/
+
+/* ==========================================================================
+1. Body
+========================================================================== */
+
+body {
+    &.is-dark {
+        background: lighten($dark, 8%);
+
+        .light-image {
+            display: none !important;
+        }
+    
+        .dark-image {
+            display: block !important;
+        }
+    
+        .light-image-inline {
+            display: none !important;
+        }
+    
+        .dark-image-inline {
+            display: inline-block !important;
+        }
+    }
+
+    .light-image {
+        display: block;
+    }
+
+    .dark-image {
+        display: none !important;
+    }
+
+    .light-image-inline {
+        display: inline-block;
+    }
+
+    .dark-image-inline {
+        display: none !important;
+    }
+}
