@@ -43,8 +43,8 @@ Stories styles
 
                 .close-stories-sidebar {
                     position: absolute;
-                    top: -22px;
-                    right: -22px;
+                    top: -12px;
+                    right: -10px;
                     width: 32px;
                     height: 32px;
                     border-radius: 50%;
@@ -62,8 +62,8 @@ Stories styles
                     }
 
                     svg {
-                        height: 16px;
-                        width: 16px;
+                        height: 20px;
+                        width: 20px;
                         color: $muted-grey;
                         transition: stroke .3s;
                     }
@@ -497,6 +497,7 @@ Stories styles
         position: static;
         width: 100%;
         height: auto;
+        background: none;
     }
 
     .header {

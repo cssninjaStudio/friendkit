@@ -26,6 +26,24 @@ Navbar mobile
         transform: translateY(0);
     }
 
+    &.is-landing {
+        &.no-background {
+            background: transparent;
+
+            .dark-mobile-logo {
+                display: none !important;
+            }
+
+            .navbar-burger span {
+                background: $white !important;
+            }
+        }
+
+        &.no-shadow {
+            box-shadow: none;
+        }
+    }
+
     .navbar-brand {
         margin-right: 0;
 

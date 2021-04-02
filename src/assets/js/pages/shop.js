@@ -168,7 +168,16 @@ $(document).ready(function () {
             $this.removeClass("is-disabled");
           }
         } else if (nextStep === 5) {
-          window.location.href = "/ecommerce-payment.html";
+          var url = window.location.href;
+          if (url.indexOf("navbar-v1")) {
+            window.location.href = "/navbar-v1-ecommerce-payment.html";
+          }
+          else if (url.indexOf("navbar-v2")) {
+            window.location.href = "/navbar-v2-ecommerce-payment.html";
+          }
+          else if (url.indexOf("sidebar-v1")) {
+            window.location.href = "/sidebar-v1-ecommerce-payment.html";
+          }
         }
       }, 800);
     });

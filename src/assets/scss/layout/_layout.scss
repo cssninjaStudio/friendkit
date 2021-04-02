@@ -26,6 +26,7 @@ body {
     min-height: 100vh;
     font-family: Roboto,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
     color: $sidebar;
+    overflow: hidden;
 
     &.is-frozen {
         overflow: hidden !important;
@@ -114,6 +115,10 @@ body {
             padding-top: 10px;
         }
     }
+}
+
+.navbar-v2-wrapper {
+    padding-top: 6rem;
 }
 
 .inbox-wrapper {

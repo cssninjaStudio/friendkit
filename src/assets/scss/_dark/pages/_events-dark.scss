@@ -61,6 +61,12 @@ body {
                                 background: darken($dark, 6%);
                                 color: $light-text;
                             }
+
+                            &:hover {
+                                background: $primary !important;
+                                border-color: $primary !important;
+                                color: $white !important;
+                            }
                         }
                     }
                 }

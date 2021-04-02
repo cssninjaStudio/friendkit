@@ -1,0 +1,80 @@
+/*! _groups.scss | Friendkit | © Css Ninja. 2020-2021 */
+
+/* ==========================================================================
+Chat window styles
+========================================================================== */
+
+/*
+    0. Groups grid dark
+*/
+
+/* ==========================================================================
+0. Groups grid dark
+========================================================================== */
+
+body {
+    &.is-dark {
+        .groups-grid {
+            .grid-header {
+                .header-inner {
+                    h2 {
+                        color: $white-light;
+                    }
+
+                    .header-actions {
+                        .buttons {
+                            .button {
+                                &:not(.accent-button) {
+                                    background: darken($dark, 6%);
+                                    border-color: lighten($dark, 4%);
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .group-box {
+                background-color: $dark;
+                border-color: lighten($dark, 10%);
+
+                &:hover {
+                    .box-info {
+                        background-color: transparent;
+                    }
+                }
+
+                .box-info {
+                    background-color: $dark;
+                }
+
+                .box-info-hover {
+                    > svg {
+                        stroke: $white;
+        
+                        &:hover {
+                            fill: $danger;
+                            stroke: $danger;
+                        }
+                    }
+                }
+
+                .box-clock {
+                    stroke: $white;
+                }
+                .box-time {
+                    color: $white;
+                }
+
+                .box-category {
+                    color: $light-text;
+                }
+
+                .box-title {
+                    color: $white;
+                }
+            }
+        }
+    }
+}

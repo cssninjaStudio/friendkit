@@ -108,6 +108,7 @@ function compileJS() {
     'src/assets/js/components/popovers-pages.js',
     'src/assets/js/components/popovers-users.js',
     'src/assets/js/navigation/navbar-v1.js',
+    'src/assets/js/navigation/navbar-v2.js',
     'src/assets/js/navigation/navbar-mobile.js',
     'src/assets/js/navigation/navbar-options.js',
     'src/assets/js/navigation/sidebar-v1.js',

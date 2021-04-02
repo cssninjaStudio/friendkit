@@ -61,6 +61,9 @@ $(document).ready(function(){
     //Init navbar v1
     initNavbar();
 
+    //Init navbar v2
+    initNavbarV2();
+
     //Init sidebar v1
     initSidebarV1();
 

@@ -14,6 +14,8 @@ CSS utilities
     6. Loaders
     7. Code highlight
     8. Success Icon
+    9. Page placeholder
+    10. Error page
 */
 
 /* ==========================================================================
@@ -1442,5 +1444,176 @@ $check-length: 36px;
 
     #successAnimationResult {
         animation: 0.3s linear 0.9s both fadeIn;
+    }
+}
+
+
+
+/* ==========================================================================
+9. Page placeholder
+========================================================================== */
+
+.page-placeholder {
+    min-height: 520px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+
+    &.is-wider {
+        .placeholder-content {
+            > p {
+                font-size: 1rem;
+                max-width: 420px;
+            }
+        }
+    }
+
+    .placeholder-content {
+        text-align: center;
+
+        img {
+            display: block;
+            max-width: 340px;
+            margin: 0 auto 12px auto;
+
+            &.is-larger {
+                max-width: 440px;
+            }
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            font-family: $font-main;
+            color: $dark-text;
+        }
+
+        p {
+            font-size: 1.1rem;
+            max-width: 440px;
+            margin: 0 auto 12px auto;
+            color: $light-text;
+
+            &.is-large {
+                max-width: 540px;
+            }
+
+            &.is-larger {
+                max-width: 620px;
+            }
+        }
+
+        .btn {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+body {
+    &.is-dark {
+        .page-placeholder {
+            .placeholder-content {
+                h3 {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .page-placeholder {
+        .placeholder-content {
+            img {
+                max-width: 280px;
+            }
+
+
+        }
+    }
+}
+
+
+/* ==========================================================================
+10. Error page
+========================================================================== */
+
+.error-container {
+    .error-wrapper {
+        max-width: 840px;
+        margin: 0 auto;
+        padding-top: 40px;
+
+        .error-inner {
+            position: relative;
+            max-width: 540px;
+            margin: 0 auto;
+
+            .bg-number {
+                font-family: $font;
+                position: absolute;
+                top: -58px;
+                left: -100px;
+                right: 0;
+                margin: 0 auto;
+                font-size: 28rem;
+                font-weight: 600;
+                opacity: .15;
+                z-index: 0;
+            }
+
+            img, h3, p, .button-wrap {
+                position: relative;
+                z-index: 1;
+            }
+
+            img {
+                display: block;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                font-family: $font-main;
+                color: $dark-text;
+                font-weight: 600;
+                margin-top: 10px;
+            }
+
+            p {
+                font-family: $font;
+                font-size: 1.1rem;
+                color: $light-text;
+                margin-bottom: 16px;
+            }
+
+            .button-wrap {
+                .button {
+                    min-width: 220px;
+                    min-height: 50px;
+                }
+            }
+        }
+    }
+}
+
+body {
+    &.is-dark {
+        .error-container {
+            .error-wrapper {
+                .error-inner {
+                    .bg-number {
+                        opacity: .9;
+                    }
+
+                    h3 {
+                        color: $white;
+                    }
+                }
+            }
+        }
     }
 }

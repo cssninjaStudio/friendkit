@@ -36,7 +36,7 @@ Landing page styles
 
     .landing-caption {
         h2 {
-            font-family: 'Montserrat', sans-serif;
+            font-family: $font-main;
             font-size: 5rem;
             font-weight: bold;
             color: $white-smoke;
@@ -45,7 +45,7 @@ Landing page styles
         }
 
         h3 {
-            font-family: 'Montserrat', sans-serif;
+            font-family: $font-main;
             font-size: 1.8rem;
             font-weight: 300;
             color: $white-smoke;
@@ -129,7 +129,7 @@ Landing page styles
                 margin-top: 12px;
 
                 h3 {
-                    font-family: 'Montserrat', sans-serif;
+                    font-family: $font-main;
                     font-weight: 600;
                     color: $dark-text;
                 }
@@ -139,14 +139,39 @@ Landing page styles
 
     .screen-wrapper {
         border-bottom: 1.4px solid $fade-grey;
-        overflow: hidden;
+        //overflow: hidden;
 
-        img {
+        &.is-spaced {
+            margin: 5rem 0;
+        }
+
+        &.has-plant {
+            position: relative;
+
+            .plant-1 {
+                position: absolute;
+                bottom: -1rem;
+                right: -5rem;
+                max-height: 250px;
+                max-width: 170px;
+            }
+
+            .plant-2 {
+                position: absolute;
+                bottom: -1rem;
+                left: -4rem;
+                max-height: 250px;
+                max-width: 170px;
+            }
+        }
+
+        img:not(.plant) {
             display: block;
             border-radius: 8px 8px 0 0;
             border: 1px solid $fade-grey;
             border-bottom: none;
             box-shadow: $light-box-shadow;
+            width: 100%;
             max-width: 940px;
             margin: 0 auto;
         }
@@ -171,7 +196,7 @@ Landing page styles
         }
 
         h3 {
-            font-family: 'Montserrat', sans-serif;
+            font-family: $font-main;
             color: $dark-text;
             font-weight: 500;
             font-size: .95rem;
@@ -196,10 +221,10 @@ Landing page styles
 
 .side-feature {
     h3 {
-        font-family: 'Montserrat', sans-serif;
+        font-family: $font-main;
         font-weight: bold;
         color: $dark-text;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     p {
@@ -329,7 +354,7 @@ Landing page styles
 
     .demo-title {
         color: $white;
-        font-family: 'Montserrat', sans-serif;
+        font-family: $font-main;
         font-size: 1.5rem;
         font-weight: 600;
         padding-bottom: 0;
@@ -380,7 +405,7 @@ Landing page styles
 
     .demos-title {
         h3 {
-            font-family: 'Montserrat', sans-serif;
+            font-family: $font-main;
             font-weight: bold;
             font-size: 1.6rem;
             color: $dark-text;
@@ -453,7 +478,7 @@ Landing page styles
             text-transform: uppercase;
             font-weight: 500;
             font-size: .8rem;
-            font-family: 'Montserrat', sans-serif;
+            font-family: $font-main;
             transition: color .3s;
         }
     }
@@ -468,7 +493,7 @@ Landing page styles
         text-align: center;
 
         h3 {
-            font-family: 'Montserrat', sans-serif;
+            font-family: $font-main;
             font-weight: bold;
             font-size: 1.6rem;
             color: $dark-text;
@@ -500,7 +525,7 @@ Landing page styles
 
             span {
                 display: block;
-                font-family: 'Montserrat', sans-serif;
+                font-family: $font-main;
                 font-weight: 500;
                 font-size: 1rem;
                 color: #8EDFCF;
@@ -561,6 +586,22 @@ Landing page styles
         }
 
         .screen-wrapper {
+
+            &.has-plant {
+                .plant-1, .plant-2 {
+                    max-height: 160px;
+                    max-width: 110px;
+                }
+
+                .plant-1  {
+                    right: -2rem;
+                }
+
+                .plant-2 {
+                    left: -2rem;
+                }
+            }
+
             img {
                 max-width: 100%;
             }
@@ -568,7 +609,7 @@ Landing page styles
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
     .landing-hero-wrapper {
         .landing-caption {
             text-align: center;
@@ -622,7 +663,7 @@ Landing page styles
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .cta-wrapper {
         .people-img {
             max-width: 600px;

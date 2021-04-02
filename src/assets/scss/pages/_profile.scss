@@ -2124,13 +2124,18 @@ Profile styles
     transform: translateY(20px);
     opacity: 0;
     pointer-events: none;
-    transition: all .3s;
+    transition: transform .3s, opacity .3s;
 
     &.is-active {
         transform: translateY(0);
         opacity: 1;
         pointer-events: all;
-        z-index: 3;
+        z-index: 50;
+    }
+
+    &.is-fullscreen {
+        top: 0;
+        height: 100%;
     }
 
     .lightbox-inner {

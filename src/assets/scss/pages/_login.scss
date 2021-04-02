@@ -189,6 +189,14 @@ Login styles
     height: calc(100vh - 100px);
     padding: 20px;
 
+    &.is-centered {
+        padding-top: 5rem;
+
+        .login-form {
+            margin: 0 auto;
+        }
+    }
+
     .login-image {
         max-width: 620px;
         margin: 0 auto;
@@ -210,6 +218,16 @@ Login styles
 
     .login-form {
         max-width: 380px;
+
+        .columns {
+            padding-top: 1rem;
+    
+            .column {
+                padding-top: .35rem;
+                padding-bottom: .35rem;
+            }
+        }
+    
 
         .field {
             &.is-flex {

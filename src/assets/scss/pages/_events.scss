@@ -22,6 +22,16 @@ Events Page
     height: calc(100vh - 58px);
     background: $white;
 
+    &.is-pushed {
+        top: 150px;
+        height: calc(100vh - 150px);
+
+        .left-panel, .right-panel {
+            top: 150px;
+            height: calc(100vh - 150px);
+        }
+    }
+
     .left-panel {
         position: fixed;
         top: 58px;

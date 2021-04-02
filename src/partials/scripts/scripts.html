@@ -6,11 +6,14 @@
 <!-- Core js -->
 <script src="{{ root }}assets/js/global.js"></script>
 
+<!-- Navigation options js -->
 <script src="{{ root }}assets/js/navbar-v1.js"></script>
+<script src="{{ root }}assets/js/navbar-v2.js"></script>
 <script src="{{ root }}assets/js/navbar-mobile.js"></script>
 <script src="{{ root }}assets/js/navbar-options.js"></script>
 <script src="{{ root }}assets/js/sidebar-v1.js"></script>
 
+<!-- Core instance js -->
 <script src="{{ root }}assets/js/main.js"></script>
 <script src="{{ root }}assets/js/chat.js"></script>
 <script src="{{ root }}assets/js/touch.js"></script>
@@ -19,7 +22,6 @@
 <!-- Components js -->
 <script src="{{ root }}assets/js/explorer.js"></script>
 <script src="{{ root }}assets/js/widgets.js"></script>
-
 <script src="{{ root }}assets/js/modal-uploader.js"></script>
 <script src="{{ root }}assets/js/popovers-users.js"></script>
 <script src="{{ root }}assets/js/popovers-pages.js"></script>
@@ -39,17 +41,26 @@
 {{#ifpage 
     'navbar-v1-feed' 
     'navbar-v1-feed-sidebar' 
-    'sidebar-v1-feed' 
+    'navbar-v1-feed-slider'
     'navbar-v1-profile-main' 
     'navbar-v1-pages-main' 
-    'navbar-v1-feed-slider'
+    'navbar-v2-feed' 
+    'navbar-v2-feed-sidebar' 
+    'navbar-v2-feed-slider'
+    'navbar-v2-profile-main' 
+    'navbar-v2-pages-main' 
+    'sidebar-v1-feed' 
+    'sidebar-v1-profile-main' 
+    'sidebar-v1-pages-main' 
 }}
 <script src="{{ root }}assets/js/feed.js"></script>
 {{/ifpage}}
 
 {{#ifpage 
     'navbar-v1-feed' 
-    'navbar-v1-feed-sidebar' 
+    'navbar-v1-feed-sidebar'
+    'navbar-v2-feed' 
+    'navbar-v2-feed-sidebar'  
     'sidebar-v1-feed'
 }}
 <script src="{{ root }}assets/js/webcam.js"></script>
@@ -66,6 +77,15 @@
     'navbar-v1-pages-about' 
     'navbar-v1-pages-community'  
     'navbar-v1-pages-photos' 
+    'navbar-v2-profile-minimal' 
+    'navbar-v2-profile-main' 
+    'navbar-v2-profile-about' 
+    'navbar-v2-profile-photos' 
+    'navbar-v2-pages-main'
+    'navbar-v2-pages-about' 
+    'navbar-v2-pages-community'  
+    'navbar-v2-pages-photos' 
+    'sidebar-v1-profile-minimal'
     'sidebar-v1-profile-about'
     'sidebar-v1-profile-friends'
     'sidebar-v1-profile-photos'
@@ -82,6 +102,8 @@
 {{#ifpage 
     'navbar-v1-stories-main' 
     'navbar-v1-stories-story'
+    'navbar-v2-stories-main' 
+    'navbar-v2-stories-story'
     'sidebar-v1-stories-main' 
     'sidebar-v1-stories-story'
 }}
@@ -112,7 +134,12 @@
     'navbar-v1-videos-home' 
     'navbar-v1-videos-home-v2' 
     'navbar-v1-videos-player'
+    'navbar-v2-videos-home' 
+    'navbar-v2-videos-home-v2' 
+    'navbar-v2-videos-player'
     'sidebar-v1-videos-home' 
+    'sidebar-v1-videos-home-v2' 
+    'sidebar-v1-videos-player'
 }}
 <script src="{{ root }}assets/js/videos.js"></script>
 {{/ifpage}}
@@ -136,6 +163,10 @@
     'navbar-v1-ecommerce-checkout' 
     'navbar-v1-ecommerce-payment' 
     'navbar-v1-ecommerce-products'
+    'navbar-v2-ecommerce-cart' 
+    'navbar-v2-ecommerce-checkout' 
+    'navbar-v2-ecommerce-payment' 
+    'navbar-v2-ecommerce-products'
     'sidebar-v1-ecommerce-products'
     'sidebar-v1-ecommerce-cart'
     'sidebar-v1-ecommerce-checkout'
