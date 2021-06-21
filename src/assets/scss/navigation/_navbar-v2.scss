@@ -205,6 +205,7 @@ Navbar styles
     }
 
     .sub-nav {
+        position: relative;
         display: flex;
         align-items: flex-end;
         justify-content: center;
@@ -214,6 +215,7 @@ Navbar styles
         box-shadow: $medium-box-shadow;
         padding: 0 1.5rem;
         border-bottom: 1px solid $fade-grey;
+        z-index: 0;
 
         .sub-nav-tabs {
             width: 100%;
@@ -293,7 +295,7 @@ Navbar styles
             padding: 0;
         }
 
-        .navbar-item {
+        /*.navbar-item {
 
             &.is-cart, &.is-account {
                 padding-left: 6px !important;
@@ -320,12 +322,12 @@ Navbar styles
             top: 75px !important;
             left: 0 !important;
             right: 0 !important;
-            width: 100% !important;
+            width: calc(100% - 20px) !important;
 
             &:before, &:after {
                 right: 46% !important;
             }
-        }
+        }*/
     }
 }
 

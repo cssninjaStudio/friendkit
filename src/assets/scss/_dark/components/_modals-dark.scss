@@ -15,6 +15,7 @@ Modal dark styles
     8. Crop profile picture modal
     9. Story Modals
     10. End tour modal
+    11. Confirm Dialog
 */
 
 /* ==========================================================================
@@ -819,6 +820,33 @@ body {
                         color: $light-text;
                     }
                 }
+            }
+        }
+    }
+}
+
+
+/* ==========================================================================
+11. Confirm Dialog
+========================================================================== */
+
+body {
+    &.is-dark {
+
+        .fancybox-bg {
+            background: darken($dark, 4%);
+        }
+        
+        .fancybox-confirm {
+            padding: 2.5rem !important;
+            background: darken($dark, 8%);
+        
+            .title {
+                color: $white;
+            }
+
+            p {
+                color: $light-text;
             }
         }
     }

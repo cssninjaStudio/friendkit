@@ -98,6 +98,7 @@ body {
     }
 
     &.is-sidebar-v1 {
+        position: relative;
         margin-left: 280px;
         width: calc(100% - 280px);
         padding-top: 1.5rem;
@@ -106,6 +107,20 @@ body {
             width: 100%;
             margin-left: 0;
         }
+    }
+
+    &.is-map {
+        position: relative;
+        top: 57px;
+        padding: 0;
+        min-height: calc(100vh - 57px);
+    }
+
+    &.is-map-pushed {
+        position: relative;
+        top: 150px;
+        padding: 0;
+        min-height: calc(100vh - 150px);
     }
 
     .view-wrap {

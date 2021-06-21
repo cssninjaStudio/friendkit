@@ -11,7 +11,6 @@ const del = require('del');
 const panini = require('panini');
 const uglify = require('gulp-uglify-es').default;
 const sourcemaps = require('gulp-sourcemaps');
-const imagemin = require('gulp-imagemin');
 const removeCode = require('gulp-remove-code');
 const removeLog = require('gulp-remove-logging');
 const prettyHtml = require('gulp-pretty-html');
@@ -125,6 +124,7 @@ function compileJS() {
     'src/assets/js/pages/inbox.js',
     'src/assets/js/pages/landing.js',
     'src/assets/js/pages/news.js',
+    'src/assets/js/pages/map.js',
     'src/assets/js/pages/profile.js',
     'src/assets/js/pages/questions.js',
     'src/assets/js/pages/shop.js',
@@ -205,7 +205,6 @@ function copyImages() {
   console.log('---------------OPTIMIZING IMAGES---------------');
   return src('src/assets/img/**/*')
     .pipe(newer('dist/assets/img/'))
-    //.pipe(imagemin())
     .pipe(dest('dist/assets/img/'))
     .pipe(browserSync.stream());
 }

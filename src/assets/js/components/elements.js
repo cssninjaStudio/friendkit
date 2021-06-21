@@ -37,7 +37,7 @@ $(document).ready(function () {
         scroll_if_anchor(window.location.hash);
 
         // Intercept all anchor clicks
-        $("body").on("click", "a", scroll_if_anchor);
+        $("body").on("click", ".submenu-wrap a", scroll_if_anchor);
 
         $('.element-menu .menu-trigger').on('click', function(){
             $(this).closest('.element-menu').siblings('.element-menu').find('.menu-trigger').removeClass('is-active');
@@ -230,7 +230,7 @@ $(document).ready(function () {
                 $.fancybox.open({
                     type: "html",
                     src:
-                        '<div class="fc-content p-5 rounded">' +
+                        '<div class="fancybox-confirm fc-content p-5 rounded">' +
                         '<h2 class="title mb-10">' +
                         opts.title +
                         "</h2>" +
@@ -241,7 +241,7 @@ $(document).ready(function () {
                         '<a data-value="0" data-fancybox-close href="javascript:;" class="button">' +
                         opts.noButton +
                         "</a>" +
-                        '<button data-value="1" data-fancybox-close class="button is-solid red-button raised">' +
+                        '<button data-value="1" data-fancybox-close class="button is-solid primary-button raised">' +
                         opts.okButton +
                         "</button>" +
                         "</p>" +
@@ -273,16 +273,16 @@ $(document).ready(function () {
             $("#test_confirm").click(function () {
                 // Open customized confirmation dialog window
                 $.fancyConfirm({
-                    title: "Use Google's location service?",
+                    title: "Are you sure you want to delete this post?",
                     message:
-                        "Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running",
-                    okButton: "Agree",
-                    noButton: "Disagree",
+                        "You are about to delete a post permanently. Post content and attachements will be lost without being ablt to be recovered",
+                    okButton: "Delete",
+                    noButton: "Cancel",
                     callback: function (value) {
                         if (value) {
-                            $("#test_confirm_rez").html("Let's do this!");
+                            alert("This is a demo callback. Delete was clicked");
                         } else {
-                            $("#test_confirm_rez").html("Maybe later.");
+                            alert("This is a demo callback. Cancel was clicked");
                         }
                     }
                 });

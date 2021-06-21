@@ -18,6 +18,7 @@
     "@babel/core": "^7.4.4",
     "acorn": "^7.1.1",
     "ansi-colors": "^4.1.1",
+    "axios": "^0.21.1",
     "babel-core": "^6.26.3",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
@@ -34,7 +35,6 @@
     "gulp-concat": "^2.6.1",
     "gulp-html-replace": "^1.6.2",
     "gulp-htmllint": "0.0.16",
-    "gulp-imagemin": "^6.0.0",
     "gulp-jshint": "^2.1.0",
     "gulp-newer": "^1.4.0",
     "gulp-pretty-html": "^2.0.9",
@@ -46,23 +46,25 @@
     "gulp-sourcemaps": "^2.6.1",
     "gulp-uglify": "^3.0.0",
     "gulp-uglify-es": "^1.0.4",
-    "sass": "^1.30.0",
+    "ini": "1.3.6",
     "jshint": "^2.10.1",
     "marked": "^0.7.0",
     "minimist": "^1.2.5",
     "node-bourbon": "^4.2.8",
     "npm-force-resolutions": "0.0.3",
-    "panini": "^1.6.3",
+    "panini": "^1.7.1",
     "run-sequence": "^2.2.1",
+    "sass": "^1.30.0",
     "yargs-parser": "18.1.2",
     "zoom-vanilla.js": "^2.0.6",
-    "ini": "1.3.6",
-    "axios": "^0.21.1"
+    "merge": "2.1.1",
+    "glob-parent": "5.1.2",
+    "trim-newlines": "4.0.1"
   },
   "dependencies": {
     "@fengyuanchen/datepicker": "^0.6.5",
     "@mdi/font": "^4.8.95",
-    "bulma": "^0.9.1",
+    "bulma": "^0.9.3",
     "bulma-extensions": "^1.0.14",
     "cropperjs": "^1.5.5",
     "croppie": "^2.6.2",
@@ -82,7 +84,7 @@
     "quill": "^1.3.7",
     "scrollreveal": "^3.4.0",
     "slick-carousel": "^1.8.1",
-    "vivid-icons": "^1.0.9",
+    "vivid-icons": "^1.0.10",
     "webui-popover": "^1.2.18"
   },
   "resolutions": {
@@ -92,6 +94,9 @@
     "acorn": "^7.1.1",
     "yargs-parser": "18.1.2",
     "ini": "1.3.6",
-    "axios": "^0.21.1"
+    "axios": "^0.21.1",
+    "merge": "2.1.1",
+    "glob-parent": "5.1.2",
+    "trim-newlines": "4.0.1"
   }
 }

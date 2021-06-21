@@ -38,117 +38,61 @@
 {{/ifpage}}
 
 <!-- Feed pages js -->
-{{#ifpage 
-    'navbar-v1-feed' 
-    'navbar-v1-feed-sidebar' 
-    'navbar-v1-feed-slider'
-    'navbar-v1-profile-main' 
-    'navbar-v1-pages-main' 
-    'navbar-v2-feed' 
-    'navbar-v2-feed-sidebar' 
-    'navbar-v2-feed-slider'
-    'navbar-v2-profile-main' 
-    'navbar-v2-pages-main' 
-    'sidebar-v1-feed' 
-    'sidebar-v1-profile-main' 
-    'sidebar-v1-pages-main' 
-}}
+{{#ifpage 'navbar-v1-feed' 'navbar-v1-feed-sidebar' 'navbar-v1-feed-slider'
+'navbar-v1-profile-main' 'navbar-v1-pages-main' 'navbar-v2-feed'
+'navbar-v2-feed-sidebar' 'navbar-v2-feed-slider' 'navbar-v2-profile-main'
+'navbar-v2-pages-main' 'sidebar-v1-feed' 'sidebar-v1-profile-main'
+'sidebar-v1-pages-main' }}
 <script src="{{ root }}assets/js/feed.js"></script>
-{{/ifpage}}
-
-{{#ifpage 
-    'navbar-v1-feed' 
-    'navbar-v1-feed-sidebar'
-    'navbar-v2-feed' 
-    'navbar-v2-feed-sidebar'  
-    'sidebar-v1-feed'
-}}
+{{/ifpage}} {{#ifpage 'navbar-v1-feed' 'navbar-v1-feed-sidebar' 'navbar-v2-feed'
+'navbar-v2-feed-sidebar' 'sidebar-v1-feed' }}
 <script src="{{ root }}assets/js/webcam.js"></script>
 <script src="{{ root }}assets/js/compose.js"></script>
 <script src="{{ root }}assets/js/autocompletes.js"></script>
 {{/ifpage}}
 
 <!-- profile js -->
-{{#ifpage 
-    'navbar-v1-profile-main' 
-    'navbar-v1-profile-about' 
-    'navbar-v1-profile-photos' 
-    'navbar-v1-pages-main'
-    'navbar-v1-pages-about' 
-    'navbar-v1-pages-community'  
-    'navbar-v1-pages-photos' 
-    'navbar-v2-profile-minimal' 
-    'navbar-v2-profile-main' 
-    'navbar-v2-profile-about' 
-    'navbar-v2-profile-photos' 
-    'navbar-v2-pages-main'
-    'navbar-v2-pages-about' 
-    'navbar-v2-pages-community'  
-    'navbar-v2-pages-photos' 
-    'sidebar-v1-profile-minimal'
-    'sidebar-v1-profile-about'
-    'sidebar-v1-profile-friends'
-    'sidebar-v1-profile-photos'
-    'sidebar-v1-profile-main'
-    'sidebar-v1-pages-about'
-    'sidebar-v1-pages-community'
-    'sidebar-v1-pages-photos'
-    'sidebar-v1-pages-main'
-}}
+{{#ifpage 'navbar-v1-profile-main' 'navbar-v1-profile-about'
+'navbar-v1-profile-photos' 'navbar-v1-pages-main' 'navbar-v1-pages-about'
+'navbar-v1-pages-community' 'navbar-v1-pages-photos' 'navbar-v2-profile-minimal'
+'navbar-v2-profile-main' 'navbar-v2-profile-about' 'navbar-v2-profile-photos'
+'navbar-v2-pages-main' 'navbar-v2-pages-about' 'navbar-v2-pages-community'
+'navbar-v2-pages-photos' 'sidebar-v1-profile-minimal' 'sidebar-v1-profile-about'
+'sidebar-v1-profile-friends' 'sidebar-v1-profile-photos'
+'sidebar-v1-profile-main' 'sidebar-v1-pages-about' 'sidebar-v1-pages-community'
+'sidebar-v1-pages-photos' 'sidebar-v1-pages-main' }}
 <script src="{{ root }}assets/js/profile.js"></script>
 {{/ifpage}}
 
 <!-- stories js -->
-{{#ifpage 
-    'navbar-v1-stories-main' 
-    'navbar-v1-stories-story'
-    'navbar-v2-stories-main' 
-    'navbar-v2-stories-story'
-    'sidebar-v1-stories-main' 
-    'sidebar-v1-stories-story'
-}}
+{{#ifpage 'navbar-v1-stories-main' 'navbar-v1-stories-story'
+'navbar-v2-stories-main' 'navbar-v2-stories-story' 'sidebar-v1-stories-main'
+'sidebar-v1-stories-story' }}
 <script src="{{ root }}assets/js/stories.js"></script>
 {{/ifpage}}
 
 <!-- friends js -->
-{{#ifpage 
-    'navbar-v1-friends-grid-v1'
-    'sidebar-v1-friends-grid-v1'
-}}
+{{#ifpage 'navbar-v1-friends-grid-v1' 'sidebar-v1-friends-grid-v1' }}
 <script src="{{ root }}assets/js/friends.js"></script>
 {{/ifpage}}
 
 <!-- questions js -->
-{{#ifpage 
-    'navbar-v1-questions-categories' 
-    'navbar-v1-questions-home' 
-    'navbar-v1-questions-settings' 
-    'navbar-v1-questions-single' 
-    'navbar-v1-questions-stats'
-}}
+{{#ifpage 'navbar-v1-questions-categories' 'navbar-v1-questions-home'
+'navbar-v1-questions-settings' 'navbar-v1-questions-single'
+'navbar-v1-questions-stats' }}
 <script src="{{ root }}assets/js/questions.js"></script>
 {{/ifpage}}
 
 <!-- video js -->
-{{#ifpage 
-    'navbar-v1-videos-home' 
-    'navbar-v1-videos-home-v2' 
-    'navbar-v1-videos-player'
-    'navbar-v2-videos-home' 
-    'navbar-v2-videos-home-v2' 
-    'navbar-v2-videos-player'
-    'sidebar-v1-videos-home' 
-    'sidebar-v1-videos-home-v2' 
-    'sidebar-v1-videos-player'
-}}
+{{#ifpage 'navbar-v1-videos-home' 'navbar-v1-videos-home-v2'
+'navbar-v1-videos-player' 'navbar-v2-videos-home' 'navbar-v2-videos-home-v2'
+'navbar-v2-videos-player' 'sidebar-v1-videos-home' 'sidebar-v1-videos-home-v2'
+'sidebar-v1-videos-player' }}
 <script src="{{ root }}assets/js/videos.js"></script>
 {{/ifpage}}
 
 <!-- events js -->
-{{#ifpage 
-    'navbar-v1-event' 
-    'navbar-v1-events'
-}}
+{{#ifpage 'navbar-v1-event' 'navbar-v1-events' }}
 <script src="{{ root }}assets/js/events.js"></script>
 {{/ifpage}}
 
@@ -158,20 +102,12 @@
 {{/ifpage}}
 
 <!-- shop js -->
-{{#ifpage 
-    'navbar-v1-ecommerce-cart' 
-    'navbar-v1-ecommerce-checkout' 
-    'navbar-v1-ecommerce-payment' 
-    'navbar-v1-ecommerce-products'
-    'navbar-v2-ecommerce-cart' 
-    'navbar-v2-ecommerce-checkout' 
-    'navbar-v2-ecommerce-payment' 
-    'navbar-v2-ecommerce-products'
-    'sidebar-v1-ecommerce-products'
-    'sidebar-v1-ecommerce-cart'
-    'sidebar-v1-ecommerce-checkout'
-    'sidebar-v1-ecommerce-payment'
-}}
+{{#ifpage 'navbar-v1-ecommerce-cart' 'navbar-v1-ecommerce-checkout'
+'navbar-v1-ecommerce-payment' 'navbar-v1-ecommerce-products'
+'navbar-v2-ecommerce-cart' 'navbar-v2-ecommerce-checkout'
+'navbar-v2-ecommerce-payment' 'navbar-v2-ecommerce-products'
+'sidebar-v1-ecommerce-products' 'sidebar-v1-ecommerce-cart'
+'sidebar-v1-ecommerce-checkout' 'sidebar-v1-ecommerce-payment' }}
 <script src="{{ root }}assets/js/shop.js"></script>
 {{/ifpage}}
 
@@ -181,11 +117,17 @@
 {{/ifpage}}
 
 <!-- settings js -->
-{{#ifpage 
-    'navbar-v1-settings-v1'
-    'sidebar-v1-settings-v1'
-}}
+{{#ifpage 'navbar-v1-settings-v1' 'sidebar-v1-settings-v1' }}
 <script src="{{ root }}assets/js/settings.js"></script>
 {{/ifpage}}
 
+<!-- map page js -->
+{{#ifpage 'navbar-v1-map-1' 'navbar-v1-map-2' 'navbar-v2-map-1'
+'navbar-v2-map-2' 'sidebar-v1-map-1'}}
+<script src="{{ root }}assets/js/map.js"></script>
+{{/ifpage}}
 
+<!-- elements page js -->
+{{#ifpage 'elements'}}
+<script src="{{ root }}assets/js/elements.js"></script>
+{{/ifpage}}

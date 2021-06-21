@@ -70,6 +70,8 @@ function toggleTheme() {
         if (theme === 'dark') {
             $('.theme-toggle input').prop('checked', true);
         }
+
+        $(document).trigger('themeChange', theme);
     }
 
     $('.theme-toggle input').on('change', function(){
@@ -77,10 +79,12 @@ function toggleTheme() {
             console.log('checked');
             setThemeToLocalStorage('dark');
             $('.theme-toggle input').prop('checked', true);
+            $(document).trigger('themeChange', 'dark');
         }
         else {
             setThemeToLocalStorage('light');
             $('.theme-toggle input').prop('checked', false);
+            $(document).trigger('themeChange', 'light');
         }
     });
 }

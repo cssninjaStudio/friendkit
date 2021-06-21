@@ -110,6 +110,7 @@ Nav drops
             transform: translateY(10px);
             pointer-events: none;
             transition: transform .3s, opacity .3s;
+            z-index: 1;
 
             &.is-active {
                 opacity: 1;
@@ -511,13 +512,14 @@ Nav drops
 
         &.is-account-dropdown {
             width: 300px;
-            right: 0 !important;
-            left: unset !important;
-            max-height: unset !important;
+            right: 0;
+            left: unset;
+            max-height: unset;
+            z-index: 1;
 
             &:before {
-                right: 23px !important;
-                left: unset !important;
+                right: 23px;
+                left: unset;
             }
 
             &:after {
@@ -779,6 +781,42 @@ Nav drops
                     }
                 }
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-item {
+
+        &.is-cart, &.is-account {
+            padding-left: 6px !important;
+            padding-right: 6px !important;
+        }
+
+        &.is-cart {
+            .shopping-cart {
+                position: fixed !important;
+                top: 95px;
+                right: 0 !important;
+                left: 0 !important;
+                margin: 0 auto !important;
+
+                &:before, &:after {
+                    left: 83% !important;
+                }
+            }
+        }
+    }
+
+    .nav-drop {
+        position: fixed !important;
+        top: 75px !important;
+        left: 10px !important;
+        right: 0 !important;
+        width: calc(100% - 20px) !important;
+
+        &:before, &:after {
+            right: 46% !important;
         }
     }
 }

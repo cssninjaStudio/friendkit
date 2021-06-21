@@ -1024,7 +1024,7 @@ https://codepen.io/fancyapps/pen/rmwyXN
 .morphing-btn-clone {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    background: #ff5268;
+    background: $primary;
     border-radius: 50%;
     position: fixed;
     -webkit-transition: all 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
@@ -1044,7 +1044,7 @@ https://codepen.io/fancyapps/pen/rmwyXN
 }
 
 .fancybox-morphing .fancybox-bg {
-    background: #ff5268;
+    background: $primary;
     opacity: 1;
 }
 
@@ -1056,7 +1056,7 @@ https://codepen.io/fancyapps/pen/rmwyXN
 .fancybox-morphing .fancybox-button--close {
     background: rgba(0, 0, 0, 0.2);
     border-radius: 50%;
-    color: #fff;
+    color: $white;
 }
 
 .fancybox-morphing .fancybox-button--close:hover {
@@ -1075,7 +1075,7 @@ https://codepen.io/fancyapps/pen/rmwyXN
 }
 
 #morphing-content * {
-    color: #fff;
+    color: $white;
 }
 
 /*
@@ -1614,6 +1614,25 @@ body {
                     }
                 }
             }
+        }
+    }
+}
+
+
+.avatar-wrap {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+
+    .avatar {
+        width: 32px;
+        min-width: 32px;
+        height: 32px;
+        object-fit: cover;
+        border-radius: 50%;
+
+        &.is-squared {
+            border-radius: 10px !important;
         }
     }
 }

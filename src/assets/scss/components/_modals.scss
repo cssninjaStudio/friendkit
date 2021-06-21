@@ -16,6 +16,7 @@ Modal styles
     9. End tour modal
     10. No stream modal
     11. Media Queries
+    12. Confirm dialog
 */
 
 //import mixins
@@ -2382,5 +2383,19 @@ Modal styles
                 }
             }
         }
+    }
+}
+
+
+/* ==========================================================================
+12. Confirm Dialog
+========================================================================== */
+
+.fancybox-confirm {
+    padding: 2.5rem !important;
+
+    .title {
+        font-family: $font-main;
+        font-size: 1.5rem;
     }
 }
