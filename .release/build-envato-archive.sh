@@ -24,7 +24,7 @@ sed -i "s/env = 'development'/env = ''/g" ./src/assets/js/main.js
 
 # move demo data
 rm -rf ./src/data
-mv ./src/data-demo ./src/data
+mv ./src/demo-data ./src/data
 
 # remove photos
 rm -rf ./src/assets/img/avatars
