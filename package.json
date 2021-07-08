@@ -1,6 +1,6 @@
 {
   "name": "friendkit",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Social media UI kit",
   "main": "index.js",
   "scripts": {
