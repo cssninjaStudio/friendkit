@@ -1,0 +1,60 @@
+<div class="navbar-v2">
+    <div class="top-nav">
+        <div class="left">
+            <div class="brand">
+                <a href="/" class="navbar-logo">
+                    <img class="logo light-image" src="assets/img/logo/friendkit-bold.svg" width="112" height="28" alt="">
+                    <img class="logo dark-image" src="assets/img/logo/friendkit-white.svg" width="112" height="28" alt="">
+                </a>
+            </div>
+            <div class="search">
+                {{> search-widget}}
+            </div>
+        </div>
+        <div class="right">
+            <div id="open-mobile-search" class="navbar-item is-icon">
+                <a class="icon-link is-primary" href="javascript:void(0);">
+                    <i data-feather="search"></i>
+                </a>
+            </div>
+            {{> friend-requests-dropdown-right}}
+            {{> notifications-dropdown-right}}
+            {{> messages-dropdown-right}}
+            {{> cart-dropdown}}
+            {{> account-dropdown}}
+        </div>
+        <!--Search-->
+        <div class="mobile-search is-hidden">
+            <div class="control">
+                <input id="tipue_drop_input_mobile" class="input" placeholder="Search...">
+                <div class="form-icon">
+                    <i data-feather="search"></i>
+                </div>
+                <div class="close-icon">
+                    <i data-feather="x"></i>
+                </div>
+                <div id="tipue_drop_content_mobile" class="tipue-drop-content"></div>
+            </div>
+        </div>
+    </div>
+    <div class="sub-nav">
+        <div class="sub-nav-tabs">
+            <div class="tabs is-centered">
+                <ul>
+                    <li class="is-active">
+                        <a href="navbar-v2-feed.html">Feed</a>
+                    </li>
+                    <li>
+                        <a href="navbar-v2-profile-friends.html">Friends</a>
+                    </li>
+                    <li>
+                        <a href="navbar-v2-groups.html">Groups</a>
+                    </li>
+                    <li>
+                        <a href="navbar-v2-ecommerce-products.html">Store</a>
+                    </li>
+                </ul>
+              </div>
+        </div>
+    </div>
+</div>

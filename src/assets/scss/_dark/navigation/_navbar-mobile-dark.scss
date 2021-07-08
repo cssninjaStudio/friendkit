@@ -1,0 +1,49 @@
+/*! _navbar-mobile-dark.scss | Friendkit | © Css Ninja. 2020-2021 */
+
+/* ==========================================================================
+Navbar mobile
+========================================================================== */
+
+/*
+    0. Navbar mobile dark
+*/
+
+/* ==========================================================================
+0. Navbar mobile dark
+========================================================================== */
+
+body {
+    &.is-dark {
+        .mobile-navbar {
+            .navbar-menu {
+                background: darken($dark, 4%);
+                border-color: darken($dark, 4%);
+
+                .navbar-item {
+                    .navbar-link {
+                        border-color: lighten($dark, 6%);
+
+                        &:hover {
+                            background: darken($dark, 1%);
+                        }
+
+                        span {
+                            &.is-heading {
+                                color: $white-light;
+                            }
+                        }
+                    }
+
+                    .navbar-dropdown {
+                        .navbar-item {
+                            .menu-badge {
+                                background: $accent;
+                                color: $white-light;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

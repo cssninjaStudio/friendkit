@@ -1,0 +1,310 @@
+/*! _navbar.scss | Friendkit | © Css Ninja. 2020-2021 */
+
+/* ==========================================================================
+Navbar mobile
+========================================================================== */
+
+/*
+    0. Navbar mobile
+    1. Media Queries
+*/
+
+/* ==========================================================================
+0. Navbar mobile
+========================================================================== */
+
+.mobile-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
+    transition: all .3s;
+
+    &.is-active {
+        transform: translateY(0);
+    }
+
+    &.is-landing {
+        &.no-background {
+            background: transparent;
+
+            .dark-mobile-logo {
+                display: none !important;
+            }
+
+            .navbar-burger span {
+                background: $white !important;
+            }
+        }
+
+        &.no-shadow {
+            box-shadow: none;
+        }
+    }
+
+    .navbar-brand {
+        margin-right: 0;
+
+        .navbar-item:hover {
+            background: transparent !important;
+        }
+
+        img {
+            height: 34px;
+            max-height: 34px;
+            -webkit-animation: pulse 1s infinite;
+            animation: pulse 1s infinite;
+        }
+
+        .navbar-burger {
+            span {
+                height: 1.5px;
+
+                transition: all .3s;
+            }
+        }
+    }
+
+    .navbar-link {
+        padding-right: 12px !important;
+    }
+
+    .navbar-item {
+        min-width: unset !important;
+
+        &:hover {
+            background: transparent !important;
+        }
+
+        &.has-dropdown {
+            .navbar-link {
+                &:after {
+                    border-color: $medium-grey;
+                }
+            }
+        }
+
+        &.is-mobile-icon {
+            span:not(.menu-badge) {
+                display: flex;
+                align-items: center;
+
+                svg {
+                    height: 18px;
+                    width: 18px;
+                    stroke: $placeholder;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+
+    .navbar-burger {
+        height: 58px;
+        width: 58px;
+    }
+
+    .navbar-burger:hover {
+        background-color: rgba(0, 0, 0, 0.02);
+    }
+
+    .navbar-burger span {
+        background-color: $muted-grey;
+    }
+
+    .navbar-menu {
+        background: #fafafa;
+
+        .button {
+            padding: 0;
+            height: 36px;
+            width: 100px;
+        }
+
+        .navbar-link {
+            color: $dark-text;
+            font-weight: 600;
+        }
+
+        .navbar-item {
+            color: $muted-grey;
+        }
+
+        .navbar-link {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            border-bottom: 1px solid $fade-grey;
+
+            img {
+                height: 38px;
+                width: 38px;
+                max-height: 38px !important;
+                border-radius: 50%;
+            }
+
+            svg {
+                height: 20px;
+                width: 20px;
+                stroke-width: 1.2px;
+                stroke: $accent;
+            }
+
+            span {
+                margin: 0 10px;
+
+                &.is-heading {
+                    font-size: 11px;
+                    letter-spacing: 1px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .navbar-dropdown .menu-badge {
+            margin-left: auto;
+            height: 22px;
+            font-size: .8rem;
+            font-weight: 500;
+            padding: 3px 6px;
+            line-height: 1.3;
+            min-width: 22px;
+            text-align: center;
+            border-radius: 100px;
+            background: lighten($fade-grey, 3%);
+            color: $dark-text;
+        }
+
+        .navbar-dropdown .button {
+            height: 40px;
+            display: block;
+            width: calc(100% - 32px);
+            font-size: .95rem;
+            line-height: 2.3;
+            margin: 8px 16px;
+        }
+
+        .navbar-dropdown .navbar-item {
+            font-size: .9rem;
+            padding: .75rem 1.5rem !important;
+
+            &.is-active, &:hover {
+                background: lighten($sidebar, 10%);
+            }
+        }
+    }
+
+    .mobile-search {
+        height: 58px;
+        display: flex;
+        align-items: center;
+        padding: 0 1rem;
+
+        .control {
+            position: relative;
+            width: 100%;
+
+            .input {
+                width: 100%;
+
+                &:focus + .form-icon {
+                    color: $primary;
+                }
+            }
+
+            .form-icon {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 38px;
+                width: 38px;
+                z-index: 2;
+                color: $placeholder;
+                transition: color .3s;
+
+                svg {
+                    height: 20px;
+                    width: 20px;
+                    transition: stroke .3s;
+                }
+            }
+
+            .close-icon {
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 38px;
+                width: 38px;
+                z-index: 2;
+                color: $dark-text;
+                transition: color .3s;
+
+                svg {
+                    height: 20px;
+                    width: 20px;
+                    transition: stroke .3s;
+                }
+            }
+        }
+
+        .tipue-drop-content {
+            position: absolute;
+            top: 62px;
+            width: 100%;
+        }
+    }
+}
+
+/* ==========================================================================
+1. Media Queries
+========================================================================== */
+
+@media (max-width: 767px) {
+    .mobile-navbar {
+        .nav-drop {
+            position: fixed !important;
+            top: 58px !important;
+            left: 10px !important;
+            right: initial !important;
+            width: calc(100% - 20px) !important;
+
+            &:before, &:after {
+                left: 50% !important;
+                right: initial !important;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .mobile-navbar {
+        .navbar-brand {
+            .navbar-item {
+                &:nth-child(2) {
+                    margin-left: auto !important;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .mobile-navbar {
+        .navbar-brand {
+            .navbar-item {
+                &:nth-child(2) {
+                    margin-left: auto !important;
+                }
+            }
+        }
+    }
+}

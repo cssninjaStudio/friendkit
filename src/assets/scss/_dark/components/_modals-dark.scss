@@ -1,0 +1,853 @@
+/*! _modals.scss | Friendkit | © Css Ninja. 2020-2021 */
+
+/* ==========================================================================
+Modal dark styles
+========================================================================== */
+
+/*
+    1. Base class
+    2. Create group modal
+    3. Albums modal
+    4. Videos modal
+    5. Share modal
+    6. Change cover and profile picture modals
+    7. User photos modal
+    8. Crop profile picture modal
+    9. Story Modals
+    10. End tour modal
+    11. Confirm Dialog
+*/
+
+/* ==========================================================================
+1. Base class
+========================================================================== */
+
+body {
+    &.is-dark {
+        .modal {
+            .card {
+                .card-heading {
+                    border-color: lighten($dark, 8%);
+
+                    h3 {
+                        color: $white-light;
+                    }
+
+                    .close-wrap {
+                        .close-modal {
+                            &:hover {
+                                background: lighten($dark, 4%);
+                            }
+                        }
+                    }
+                }
+
+                .subheading {
+                    border-color: lighten($dark, 8%) !important;
+
+                    .group-avatar {
+                        .add-photo {
+                            background: lighten($dark, 7%);
+                        }
+                    }
+
+                    .control {
+                        input {
+                            background: $dark;
+                            border-color: $dark;
+                            color: $white-light;
+
+                            &::placeholder {
+                                color: lighten($dark, 24%);
+                            }
+                        }
+                    }
+                }
+
+                .card-body {
+                    .content-block {
+                        .help-text {
+                            h3 {
+                                color: $white-light;
+                            }
+
+                            p {
+                                color: $light-text;
+                            }
+                        }
+                    }
+
+                    .slide-dots {
+                        .dot {
+                            &:not(.is-active) {
+                                background: darken($dark, 8%);
+                            }
+                        }
+                    }
+                }
+
+                .card-footer {
+                    border-color: lighten($dark, 8%);
+
+                    .grey-button {
+                        background: darken($dark, 4%);
+                        border-color: darken($dark, 4%);
+                        color: $white-light;
+                    }
+
+                    .dropdown {
+                        > div .button {
+                            background: darken($dark, 5%);
+                            border-color: lighten($dark, 4%);
+                            color: $light-text;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+2. Create group modal
+========================================================================== */
+
+body {
+    &.is-dark {
+        .create-group-modal {
+            .card-body {
+                .inner {
+                    .left-section {
+                        .search-subheader {
+                            border-color: lighten($dark, 8%) !important;
+
+                            .control {
+                                input {
+                                    background: $dark;
+                                    border-color: $dark;
+                                    color: $white-light;
+
+                                    &::placeholder {
+                                        color: lighten($dark, 24%);
+                                    }
+                                }
+                            }
+                        }
+
+                        .user-list {
+                            .friend-block {
+                                &:hover {
+                                    background: lighten($dark, 6%);
+                                }
+
+                                .round-checkbox {
+                                    input:not(:checked) + label {
+                                        background: darken($dark, 5%);
+                                        border-color: lighten($dark, 4%);
+                                    }
+                                }
+
+                                .friend-name {
+                                    color: $light-text;
+                                }
+                            }
+                        }
+                    }
+
+                    .right-section {
+                        background: $dark;
+                        border-color: lighten($dark, 8%);
+
+                        .selected-count {
+                            span {
+                                &:first-child {
+                                    color: $light-text;
+                                }
+                            }
+                        }
+
+                        .selected-list {
+                            .selected-friend-block {
+                                .image-wrapper {
+                                    .checked-badge {
+                                        border-color: $dark;
+                                    }
+                                }
+
+                                .friend-name {
+                                    color: $white-light;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+4. Albums modal
+========================================================================== */
+
+body {
+    &.is-dark {
+        .albums-modal {
+            .card-body {
+                .left-section {
+                    background: $dark;
+                    border-color: lighten($dark, 8%);
+
+                    .album-form {
+                        .control {
+                            .input, .textarea {
+                                background: lighten($dark, 4%);
+                                border-color: lighten($dark, 10%);
+                                color: $white-light;
+
+                                &::placeholder {
+                                    color: lighten($dark, 24%);
+                                }
+                            }
+                        }
+                    }
+
+                    .album-date, .tagged-in-album, .shared-album {
+                        .head {
+                            h4 {
+                                color: $white-light;
+                            }
+
+                            .button {
+                                background: darken($dark, 4%);
+                                border-color: lighten($dark, 4%);
+                            }
+
+                            .basic-checkbox {
+                                .styled-checkbox:not(:checked) {
+                                    + label {
+                                        &:before {
+                                            background: darken($dark, 4%);
+                                            border-color: lighten($dark, 4%);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        > p {
+                            color: $light-text;
+                        }
+
+                        .control {
+                            .input {
+                                background: lighten($dark, 4%);
+                                border-color: lighten($dark, 10%);
+                                color: $white-light;
+
+                                &::placeholder {
+                                    color: lighten($dark, 24%);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .right-section {
+                    .modal-uploader {
+                        #actions {
+                            .button {
+                                background: darken($dark, 6%);
+                                border-color: lighten($dark, 4%);
+                                color: $white;
+                            }
+
+                            .file-count {
+                                color: $light-text;
+                            }
+                        }
+
+                        #previews {
+                            .is-template {
+                                .preview-box {
+                                    background: darken($dark, 6%);
+
+                                    .remove-button {
+                                        border-color: $dark;
+                                        background: darken($dark, 6%);
+                                    }
+
+                                    .preview-body {
+                                        border-color: lighten($dark, 4%);
+
+                                        .item-meta {
+                                            * {
+                                                color: $light-text;
+                                            }
+                                        }
+
+                                        .upload-item-description {
+                                            .control {
+                                                .textarea {
+                                                    background: darken($dark, 6%);
+                                                    border-color: darken($dark, 6%);
+                                                    color: $white-light;
+
+                                                    &::placeholder {
+                                                        color: lighten($dark, 24%);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+4. Videos modal
+========================================================================== */
+
+body {
+    &.is-dark {
+        .videos-modal {
+            .card {
+                .card-body {
+                    .inner {
+                        .left-section {}
+
+                        .right-section {
+                            border-color: lighten($dark, 10%);
+
+                            .header {
+                                .user-meta {
+                                    span {
+                                        &:first-child {
+                                            color: $white-light;
+
+                                            small {
+                                                color: $light-text;
+                                            }
+                                        }
+
+                                        &:nth-child(2) {
+                                            color: $light-text;
+                                        }
+                                    }
+                                }
+
+                                > .button {
+                                    background: darken($dark, 6%);
+                                    border-color: lighten($dark, 4%);
+                                    color: $white;
+                                }
+
+                                .dropdown {
+                                    > div {
+                                        .button {
+                                            svg {
+                                                stroke: $light-text;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .inner-content {
+                                .control {
+                                    .input {
+                                        background: darken($dark, 6%);
+                                        border-color: darken($dark, 6%);
+                                        color: $white-light;
+
+                                        &::placeholder {
+                                            color: lighten($dark, 24%);
+                                        }
+                                    }
+                                }
+
+                                .live-stats {
+                                    border-color: lighten($dark, 10%);
+                                }
+
+                                .actions {
+                                    .action {
+                                        &:not(:hover) {
+                                            span {
+                                                color: $light-text;
+                                            }
+                                        }
+                                    }
+
+                                    .dropdown {
+                                        > div {
+                                            .avatar-button {
+                                                svg {
+                                                    fill: $white-light;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .tabs-wrapper {
+                                .tabs {
+                                    ul {
+                                        border-color: lighten($dark, 10%);
+
+                                        li:not(.is-active) {
+                                            a {
+                                                border-color: lighten($dark, 10%);
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .tab-content {
+                                    background: darken($dark, 6%);
+
+                                    .media {
+                                        &.is-comment {
+                                            .media-content {
+                                                background: lighten($dark, 3%);
+
+                                                .username {
+                                                    color: $white-light;
+                                                }
+
+                                                p {
+                                                    color: $light-text;
+                                                }
+
+                                                .comment-actions {
+                                                    span {
+                                                        color: $light-text;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .comment-controls {
+                                background: $dark;
+                                border-color: lighten($dark, 10%);
+
+                                .controls-inner {
+                                    .control {
+                                        .textarea {
+                                            background: darken($dark, 6%);
+                                            border-color: darken($dark, 6%);
+                                            color: $white-light;
+
+                                            &::placeholder {
+                                                color: lighten($dark, 24%);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+5. Share modal
+========================================================================== */
+
+body {
+    &.is-dark {
+        .share-modal {
+            .card {
+                .card-heading {
+                    .share-dropdown {
+                        &:not(.is-active) {
+                            > div .button {
+                                background: darken($dark, 6%);
+                                border-color: lighten($dark, 4%);
+                                color: $light-text;
+                            }
+                        }
+
+                        .dropdown-menu {
+                            .dropdown-content {
+                                background: darken($dark, 6%);
+                                border-color: lighten($dark, 4%);
+
+                                .dropdown-item {
+                                    &:hover {
+                                        background: lighten($dark, 2%);
+                                    }
+
+                                    .media {
+                                        .media-content {
+                                            small {
+                                                color: $light-text;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .card-body {
+                    > .control {
+                        .textarea {
+                            background: $dark;
+                            border-color: $dark;
+                            color: $white-light;
+
+                            &::placeholder {
+                                color: lighten($dark, 24%);
+                            }
+                        }
+                    }
+
+                    .shared-publication {
+                        .publication-meta {
+                            background: darken($dark, 6%);
+                            border-color: darken($dark, 6%);
+
+                            .inner-flex {
+                                p {
+                                    color: $light-text;
+
+                                    &:before, &:after {
+                                        display: none !important;
+                                    }
+                                }
+                            }
+                        }
+
+                        .publication-footer {
+                            .stats {
+                                .stat-block {
+                                    i, small {
+                                        color: $light-text;
+                                    }
+                                }
+                            }
+
+                            .publication-origin {
+                                i, small {
+                                    color: $light-text;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .bottom-share-inputs {
+                    .control {
+                        border-color: lighten($dark, 10%);
+
+                        .input-heading {
+                            background: darken($dark, 5%);
+                        }
+                    }
+                }
+
+                .card-footer {
+                    background: $dark;
+
+                    .action-wrap {
+                        .footer-action {
+                            &:hover, &.is-active {
+                                background: lighten($dark, 5%);
+
+                                i {
+                                    color: $white-light;
+                                }
+                            }
+                        }
+                    }
+
+                    .button-wrap {
+                        .button:not(.primary-button) {
+                            background: darken($dark, 5%);
+                            border-color: darken($dark, 5%);
+                            color: $light-text;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+6. Change cover and profile picture modals
+========================================================================== */
+
+body {
+    &.is-dark {
+        .change-cover-modal, .change-profile-pic-modal, .new-story-modal {
+            .card-body {
+                .selection-placeholder {
+                    .selection-box {
+                        background: lighten($dark, 8%);
+                        border-color: lighten($dark, 12%);
+
+                        &:hover {
+                            .box-content {
+                                .box-text {
+                                    span {
+                                        &:first-child {
+                                            color: $accent;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .box-content {
+                            .box-text {
+                                span {
+                                    &:first-child {
+                                        color: $white-light;
+                                    }
+
+                                    &:nth-child(2) {
+                                        color: $light-text;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+7. User photos modal
+========================================================================== */
+
+body {
+    &.is-dark {
+        .user-photos-modal {
+            .card {
+                .card-body {
+                    .nav-tabs-wrapper {
+                        .tabs {
+                            ul {
+                                li {
+                                    &.is-active {
+                                        background: $accent;
+                                        border-color: $accent;
+
+                                        a {
+                                            color: $white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .album-wrapper {
+                        background: lighten($dark, 10%);
+                        border-color: lighten($dark, 16%);
+
+                        .album-meta {
+                            .album-title {
+                                span {
+                                    &:first-child {
+                                        color: $white-light;
+                                        font-weight: 500;
+                                    }
+
+                                    &:nth-child(2) {
+                                        color: $light-text;
+                                    }
+                                }
+                            }
+
+                            .image-count {
+                                span {
+                                    color: $light-text;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+8. Crop profile picture modal
+========================================================================== */
+
+body {
+    &.is-dark {
+        .upload-crop-profile-modal, .upload-crop-cover-modal {
+            .card {
+                .card-body {
+                    .profile-uploader-box, .cover-uploader-box {
+                        border-color: lighten($dark, 18%);
+                    }
+
+                    .upload-demo-wrap {
+                        .upload-help {
+                            .cover-reset {
+                                background: darken($dark, 5%);
+                                border-color: darken($dark, 5%);
+                                color: $light-text;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+9. Story Modals
+========================================================================== */
+
+body {
+    &.is-dark {
+        .video-story-modal, .image-story-modal {
+            .card {
+                .card-body {
+                    .story-meta {
+                        > p {
+                            color: $light-text;
+                        }
+
+                        .field {
+                            .control {
+                                &.buttons {
+                                    .button:not(.accent-button) {
+                                        background: darken($dark, 4%);
+                                        border-color: lighten($dark, 4%);
+                                        color: $white-light;
+                                    }
+                                }
+
+                                .input, .textarea {
+                                    background: lighten($dark, 4%);
+                                    border-color: lighten($dark, 10%);
+                                    color: $white-light;
+
+                                    &::placeholder {
+                                        color: lighten($dark, 24%);
+                                    }
+                                }
+
+                                .tokenize {
+                                    background: lighten($dark, 4%);
+                                    border-color: lighten($dark, 10%);
+
+                                    .token {
+                                        background: $dark;
+                                        border-color: $dark;
+                                        color: $white-light;
+                                    }
+
+                                    .token-search, .placeholder {
+                                        border: none;
+
+                                        input {
+                                            border: none;
+                                            color: $white-light;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .story-upload {
+                        .input-block {
+                            input {
+                                background: lighten($dark, 4%);
+                                border-color: lighten($dark, 10%);
+                                color: $light-text;
+
+                                &::-webkit-file-upload-button {
+                                    background: darken($dark, 4%);
+                                    border-color: lighten($dark, 4%);
+                                    color: $white-light;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ==========================================================================
+10. End tour modal
+========================================================================== */
+
+body {
+    &.is-dark {
+        .end-tour-modal {
+            .card {
+                .card-body {
+
+                    .image-wrap {
+                        background: lighten($dark, 10%);
+                    }
+
+                    h3 {
+                        color: $white-light;
+                    }
+
+                    p {
+                        color: $light-text;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ==========================================================================
+11. Confirm Dialog
+========================================================================== */
+
+body {
+    &.is-dark {
+
+        .fancybox-bg {
+            background: darken($dark, 4%);
+        }
+        
+        .fancybox-confirm {
+            padding: 2.5rem !important;
+            background: darken($dark, 8%);
+        
+            .title {
+                color: $white;
+            }
+
+            p {
+                color: $light-text;
+            }
+        }
+    }
+}

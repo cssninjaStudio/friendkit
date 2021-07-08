@@ -1,0 +1,100 @@
+---
+layout: sidebar-v1
+title: Public Page
+---
+
+<div class="toolbar-v1-fixed-wrap">
+	{{> toolbar-v1}}
+</div>
+
+<!-- Container -->
+<div id="pages-main" class="container sidebar-boxed" data-open-sidebar data-page-title="Public Page">
+
+	{{> toolbar-v1}}
+
+    <!-- Profile page main wrapper -->
+    <div class="view-wrap is-headless">
+        <div class="columns is-multiline no-margin">
+            <!-- Left side column -->
+            <div class="column is-paddingless">
+                <!-- Timeline Header -->
+                <!-- html/partials/pages/pages/page-profile-header.html -->
+                {{> page-profile-header}}
+            </div>
+
+        </div>
+
+        <div class="columns has-portrait-padding">
+            <div class="column is-4">
+
+                <!-- Community widget -->
+                <!-- html/partials/pages/widgets/page-community-widget.html -->
+                {{> page-community-widget}}
+
+                <!-- Related pages widget -->
+                <!-- html/partials/pages/widgets/pages-related-pages-widget.html -->
+                {{> page-related-pages-widget}}
+
+            </div>
+
+            <div class="column is-8">
+                <div class="box-heading">
+                    <h4>Posts</h4>
+                    <div class="button-wrap">
+                        <button type="button" class="button is-active">Recent</button>
+                        <button type="button" class="button">Popular</button>
+                    </div>
+                </div>
+
+                <div class="profile-timeline">
+
+                    <!-- Page Timeline post 1 -->
+                    <!-- html/partials/pages/pages/posts/page-timeline-post1.html -->
+                    {{> page-timeline-post1}}
+
+                    <!-- Page Timeline post 2 -->
+                    <!-- html/partials/pages/pages/posts/page-timeline-post2.html -->
+                    {{> page-timeline-post2}}
+
+                    <!-- Page Timeline post 3 -->
+                    <!-- html/partials/pages/pages/posts/page-timeline-post3.html -->
+                    {{> page-timeline-post3}}
+
+                    <!-- Page Timeline post 4 -->
+                    <!-- html/partials/pages/pages/posts/page-timeline-post4.html -->
+                    {{> page-timeline-post4}}
+
+                    <!-- Page Timeline post 5 -->
+                    <!-- html/partials/pages/pages/posts/page-timeline-post5.html -->
+                    {{> page-timeline-post5}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- Change cover image modal -->
+<!--html/partials/pages/profile/timeline/modals/change-cover-modal.html-->
+{{> change-cover-modal}}
+
+<!-- Change profile pic modal -->
+<!--html/partials/pages/profile/timeline/modals/change-profile-pic-modal.html-->
+{{> change-profile-pic-modal}}
+
+<!-- User photos and albums -->
+<!--html/partials/pages/profile/timeline/modals/user-photos-modal.html-->
+{{> user-photos-modal}}
+
+<!-- Profile picture crop modal -->
+<!--html/partials/pages/profile/timeline/modals/upload-crop-profile-modal.html-->
+{{> upload-crop-profile-modal}}
+
+<!-- Cover image crop modal -->
+<!--html/partials/pages/profile/timeline/modals/upload-crop-cover-modal.html-->
+{{> upload-crop-cover-modal}}
+
+<!-- Share modal -->
+<!-- /partials/pages/feed/modals/share-modal.html -->
+{{> share-modal}}

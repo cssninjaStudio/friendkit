@@ -1,0 +1,215 @@
+---
+layout: navbar-v2
+title: Payment
+---
+
+<div id="shop-page" class="navbar-v2-wrapper">
+
+    <div class="container is-desktop">
+        <!--Wrapper-->
+        <div class="shop-wrapper">
+            <!--Header-->
+            <div class="cart-container is-payment">
+                <div class="cart-header">
+                    <div class="header-inner">
+                        <h2 id="checkout-step-title">Payment</h2>
+                        <div class="header-actions">
+                            <div class="buttons">
+                                <a href="/navbar-v2-ecommerce-checkout.html" class="button is-light">
+                                    <span class="icon is-small">
+                                        <i data-feather="arrow-left"></i>
+                                    </span>
+                                    <span>Back</span>
+                                </a>
+                                <a href="/navbar-v2-ecommerce-products.html" class="button is-solid primary-button raised is-hidden">View Order</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Container-->
+            <div id="payment-container" class="checkout-container">
+                <!--Left Side-->
+                <div class="left">
+                    <div class="left-header">
+                        <div class="header-inner">
+                            <img class="avatar" src="assets/img/icons/logos/store.svg" alt="image">
+                            <div class="separator"></div>
+                            <div class="title-wrap">
+                                <h3 class="payment-title">Pay your order</h3>
+                                <p class="payment-subtitle">Enter your credit card information</p>
+                            </div>
+                        </div>
+                        <div class="header-coupon">
+                            <div class="field is-grouped">
+                                <div class="control">
+                                    <input type="text" class="input" placeholder="Gift card or discount code" />
+                                </div>
+                                <div class="control">
+                                    <button class="button is-solid primary-button raised">Apply</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="header-foot">
+                            <span class="label">Total</span>
+                            <span class="amount" data-currency="USD">$216.92</span>
+                        </div>
+                    </div>
+                    <div class="left-body"></div>
+                </div>
+
+                <!--Right Side-->
+                <div class="right">
+                    <div class="payment-form">
+                        <form action="/charge" method="post" id="stripe-payment-form" class="provider-form is-active">
+                            <div id="checkout-contact-section" class="form-section has-margin-bottom">
+                                <div class="form-section-header">
+                                    <h3>Contact Information</h3>
+                                </div>
+                                <div class="field">
+                                    <label for="card-element">Email Address</label>
+                                    <div class="control">
+                                        <input class="input" placeholder="Enter your email address" name="checkout_email"
+                                            autofocus>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div id="checkout-payment-section" class="form-section">
+                                <div class="form-section-header">
+                                    <h3>Payment Information</h3>
+                                </div>
+
+                                <div class="field">
+                                    <label for="card-element">Name on card</label>
+                                    <div class="control">
+                                        <input class="input" placeholder="Enter the name on the credit card"
+                                            name="checkout_name">
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <label for="card-element">Credit or debit card</label>
+                                    <div class="control">
+                                        <div id="card-element">
+                                            <!-- a Stripe Element will be inserted here. -->
+                                        </div>
+
+                                        <!-- Used to display Element errors -->
+                                        <div id="card-errors" role="alert"></div>
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <label>Country</label>
+                                    <div class="control has-icons-left">
+                                        <div class="select">
+                                            <select>
+                                                <option></option>
+                                                <option selected>United States of America</option>
+                                                <option>Belgium</option>
+                                                <option>Brazil</option>
+                                                <option>Canada</option>
+                                                <option>France</option>
+                                                <option>Germany</option>
+                                                <option>Mexico</option>
+                                                <option>Spain</option>
+                                                <option>England</option>
+                                                <option>Luxembourg</option>
+                                            </select>
+                                        </div>
+                                        <div class="icon is-small is-left">
+                                            <i class="mdi mdi-earth"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="field is-disclaimer">
+                                <p>By clicking on 'Submit Payment', you confirm that you fully agree to our <a href="#">Terms Of
+                                        Service</a> and to our <a href="#">Customer's Policy</a>.</p>
+                            </div>
+
+                            <div class="field is-button">
+                                <div class="buttons has-addons">
+                                    <button id="payment-button" type="button" class="button is-solid primary-button">Confirm
+                                        Payment</button>
+                                    <button type="button" class="button is-solid primary-button">$216.92</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div id="confirmation-container" class="checkout-container is-hidden">
+
+                <div class="confirmation-box">
+                    <svg id="successAnimation" class="animated" xmlns="http://www.w3.org/2000/svg" width="70"
+                        height="70" viewBox="0 0 70 70">
+                        <path id="successAnimationResult" fill="#D8D8D8"
+                            d="M35,60 C21.1928813,60 10,48.8071187 10,35 C10,21.1928813 21.1928813,10 35,10 C48.8071187,10 60,21.1928813 60,35 C60,48.8071187 48.8071187,60 35,60 Z M23.6332378,33.2260427 L22.3667622,34.7739573 L34.1433655,44.40936 L47.776114,27.6305926 L46.223886,26.3694074 L33.8566345,41.59064 L23.6332378,33.2260427 Z" />
+                        <circle id="successAnimationCircle" cx="35" cy="35" r="24" stroke="#979797" stroke-width="2"
+                            stroke-linecap="round" fill="transparent" />
+                        <polyline id="successAnimationCheck" stroke="#979797" stroke-width="2" points="23 34 34 43 47 27"
+                            fill="transparent" />
+                    </svg>
+                    <h3>Your payment was successful.</h3>
+                    <p>Thank you for your purchase. We will immediatly start preparing your order and ship it to you.</p>
+
+                    <div class="order-summary">
+                        <h4>Order Summary</h4>
+
+                        <div class="order-line">
+                            <div class="item">
+                                <span>Transaction ID</span>
+                            </div>
+                            <div class="amount">
+                                <span>#45894</span>
+                            </div>
+                        </div>
+                        <div class="order-line">
+                            <div class="item">
+                                <span>Subtotal</span>
+                            </div>
+                            <div class="amount">
+                                <span data-currency="USD">$201.92</span>
+                            </div>
+                        </div>
+                        <div class="order-line">
+                            <div class="item">
+                                <span>Shipping</span>
+                            </div>
+                            <div class="amount">
+                                <span data-currency="USD">$15.00</span>
+                            </div>
+                        </div>
+                        <div class="order-line">
+                            <div class="item">
+                                <span>Taxes</span>
+                            </div>
+                            <div class="amount">
+                                <span data-currency="USD">$8.92</span>
+                            </div>
+                        </div>
+                        <div class="order-line">
+                            <div class="item is-total">
+                                <span>Total</span>
+                            </div>
+                            <div class="amount is-total">
+                                <span data-currency="USD">$216.92</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>

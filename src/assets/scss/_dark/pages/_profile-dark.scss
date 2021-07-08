@@ -1,0 +1,788 @@
+/*! _app-profile.scss | Friendkit | © Css Ninja. 2020-2021 */
+
+/* ==========================================================================
+Profile styles
+========================================================================== */
+
+/*
+    1. Profile Layout
+    2. Page Profile about
+    3. Profile friends
+    4. Photo Library
+    5. Minimal Profile Layout
+*/
+
+/* ==========================================================================
+1. Profile Layout
+========================================================================== */
+
+body {
+    &.is-dark {
+        .cover-bg {
+            .avatar {
+                .pop-button:not(#chat-pop) {
+                    background: darken($dark, 5%);
+                    border-color: darken($dark, 5%);
+                    color: $light-text;
+                }
+            }
+        }
+
+        .profile-menu {
+            .button {
+                &:not(.is-active) {
+                    background: darken($dark, 5%);
+                    border-color: darken($dark, 5%);
+                    color: $light-text;
+                }
+
+                &.is-active {
+                    background: $accent !important;
+                    border-color: $accent !important;
+                    color: $white !important;
+                }
+            }
+        }
+
+        .profile-subheader {
+            .subheader-start, .subheader-middle {
+                h2 {
+                    color: $white-light;
+                    font-weight: 500;
+                }
+
+                span {
+                    &:first-child {
+                        color: $white-light;
+                        font-weight: 500;
+                    }
+
+                    &:nth-child(2) {
+                        color: $light-text;
+                    }
+                }
+            }
+
+            .subheader-end {
+                .button {
+                    background: darken($dark, 5%);
+                    border-color: darken($dark, 5%);
+                    color: $light-text;
+                }
+            }
+        }
+
+        .box-heading {
+            background: $dark;
+            border-color: lighten($dark, 10%);
+
+            h4 {
+                color: $white-light;
+            }
+
+            .button-wrap {
+                .button {
+                    &:first-child {
+                        background: $dark;
+                        border-color: $accent !important;
+                        color: $accent !important;
+
+                        &:hover {
+                            background: $accent !important;
+                            color: $white !important;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        background: darken($dark, 5%);
+                        border-color: lighten($dark, 5%);
+                        color: $light-text;
+                    }
+                }
+            }
+
+            .dropdown {
+                > div {
+                    .button {
+                        border: none;
+                        background: $dark;
+                        border-color: $dark;
+                        color: $white-light;
+                    }
+                }
+            }
+
+            .heading-search {
+                .input {
+                    background: lighten($dark, 4%);
+                    border-color: lighten($dark, 10%);
+                    color: $white-light;
+
+                    &::placeholder {
+                        color: lighten($dark, 24%);
+                    }
+                }
+
+                .search-icon {}
+            }
+        }
+
+        .profile-timeline {
+            .profile-post {
+                .time {
+                    .img-container {
+                        background: lighten($dark, 5%);
+
+                        &:after {
+                            background: lighten($dark, 18%);
+                        }
+                    }
+                }
+            }
+        }
+
+        .basic-infos-wrapper {
+            .card {
+                &.is-profile-info {
+                    .info-row {
+                        border-color: lighten($dark, 10%);
+
+                        > div {
+                            span {
+                                color: $white-light;
+                            }
+
+                            a {
+                                color: $light-text;
+
+                                &:hover {
+                                    color: $accent;
+                                }
+                            }
+                        }
+
+                        > i {
+                            color: $light-text;
+                        }
+                    }
+                }
+            }
+        }
+
+        .friend-cards-list, .trip-cards-list {
+            .card {
+                &.is-friend-card, &.is-trip-card {
+                    .friend-item, .trip-item {
+                        border-color: lighten($dark, 10%);
+
+                        .text-content {
+                            span {
+                                color: $white-light;
+                            }
+
+                            a {
+                                color: $light-text;
+
+                                &:hover {
+                                    color: $accent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .card {
+            &.is-community, &.is-about, &.is-friendkit {
+                h4 {
+                    color: $white-light;
+                }
+
+                > p {
+                    color: $light-text;
+                }
+
+                .flex-block, .created {
+                    svg {
+                        stroke: $light-text;
+                    }
+
+                    p, span {
+                        color: $light-text;
+
+                        a {
+                            color: $accent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+2. Page Profile about
+========================================================================== */
+
+body {
+    &.is-dark {
+        .profile-about {
+            .left-menu {
+                .left-menu-inner {
+                    .menu-item:not(.is-active) {
+                        .menu-icon {
+                            i, span {
+                                color: $light-text;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right-content {
+                .content-section {
+                    .flex-block {
+                        background: $dark;
+                        border-color: lighten($dark, 10%);
+
+                        .flex-block-meta {
+                            span {
+                                &:first-child {
+                                    color: $white-light;
+                                    font-weight: 500;
+
+                                    a {
+                                        color: $accent;
+                                    }
+                                }
+
+                                &:nth-child(2) {
+                                    color: $light-text;
+                                }
+                            }
+                        }
+                    }
+
+                    .about-summary {
+                        background: $dark;
+                        border-color: lighten($dark, 10%);
+
+                        .content {
+                            h3 {
+                                color: $white-light;
+                            }
+
+                            p {
+                                color: $light-text;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .about-card {
+                background: $dark;
+                border-color: lighten($dark, 10%);
+
+                .header {
+                    .icon-title {
+                        h3 {
+                            color: $white-light;
+                        }
+                    }
+
+                    .actions {
+                        .button-wrapper, .dropdown > div {
+                            .button {
+                                background: darken($dark, 5%);
+                                border-color: darken($dark, 5%);
+                                color: $light-text;
+                            }
+
+                            .indicator {
+                                border-color: $dark;
+                            }
+                        }
+                    }
+                }
+
+                .body {
+                    .friend-small-card {
+                        background: lighten($dark, 6%);
+                        border-color: lighten($dark, 12%);
+
+                        .meta {
+                            span {
+                                &:first-child {
+                                    color: $white-light;
+                                    font-weight: 500;
+
+                                    a {
+                                        color: $accent;
+                                    }
+                                }
+
+                                &:nth-child(2) {
+                                    color: $light-text;
+                                }
+                            }
+                        }
+
+                        .dropdown > div {
+                            .button {
+                                background: darken($dark, 5%);
+                                border-color: darken($dark, 5%);
+                                color: $light-text;
+                            }
+                        }
+                    }
+
+                    .photo-list {
+                        .photo-wrapper {
+                            .small-like {
+                                &:not(.is-active) {
+                                    .inner {
+                                        svg {
+                                            stroke: lighten($dark, 28%);
+                                        }
+                                    }
+                                }
+
+                                .inner {
+                                    background: lighten($dark, 8%);
+                                }
+                            }
+                        }
+                    }
+
+                    .place-list {
+                        .place-wrapper {
+                            background: lighten($dark, 6%);
+                            border-color: lighten($dark, 12%);
+
+                            .foot {
+                                a {
+                                    color: $white-light;
+
+                                    &:hover {
+                                        color: $accent;
+                                    }
+                                }
+
+                                .rating {
+                                    svg:not(.is-checked) {
+                                        fill: darken($dark, 6%);
+                                        stroke: darken($dark, 6%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .slider-timeline {
+                .timeline-item {
+                    background: $dark;
+                    border-color: lighten($dark, 8%);
+
+                    .image-container {
+                        .logo-container {
+                            background: $dark;
+                        }
+                    }
+
+                    h3 {
+                        color: $white-light;
+                    }
+
+                    > p, .date {
+                        color: $light-text;
+                    }
+                }
+            }
+
+            .glider-dots {
+                .glider-dot:not(.active) {
+                    background: darken($dark, 6%);
+                }
+            }
+        }
+
+        .page-about-card {
+            .card-title {
+                h4 {
+                    color: $white-light;
+                }
+
+                .button {
+                    background: $accent !important;
+                    border-color: $accent !important;
+                    color: $white !important;
+                }
+            }
+
+            .about-body {
+                .about-block {
+                    .block-header {
+                        border-color: lighten($dark, 8%);
+
+                        h4 {
+                            color: $white-light;
+                        }
+                    }
+
+                    .block-content {
+                        .flex-inner {
+                            &.has-meta {
+                                i {
+                                    color: $light-text;
+                                }
+
+                                .meta {
+                                    span {
+                                        &:first-child {
+                                            color: $white-light;
+                                        }
+
+                                        &:nth-child(2) {
+                                            color: $light-text;
+                                        }
+                                    }
+                                }
+                            }
+
+                            svg {
+                                stroke: $light-text;
+                            }
+
+                            span {
+                                color: $light-text;
+
+                                a {
+                                    color: $accent;
+                                }
+                            }
+                        }
+
+                        .history-block {
+                            .date {
+                                color: $accent;
+                            }
+
+                            .timeline {
+                                ul li {
+                                    color: $light-text;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .community-content {
+            .community-info {
+                .page-followers {
+                    background: $dark;
+                    border-color: lighten($dark, 12%);
+
+                    .header {
+                        h3 {
+                            color: $white-light;
+                        }
+                    }
+
+                    .more-followers {
+                        a {
+                            background: darken($dark, 6%);
+                            border-color: lighten($dark, 4%);
+                            color: $white;
+                        }
+                    }
+                }
+            }
+
+            .community-widgets {
+                .page-counts {
+                    background: $dark;
+                    border-color: lighten($dark, 12%);
+
+                    > div {
+                        border-color: lighten($dark, 12%) !important;
+
+                        span {
+                            &:first-child {
+                                color: $white-light;
+                            }
+
+                            &:nth-child(2) {
+                                color: $light-text;
+                            }
+                        }
+                    }
+                }
+
+                .page-invites {
+                    background: $dark;
+                    border-color: lighten($dark, 12%);
+
+                    .header {
+                        h3 {
+                            color: $white-light;
+                        }
+
+                        .control {
+                            .input {
+                                &:focus {
+                                    border-color: lighten($dark, 16%) !important;
+                                }
+                            }
+                        }
+                    }
+
+                    .suggestions {
+                        .suggestion {
+                            border-color: lighten($dark, 12%) !important;
+
+                            .meta span {
+                                color: $light-text;
+                            }
+
+                            .button {
+                                background: lighten($dark, 10%);
+                                border-color: lighten($dark, 16%);
+                                color: $white;
+
+                                &:hover {
+                                    background: $accent;
+                                    border-color: $accent;
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. Profile friends
+========================================================================== */
+
+body {
+    &.is-dark {
+        .friends-grid {
+            .friend-item {
+                background: $dark;
+                border-color: lighten($dark, 8%);
+
+                .avatar-wrap {
+                    .chat-button {
+                        border-color: $dark;
+                    }
+
+                    .circle {
+                        border-color: lighten($dark, 14%);
+                    }
+                }
+
+                > h3 {
+                    color: $white-light;
+                }
+
+                > p {
+                    color: $light-text;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+4. Photo Library
+========================================================================== */
+
+body {
+    &.is-dark {
+        .image-grid-wrap {
+            .image-grid {
+                .image-row {
+                    .has-background-image {
+                        .photo-like {
+                            &:not(.is-liked) {
+                                .inner {
+                                    svg {
+                                        stroke: lighten($dark, 28%);
+                                    }
+                                }
+                            }
+
+                            .inner {
+                                background: lighten($dark, 8%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .custom-profile-lightbox {
+            .lightbox-inner {
+                .sidebar-side {
+                    background: lighten($dark, 6%);
+
+                    .comments-loader {
+                        background: lighten($dark, 6%);
+                    }
+
+                    .header {
+                        .user-meta {
+                            span {
+                                &:first-child {
+                                    color: $white-light;
+
+                                    small {
+                                        color: $light-text;
+                                    }
+                                }
+
+                                &:nth-child(2) {
+                                    color: $light-text;
+                                }
+                            }
+                        }
+
+                        > .button {
+                            background: darken($dark, 6%);
+                            border-color: lighten($dark, 4%);
+                            color: $white;
+                        }
+
+                        .dropdown {
+                            > div {
+                                .button {
+                                    svg {
+                                        stroke: $light-text;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .inner-content {
+                        .live-stats {
+                            border-color: lighten($dark, 10%);
+                        }
+
+                        .actions {
+                            .action {
+                                &:not(:hover) {
+                                    span {
+                                        color: $light-text;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .comments-list {
+                        background: lighten($dark, 2%);
+
+                        .media {
+                            &.is-comment {
+                                .media-content {
+                                    background: lighten($dark, 6%);
+
+                                    .username {
+                                        color: $white-light;
+                                    }
+
+                                    p {
+                                        color: $light-text;
+                                    }
+
+                                    .comment-actions {
+                                        a {
+                                            color: $accent;
+                                        }
+
+                                        span {
+                                            color: $light-text;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .comment-controls {
+                        background: lighten($dark, 6%);
+                        border-color: lighten($dark, 10%);
+
+                        .controls-inner {
+                            .control {
+                                .textarea {
+                                    background: lighten($dark, 1%);
+                                    border-color: lighten($dark, 1%);
+                                    color: $white-light;
+
+                                    &::placeholder {
+                                        color: lighten($dark, 24%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+5. Minimal Profile Layout
+========================================================================== */
+
+body {
+    &.is-dark {
+        .minimal-profile-wrapper {
+            .profile-info {
+                .left {
+                    .profile-avatar {
+                        img {
+                            border-color: lighten($dark, 10%);
+                        }
+                    }
+
+                    .button {
+                        background: darken($dark, 5%);
+                        border-color: darken($dark, 5%);
+                        color: $light-text;
+
+                        &:hover {
+                            background: $accent;
+                            border-color: $accent;
+                            color: $white;
+                        }
+                    }
+                }
+
+                .right {
+                    .head {
+                        h2 {
+                            color: $white-light;
+                        }
+                    }
+
+                    .bio p {
+                        color: $light-text;
+                    }
+                }
+            }
+        }
+    }
+}

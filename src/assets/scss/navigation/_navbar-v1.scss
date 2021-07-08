@@ -1,0 +1,482 @@
+/*! _navbar.scss | Friendkit | © Css Ninja. 2020-2021 */
+
+/* ==========================================================================
+Navbar styles
+========================================================================== */
+
+/*
+    0. Main Navbar
+    1. Explorer Menu
+    2. Media Queries
+*/
+
+/* ==========================================================================
+0. Main Navbar
+========================================================================== */
+
+.navbar-v1 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 19;
+    height: 58px;
+    width: 100%;
+    background: $white;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
+    border-bottom: 1px solid $fade-grey;
+    transition: all .3s;
+
+    &.no-shadow {
+        box-shadow: none !important;
+    }
+
+    &.no-background {
+        background: transparent !important;
+        border-bottom-color: transparent !important;
+    }
+
+    &.is-landing {
+        height: 70px;
+
+        .navbar-brand {
+            height: 70px;
+
+            .navbar-item {
+                height: 70px;
+
+                .logo {
+                    max-height: 44px;
+                    width: 100%;
+                    max-width: 44px;
+                }
+            }
+        }
+
+        .navbar-item {
+            a:not(.button) {
+                color: $dark-text;
+                font-weight: 500;
+            }
+        }
+
+        .navbar-end {
+            .button {
+                font-size: .95rem;
+                height: 46px;
+                min-width: 120px;
+            }
+        }
+
+        &.no-background {
+            .navbar-brand {
+                .navbar-burger span {
+                    background: $white;
+                }
+            }
+
+            .navbar-end {
+                .navbar-item {
+                    .button {
+                        background: transparent;
+                        border-color: $white-smoke;
+                        color: $white-smoke !important;
+
+                        &:hover {
+                            border-color: $white;
+                            background: $white;
+                            color: $dark-text !important;
+                            opacity: 1 !important;
+                        }
+                    }
+
+                    a {
+                        color: $white-smoke;
+                    }
+                }
+            }
+        }
+
+        &.mobile-navbar {
+            &.no-background {
+                .navbar-brand {
+                    .dark-mobile-logo {
+                        display: none;
+                    }
+
+                    .light-mobile-logo {
+                        display: block;
+                    }
+                }
+            }
+
+            .navbar-brand {
+                .dark-mobile-logo {
+                    display: block;
+                }
+
+                .light-mobile-logo {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &.is-side {
+        width: calc(100% - 70px);
+        margin-left: 70px;
+    }
+
+    .container {
+        &.is-fluid {
+            padding: 0;
+        }
+    }
+
+    .navbar-brand {
+        height: 58px;
+        margin-left: 0 !important;
+        margin-right: 20px;
+
+        &.is-fluid {
+            margin-right: 0;
+            margin-left: 10px !important;
+        }
+
+        &.is-title {
+            display: flex;
+            align-items: center;
+
+            h2 {
+                margin-left: 20px;
+                color: $dark-text;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.1rem;
+                font-weight: 600;
+            }
+        }
+
+        .navbar-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 58px;
+            min-width: 58px;
+
+            .logo {
+                max-height: 38px;
+                max-width: 38px;
+            }
+
+            .user-image img {
+                max-height: 42px;
+                max-width: 42px;
+            }
+
+            &:hover {
+                background: $primary !important;
+            }
+        }
+    }
+
+    .navbar-menu {
+        margin-right: 0 !important;
+    }
+
+    .navbar-item {
+        position: relative;
+        .action-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 36px;
+            max-width: 36px;
+            height: 36px;
+            min-height: 36px;
+            border-radius: 50%;
+            padding: 0;
+            display: none;
+
+            svg {
+                height: 16px;
+                width: 16px;
+            }
+        }
+
+        
+    }
+
+    .control {
+        position: relative;
+
+        .input {
+            position: relative;
+            height: 38px;
+            width: 320px;
+            padding-right: 85px;
+            padding-left: 38px;
+            padding-bottom: 8px;
+            background: lighten($fade-grey, 6%);
+            border-color: lighten($fade-grey, 6%);
+            transition: all .4s;
+            z-index: 1;
+
+            &:focus {
+                background: $white;
+                box-shadow: $light-box-shadow !important;
+                border-color: darken($fade-grey, 2%);
+            }
+        }
+
+        .input:not(:valid) ~ .reset-search {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .input:focus ~ .search-icon svg {
+            stroke: $muted-grey !important;
+        }
+
+        .reset-search {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 38px;
+            width: 38px;
+            opacity: 1;
+            pointer-events: all;
+            transition: all .3s;
+            z-index: 1;
+            cursor: pointer;
+
+            svg {
+                height: 18px;
+                width: 18px;
+                stroke: $muted-grey;
+            }
+        }
+
+        .search-icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 38px;
+            width: 38px;
+            z-index: 1;
+
+            svg {
+                height: 20px;
+                width: 20px;
+                stroke: $placeholder;
+                transition: all .3s;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+1. Explorer Menu
+========================================================================== */
+
+.explorer-menu {
+    position: fixed;
+    top: 58px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 58px);
+    background: $white;
+    opacity: 0;
+    z-index: -1;
+    transform: translateY(60px);
+    transition: opacity .4s, transform .4s;
+
+    &.is-active {
+        transform: translateY(0);
+        opacity: 1;
+        z-index: 11;
+    }
+
+    .explorer-inner {
+        position: relative;
+        height: 100%;
+        width: 100%;
+
+        .explorer-container {
+            max-width: 840px;
+            margin: 0 auto;
+        }
+
+        .explorer-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0;
+
+            h3 {
+                font-family: Montserrat, sans-serif;
+                font-weight: bold;
+                font-size: 1.2rem;
+                color: $dark-text;
+            }
+
+            .control {
+                position: relative;
+
+                input {
+                    padding-right: 40px;
+
+                    &:focus + .form-icon {
+                        svg {
+                            stroke: $accent;
+                        }
+                    }
+                }
+
+                .form-icon {
+                    position: absolute;
+                    top: 0;
+                    right: 4px;
+                    height: 36px;
+                    width: 36px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    svg {
+                        height: 16px;
+                        width: 16px;
+                        stroke: $placeholder;
+                        transition: stroke .3s;
+                    }
+                }
+            }
+        }
+
+        .explore-list {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .explore-item {
+                text-align: center;
+                width: calc(20% - 16px);
+                margin: 8px;
+                padding: 20px 0;
+                border: 1px solid transparent;
+                border-radius: 8px;
+                transition: all .3s;
+                cursor: pointer;
+
+                &:hover {
+                    border-color: $fade-grey;
+                    box-shadow: $light-box-shadow;
+
+                    img {
+                        box-shadow: $light-box-shadow;
+                    }
+                }
+
+                &.is-coming-soon {
+                    img {
+                        filter: grayscale(0.9);
+                    }
+                }
+
+                img {
+                    display: block;
+                    height: 60px;
+                    width: 60px;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                    transition: all .3s;
+                }
+
+                h4 {
+                    font-family: Montserrat, sans-serif;
+                    font-weight: 600;
+                    font-size: .9rem;
+                    color: $dark-text;
+                    margin-top: 6px;
+                }
+
+                .coming-soon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: lighten($fade-grey, 5%);
+                    color: $dark-text;
+                    font-size: .8rem;
+                    font-weight: 500;
+                    line-height: 1;
+                    max-width: 96px;
+                    padding: 4px 8px;
+                    border-radius: 100px;
+                    margin: 0 auto;
+                    position: relative;
+                    top: 3px;
+                }
+            }
+        }
+    }
+}
+
+
+/* ==========================================================================
+2. Media Queries
+========================================================================== */
+
+@media (max-width: 767px) {
+    .explorer-menu {
+        .explorer-container {
+            padding: 0 20px;
+
+            .explorer-header {
+                .control {
+                    max-width: 200px;
+                }
+            }
+
+            .explore-list {
+                max-height: calc(100vh - 150px);
+                overflow-y: auto;
+
+                .explore-item {
+                    padding: 4px 0;
+                    width: calc(33.3% - 16px);
+
+                    img {
+                        height: 50px;
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .explorer-menu {
+        .explorer-container {
+            .explorer-header {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .explorer-menu {
+        .explorer-container {
+            .explorer-header {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+        }
+    }
+}

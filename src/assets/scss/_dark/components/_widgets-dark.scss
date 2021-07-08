@@ -1,0 +1,178 @@
+/*! _widgets-dark.scss | Friendkit | © Css Ninja. 2020-2021 */
+
+/* ==========================================================================
+Widget styles
+========================================================================== */
+
+/*
+    0. Schedule widget
+*/
+
+/* ==========================================================================
+0. Schedule widget
+========================================================================== */
+
+body {
+    &.is-dark {
+        .schedule {
+            background: $dark;
+            border-color: lighten($dark, 10%);
+        
+            .schedule-day-container {
+                .day-content {
+                    background: $dark;
+                    border-color: lighten($dark, 10%);
+        
+                    .event-details-wrap {
+                        .meta-block {
+                            > i {
+                                color: $light-text;
+                            }
+        
+                            .meta {
+                                span {
+                                    &:first-child {
+                                        color: $white-light;
+                                        font-weight: 500;
+                                    }
+        
+                                    &:nth-child(2) {
+                                        color: $light-text;
+                                    }
+                                }
+                            }
+                        }
+        
+                        .participants-wrap {
+                            label {
+                                color: $white-light;
+                            }
+        
+                            .participants {
+                                img {
+                                    border-color: $dark;
+                                }
+                            }
+                        }
+        
+                        .event-description {
+                            label {
+                                color: $white-light;
+                            }
+        
+                            p {
+                                color: $light-text;
+                            }
+                        }
+        
+                        hr {
+                            height: 1px;
+                            background: lighten($dark, 8%);
+                        }
+        
+                        .button-wrap {
+                            .button {
+                                background: darken($dark, 5%);
+                                border-color: darken($dark, 5%);
+                                color: $light-text;
+        
+                                &:hover {
+                                    background: $accent;
+                                    border-color: $accent;
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        
+            .schedule-header {
+                .nav-icon, .month {
+                    &:hover {
+                        background: lighten($dark, 8%);
+                    }
+                }
+        
+                .month {
+                    color: $white-light;
+                }
+            }
+        
+            .schedule-divider {
+                background: lighten($dark, 10%);
+            }
+        
+            .schedule-calendar {
+                .calendar-row {
+                    .day.day-name {
+                        color: $light-text;
+                    }
+        
+                    .day {
+                        color: $light-text;
+        
+                        &:not(.event) {
+                            &:hover {
+                                background: lighten($dark, 5%);
+                            }
+                        }
+                    }
+                }
+        
+                .next-fab {
+                    background: lighten($dark, 5%);
+                    border-color: lighten($dark, 10%);
+        
+                    &:hover {
+                        background: lighten($dark, 2%);
+                    }
+        
+                    svg {
+                        stroke: $light-text;
+                    }
+                }
+            }
+        
+            .schedule-events {
+                background: $dark;
+                border-color: lighten($dark, 10%);
+        
+                .schedule-events-title {
+                    color: $white-light;
+                }
+        
+                .schedule-event {
+                    .event-title {
+                        span {
+                            &:first-child {
+                                color: $white-light;
+                                font-weight: 500;
+                            }
+        
+                            &:nth-child(2) {
+                                color: $light-text;
+                            }
+                        }
+                    }
+                }
+        
+                .button-wrap {
+                    .button {
+                        background: darken($dark, 5%);
+                        border-color: darken($dark, 5%);
+                        color: $light-text;
+        
+                        &:hover {
+                            background: $accent;
+                            border-color: $accent;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+

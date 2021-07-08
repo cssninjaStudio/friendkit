@@ -5,11 +5,19 @@ Main color and shadow variables
 ========================================================================== */
 
 /*
+    0. Fonts
     1. Main colors
     2. State colors
     3. Social colors
     4. Box Shadows
 */
+
+/* ==========================================================================
+0. Fonts
+========================================================================== */
+
+$font-main: 'Montserrat', sans-serif;
+$font: 'Roboto', sans-serif;
 
 /* ==========================================================================
 1. Main colors
@@ -27,7 +35,6 @@ $med-grey: #6f7592;
 $dark-text: #393a4f;
 $light-text: #ABB0BE;
 
-//$primary: #ff5f59;
 $primary: #3d70b2;
 $secondary: #41d6c3;
 $accent: #5596e6;
@@ -41,6 +48,7 @@ $cream-grey: #eee;
 $medium-grey: #ddd;
 $light-text: #a2a5b9;
 $placeholder: #cecece;
+$widget-grey: #f5f6fa;
 
 $fade-grey: #e8e8e8;
 $muted-grey: #999;
@@ -109,5 +117,9 @@ $blue-box-shadow: 0 14px 26px -12px $blue-shadow-from, 0 4px 23px 0px $base-shad
 //Light box shadow
 $light-box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
 
+//Medium box shadow
+$medium-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.09);
+
 //Heavy box shadow
 $heavy-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+

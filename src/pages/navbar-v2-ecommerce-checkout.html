@@ -1,0 +1,264 @@
+---
+layout: navbar-v2
+title: Checkout
+---
+
+<div id="shop-page" class="navbar-v2-wrapper">
+
+    <div class="container is-desktop">
+        <!--Payment Wrapper-->
+        <div class="shop-wrapper">
+            <div class="cart-container">
+                <div class="cart-header">
+                    <div class="header-inner">
+                        <h2 id="checkout-step-title">1. Confirm your order</h2>
+                        <div class="header-actions">
+                            <div class="buttons">
+                                <a id="checkout-back" class="button is-light" data-step="0">
+                                    <span class="icon is-small">
+                                        <i data-feather="arrow-left"></i>
+                                    </span>
+                                    <span>Back</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Checkout content-->
+                <div class="cart-content">
+                    <div class="columns">
+                        <div class="column is-8">
+
+                            <!--Checkout section 1-->
+                            <div id="checkout-section-1" class="checkout-section is-active">
+                                <!--Table-->
+                                <div class="flex-table">
+                                    <!--Table header-->
+                                    <div class="flex-table-header">
+                                        <span class="product"><span>Product</span></span>
+                                        <span class="quantity">Quantity</span>
+                                        <span class="price">Price</span>
+                                        <span class="discount">Discount</span>
+                                        <span class="total">Total</span>
+                                    </div>
+                                    <!--Table item-->
+                                    <div class="flex-table-item">
+                                        <div class="product">
+                                            <img src="assets/img/products/2.svg" alt="">
+                                            <span class="product-name">Cool Shirt</span>
+                                        </div>
+                                        <div class="quantity">
+                                            <span class="has-price">1</span>
+                                        </div>
+                                        <div class="price">
+                                            <span class="has-price">29.00</span>
+                                        </div>
+                                        <div class="discount">
+                                            <span class="has-price">0</span>
+                                        </div>
+                                        <div class="total">
+                                            <span class="has-price">29.00</span>
+                                        </div>
+                                    </div>
+                                    <!--Table item-->
+                                    <div class="flex-table-item">
+                                        <div class="product">
+                                            <img src="assets/img/products/3.svg" alt="">
+                                            <span class="product-name">Military Short</span>
+                                        </div>
+                                        <div class="quantity">
+                                            <span class="has-price">1</span>
+                                        </div>
+                                        <div class="price">
+                                            <span class="has-price">39.00</span>
+                                        </div>
+                                        <div class="discount">
+                                            <span class="has-price">0</span>
+                                        </div>
+                                        <div class="total">
+                                            <span class="has-price">39.00</span>
+                                        </div>
+                                    </div>
+                                    <!--Table item-->
+                                    <div class="flex-table-item">
+                                        <div class="product">
+                                            <img src="assets/img/products/4.svg" alt="">
+                                            <span class="product-name">Cool Backpack</span>
+                                        </div>
+                                        <div class="quantity">
+                                            <span class="has-price">1</span>
+                                        </div>
+                                        <div class="price">
+                                            <span class="has-price">125.00</span>
+                                        </div>
+                                        <div class="discount">
+                                            <span class="has-price">0</span>
+                                        </div>
+                                        <div class="total">
+                                            <span class="has-price">125.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Checkout section-->
+                            <div id="checkout-section-2" class="checkout-section">
+                                <div class="columns is-multiline">
+                                    <div class="column is-6">
+                                        <div class="address-box shipping-address">
+                                            <input type="radio" name="shipping_address">
+                                            <div class="address-box-inner">
+                                                <p>Jenna Davis</p>
+                                                <p>53 Miguel Abrejo St.</p>
+                                                <p>Suite G 63, 92618</p>
+                                                <p>Los Angeles, CA</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column is-6">
+                                        <div class="address-box shipping-address">
+                                            <input type="radio" name="shipping_address">
+                                            <div class="address-box-inner">
+                                                <p>Jenna Davis</p>
+                                                <p>578 Juan Velasquez Parkway.</p>
+                                                <p>Appartment 88, 92612</p>
+                                                <p>Los Angeles, CA</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="add-address-link">
+                                    <a>
+                                        <i data-feather="plus"></i>
+                                        <span>Add Address</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!--Checkout section-->
+                            <div id="checkout-section-3" class="checkout-section">
+                                <div class="columns is-multiline">
+                                    <div class="column is-4">
+                                        <div class="shipping-box">
+                                            <input type="radio" name="shipping_method">
+                                            <div class="shipping-box-inner">
+                                                <img src="assets/img/icons/checkout/world-dark.svg" alt="">
+                                                <p>Worldwide</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column is-4">
+                                        <div class="shipping-box">
+                                            <input type="radio" name="shipping_method">
+                                            <div class="shipping-box-inner">
+                                                <img src="assets/img/icons/checkout/ups.svg" alt="">
+                                                <p>UPS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column is-4">
+                                        <div class="shipping-box">
+                                            <input type="radio" name="shipping_method">
+                                            <div class="shipping-box-inner">
+                                                <img src="assets/img/icons/checkout/usps.svg" alt="">
+                                                <p>USPS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Checkout section-->
+                            <div id="checkout-section-4" class="checkout-section">
+                                <div class="columns is-multiline">
+                                    <div class="column is-6">
+                                        <div class="address-box billing-address">
+                                            <input type="radio" name="billing_address">
+                                            <div class="address-box-inner">
+                                                <p>Jenna Davis</p>
+                                                <p>53 Miguel Abrejo St.</p>
+                                                <p>Suite G 63, 92618</p>
+                                                <p>Los Angeles, CA</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column is-6">
+                                        <div class="address-box billing-address">
+                                            <input type="radio" name="billing_address">
+                                            <div class="address-box-inner">
+                                                <p>Jenna Davis</p>
+                                                <p>578 Juan Velasquez Parkway.</p>
+                                                <p>Appartment 88, 92612</p>
+                                                <p>Los Angeles, CA</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="add-address-link">
+                                    <a>
+                                        <i data-feather="plus"></i>
+                                        <span>Add Address</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--Right Side-->
+                        <div class="column is-4">
+                            <div class="cart-summary">
+                                <div class="summary-header">
+                                    <h3>Order Summary</h3>
+                                </div>
+
+                                <!--card-->
+                                <div id="shipping-placeholder-box" class="summary-card has-text-centered">
+                                    <img class="light-image" src="assets/img/icons/questions/cart.svg" alt="">
+                                    <img class="dark-image" src="assets/img/icons/questions/cart-dark.svg" alt="">
+                                    <h4>Shipping</h4>
+                                    <p>Please verify your order before proceeding with shipping.</p>
+                                </div>
+
+                                <!--card-->
+                                <div id="shipping-address-box" class="summary-card is-hidden">
+                                    <img class="light-image shipping-logo" src="assets/img/icons/checkout/world.svg" alt="">
+                                    <img class="dark-image shipping-logo" src="assets/img/icons/checkout/world-dark.svg" alt="">
+                                    <h3>Shipping Address</h3>
+                                </div>
+
+                                <!--card-->
+                                <div class="summary-card">
+                                    <div class="order-line">
+                                        <span>Subtotal</span>
+                                        <span>193.00</span>
+                                    </div>
+                                    <div id="shipping-amount" class="order-line">
+                                        <span>Shipping</span>
+                                        <span class="is-text">Not calculated</span>
+                                    </div>
+                                    <div class="order-line">
+                                        <span>Taxes</span>
+                                        <span>8.92</span>
+                                    </div>
+                                    <div id="total-amount" class="order-line">
+                                        <span class="is-total">Total</span>
+                                        <span class="is-total">201.92</span>
+                                    </div>
+                                    <div class="button-wrap">
+                                        <button id="checkout-button" class="button is-solid primary-button raised is-fullwidth"
+                                            data-step="2">Continue</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

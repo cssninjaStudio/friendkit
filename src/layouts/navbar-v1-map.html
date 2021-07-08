@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title> Friendkit | {{title}}</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+
+    {{#ifpage 
+      'navbar-v1-map-1'
+      'navbar-v1-map-2'
+    }}
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css"
+      type="text/css"
+    />
+    {{/ifpage}}
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <link rel="stylesheet" href="{{root}}assets/css/core.css">
+</head>
+
+<body>
+
+    {{> pageloader}}
+
+    <div class="app-overlay"></div>
+
+    {{> navbar}}
+    {{> mobile-navbar}}
+
+    <div class="view-wrapper is-map">
+        {{> body}}
+    </div>
+
+    {{> chat-wrapper}}
+    {{> explorer-menu}}
+
+    <!--Load Mapbox-->
+    {{#ifpage 
+      'navbar-v1-map-1'
+      'navbar-v1-map-2'
+    }}
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
+    <!-- Promise polyfill script required to use Mapbox GL Geocoder in IE 11 -->
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+    {{/ifpage}} 
+
+    {{> scripts}}
+</body>
+
+</html>

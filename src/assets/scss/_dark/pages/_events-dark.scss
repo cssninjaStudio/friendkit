@@ -1,0 +1,273 @@
+/*! _app-events-dark.scss | Friendkit | © Css Ninja. 2020-2021 */
+
+/* ==========================================================================
+Events Pages dark styles
+========================================================================== */
+
+/*
+    1. Events page layout
+    2. Event page layout
+*/
+
+/* ==========================================================================
+1. Events page layout
+========================================================================== */
+
+body {
+    &.is-dark {
+        .events-wrapper {
+            .left-panel {
+                background: darken($dark, 6%);
+                border-color: darken($dark, 6%);
+
+                .left-panel-inner {
+                    .scroll-link {
+                        border-color: lighten($dark, 8%);
+
+                        &.is-active {
+                            background: lighten($dark, 3%);
+
+                            .date-block {
+                                .month {
+                                    color: $white-light;
+                                }
+                            }
+                        }
+
+                        &:not(.is-active) {
+                            .date-block {
+                                svg {
+                                    stroke: $light-text;
+                                }
+
+                                .month {
+                                    color: $light-text;
+                                }
+                            }
+                        }
+
+                        .meta-block {
+                            span {
+                                color: $light-text;
+                            }
+                        }
+                    }
+
+                    .add-event {
+                        background: darken($dark, 6%);
+
+                        .button {
+                            &:not(:hover) {
+                                background: darken($dark, 6%);
+                                color: $light-text;
+                            }
+
+                            &:hover {
+                                background: $primary !important;
+                                border-color: $primary !important;
+                                color: $white !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right-panel {
+                background: lighten($dark, 2%);
+                border-color: lighten($dark, 2%);
+
+                .panel-header {
+                    h3 {
+                        color: $white-light;
+                    }
+                }
+
+                .panel-body {
+                    .activity-block {
+                        .activity-meta {
+                            p, span {
+                                color: $light-text;
+                            }
+
+                            a {
+                                color: $white-light;
+
+                                &:hover {
+                                    color: $accent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .wrapper-inner {
+                .event-list {
+                    .event-item {
+                        background: lighten($dark, 8%);
+                        border-color: lighten($dark, 14%) !important;
+
+                        .event-inner-wrap {
+                            .event-title {
+                                color: $white-light;
+                            }
+
+                            .event-subtitle {
+                                svg {
+                                    stroke: $light-text;
+                                }
+
+                                h3 {
+                                    color: $light-text;
+                                }
+                            }
+
+                            .event-options {
+                                > div .button {
+                                    background: lighten($dark, 8%) !important;
+                                }
+                            }
+
+                            .event-content {
+                                .event-description {
+                                    p {
+                                        color: $light-text;
+                                    }
+                                }
+                            }
+
+                            .event-participants {
+                                .participants-group {
+                                    img {
+                                        border-color: lighten($dark, 8%);
+                                    }
+                                }
+
+                                .participants-text {
+                                    p {
+                                        color: $light-text;
+
+                                        a {
+                                            color: $white-light;
+
+                                            &:hover {
+                                                color: $accent;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+1. Event page layout
+========================================================================== */
+
+body {
+    &.is-dark {
+        .event-page-wrapper {
+            .event-content {
+                .event-head {
+                    overflow: hidden;
+                    border-color: lighten($dark, 4%);
+                    background: $dark;
+
+                    h2 {
+                        color: $white-light;
+                    }
+
+                    .left {
+                        .button-separator {
+                            background: lighten($dark, 10%);
+                            border-color: lighten($dark, 18%);
+                        }
+
+                        .info-block {
+                            .info-body {
+                                p, a {
+                                    color: $white-light;
+                                }
+
+                                a:hover {
+                                    color: $accent;
+                                }
+                            }
+                        }
+                    }
+
+                    .right {
+                        background: lighten($dark, 6%);
+                        border-color: lighten($dark, 18%);
+
+                        .subscribe-block {
+                            p {
+                                color: $light-text;
+                            }
+                        }
+                    }
+                }
+
+                .event-participants {
+                    .container-inner {
+                        .participant {
+                            .participant-avatar {
+                                background: lighten($dark, 16%);
+                                border-color: lighten($dark, 16%);
+
+                                &:hover {
+                                    border-color: $accent;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .event-details {
+                    .left {
+                        border-color: lighten($dark, 18%);
+
+                        .details-block {
+                            h3 {
+                                color: $white-light;
+                            }
+
+                            p {
+                                color: $light-text;
+                            }
+                        }
+                    }
+
+                    .right {
+                        .event-owner {
+                            .meta {
+                                span {
+                                    &:nth-child(2) {
+                                        color: $white-light;
+                                    }
+                                }
+                            }
+                        }
+
+                        .side-block {
+                            .side-body {
+                                a {
+                                    color: $white-light;
+
+                                    &:hover {
+                                        color: $accent;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

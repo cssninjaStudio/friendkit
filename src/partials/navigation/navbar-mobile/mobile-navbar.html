@@ -1,0 +1,103 @@
+<nav class="navbar mobile-navbar is-hidden-desktop" aria-label="main navigation">
+    <!-- Brand -->
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+            <img class="light-image" src="assets/img/logo/friendkit-bold.svg" alt="">
+            <img class="dark-image" src="assets/img/logo/friendkit-white.svg" alt="">
+        </a>
+
+        {{> friend-requests-dropdown}}
+
+        {{> notifications-dropdown}}
+
+        {{> messages-dropdown}}
+        <div id="mobile-explorer-trigger" class="navbar-item is-icon">
+            <a class="icon-link is-primary">
+                <i class="mdi mdi-apps"></i>
+            </a>
+        </div>
+
+        <div id="open-mobile-search" class="navbar-item is-icon">
+            <a class="icon-link is-primary" href="javascript:void(0);">
+                <i data-feather="search"></i>
+            </a>
+        </div>
+
+        <!-- Mobile menu toggler icon -->
+        <div class="navbar-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- Navbar mobile menu -->
+    <div class="navbar-menu">
+        <!-- Account -->
+        <div class="navbar-item has-dropdown is-active">
+            <a href="/navbar-v1-profile-main.html" class="navbar-link">
+                <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/jenna.png" alt="">
+                <span class="is-heading">Jenna Davis</span>
+            </a>
+
+            <!-- Mobile Dropdown -->
+            <div class="navbar-dropdown">
+                <a href="/navbar-v1-feed.html" class="navbar-item is-flex is-mobile-icon">
+                    <span><i data-feather="activity"></i>Feed</span>
+                    <span class="menu-badge">87</span>
+                </a>
+                <a href="/navbar-v1-videos-home-v2.html" class="navbar-item is-flex is-mobile-icon">
+                    <span><i data-feather="play-circle"></i>Watch</span>
+                    <span class="menu-badge">21</span>
+                </a>
+                <a href="/navbar-v1-profile-friends.html" class="navbar-item is-flex is-mobile-icon">
+                    <span><i data-feather="heart"></i>Friend Requests</span>
+                    <span class="menu-badge">3</span>
+                </a>
+                <a href="/navbar-v1-profile-main.html" class="navbar-item is-flex is-mobile-icon">
+                    <span><i data-feather="user"></i>Profile</span>
+                </a>
+                <a href="/navbar-v1-ecommerce-cart.html" class="navbar-item is-flex is-mobile-icon">
+                    <span><i data-feather="shopping-cart"></i>Cart</span>
+                    <span class="menu-badge">3</span>
+                </a>
+                <a href="#" class="navbar-item is-flex is-mobile-icon">
+                    <span><i data-feather="bookmark"></i>Bookmarks</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- More -->
+        <div class="navbar-item has-dropdown">
+            <a href="/navbar-v1-settings.html" class="navbar-link">
+                <i data-feather="user"></i>
+                <span class="is-heading">Account</span>
+            </a>
+
+            <!-- Mobile Dropdown -->
+            <div class="navbar-dropdown">
+                <a href="#" class="navbar-item is-flex is-mobile-icon">
+                    <span><i data-feather="life-buoy"></i>Support</span>
+                </a>
+                <a href="/navbar-v1-settings.html" class="navbar-item is-flex is-mobile-icon">
+                    <span><i data-feather="settings"></i>Settings</span>
+                </a>
+                <a href="#" class="navbar-item is-flex is-mobile-icon">
+                    <span><i data-feather="log-out"></i>Logout</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--Search-->
+    <div class="mobile-search is-hidden">
+        <div class="control">
+            <input id="tipue_drop_input_mobile" class="input" placeholder="Search...">
+            <div class="form-icon">
+                <i data-feather="search"></i>
+            </div>
+            <div class="close-icon">
+                <i data-feather="x"></i>
+            </div>
+            <div id="tipue_drop_content_mobile" class="tipue-drop-content"></div>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,244 @@
+/*! _utils-dark.scss | Friendkit | © Css Ninja. 2020-2021 */
+
+/* ==========================================================================
+CSS utilities
+========================================================================== */
+
+/*
+    1. Fancybox
+    2. Hopscotch styles
+    3. Loaders
+*/
+
+/* ==========================================================================
+1. Fancybox
+========================================================================== */
+
+body {
+    &.is-dark {
+        .fancybox-custom-layout {
+            .fancybox-caption {
+                background: $dark;
+
+                .fancybox-caption__body {
+                    background: $dark;
+
+                    .header {
+                        .user-meta {
+                            span {
+                                &:first-child {
+                                    color: $white-light;
+    
+                                    small {
+                                        color: $light-text;
+                                    }
+                                }
+    
+                                &:nth-child(2) {
+                                    color: $light-text;
+                                }
+                            }
+                        }
+    
+                        > .button {
+                            background: darken($dark, 6%);
+                            border-color: lighten($dark, 4%);
+                            color: $white;
+                        }
+    
+                        .dropdown {
+                            > div {
+                                .button {
+                                    svg {
+                                        stroke: $light-text;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .inner-content {
+                        .live-stats {
+                            border-color: lighten($dark, 10%);
+                        }
+
+                        .actions {
+                            .action {
+                                &:not(:hover) {
+                                    span {
+                                        color: $light-text;
+                                    }
+                                }
+                            }
+
+                            .dropdown {
+                                > div {
+                                    .avatar-button {
+                                        svg {
+                                            fill: $white-light;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .comments-list {
+                        background: darken($dark, 6%);
+
+                        .media {
+                            &.is-comment {
+                                .media-content {
+                                    background: lighten($dark, 3%);
+
+                                    .username {
+                                        color: $white-light;
+                                    }
+
+                                    p {
+                                        color: $light-text;
+                                    }
+
+                                    .comment-actions {
+                                        span {
+                                            color: $light-text;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .comment-controls {
+                        background: $dark;
+                        border-color: lighten($dark, 10%);
+
+                        .controls-inner {
+                            .control {
+                                .textarea {
+                                    background: darken($dark, 6%);
+                                    border-color: darken($dark, 6%);
+                                    color: $white-light;
+
+                                    &::placeholder {
+                                        color: lighten($dark, 24%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ==========================================================================
+2. Hopscotch styles
+========================================================================== */
+
+body {
+    &.is-dark {
+        .hopscotch-bubble {
+            border-color: lighten($dark, 4%) !important;
+            background: darken($dark, 6%) !important;
+
+            .hopscotch-bubble-container {
+                background: darken($dark, 6%) !important;
+
+                .hopscotch-bubble-number {
+                    background: darken($dark, 6%) !important;
+                }
+
+                .hopscotch-bubble-content {
+                    .hopscotch-title {
+                        color: $white-light;
+                    }
+
+                    .hopscotch-content {
+                        color: $light-text;
+                    }
+                }
+
+                .hopscotch-actions {
+                    .hopscotch-nav-button {
+                        background: $accent !important;
+                        border-color: $accent !important;
+                        color: $white !important;
+                        outline: none !important;
+                    }
+                }
+
+                .hopscotch-bubble-close {
+                    background: darken($dark, 6%) !important;
+                }
+            }
+
+            .hopscotch-arrow {
+                &.up {
+                    .hopscotch-bubble-arrow-border {
+                        border-bottom-color: lighten($dark, 4%) !important;
+                    }
+                    .hopscotch-bubble-arrow {
+                        border-bottom-color: darken($dark, 6%) !important;
+                    }
+                }
+
+                &.down {
+                    .hopscotch-bubble-arrow-border {
+                        border-top-color: lighten($dark, 4%) !important;
+                    }
+                    .hopscotch-bubble-arrow {
+                        border-top-color: darken($dark, 6%) !important;
+                    }
+                }
+
+                &.right {
+                    .hopscotch-bubble-arrow-border {
+                        border-left-color: lighten($dark, 4%) !important;
+                    }
+                    .hopscotch-bubble-arrow {
+                        border-left-color: darken($dark, 6%) !important;
+                    }
+                }
+
+                &.left {
+                    .hopscotch-bubble-arrow-border {
+                        border-right-color: lighten($dark, 4%) !important;
+                    }
+                    .hopscotch-bubble-arrow {
+                        border-right-color: darken($dark, 6%) !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/* ==========================================================================
+3. Loaders
+========================================================================== */
+
+body {
+    &.is-dark {
+        .subloader {
+            background: lighten($dark, 8%) !important;
+        }
+    }
+}
+
+
+/* ==========================================================================
+3. Dark helpers
+========================================================================== */
+
+body {
+    &.is-dark {
+        .is-dark-heading {
+            color: darken($white, 8%) !important;
+        }
+    }
+}

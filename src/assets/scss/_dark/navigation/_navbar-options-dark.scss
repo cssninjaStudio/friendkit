@@ -1,0 +1,66 @@
+/*! _navbar-options-dark.scss | Friendkit | © Css Ninja. 2020-2021 */
+
+/* ==========================================================================
+Navbar options
+========================================================================== */
+
+/*
+    0. Navbar options dark
+*/
+
+/* ==========================================================================
+0. Navbar options dark
+========================================================================== */
+
+body {
+    &.is-dark {
+        .options-nav {
+            background: darken($dark, 2%);
+            border-color: darken($dark, 2%);
+
+            .nav-inner {
+                &.is-friends {
+                    .nav-item {
+                        &.is-icon {
+                            svg {
+                                stroke: $light-text;
+                            }
+                        }
+                    }
+
+                    .option-tabs {
+                        &.is-friends {
+                            .option-tab {
+                                &:not(.is-active) {
+                                    span {
+                                        color: lighten($dark, 24%);
+                                    }
+                                }
+
+                                &.is-active {
+                                    span {
+                                        color: $white-light;
+                                    }
+                                }
+                            }
+
+                            .option-naver {
+                                background: $accent;
+                            }
+                        }
+                    }
+
+                    .end-group {
+                        .is-friend-count {
+                            color: $light-text;
+                        }
+
+                        .is-icon, .is-search {
+                            border-color: lighten($dark, 12%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

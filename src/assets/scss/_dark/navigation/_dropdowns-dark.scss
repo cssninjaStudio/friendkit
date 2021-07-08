@@ -1,0 +1,201 @@
+/*! _dropdowns-dark.scss | Friendkit | © Css Ninja. 2020-2021 */
+
+/* ==========================================================================
+Nav drops styles
+========================================================================== */
+
+/*
+    0. Nav drops dark
+*/
+
+/* ==========================================================================
+0. Nav drops dark
+========================================================================== */
+
+body {
+    &.is-dark {
+        .navbar-item {
+            &.is-icon {
+                &:not(:hover):not(.is-active) {
+                    .icon-link {
+                        svg {
+                            stroke: $light-text;
+                        }
+
+                        .mdi {
+                            color: $light-text;
+                        }
+                    }
+                }
+
+                .icon-link {
+                    &.is-active {
+                        svg {
+                            stroke: $white !important;
+                        }
+
+                        .mdi {
+                            color: $white !important;
+                        }
+
+                        .indicator {
+                            border-color: darken($dark, 6%) !important;
+                        }
+                    }
+                }
+            }
+
+            &.is-account {
+                .user-image {
+                    .indicator {
+                        border-color: darken($dark, 6%);
+                    }
+                }
+            }
+
+            &.is-cart {
+                .cart-button {
+                    .cart-count {
+                        border-color: darken($dark, 6%);
+                    }
+                }
+
+                .shopping-cart {
+                    background: darken($dark, 5%) !important;
+                    border-color: lighten($dark, 8%) !important;
+
+                    &:after {
+                        border-bottom-color: darken($dark, 5%);
+                    }
+
+                    &:before {
+                        border-bottom-color: lighten($dark, 8%);
+                    }
+
+                    .cart-inner {
+                        .navbar-cart-loader {
+                            background: darken($dark, 5%) !important;
+                        }
+
+                        .shopping-cart-header {
+                            border-color: lighten($dark, 8%) !important;
+
+                            .cart-link {
+                                border-color: $accent;
+                                color: $accent;
+
+                                &:hover {
+                                    background: $accent;
+                                    color: $white;
+                                }
+                            }
+
+                            .shopping-cart-total {
+                                .main-color-text {
+                                    color: darken($white-light, 10%);
+                                }
+                            }
+                        }
+
+                        .shopping-cart-items {
+                            .cart-row {
+                                border-color: lighten($dark, 8%) !important;
+
+                                .item-meta {
+                                    .item-name {
+                                        color: darken($white-light, 10%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .nav-drop {
+                background: darken($dark, 5%) !important;
+                border-color: lighten($dark, 8%) !important;
+
+                &:after {
+                    border-bottom-color: darken($dark, 5%) !important;
+                }
+
+                &:before {
+                    border-bottom-color: darken($dark, 5%) !important;
+                }
+
+                .nav-drop-header, .nav-drop-footer {
+                    background: darken($dark, 5%) !important;
+                    border-bottom-color: lighten($dark, 2%);
+                }
+
+                .nav-drop-header {
+                    border-color: lighten($dark, 6%) !important;
+
+                    .theme-toggle {
+                        .toggler {
+                            background: darken($dark, 0%) !important;
+                        }
+                    }
+                }
+
+                .nav-drop-body {
+                    &.account-items {
+                        .account-item {
+                            &:hover {
+                                background: lighten($dark, 6%);
+                            }
+
+                            .media {
+                                .media-content {
+                                    h3 {
+                                        color: darken($white-light, 10%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.is-friend-requests, &.is-notifications, &.is-messages {
+                        .media {
+                            .media-content {
+                                a {
+                                    color: $accent;
+                                }
+
+                                .time {
+                                    color: darken($white-light, 10%);
+                                }
+                            }
+
+                            .media-right {
+                                .button {
+                                    background: lighten($dark, 6%) !important;
+                                    border-color: lighten($dark, 6%) !important;
+                                }
+                            }
+                        }
+                    }
+
+                    .media {
+                        border-color: lighten($dark, 6%) !important;
+
+                        .media-content {
+                            a {
+                                color: darken($white-light, 14%);
+
+                                &:hover {
+                                    color: $accent;
+                                }
+                            }
+                        }
+                    }
+
+                    .account-divider {
+                        background: lighten($dark, 6%) !important;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+/*! sidebar-v1-dark.scss | Friendkit | © Css Ninja. 2020-2021 */
+
+/* ==========================================================================
+Sidebar v1 dark
+========================================================================== */
+
+/*
+    1. Sidebar v1 dark
+*/
+
+/* ==========================================================================
+1. Sidebar v1 dark
+========================================================================== */
+
+body {
+    &.is-dark {
+        .sidebar-v1 {
+            background: darken($dark, 6%);
+            border-color: darken($dark, 6%);
+
+            .top-section {
+
+                .close-button {
+                    color: $primary;
+                }
+
+                .field {
+                    .control {
+                        .input {
+                            background: darken($dark, 2%);
+                            border-color: darken($dark, 2%);
+
+                            &:focus {
+                                background: lighten($dark, 3%);
+                                border-color: lighten($dark, 3%);
+                            }
+                        }
+                    }
+                }
+
+                .user-block {
+                    .meta {
+                        span {
+                            &:first-child {
+                                color: $white-light;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .bottom-section {
+                ul {
+                    li {
+
+                        &:hover {
+                            background: darken($dark, 2%);
+                        }
+
+                        a {
+                            &:not(.is-active) {
+                                span {
+                                    color: darken($light-text, 8%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

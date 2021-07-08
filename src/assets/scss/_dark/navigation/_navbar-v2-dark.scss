@@ -1,0 +1,73 @@
+/*! _navbar-v2-dark.scss | Friendkit | © Css Ninja. 2020-2021 */
+
+/* ==========================================================================
+Navbar v2 dark styles
+========================================================================== */
+
+/*
+    1. Navbar v2
+*/
+
+/* ==========================================================================
+1. Navbar v2
+========================================================================== */
+
+body {
+    &.is-dark {
+        .navbar-v2 {
+            .top-nav {
+                background: darken($dark, 6%);
+                border-color: darken($dark, 6%);
+        
+                .left {
+                    .brand {
+                        .navbar-logo {
+                            border-color: lighten($dark, 9%) !important;
+                        }
+                    }
+
+                    .control {
+                        .input {
+                            background: lighten($dark, 4%);
+                            border-color: lighten($dark, 4%);
+                            color: $white-light;
+    
+                            &::placeholder {
+                                color: lighten($dark, 24%);
+                            }
+    
+                            &:focus ~ .search-icon {
+                                svg {
+                                    stroke: $primary !important;
+                                }
+                            }
+                        }
+    
+                        .search-icon {
+                            svg {
+                                stroke: lighten($dark, 24%);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .sub-nav {
+                background: darken($dark, 3%);
+                border-bottom-color: lighten($dark, 3%) !important;
+
+                .sub-nav-tabs {
+                    ul {
+                        li {
+                            &:not(.is-active) {
+                                a {
+                                    opacity: .6;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
