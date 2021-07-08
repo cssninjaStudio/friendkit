@@ -49,3 +49,5 @@ node_modules/
 ### Custom Files ###
 dist/
 accessibility-reports/
+*.zip
+*.log

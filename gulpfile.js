@@ -1,5 +1,5 @@
 'use strict';
-const { src, dest, watch, series, parallel } = require('gulp');
+const { src, dest, watch, series } = require('gulp');
 const log = require('fancy-log');
 const colors = require('ansi-colors');
 const browserSync = require('browser-sync').create();
@@ -12,13 +12,10 @@ const panini = require('panini');
 const uglify = require('gulp-uglify-es').default;
 const sourcemaps = require('gulp-sourcemaps');
 const imagemin = require('gulp-imagemin');
-const removeCode = require('gulp-remove-code');
-const removeLog = require('gulp-remove-logging');
 const prettyHtml = require('gulp-pretty-html');
 const sassLint = require('gulp-sass-lint');
 const htmllint = require('gulp-htmllint');
 const jshint = require('gulp-jshint');
-const htmlreplace = require('gulp-html-replace');
 const newer = require('gulp-newer');
 const autoprefixer = require('gulp-autoprefixer');
 const accessibility = require('gulp-accessibility');
@@ -125,6 +122,7 @@ function compileJS() {
     'src/assets/js/elements.js',
   ])
     .pipe(babel())
+    .pipe(uglify())
     .pipe(dest('dist/assets/js/'))
     .pipe(browserSync.stream());
 }
@@ -193,6 +191,23 @@ function browserSyncInit(done) {
 // ------------ OPTIMIZATION TASKS -------------
 
 // COPIES AND MINIFY IMAGE TO DIST
+function minifyImages() {
+  console.log('---------------OPTIMIZING IMAGES---------------');
+  return src('src/assets/img/**/*.+(png|jpg|jpeg|gif|svg|mp4|webm|ogg)')
+    .pipe(newer('dist/assets/img/'))
+    .pipe(imagemin([
+      imagemin.gifsicle({ optimizationLevel: 3, interlaced: true }),
+      imagemin.mozjpeg({ quality: 85 }),
+      imagemin.optipng({ optimizationLevel: 3 }),
+      imagemin.svgo()
+    ], {
+      verbose: true
+    }))
+    .pipe(dest('dist/assets/img/'))
+    .pipe(browserSync.stream());
+}
+
+// COPIES IMAGE TO DIST
 function copyImages() {
   console.log('---------------OPTIMIZING IMAGES---------------');
   return src('src/assets/img/**/*')
@@ -251,8 +266,9 @@ function concatPlugins() {
     //Additional static js assets
     'src/assets/vendor/js/**/*.js',
   ])
-    .pipe(sourcemaps.init())
     .pipe(concat('app.js'))
+    .pipe(sourcemaps.init())
+    .pipe(uglify())
     .pipe(sourcemaps.write('./'))
     .pipe(dest('dist/assets/js'))
     .pipe(browserSync.stream());
@@ -352,8 +368,40 @@ exports.accessibility = HTMLAccessibility;
 exports.setup = series(setupBulma);
 
 // DEV
-exports.dev = series(cleanDist, copyFont, copyData, jsVendor, cssVendor, copyImages, compileHTML, concatPlugins, concatCssPlugins, compileJS, resetPages, prettyHTML, compileSASS, compileSCSS, browserSyncInit, watchFiles);
+exports.dev = series(
+  cleanDist, 
+  copyFont, 
+  copyData, 
+  jsVendor, 
+  cssVendor, 
+  copyImages, 
+  compileHTML, 
+  concatPlugins, 
+  concatCssPlugins, 
+  compileJS, 
+  resetPages, 
+  prettyHTML, 
+  compileSASS, 
+  compileSCSS, 
+  browserSyncInit, 
+  watchFiles
+);
 
 // BUILD
-exports.build = series(cleanDist, copyFont, copyData, jsVendor, cssVendor, copyImages, compileHTML, concatPlugins, concatCssPlugins, compileJS, resetPages, prettyHTML, compileSASS, compileSCSS);
+exports.build = series(
+  cleanDist, 
+  copyFont, 
+  copyData, 
+  jsVendor, 
+  cssVendor, 
+  compileHTML, 
+  concatPlugins, 
+  concatCssPlugins, 
+  compileJS, 
+  minifyImages,
+  resetPages, 
+  prettyHTML, 
+  compileSASS, 
+  compileSCSS
+);
 
