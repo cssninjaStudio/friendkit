@@ -1,0 +1,139 @@
+/*! _dashboard-dark.scss | Friendkit | © Css Ninja. 2020-2021 */
+
+/* ==========================================================================
+Dashboard dark styles
+========================================================================== */
+
+/*
+    1. Dashboard toolbar dark
+    2. Dashboard box dark
+    3. Dashboard videos dark
+*/
+
+/* ==========================================================================
+1. Dashboard toolbar dark
+========================================================================== */
+
+.is-dark {
+  .dashboard-toolbar {
+    .title {
+      color: $white;
+    }
+
+    .theme-toggle {
+      .toggler {
+        background: darken($dark, 0%) !important;
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+2. Dashboard box dark
+========================================================================== */
+
+.is-dark {
+  .dashboard-box {
+    background-color: $dark;
+    border-color: lighten($dark, 10%);
+
+    .title,
+    .topheading {
+      color: $white-light;
+    }
+
+    .stat-block {
+      border-bottom-color: lighten($dark, 10%);
+
+      .stat-value {
+        color: $white-light;
+      }
+    }
+
+    .help-block {
+      h4 {
+        color: $white-light;
+      }
+    }
+
+    .box-content {
+      .box-line {
+        .left {
+          color: darken($light-text, 13%);
+        }
+      }
+
+      .box-comments {
+        .box-comment {
+          border-top-color: lighten($dark, 10%);
+
+          .comment-meta {
+            .meta-content {
+              color: darken($light-text, 14%);
+            }
+          }
+        }
+      }
+
+      .box-subscribers {
+        .box-subscriber {
+          border-top-color: lighten($dark, 10%);
+
+          .subscriber-meta {
+            .meta-title {
+              color: $white-light;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+3. Dashboard videos dark
+========================================================================== */
+
+.is-dark {
+  .video-collection {
+    .collection-header {
+      > a {
+        &.is-active {
+          color: $white-light;
+        }
+      }
+    }
+
+    .collections-wrap {
+      .collection {
+        .header {
+          h4 {
+            color: $white-light;
+          }
+
+          a {
+            color: $accent;
+          }
+        }
+
+        .video-collection {
+          .episode {
+            .episode-meta {
+              .info {
+                span {
+                  &:first-child {
+                    color: $white-light;
+                  }
+
+                  &:nth-child(2) {
+                    color: $light-text;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

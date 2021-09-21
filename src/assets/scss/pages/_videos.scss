@@ -447,7 +447,7 @@ Videos styles
 
             > a {
                 margin-right: 30px;
-                font-family: 'Montserrat', sans-serif;
+                font-family: $font-main;
                 font-size: .85rem;
                 font-weight: 600;
                 color: $placeholder;
@@ -520,8 +520,6 @@ Videos styles
                     padding: 10px 0 20px 0;
                     margin-left: -10px;
                     margin-right: -10px;
-
-                    //margin-bottom: 20px;
 
                     .episode {
                         margin: 10px;

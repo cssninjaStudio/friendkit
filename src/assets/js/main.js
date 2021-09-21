@@ -67,6 +67,9 @@ $(document).ready(function(){
     //Init sidebar v1
     initSidebarV1();
 
+    //Dashboard
+    linkCheck();
+
     //Mobile menu toggle
     initResponsiveMenu();
 

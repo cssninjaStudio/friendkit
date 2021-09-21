@@ -1,0 +1,548 @@
+/*! _dashboard.scss | Friendkit | © Css Ninja. 2020-2021 */
+
+/* ==========================================================================
+Dashboard styles
+========================================================================== */
+
+/*
+    0. Dashboard container
+    1. Dashboard toolbar
+    2. Dashboard box
+*/
+
+/* ==========================================================================
+0. Dashboard container
+========================================================================== */
+
+.dashboard-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .dashboard-container {
+    padding-top: 80px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .dashboard-container {
+    padding-top: 80px;
+  }
+}
+
+
+/* ==========================================================================
+1. Dashboard toolbar
+========================================================================== */
+
+.dashboard-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+
+  .title {
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+
+    .buttons {
+      margin-left: 0.5rem;
+
+      .live-button {
+        color: $danger !important;
+        border-color: $danger !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .dashboard-toolbar {
+    flex-direction: column;
+
+    .title {
+      margin-bottom: 1rem;
+    }
+
+    .actions {
+      flex-direction: column;
+
+      .buttons {
+        margin-top: 1rem;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+2. Dashboard box
+========================================================================== */
+
+.dashboard-box {
+  background: $white;
+  padding: 1.5rem;
+  border: 1px solid darken($fade-grey, 2%);
+  border-radius: 0.75rem;
+
+  &:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+
+  &.is-compact {
+    padding: 2rem;
+  }
+
+  > .title {
+    margin-bottom: 0.75rem;
+  }
+
+  .topheading {
+    font-family: $font;
+    color: $dark-text;
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+
+  .small,
+  .subheading {
+    font-family: $font;
+    font-size: 0.85rem;
+    color: $light-text;
+  }
+
+  .box-media {
+    display: block;
+    margin-bottom: 0.75rem;
+
+    img {
+      display: block;
+      border-radius: 0.75rem;
+    }
+  }
+
+  .positive {
+    color: $success;
+  }
+
+  .negative {
+    color: $danger;
+  }
+
+  .stat-block {
+    margin-bottom: 0.75rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid darken($fade-grey, 2%);
+
+    .stat-title {
+      display: block;
+      font-family: $font;
+      font-size: 0.85rem;
+      color: $light-text;
+    }
+
+    .stat-value {
+      display: block;
+      font-family: $font;
+      font-weight: 700;
+      font-size: 2rem;
+      color: $dark-text;
+      line-height: 1.2;
+    }
+
+    .stat-subtitle {
+      display: block;
+      font-family: $font;
+      font-size: 0.85rem;
+      color: $light-text;
+    }
+  }
+
+  .help-block {
+    img {
+      max-width: 80px;
+      margin: 0 auto 20px auto;
+    }
+
+    h4 {
+      font-family: $font-main;
+      font-weight: 600;
+      color: $dark-text;
+      font-size: 0.9rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: $muted-grey;
+    }
+  }
+
+  .box-content {
+    .box-lines {
+      padding: 0.75rem 0;
+    }
+
+    .box-line {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.25rem 0;
+
+      .left,
+      .right {
+        display: block;
+      }
+
+      .left {
+        font-family: $font;
+        font-size: 0.9rem;
+        color: $dark-text;
+      }
+
+      .right {
+        font-family: $font;
+        font-size: 0.9rem;
+        color: $light-text;
+      }
+    }
+
+    .box-comments {
+      padding: 1rem 0;
+
+      .box-comment {
+        display: flex;
+
+        + .box-comment {
+          margin-top: 1rem;
+          padding-top: 1rem;
+          border-top: 1px solid darken($fade-grey, 2%);
+        }
+
+        .comment-avatar {
+          display: block;
+          height: 32px;
+          width: 32px;
+          min-width: 32px;
+          border-radius: 50%;
+          margin-right: 0.75rem;
+        }
+
+        .comment-meta {
+          .meta-title {
+            display: block;
+            font-family: $font;
+            font-size: 0.8rem;
+            color: $light-text;
+          }
+
+          .meta-content {
+            display: block;
+            font-family: $font;
+            font-size: 0.9rem;
+            color: $dark-text;
+          }
+        }
+
+        .comment-end {
+          margin-left: auto;
+
+          .end-thumbnail {
+            display: block;
+            height: 40px;
+            width: 40px;
+            min-width: 40px;
+            border-radius: 0.5rem;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+
+    .box-subscribers {
+      padding: 1rem 0;
+
+      .box-subscriber {
+        display: flex;
+
+        + .box-subscriber {
+          margin-top: 1rem;
+          padding-top: 1rem;
+          border-top: 1px solid darken($fade-grey, 2%);
+        }
+
+        .subscriber-avatar {
+          display: block;
+          height: 42px;
+          width: 42px;
+          min-width: 42px;
+          border-radius: 50%;
+          margin-right: 0.75rem;
+        }
+
+        .subscriber-meta {
+          .meta-title {
+            display: block;
+            font-weight: 500;
+            font-family: $font;
+            font-size: 0.9rem;
+            color: $dark-text;
+          }
+
+          .meta-content {
+            display: block;
+            font-family: $font;
+            font-size: 0.8rem;
+            color: $light-text;
+          }
+        }
+      }
+    }
+
+    .button-wrap {
+      .button {
+        height: 44px;
+      }
+    }
+
+    .link-wrap {
+      margin-top: 0.5rem;
+
+      .link {
+        display: flex;
+        align-items: center;
+        font-family: $font;
+        font-size: 0.9rem;
+        color: $primary;
+
+        &:hover {
+          svg {
+            transform: translateX(5px);
+          }
+        }
+
+        svg {
+          height: 16px;
+          width: 16px;
+          margin-left: 0.25rem;
+          transition: transform 0.3s;
+        }
+      }
+    }
+  }
+}
+
+.video-collection {
+  .collection-header {
+    display: flex;
+
+    > a {
+      margin-right: 30px;
+      font-family: $font-main;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: $placeholder;
+      padding-bottom: 5px;
+      border-bottom: 2px solid transparent;
+      transition: all 0.3s;
+
+      &.is-active {
+        color: $dark-text;
+        border-color: $accent;
+      }
+    }
+
+    .search-button {
+      height: 36px;
+      width: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      cursor: pointer;
+
+      &:hover {
+        svg {
+          stroke: $dark-text;
+        }
+      }
+
+      svg {
+        position: relative;
+        top: 2px;
+        height: 16px;
+        width: 16px;
+        stroke: $placeholder;
+        transition: stroke 0.3s;
+      }
+    }
+  }
+
+  .collections-wrap {
+    display: none;
+    animation: fadeInLeft 0.5s;
+    padding: 30px 0;
+
+    &.is-active {
+      display: block;
+    }
+
+    .collection {
+      &:not(:first-child) {
+        padding-top: 1rem;
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+
+        h4 {
+          font-family: $font-main;
+          font-size: 1rem;
+          font-weight: 700;
+          color: $dark-text;
+        }
+
+        a {
+          padding: 0 24px;
+          color: $muted-grey;
+          font-size: 0.8rem;
+        }
+      }
+
+      .video-collection {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 0 20px 0;
+        margin-left: -10px;
+        margin-right: -10px;
+
+        .episode {
+          margin: 10px;
+          width: calc(25% - 20px);
+
+          .episode-thumbnail {
+            position: relative;
+
+            &:hover {
+              .episode-overlay {
+                background: rgba($dark-text, 0.4);
+              }
+
+              .play-button {
+                opacity: 1;
+                transform: scale(1) rotate(0);
+              }
+            }
+
+            .episode-overlay {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 100%;
+              border-radius: 6px;
+              background: rgba($dark-text, 0);
+              transition: all 0.3s;
+              z-index: 1;
+            }
+
+            .episode-duration {
+              position: absolute;
+              bottom: 10px;
+              left: 10px;
+              padding: 3px 6px;
+              background: black;
+              border-radius: 4px;
+              color: $white-smoke;
+              font-size: 0.7rem;
+              z-index: 2;
+            }
+
+            .play-button {
+              position: absolute;
+              top: calc(50% - 20px);
+              left: calc(50% - 20px);
+              height: 40px;
+              width: 40px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              z-index: 3;
+              opacity: 0;
+              transform: scale(0.7) rotate(-180deg);
+              transition: all 0.3s;
+
+              svg {
+                height: 38px;
+                width: 38px;
+                stroke-width: 1px;
+                stroke: $white-smoke;
+              }
+            }
+
+            img {
+              display: block;
+              border-radius: 6px;
+            }
+          }
+
+          .episode-meta {
+            display: flex;
+            margin-top: 8px;
+
+            img {
+              display: block;
+              height: 32px;
+              width: 32px;
+              min-width: 32px;
+              border-radius: 50%;
+            }
+
+            .info {
+              margin-left: 8px;
+
+              span {
+                display: block;
+                line-height: 1.2;
+
+                &:first-child {
+                  font-family: "Montserrat", sans-serif;
+                  font-weight: 600;
+                  font-size: 0.85rem;
+                  color: $dark-text;
+                }
+
+                &:last-child {
+                  font-family: "Roboto", sans-serif;
+                  font-size: 0.8rem;
+                  color: $muted-grey;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .video-collection {
+    .collections-wrap {
+      .collection {
+        .video-collection {
+          .episode {
+            width: calc(100% - 20px);
+          }
+        }
+      }
+    }
+  }
+}

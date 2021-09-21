@@ -1,0 +1,340 @@
+---
+layout: dashboard
+title: Dashboard
+---
+
+<!--Dashboard container-->
+<div id="creator-dashboard" class="dashboard-container">
+  <!--Toolbar-->
+  <div class="dashboard-toolbar">
+    <h1 class="title is-4">Creator dashboard</h1>
+    <div class="actions">
+      <label class="theme-toggle">
+        <input type="checkbox" />
+        <span class="toggler">
+          <span class="dark">
+            <i data-feather="moon"></i>
+          </span>
+          <span class="light">
+            <i data-feather="sun"></i>
+          </span>
+        </span>
+      </label>
+      <div class="buttons">
+        <a class="button is-solid primary-button is-raised has-icon">
+          <i data-feather="plus"></i>
+          <span>Create</span>
+        </a>
+        <a class="button is-solid live-button has-icon">
+          <i data-feather="video"></i>
+          <span>Go Live</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="dashboard-body">
+    <div class="columns">
+      <!--Dashboard column-->
+      <div class="column is-4">
+        <!--Dashboard box-->
+        <div class="dashboard-box">
+          <h3 class="title is-5 is-thin">Latest content</h3>
+          <div class="box-media">
+            <img
+              src="https://via.placeholder.com/1600x900"
+              data-demo-src="assets/img/demo/unsplash/4.jpg"
+              alt=""
+            />
+          </div>
+          <div class="box-content">
+            <p class="small">First 2 days 4 hours</p>
+            <div class="box-lines">
+              <div class="box-line">
+                <span class="left">Ranking by views</span>
+                <span class="right">3 of 6</span>
+              </div>
+              <div class="box-line">
+                <span class="left">Views</span>
+                <span class="right">2.8k</span>
+              </div>
+              <div class="box-line">
+                <span class="left">Bounce rate</span>
+                <span class="right">
+                  <span class="positive">2.3%</span>
+                </span>
+              </div>
+              <div class="box-line">
+                <span class="left">Average duration</span>
+                <span class="right">2:19</span>
+              </div>
+            </div>
+            <div class="button-wrap">
+              <button class="button is-solid primary-button is-fullwidth">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--Dashboard box-->
+        <div class="dashboard-box">
+          <h3 class="title is-5 is-thin">Latest subscribers</h3>
+          <p class="small">Last 90 days</p>
+
+          <div class="box-content">
+            <div class="box-subscribers">
+              <!--Subscriber-->
+              <div class="box-subscriber">
+                <img
+                  class="subscriber-avatar"
+                  src="https://via.placeholder.com/300x300"
+                  data-demo-src="assets/img/avatars/lana.jpeg"
+                  data-user-popover="10"
+                  alt=""
+                />
+                <div class="subscriber-meta">
+                  <span class="meta-title">Lana Henrikssen</span>
+                  <span class="meta-content">223 followers</span>
+                </div>
+              </div>
+              <!--Subscriber-->
+              <div class="box-subscriber">
+                <img
+                  class="subscriber-avatar"
+                  src="https://via.placeholder.com/300x300"
+                  data-demo-src="assets/img/avatars/dan.jpg"
+                  data-user-popover="1"
+                  alt=""
+                />
+                <div class="subscriber-meta">
+                  <span class="meta-title">Dan Walker</span>
+                  <span class="meta-content">642 followers</span>
+                </div>
+              </div>
+              <!--Subscriber-->
+              <div class="box-subscriber">
+                <img
+                  class="subscriber-avatar"
+                  src="https://via.placeholder.com/300x300"
+                  data-demo-src="assets/img/avatars/elise.jpg"
+                  data-user-popover="6"
+                  alt=""
+                />
+                <div class="subscriber-meta">
+                  <span class="meta-title">Elise Walker</span>
+                  <span class="meta-content">111 followers</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="link-wrap">
+              <a class="link">
+                <span>View All</span>
+                <i data-feather="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Dashboard column-->
+      <div class="column is-4">
+        <!--Dashboard box-->
+        <div class="dashboard-box">
+          <h3 class="title is-5 is-thin">Analytics</h3>
+          <div class="stat-block">
+            <span class="stat-title">Current subscribers</span>
+            <span class="stat-value">839</span>
+            <span class="stat-subtitle"
+              ><span class="positive">+49</span> in last 28 days
+            </span>
+          </div>
+
+          <div class="box-content">
+            <div class="box-lines">
+              <h4 class="topheading">Summary</h4>
+              <p class="subheading mb-2">Last 28 days</p>
+              <div class="box-line">
+                <span class="left">Views</span>
+                <span class="right">2.5k</span>
+              </div>
+              <div class="box-line">
+                <span class="left">Duration</span>
+                <span class="right">1:27</span>
+              </div>
+            </div>
+            <div class="box-lines">
+              <h4 class="topheading">Highlights</h4>
+              <p class="subheading mb-2">Last 28 days</p>
+              <div class="box-line">
+                <span class="left">Post views</span>
+                <span class="right">
+                  <span class="positive">+7.8%</span>
+                </span>
+              </div>
+              <div class="box-line">
+                <span class="left">Video views</span>
+                <span class="right">
+                  <span class="negative">-2.3%</span>
+                </span>
+              </div>
+              <div class="box-line">
+                <span class="left">Comments</span>
+                <span class="right">
+                  <span>+1.4%</span>
+                </span>
+              </div>
+              <div class="box-line">
+                <span class="left">Subscriptions</span>
+                <span class="right">
+                  <span>+5.1%</span>
+                </span>
+              </div>
+            </div>
+            <div class="link-wrap">
+              <a class="link">
+                <span>View More</span>
+                <i data-feather="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!--Dashboard box-->
+        <div class="dashboard-box">
+          <h3 class="title is-5 is-thin">Latest comments</h3>
+          <p class="small">Comments you haven't answered</p>
+
+          <div class="box-content">
+            <div class="box-comments">
+              <!--Comment-->
+              <div class="box-comment">
+                <img
+                  class="comment-avatar"
+                  src="https://via.placeholder.com/300x300"
+                  data-demo-src="assets/img/avatars/nelly.png"
+                  data-user-popover="9"
+                  alt=""
+                />
+                <div class="comment-meta">
+                  <span class="meta-title">Nelly • 2 days ago</span>
+                  <span class="meta-content">How is this going?</span>
+                </div>
+                <div class="comment-end">
+                  <img
+                    class="end-thumbnail"
+                    src="https://via.placeholder.com/1600x900"
+                    data-demo-src="assets/img/demo/unsplash/17.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!--Comment-->
+              <div class="box-comment">
+                <img
+                  class="comment-avatar"
+                  src="https://via.placeholder.com/300x300"
+                  data-demo-src="assets/img/avatars/mike.jpg"
+                  data-user-popover="12"
+                  alt=""
+                />
+                <div class="comment-meta">
+                  <span class="meta-title">Mike • 3 days ago</span>
+                  <span class="meta-content">Haha, that was amazing!</span>
+                </div>
+                <div class="comment-end">
+                  <img
+                    class="end-thumbnail"
+                    src="https://via.placeholder.com/1600x900"
+                    data-demo-src="assets/img/demo/unsplash/35.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!--Comment-->
+              <div class="box-comment">
+                <img
+                  class="comment-avatar"
+                  src="https://via.placeholder.com/300x300"
+                  data-demo-src="assets/img/avatars/rolf.jpg"
+                  data-user-popover="13"
+                  alt=""
+                />
+                <div class="comment-meta">
+                  <span class="meta-title">Rolf • 4 days ago</span>
+                  <span class="meta-content"
+                    >Do you think you can get it done?</span
+                  >
+                </div>
+                <div class="comment-end">
+                  <img
+                    class="end-thumbnail"
+                    src="https://via.placeholder.com/1600x900"
+                    data-demo-src="assets/img/demo/unsplash/31.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="link-wrap">
+              <a class="link">
+                <span>View All</span>
+                <i data-feather="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Dashboard column-->
+      <div class="column is-4">
+        <!--Box-->
+        <div class="dashboard-box is-compact">
+          <h3 class="title is-5 is-thin">Help</h3>
+          <div class="help-block">
+            <img
+              class="light-image"
+              src="assets/img/icons/questions/help.svg"
+              alt=""
+            />
+            <img
+              class="dark-image"
+              src="assets/img/icons/questions/help-dark.svg"
+              alt=""
+            />
+            <h4>Help center</h4>
+            <p>
+              Having trouble? Please search our
+              <a class="standard-link">Help Center</a> for a quick answer to
+              your problem.
+            </p>
+          </div>
+        </div>
+
+        <!--Box-->
+        <div class="dashboard-box is-compact">
+          <h3 class="title is-5 is-thin">Support</h3>
+          <div class="help-block">
+            <img
+              class="light-image"
+              src="assets/img/icons/questions/assistance.svg"
+              alt=""
+            />
+            <img
+              class="dark-image"
+              src="assets/img/icons/questions/assistance-dark.svg"
+              alt=""
+            />
+            <h4>24/7 Support</h4>
+            <p>
+              Our Help Center didn't help? Please contact our 24/7
+              <a class="standard-link">Customer Assistance</a> hotline.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

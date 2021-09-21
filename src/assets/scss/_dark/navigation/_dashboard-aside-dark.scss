@@ -1,0 +1,28 @@
+/*! _dashboard-aside-dark.scss | Friendkit | © Css Ninja. 2020-2021 */
+
+/* ==========================================================================
+Dashboard Aside Dark
+========================================================================== */
+
+/*
+    0. Dashboard Aside Dark base
+*/
+
+/* ==========================================================================
+0. Dashboard Aside Dark base
+========================================================================== */
+
+.is-dark {
+  .dashboard-aside {
+    background: darken($dark, 6%);
+    border-color: darken($dark, 6%);
+    
+    .dashboard-aside-link {
+      color: $light-text;
+
+      &.is-active {
+        color: $primary;
+      }
+    }
+  }
+}

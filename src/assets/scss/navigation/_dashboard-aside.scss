@@ -1,0 +1,141 @@
+/*! _dashboard-aside.scss | Friendkit | © Css Ninja. 2020-2021 */
+
+/* ==========================================================================
+Dashboard Aside
+========================================================================== */
+
+/*
+    0. Dashboard Aside base
+*/
+
+/* ==========================================================================
+0. Dashboard Aside base
+========================================================================== */
+
+.dashboard-aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 80px;
+  background: $white;
+  border-right: 1px solid darken($fade-grey, 2%);
+  box-shadow: $light-box-shadow;
+  z-index: 10;
+  transition: transform 0.3s;
+
+  .dashboard-aside-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+
+    .logo {
+      max-width: 40px;
+    }
+  }
+
+  .dashboard-aside-end {
+    margin-top: auto;
+  }
+
+  .dashboard-aside-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    text-align: center;
+    color: $light-text;
+
+    &.is-active {
+      color: $primary;
+    }
+
+    svg {
+      height: 18px;
+      width: 18px;
+    }
+
+    span {
+      display: block;
+      font-family: $font;
+      font-size: 0.6rem;
+      text-transform: uppercase;
+    }
+
+    .link-avatar {
+      display: block;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .dashboard-aside {
+    flex-direction: row;
+    width: 100%;
+    height: 70px;
+
+    .dashboard-aside-brand {
+      height: 70px;
+      width: 60px;
+    }
+
+    .dashboard-aside-body {
+      display: flex;
+      flex-grow: 2;
+      display: flex;
+      justify-content: center;
+    }
+
+    .dashboard-aside-link {
+      height: 70px;
+      width: 60px;
+    }
+
+    .dashboard-aside-end {
+      height: 70px;
+      width: 60px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .dashboard-aside {
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+
+    .dashboard-aside-brand {
+      height: 60px;
+      width: 60px;
+    }
+
+    .dashboard-aside-body {
+      display: flex;
+      flex-grow: 2;
+      display: flex;
+      justify-content: center;
+    }
+
+    .dashboard-aside-link {
+      height: 60px;
+      width: 60px;
+    }
+
+    .dashboard-aside-end {
+      height: 60px;
+      width: 60px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .dashboard-aside {
+    width: 60px;
+  }
+}
