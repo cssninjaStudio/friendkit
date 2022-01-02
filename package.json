@@ -39,7 +39,7 @@
     "gulp-newer": "^1.4.0",
     "gulp-pretty-html": "^2.0.9",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^5.0.0",
+    "gulp-sass": "^5.1.0",
     "gulp-sass-lint": "^1.4.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.0",
@@ -52,7 +52,7 @@
     "node-bourbon": "^4.2.8",
     "panini": "^1.7.1",
     "run-sequence": "^2.2.1",
-    "sass": "^1.30.0",
+    "sass": "^1.39.2",
     "trim-newlines": "4.0.2",
     "yargs-parser": "18.1.2",
     "zoom-vanilla.js": "^2.0.6"

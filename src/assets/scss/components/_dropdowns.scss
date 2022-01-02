@@ -107,6 +107,7 @@ Dropdown styles
         border-color: $fade-grey;
         padding-top: 0;
         min-width: 280px;
+        border-radius: .65rem;
 
         &.has-margin {
             margin-top: 10px;
@@ -115,6 +116,7 @@ Dropdown styles
         .dropdown-content {
             border: 1px solid $fade-grey;
             box-shadow: none;
+            border-radius: .65rem;
         }
     }
 

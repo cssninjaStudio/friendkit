@@ -389,7 +389,7 @@ Profile styles
 .box-heading {
     width: 100%;
     padding: 8px;
-    border-radius: 6px;
+    border-radius: .75rem;
     border: 1px solid $fade-grey;
     background: $white;
     display: flex;
@@ -687,7 +687,7 @@ Profile styles
         width: calc(25% - 6px);
         margin-bottom: 12px;
         object-fit: cover;
-        border-radius: 4px;
+        border-radius: .65rem;
         transition: all .3s;
 
         &:hover {
@@ -709,7 +709,7 @@ Profile styles
         width: calc(33% - 6px);
         min-height: 60px;
         margin-bottom: 12px;
-        border-radius: 4px;
+        border-radius: .85rem;
         transition: all .3s;
 
         &:hover {
@@ -721,7 +721,7 @@ Profile styles
         img {
             display: block;
             object-fit: cover;
-            border-radius: 4px;
+            border-radius: .85rem;
             width: 100%;
             height: 100%;
             transition: all .3s;
@@ -733,7 +733,7 @@ Profile styles
             left: 0;
             height: 100%;
             width: 100%;
-            border-radius: 6px;
+            border-radius: .85rem;
             background: rgba($sidebar, 0.6);
         }
 
@@ -988,7 +988,7 @@ Profile styles
                 transition: all .3s;
                 padding: 12px;
                 margin-bottom: 10px;
-                border-radius: 6px;
+                border-radius: .65rem;
                 cursor: pointer;
                 border: 1px solid $fade-grey;
                 background: $white;
@@ -1076,7 +1076,7 @@ Profile styles
         transition: all .3s;
         padding: 30px;
         margin-bottom: 10px;
-        border-radius: 6px;
+        border-radius: .85rem;
         cursor: pointer;
         border: 1px solid $fade-grey;
         background: $white;
@@ -1113,7 +1113,7 @@ Profile styles
             position: relative;
             padding: 20px;
             background: $white;
-            border-radius: 6px;
+            border-radius: .65rem;
             border: 1px solid darken($fade-grey, 4%);
             margin-right: 1rem;
 
@@ -1124,7 +1124,7 @@ Profile styles
                     display: block;
                     min-height: 160px;
                     object-fit: cover;
-                    border-radius: 2px;
+                    border-radius: .65rem;
                 }
 
                 .logo-container {
@@ -1190,7 +1190,7 @@ Profile styles
 
 .about-card {
     width: 100%;
-    border-radius: 6px;
+    border-radius: .75rem;
     border: 1px solid darken($fade-grey, 4%);
     background: $white;
 
@@ -1277,7 +1277,7 @@ Profile styles
             align-items: center;
             width: 100%;
             padding: 12px;
-            border-radius: 6px;
+            border-radius: .65rem;
             border: 1px solid darken($fade-grey, 4%);
             background: $white;
             transition: all .3s;
@@ -1365,7 +1365,7 @@ Profile styles
                     left: 0;
                     height: 100%;
                     width: 100%;
-                    border-radius: 4px;
+                    border-radius: .65rem;
                     background: $dark-text;
                     opacity: 0;
                     transition: opacity .3s;
@@ -1449,7 +1449,7 @@ Profile styles
                     display: block;
                     object-fit: cover;
                     width: 100%;
-                    border-radius: 4px;
+                    border-radius: .65rem;
                 }
             }
         }
@@ -1471,7 +1471,7 @@ Profile styles
                     display: block;
                     object-fit: cover;
                     width: 100%;
-                    border-radius: 4px;
+                    border-radius: .65rem;
                 }
 
                 .video-overlay {
@@ -1545,7 +1545,7 @@ Profile styles
                 padding: 12px;
                 background: $white;
                 border: 1px solid darken($fade-grey, 4%);
-                border-radius: 4px;
+                border-radius: .65rem;
                 transition: all .3s;
 
                 &:hover {
@@ -1556,7 +1556,7 @@ Profile styles
                     display: block;
                     object-fit: cover;
                     width: 100%;
-                    border-radius: 4px;
+                    border-radius: .65rem;
                 }
 
                 .foot {

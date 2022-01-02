@@ -66,6 +66,7 @@ Form controls styles
 .input {
     font-size: .9rem;
     height: 36px;
+    border-radius: .65rem;
     transition: all .3s;
 
     &:focus {
@@ -106,6 +107,7 @@ Form controls styles
 
 .textarea {
     font-size: .9rem;
+    border-radius: .65rem;
     transition: all .3s;
 
     &.is-sm {

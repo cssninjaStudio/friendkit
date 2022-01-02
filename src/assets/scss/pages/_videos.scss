@@ -545,7 +545,7 @@ Videos styles
                                 left: 0;
                                 height: 100%;
                                 width: 100%;
-                                border-radius: 6px;
+                                border-radius: .65rem;
                                 background: rgba($dark-text, 0);
                                 transition: all .3s;
                                 z-index: 1;
@@ -557,7 +557,7 @@ Videos styles
                                 left: 10px;
                                 padding: 3px 6px;
                                 background: black;
-                                border-radius: 4px;
+                                border-radius: .5rem;
                                 color: $white-smoke;
                                 font-size: .7rem;
                                 z-index: 2;
@@ -587,7 +587,7 @@ Videos styles
 
                             img {
                                 display: block;
-                                border-radius: 6px;
+                                border-radius: .65rem;
                             }
                         }
 

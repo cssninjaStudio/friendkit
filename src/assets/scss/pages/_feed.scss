@@ -20,11 +20,11 @@ Main feed styles
 .card {
     &.is-new-content {
         .tabs-wrapper {
-            border-radius: 6px;
+            border-radius: .85rem;
         }
 
         .tabs {
-            border-radius: 6px 6px 0 0;
+            border-radius: .85rem .85rem 0 0;
 
             ul {
                 background: $white-smoke;
@@ -159,7 +159,7 @@ Main feed styles
             justify-content: flex-start;
             align-items: center;
             padding: 8px;
-            border-radius: 0 0 6px 6px;
+            border-radius: 0 0 .85rem .85rem;
             background: $white;
             cursor: pointer;
 
@@ -509,7 +509,7 @@ Main feed styles
             position: relative;
             margin-top: 20px !important;
             border-bottom-color: transparent;
-            border-radius: 6px 6px 0 0;
+            border-radius: .85rem .85rem 0 0;
         }
 
         &.is-simple {
@@ -634,7 +634,7 @@ Main feed styles
 
                 img {
                     display: block;
-                    border-radius: 3px;
+                    border-radius: .75rem;
                 }
 
                 .like-wrapper {
@@ -1261,7 +1261,7 @@ Main feed styles
                         .textarea {
                             border-color: darken($fade-grey, 3%);
                             border-bottom: none;
-                            border-radius: 4px 4px 0 0;
+                            border-radius: .65rem .65rem 0 0;
                             resize: none;
                         }
                     }
@@ -1274,7 +1274,7 @@ Main feed styles
                         border-left: 1px solid $fade-grey;
                         border-right: 1px solid $fade-grey;
                         border-bottom: 1px solid $fade-grey;
-                        border-radius: 0 0 4px 4px;
+                        border-radius: 0 0 .65rem .65rem;
 
                         .toolbar {
                             display: flex;
