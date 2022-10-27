@@ -1,15 +1,18 @@
 FROM bitnami/node:16 AS build
 WORKDIR /app
 
+RUN corepack enable && corepack prepare pnpm@latest --activate
+
 COPY package.json ./
-COPY package-lock.json ./
-RUN npm install --unsafe-perm
+COPY pnpm-lock.yaml ./
+COPY .npmrc ./
+RUN pnpm install
 
 COPY . .
-RUN npm run build
+RUN pnpm build
 
 
-FROM bitnami/nginx:1.21 AS prod
+FROM bitnami/nginx:1.22 AS prod
 WORKDIR /app
 
 COPY --from=build /app/dist .

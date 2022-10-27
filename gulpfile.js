@@ -7,6 +7,7 @@ const sass = require('gulp-sass')(require('sass'));
 const bourbon = require('node-bourbon').includePaths;
 const rename = require('gulp-rename');
 const concat = require('gulp-concat');
+const replace = require('gulp-replace');
 const del = require('del');
 const panini = require('panini');
 const uglify = require('gulp-uglify-es').default;
@@ -22,6 +23,7 @@ const accessibility = require('gulp-accessibility');
 const babel = require('gulp-babel');
 const nodepath = 'node_modules/';
 const assetspath = 'assets/';
+const packageJson = require('./package.json')
 
 // File paths
 const files = {
@@ -59,6 +61,7 @@ function compileHTML() {
   console.log('---------------COMPILING HTML WITH PANINI---------------');
   panini.refresh();
   return src('src/pages/**/*.html')
+    .pipe(replace('{{PACKAGE_VERSION}}', packageJson.version))
     .pipe(panini({
       root: 'src/pages/',
       layouts: 'src/layouts/',
