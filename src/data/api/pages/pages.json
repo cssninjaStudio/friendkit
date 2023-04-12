@@ -4,7 +4,7 @@
         "activity": "Pizza & Fast Food",
         "followers": "150K",
         "page_id": "0",
-        "profile_picture": "assets/img/icons/logos/fastpizza.svg",
+        "profile_picture": "assets/img/vector/icons/logos/fastpizza.svg",
         "cover_image": "assets/img/demo/unsplash/popovers/pages/fastpizza.jpg"
     },
     {
@@ -12,7 +12,7 @@
         "activity": "Technology",
         "followers": "75K",
         "page_id": "1",
-        "profile_picture": "assets/img/icons/logos/lonelydroid.svg",
+        "profile_picture": "assets/img/vector/icons/logos/lonelydroid.svg",
         "cover_image": "assets/img/demo/unsplash/popovers/pages/lonelydroid.jpg"
     },
     {
@@ -20,7 +20,7 @@
         "activity": "Movies / Entertainment",
         "followers": "29K",
         "page_id": "2",
-        "profile_picture": "assets/img/icons/logos/metamovies.svg",
+        "profile_picture": "assets/img/vector/icons/logos/metamovies.svg",
         "cover_image": "assets/img/demo/unsplash/popovers/pages/imdb.jpg"
     },
     {
@@ -28,7 +28,7 @@
         "activity": "Technology",
         "followers": "3K",
         "page_id": "3",
-        "profile_picture": "assets/img/icons/logos/nuclearjs.svg",
+        "profile_picture": "assets/img/vector/icons/logos/nuclearjs.svg",
         "cover_image": "assets/img/demo/unsplash/popovers/pages/nuclearjs.jpg"
     },
     {
@@ -36,7 +36,7 @@
         "activity": "Web / Design",
         "followers": "130K",
         "page_id": "4",
-        "profile_picture": "assets/img/icons/logos/slicer.svg",
+        "profile_picture": "assets/img/vector/icons/logos/slicer.svg",
         "cover_image": "assets/img/demo/unsplash/popovers/pages/slicer.jpg"
     },
     {
@@ -52,7 +52,7 @@
         "activity": "Education",
         "followers": "230K",
         "page_id": "6",
-        "profile_picture": "assets/img/icons/logos/brent.svg",
+        "profile_picture": "assets/img/vector/icons/logos/brent.svg",
         "cover_image": "assets/img/demo/unsplash/popovers/pages/brent.jpg"
     },
     {
@@ -60,7 +60,7 @@
         "activity": "Cities & Travel",
         "followers": "15M",
         "page_id": "8",
-        "profile_picture": "assets/img/icons/logos/la.svg",
+        "profile_picture": "assets/img/vector/icons/logos/la.svg",
         "cover_image": "assets/img/demo/unsplash/popovers/pages/la.jpg"
     },
     {
@@ -68,7 +68,7 @@
         "activity": "Fashion",
         "followers": "800K",
         "page_id": "9",
-        "profile_picture": "assets/img/icons/logos/lipflow.svg",
+        "profile_picture": "assets/img/vector/icons/logos/lipflow.svg",
         "cover_image": "assets/img/demo/unsplash/popovers/pages/lipflow.jpg"
     },
     {
@@ -76,7 +76,7 @@
         "activity": "Fashion",
         "followers": "800K",
         "page_id": "10",
-        "profile_picture": "assets/img/icons/logos/drop.svg",
+        "profile_picture": "assets/img/vector/icons/logos/drop.svg",
         "cover_image": "assets/img/demo/unsplash/popovers/pages/drop.jpg"
     },
     {
@@ -84,7 +84,7 @@
         "activity": "Fashion",
         "followers": "220K",
         "page_id": "11",
-        "profile_picture": "assets/img/icons/logos/quick-fashion.svg",
+        "profile_picture": "assets/img/vector/icons/logos/quick-fashion.svg",
         "cover_image": "assets/img/demo/unsplash/popovers/pages/quick-fashion.jpg"
     },
     {
@@ -92,7 +92,7 @@
         "activity": "Pizza & Fast Food",
         "followers": "135K",
         "page_id": "13",
-        "profile_picture": "assets/img/icons/logos/gopizza.svg",
+        "profile_picture": "assets/img/vector/icons/logos/gopizza.svg",
         "cover_image": "assets/img/demo/unsplash/popovers/pages/gopizza.jpg"
     },
     {
@@ -100,7 +100,7 @@
         "activity": "Burgers & Fast Food",
         "followers": "320K",
         "page_id": "14",
-        "profile_picture": "assets/img/icons/logos/oreilly.svg",
+        "profile_picture": "assets/img/vector/icons/logos/oreilly.svg",
         "cover_image": "assets/img/demo/unsplash/popovers/pages/oreilly.jpg"
     },
     {
@@ -108,7 +108,7 @@
         "activity": "Burgers & Fast Food",
         "followers": "45K",
         "page_id": "15",
-        "profile_picture": "assets/img/icons/logos/epicburger.svg",
+        "profile_picture": "assets/img/vector/icons/logos/epicburger.svg",
         "cover_image": "assets/img/demo/unsplash/popovers/pages/epicburger.jpg"
     },
     {
@@ -116,7 +116,7 @@
         "activity": "Fast Food",
         "followers": "30K",
         "page_id": "16",
-        "profile_picture": "assets/img/icons/logos/subs.svg",
+        "profile_picture": "assets/img/vector/icons/logos/subs.svg",
         "cover_image": "assets/img/demo/unsplash/popovers/pages/subs.jpg"
     }
 ]

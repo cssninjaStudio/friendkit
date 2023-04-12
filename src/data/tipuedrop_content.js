@@ -86,49 +86,49 @@ var tipuedrop = {
         },
         {
             "title": "Android Studio",
-            "thumb": "assets/img/icons/logos/android.svg",
+            "thumb": "assets/img/vector/icons/logos/android.svg",
             "text": "<small>Technology</small>",
             "url": "/profile"
         },
         {
             "title": "Angular",
-            "thumb": "assets/img/icons/logos/angular.svg",
+            "thumb": "assets/img/vector/icons/logos/angular.svg",
             "text": "<small>Technology</small>",
             "url": "/profile"
         },
         {
             "title": "Domino's Pizza",
-            "thumb": "assets/img/icons/logos/domino.jpg",
+            "thumb": "assets/img/vector/icons/logos/domino.jpg",
             "text": "<small>Pizza & Fast Food</small>",
             "url": "/profile"
         },
         {
             "title": "IMDB",
-            "thumb": "assets/img/icons/logos/imdb.png",
+            "thumb": "assets/img/vector/icons/logos/imdb.png",
             "text": "<small>Movies / Entertainment</small>",
             "url": "/profile"
         },
         {
             "title": "Vuejs",
-            "thumb": "assets/img/icons/logos/vuejs.svg",
+            "thumb": "assets/img/vector/icons/logos/vuejs.svg",
             "text": "<small>Technology</small>",
             "url": "/profile"
         },
         {
             "title": "Reactjs",
-            "thumb": "assets/img/icons/logos/reactjs.svg",
+            "thumb": "assets/img/vector/icons/logos/reactjs.svg",
             "text": "<small>Technology</small>",
             "url": "/profile"
         },
         {
             "title": "Photoshop",
-            "thumb": "assets/img/icons/logos/photoshop.svg",
+            "thumb": "assets/img/vector/icons/logos/photoshop.svg",
             "text": "<small>Design</small>",
             "url": "/profile"
         },
         {
             "title": "WordPress",
-            "thumb": "assets/img/icons/logos/wordpress.svg",
+            "thumb": "assets/img/vector/icons/logos/wordpress.svg",
             "text": "<small>Technology</small>",
             "url": "/profile"
         }
