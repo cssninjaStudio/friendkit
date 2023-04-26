@@ -245,7 +245,7 @@ function concatPlugins() {
     nodepath + 'webui-popover/dist/jquery.webui-popover.min.js',
     nodepath + 'easy-autocomplete/dist/jquery.easy-autocomplete.min.js',
     nodepath + 'dropzone/dist/min/dropzone.min.js',
-    nodepath + '@fengyuanchen/datepicker/dist/datepicker.min.js',
+    nodepath + '@chenfengyuan/datepicker/dist/datepicker.min.js',
     nodepath + 'izitoast/dist/js/iziToast.min.js',
     nodepath + 'quill/dist/quill.min.js',
     nodepath + 'croppie/croppie.min.js',
