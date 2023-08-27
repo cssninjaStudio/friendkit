@@ -10,7 +10,7 @@ if ($('.modal-uploader').length) {
 
     var uploadCount = 0;
 
-    Dropzone.autoDiscover = false;
+    // Dropzone.autoDiscover = false;
 
     // Get the template HTML and remove it from the doument
     var previewNode = document.querySelector("#template");

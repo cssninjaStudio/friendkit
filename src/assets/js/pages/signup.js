@@ -4,7 +4,7 @@
 Signup Process JS
 ========================================================================== */
 
-Dropzone.autoDiscover = false;
+// Dropzone.autoDiscover = false;
 
 $(document).ready(function () {
 

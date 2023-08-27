@@ -1,29 +1,30 @@
-'use strict';
-const { src, dest, watch, series } = require('gulp');
-const log = require('fancy-log');
-const colors = require('ansi-colors');
-const browserSync = require('browser-sync').create();
-const sass = require('gulp-sass')(require('sass'));
-const bourbon = require('node-bourbon').includePaths;
-const rename = require('gulp-rename');
-const concat = require('gulp-concat');
-const replace = require('gulp-replace');
-const del = require('del');
-const panini = require('panini');
-const uglify = require('gulp-uglify-es').default;
-const sourcemaps = require('gulp-sourcemaps');
-const imagemin = require('gulp-imagemin');
-const prettyHtml = require('gulp-pretty-html');
-const sassLint = require('gulp-sass-lint');
-const htmllint = require('gulp-htmllint');
-const jshint = require('gulp-jshint');
-const newer = require('gulp-newer');
-const autoprefixer = require('gulp-autoprefixer');
-const accessibility = require('gulp-accessibility');
-const babel = require('gulp-babel');
+import gulp from 'gulp'
+import bc from 'browser-sync'
+import sassCompiler from 'sass'
+import gulpSass from 'gulp-sass'
+import bourbon from 'node-bourbon'
+import uglify from 'gulp-uglify-es'
+import rename from 'gulp-rename'
+import concat from 'gulp-concat'
+import { deleteSync } from 'del'
+import imagemin, { gifsicle, mozjpeg, optipng, svgo } from 'gulp-imagemin'
+import panini from 'panini'
+import sourcemaps from 'gulp-sourcemaps'
+import replace from 'gulp-replace'
+import newer from 'gulp-newer'
+import autoprefixer from 'gulp-autoprefixer'
+import prettyHtml from 'gulp-pretty-html'
+import gulpAccessibility from 'gulp-accessibility'
+import babel from 'gulp-babel'
+import packageJson from './package.json' assert { type: 'json' }
+
+const { src, dest, watch, series } = gulp
+const browserSync = bc.create()
+const sass = gulpSass(sassCompiler)
+sass.compiler = sassCompiler
+
 const nodepath = 'node_modules/';
 const assetspath = 'assets/';
-const packageJson = require('./package.json')
 
 // File paths
 const files = {
@@ -49,7 +50,7 @@ function compileSCSS() {
       outputStyle: 'compressed',
       sourceComments: 'map',
       sourceMap: 'scss',
-      includePaths: bourbon
+      includePaths: bourbon.includePaths
     }).on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(dest('dist/assets/css'))
@@ -117,7 +118,7 @@ function compileJS() {
     'src/assets/js/pages/videos.js',
   ])
     .pipe(babel())
-    .pipe(uglify())
+    .pipe(uglify.default())
     .pipe(dest('dist/assets/js/'))
     .pipe(browserSync.stream());
 }
@@ -127,42 +128,6 @@ function resetPages(done) {
   console.log('---------------CLEARING PANINI CACHE---------------');
   panini.refresh();
   done();
-}
-
-// SASS LINT
-function scssLint() {
-  console.log('---------------SASS LINTING---------------');
-  return src('src/assets/scss/**/*.scss')
-    .pipe(sassLint({
-      configFile: '.scss-lint.yml'
-    }))
-    .pipe(sassLint.format())
-    .pipe(sassLint.failOnError());
-}
-
-// HTML LINTER
-function htmlLint() {
-  console.log('---------------HTML LINTING---------------');
-  return src('dist/*.html')
-    .pipe(htmllint({}, htmllintReporter));
-}
-
-function htmllintReporter(filepath, issues) {
-  if (issues.length > 0) {
-    issues.forEach(function (issue) {
-      log(colors.cyan('[gulp-htmllint] ') + colors.white(filepath + ' [' + issue.line + ']: ') + colors.red('(' + issue.code + ') ' + issue.msg));
-    });
-    process.exitCode = 1;
-  } else {
-    console.log('---------------NO HTML LINT ERROR---------------');
-  }
-}
-
-// JS LINTER
-function jsLint() {
-  return src('src/assets/js/*.js')
-    .pipe(jshint())
-    .pipe(jshint.reporter('default'));
 }
 
 // WATCH FILES
@@ -178,7 +143,9 @@ function watchFiles() {
 function browserSyncInit(done) {
   console.log('---------------BROWSER SYNC---------------');
   browserSync.init({
-    server: './dist'
+    server: './dist',
+    ui: false,
+    open: false,
   });
   return done();
 }
@@ -191,10 +158,10 @@ function minifyImages() {
   return src('src/assets/img/**/*.+(png|jpg|jpeg|gif|svg|mp4|webm|ogg)')
     .pipe(newer('dist/assets/img/'))
     .pipe(imagemin([
-      imagemin.gifsicle({ optimizationLevel: 3, interlaced: true }),
-      imagemin.mozjpeg({ quality: 85 }),
-      imagemin.optipng({ optimizationLevel: 3 }),
-      imagemin.svgo()
+      gifsicle({ optimizationLevel: 3, interlaced: true }),
+      mozjpeg({ quality: 85 }),
+      optipng({ optimizationLevel: 3 }),
+      svgo()
     ], {
       verbose: true
     }))
@@ -244,13 +211,12 @@ function concatPlugins() {
     nodepath + 'emojionearea/dist/emojionearea.min.js',
     nodepath + 'webui-popover/dist/jquery.webui-popover.min.js',
     nodepath + 'easy-autocomplete/dist/jquery.easy-autocomplete.min.js',
-    nodepath + 'dropzone/dist/min/dropzone.min.js',
+    nodepath + 'dropzone/dist/dropzone-min.js',
     nodepath + '@chenfengyuan/datepicker/dist/datepicker.min.js',
     nodepath + 'izitoast/dist/js/iziToast.min.js',
     nodepath + 'quill/dist/quill.min.js',
     nodepath + 'croppie/croppie.min.js',
     nodepath + 'cropperjs/dist/cropper.min.js',
-    nodepath + 'dropzone/dist/min/dropzone.min.js',
     nodepath + 'modal-video/js/jquery-modal-video.min.js',
     nodepath + 'plyr/dist/plyr.min.js',
     nodepath + 'hammerjs/hammer.min.js',
@@ -262,7 +228,7 @@ function concatPlugins() {
   ])
     .pipe(concat('app.js'))
     .pipe(sourcemaps.init())
-    .pipe(uglify())
+    .pipe(uglify.default())
     .pipe(sourcemaps.write('./'))
     .pipe(dest('dist/assets/js'))
     .pipe(browserSync.stream());
@@ -282,7 +248,7 @@ function concatCssPlugins() {
     nodepath + 'quill/dist/quill.bubble.css',
     nodepath + 'croppie/croppie.css',
     nodepath + 'plyr/dist/plyr.css',
-    nodepath + 'dropzone/dist/min/dropzone.min.css',
+    nodepath + 'dropzone/dist/dropzone.css',
     nodepath + 'cropperjs/dist/cropper.min.css',
     nodepath + 'hopscotch/dist/css/hopscotch.min.css',
     nodepath + 'glider-js/glider.min.css',
@@ -332,18 +298,18 @@ function prettyHTML() {
 // DELETE DIST FOLDER
 function cleanDist(done) {
   console.log('---------------REMOVING OLD FILES FROM DIST---------------');
-  del.sync('dist');
+  deleteSync('dist');
   return done();
 }
 
 // ACCESSIBILITY CHECK
 function HTMLAccessibility() {
   return src('dist/*.html')
-    .pipe(accessibility({
+    .pipe(gulpAccessibility({
       force: true
     }))
     .on('error', console.log)
-    .pipe(accessibility.report({
+    .pipe(gulpAccessibility.report({
       reportType: 'txt'
     }))
     .pipe(rename({
@@ -352,17 +318,14 @@ function HTMLAccessibility() {
     .pipe(dest('accessibility-reports'));
 }
 
-// RUN ALL LINTERS
-exports.linters = series(htmlLint, scssLint, jsLint);
-
 // RUN ACCESSIILITY CHECK
-exports.accessibility = HTMLAccessibility;
+export const accessibility = HTMLAccessibility;
 
 //SETUP
-exports.setup = series(setupBulma);
+export const setup = series(setupBulma);
 
 // DEV
-exports.dev = series(
+export const dev = series(
   cleanDist, 
   copyFont, 
   copyData, 
@@ -381,7 +344,7 @@ exports.dev = series(
 );
 
 // BUILD
-exports.build = series(
+export const build = series(
   cleanDist, 
   copyFont, 
   copyData, 
