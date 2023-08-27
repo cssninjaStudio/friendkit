@@ -4,7 +4,7 @@
 Inbox UI functions
 ========================================================================== */
 
-$(document).ready(function () {
+$(function () {
   'use strict'
 
   if ($('.inbox-wrapper').length) {

@@ -4,7 +4,7 @@
 Explorer menu js file
 ========================================================================== */
 
-$(document).ready(function () {
+$(function () {
   'use strict'
 
   if ($('.explorer-menu').length) {

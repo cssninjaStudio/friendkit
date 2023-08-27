@@ -4,7 +4,7 @@
 News pages js file
 ========================================================================== */
 
-$(document).ready(function () {
+$(function () {
   'use strict'
 
   if ($('#news-layout').length) {

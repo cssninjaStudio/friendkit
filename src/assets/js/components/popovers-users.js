@@ -94,7 +94,7 @@ function getUserPopovers() {
   })
 }
 
-$(document).ready(function () {
+$(function () {
   /* Users
 
         0. Jenna Davis

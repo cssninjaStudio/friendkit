@@ -58,4 +58,4 @@ function initNavbarV2() {
   }
 }
 
-$(document).ready(function () {})
+$(function () {})

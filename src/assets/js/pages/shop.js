@@ -37,7 +37,7 @@ function initSpinner(price) {
     })
 }
 
-$(document).ready(function () {
+$(function () {
   if ($('#shop-page').length) {
     //Tabs
     $('.store-tabs .tab-control').on('click', function () {

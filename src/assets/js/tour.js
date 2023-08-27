@@ -161,7 +161,7 @@ var tour = {
   ],
 }
 
-$(document).ready(function () {
+$(function () {
   $('#tour-start').on('click', function () {
     if (!hopscotch.isActive) {
       // Start the tour!

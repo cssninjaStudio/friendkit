@@ -92,7 +92,7 @@ function getPagesPopovers() {
   })
 }
 
-$(document).ready(function () {
+$(function () {
   /* Pages
 
         0. Fast Pizza

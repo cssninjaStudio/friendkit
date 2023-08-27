@@ -29,7 +29,7 @@ function initSidebar() {
   }
 }
 
-$(document).ready(function () {
+$(function () {
   //Subnavbar search
   initSubSearch()
 

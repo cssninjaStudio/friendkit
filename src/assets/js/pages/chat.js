@@ -4,7 +4,7 @@
 Chat js file
 ========================================================================== */
 
-$(document).ready(function () {
+$(function () {
   'use strict'
 
   //Close chat app

@@ -4,7 +4,7 @@
 Fancybox functions
 ========================================================================== */
 
-$(document).ready(function () {
+$(function () {
   'use strict'
 
   //Change demo images

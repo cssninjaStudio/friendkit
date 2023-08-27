@@ -4,7 +4,7 @@
 Friends page js file
 ========================================================================== */
 
-$(document).ready(function () {
+$(function () {
   'use strict'
 
   if ($('#friends-page').length) {

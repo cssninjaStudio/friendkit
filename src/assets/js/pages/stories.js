@@ -80,7 +80,7 @@ function initAutoTag() {
   })
 }
 
-$(document).ready(function () {
+$(function () {
   //Sidebar
   if ($('.stories-sidebar').length) {
     $('.mobile-sidebar-trigger').on('click', function () {

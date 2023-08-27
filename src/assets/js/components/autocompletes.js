@@ -4,7 +4,7 @@
 All autocompletes that are used accross the project
 ========================================================================== */
 
-$(document).ready(function () {
+$(function () {
   'use strict'
 
   //Friends autocomplete

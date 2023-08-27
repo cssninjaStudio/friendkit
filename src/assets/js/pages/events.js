@@ -4,7 +4,7 @@
 Events page js file
 ========================================================================== */
 
-$(document).ready(function () {
+$(function () {
   'use strict'
 
   if ($('#events-page').length) {

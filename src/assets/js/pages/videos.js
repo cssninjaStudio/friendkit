@@ -4,7 +4,7 @@
 Videos js file
 ========================================================================== */
 
-$(document).ready(function () {
+$(function () {
   'use strict'
 
   //Sidebar

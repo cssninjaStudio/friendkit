@@ -4,7 +4,7 @@
 Landing page functions
 ========================================================================== */
 
-$(document).ready(function () {
+$(function () {
   'use strict'
 
   if ($('.landing-wrapper').length) {

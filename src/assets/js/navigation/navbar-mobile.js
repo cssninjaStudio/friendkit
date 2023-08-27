@@ -30,4 +30,4 @@ function initResponsiveMenu() {
   }
 }
 
-$(document).ready(function () {})
+$(function () {})

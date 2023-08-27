@@ -4,7 +4,7 @@
 Feed page js file
 ========================================================================== */
 
-$(document).ready(function () {
+$(function () {
   'use strict'
 
   if ($('#activity-feed').length) {

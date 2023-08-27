@@ -348,7 +348,7 @@ function initMapBox() {
   }
 }
 
-$(document).ready(function () {
+$(function () {
   initMapBox()
 
   $('.map-box').on('click', function () {

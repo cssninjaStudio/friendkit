@@ -4,7 +4,7 @@
 Widgets js file
 ========================================================================== */
 
-$(document).ready(function () {
+$(function () {
   'use strict'
 
   if ($('.schedule').length) {

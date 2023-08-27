@@ -6,7 +6,7 @@ Settings js file
 
 'use strict'
 
-$(document).ready(function () {
+$(function () {
   if ($('.settings-wrapper').length) {
     //Sidebar
     if ($('.settings-sidebar').length) {

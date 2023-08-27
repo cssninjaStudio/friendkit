@@ -4,7 +4,7 @@
 Questions js file
 ========================================================================== */
 
-$(document).ready(function () {
+$(function () {
   'use strict'
 
   //Highlight current menu item

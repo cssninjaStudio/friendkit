@@ -6,7 +6,7 @@ Signup Process JS
 
 // Dropzone.autoDiscover = false;
 
-$(document).ready(function () {
+$(function () {
   'use strict'
 
   $('.progress-wrap .dot').on('click', function () {

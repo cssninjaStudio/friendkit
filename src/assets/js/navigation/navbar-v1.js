@@ -38,4 +38,4 @@ function initNavbar() {
   })
 }
 
-$(document).ready(function () {})
+$(function () {})

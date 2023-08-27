@@ -19,7 +19,7 @@ var env = 'development'
 //Pageloader
 initPageloader()
 
-$(document).ready(function () {
+$(function () {
   if (env === 'development') {
     //Demo images
     changeDemoHrefs()
