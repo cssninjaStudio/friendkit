@@ -14,85 +14,84 @@ Login dark styles
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .login-wrapper {
-            .form-hero {
-                .logo-wrap {
-                    background: lighten($dark, 8%);
-                }
-            }
-
-            .form-wrapper {
-                .avatar {
-                    border-color: lighten($dark, 18%);
-
-                    .badge {
-                        border-color: lighten($dark, 8%);
-                    }
-                }
-
-                .login-form {
-                    .field {
-                        .control {
-                            .input {
-                                background: lighten($dark, 4%);
-                                border-color: lighten($dark, 10%);
-                                color: $white-light;
-
-                                &::placeholder {
-                                    color: lighten($dark, 24%);
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .forgot-password {
-                    a {
-                        color: $light-text;
-
-                        &:hover {
-                            color: $accent;
-                        }
-                    }
-                }
-            }
+  &.is-dark {
+    .login-wrapper {
+      .form-hero {
+        .logo-wrap {
+          background: lighten($dark, 8%);
         }
-    }
-}
+      }
 
+      .form-wrapper {
+        .avatar {
+          border-color: lighten($dark, 18%);
+
+          .badge {
+            border-color: lighten($dark, 8%);
+          }
+        }
+
+        .login-form {
+          .field {
+            .control {
+              .input {
+                background: lighten($dark, 4%);
+                border-color: lighten($dark, 10%);
+                color: $white-light;
+
+                &::placeholder {
+                  color: lighten($dark, 24%);
+                }
+              }
+            }
+          }
+        }
+
+        .forgot-password {
+          a {
+            color: $light-text;
+
+            &:hover {
+              color: $accent;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 /* ==========================================================================
 1. Minimal login page layout
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .signup-wrapper {
-            .fake-nav {
-                background: darken($dark, 2%);
-                border-color: darken($dark, 2%);
-            }
+  &.is-dark {
+    .signup-wrapper {
+      .fake-nav {
+        background: darken($dark, 2%);
+        border-color: darken($dark, 2%);
+      }
 
-            .login-container {
-                .form-title {
-                    color: $white-light;
-                }
-
-                .login-form {
-                    .field {
-                        &.is-flex {
-                            .switch-block {
-                                .meta {
-                                    p {
-                                        color: $light-text;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+      .login-container {
+        .form-title {
+          color: $white-light;
         }
+
+        .login-form {
+          .field {
+            &.is-flex {
+              .switch-block {
+                .meta {
+                  p {
+                    color: $light-text;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
+  }
 }

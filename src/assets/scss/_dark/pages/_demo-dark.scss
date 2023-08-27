@@ -14,60 +14,61 @@ Demo & elements Styles
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .elements-sidebar {
-            background: darken($dark, 6%);
-            border-color: darken($dark, 6%);
+  &.is-dark {
+    .elements-sidebar {
+      background: darken($dark, 6%);
+      border-color: darken($dark, 6%);
 
-            .header {
-                border-color: lighten($dark, 4%);
+      .header {
+        border-color: lighten($dark, 4%);
 
-                h3 {
-                    color: $white-light;
-                }
-            }
-
-            .elements-list {
-                .element-menu {
-                    border-color: lighten($dark, 4%);
-
-                    .menu-trigger {
-                        &:hover, &.is-active {
-                            background: darken($dark, 3%);
-
-                            span {
-                                color: $white-light;
-                            }
-
-                            > svg {
-                                stroke: $white;
-                            }
-                        }
-
-                        span {
-                            color: $light-text;
-                        }
-                    }
-
-                    .submenu-wrap {
-                        ul li {
-                            a {
-                                color: $light-text;
-
-                                &.is-active {
-                                    color: $accent;
-                                }
-
-                                &:not(.is-active):hover {
-                                    color: $white-light;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+        h3 {
+          color: $white-light;
         }
+      }
+
+      .elements-list {
+        .element-menu {
+          border-color: lighten($dark, 4%);
+
+          .menu-trigger {
+            &:hover,
+            &.is-active {
+              background: darken($dark, 3%);
+
+              span {
+                color: $white-light;
+              }
+
+              > svg {
+                stroke: $white;
+              }
+            }
+
+            span {
+              color: $light-text;
+            }
+          }
+
+          .submenu-wrap {
+            ul li {
+              a {
+                color: $light-text;
+
+                &.is-active {
+                  color: $accent;
+                }
+
+                &:not(.is-active):hover {
+                  color: $white-light;
+                }
+              }
+            }
+          }
+        }
+      }
     }
+  }
 }
 
 /* ==========================================================================
@@ -75,24 +76,24 @@ body {
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .elements-wrap {
-            .element-block {
-                border-color: lighten($dark, 4%);
-                background: $dark;
+  &.is-dark {
+    .elements-wrap {
+      .element-block {
+        border-color: lighten($dark, 4%);
+        background: $dark;
 
-                h3 {
-                    color: $white-light;
-                }
-
-                p {
-                    color: $light-text;
-                }
-
-                code {
-                    background: $dark;
-                }
-            }
+        h3 {
+          color: $white-light;
         }
+
+        p {
+          color: $light-text;
+        }
+
+        code {
+          background: $dark;
+        }
+      }
     }
+  }
 }

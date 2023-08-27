@@ -4,34 +4,31 @@
 Fancybox functions
 ========================================================================== */
 
-$(document).ready(function(){
+$(document).ready(function () {
+  'use strict'
 
-    "use strict";
+  //Change demo images
+  function changeLightboxImages() {
+    $('.fancybox-container [data-demo-src]').each(function () {
+      var newSrc = $(this).attr('data-demo-src')
+      $(this).attr('src', newSrc)
+    })
+  }
 
-    //Change demo images
-    function changeLightboxImages() {
-        $('.fancybox-container [data-demo-src]').each(function () {
-            var newSrc = $(this).attr('data-demo-src');
-            $(this).attr('src', newSrc);
-        });
-    }
+  if ($('[data-fancybox]').length) {
+    var moreIcon = feather.icons['more-vertical'].toSvg()
+    var thumbsUpIcon = feather.icons['thumbs-up'].toSvg()
+    var lockIcon = feather.icons.lock.toSvg()
+    var userIcon = feather.icons.user.toSvg()
+    var usersIcon = feather.icons.users.toSvg()
+    var globeIcon = feather.icons.globe.toSvg()
+    var heartIcon = feather.icons.heart.toSvg()
+    var smileIcon = feather.icons.smile.toSvg()
+    var messageIcon = feather.icons['message-circle'].toSvg()
 
+    var lightboxContent = ''
 
-    if ($('[data-fancybox]').length) {
-
-        var moreIcon = feather.icons['more-vertical'].toSvg();
-        var thumbsUpIcon = feather.icons['thumbs-up'].toSvg();
-        var lockIcon = feather.icons.lock.toSvg();
-        var userIcon = feather.icons.user.toSvg();
-        var usersIcon = feather.icons.users.toSvg();
-        var globeIcon = feather.icons.globe.toSvg();
-        var heartIcon = feather.icons.heart.toSvg();
-        var smileIcon = feather.icons.smile.toSvg();
-        var messageIcon = feather.icons['message-circle'].toSvg();
-
-        var lightboxContent = ''
-
-        var lightboxComments1 = `
+    var lightboxComments1 = `
             <div class="header">
                 <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/dan.jpg" alt="">
                 <div class="user-meta">
@@ -279,7 +276,7 @@ $(document).ready(function(){
             </div>
         `
 
-        var lightboxComments2 = `
+    var lightboxComments2 = `
             <div class="header">
                 <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/elise.jpg" alt="">
                 <div class="user-meta">
@@ -487,7 +484,7 @@ $(document).ready(function(){
             </div>
         `
 
-        var lightboxComments3 = `
+    var lightboxComments3 = `
             <div class="header">
                 <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/stella.jpg" alt="">
                 <div class="user-meta">
@@ -775,7 +772,7 @@ $(document).ready(function(){
             </div>
         `
 
-        var profileLightbox1 = `
+    var profileLightbox1 = `
             <div class="header">
                 <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
                 <div class="user-meta">
@@ -983,7 +980,7 @@ $(document).ready(function(){
             </div>
         `
 
-        var profileLightbox2 = `
+    var profileLightbox2 = `
             <div class="header">
                 <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/elise.jpg" alt="">
                 <div class="user-meta">
@@ -1151,7 +1148,7 @@ $(document).ready(function(){
             </div>
         `
 
-        var profileLightbox3 = `
+    var profileLightbox3 = `
             <div class="header">
                 <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
                 <div class="user-meta">
@@ -1439,7 +1436,7 @@ $(document).ready(function(){
             </div>
         `
 
-        var profileLightbox4 = `
+    var profileLightbox4 = `
             <div class="header">
                 <img src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/jenna.png" alt="">
                 <div class="user-meta">
@@ -1707,66 +1704,52 @@ $(document).ready(function(){
             </div>
         `
 
-        $('[data-fancybox]').each(function(){
-            if (($(this).attr('data-lightbox-type')) == 'comments'){
-                var lightboxContent = $(this).attr('data-fancybox');
-                console.log(lightboxContent);
-                $(this).fancybox({
-                    baseClass: "fancybox-custom-layout",
-                    keyboard: false,
-                    infobar: false,
-                    touch: {
-                    vertical: false
-                    },
-                    buttons: [
-                        "close",
-                        "thumbs",
-                        "share"
-                    ],
-                    animationEffect: "fade",
-                    transitionEffect: "fade",
-                    preventCaptionOverlap: false,
-                    idleTime: false,
-                    gutter: 0,
-                    // Customize caption area
-                    caption: function(instance) {
-                        if (lightboxContent == 'post1') {
-                            return lightboxComments1;
-                        }
-                        else if (lightboxContent == 'post2') {
-                            return lightboxComments2;
-                        }
-                        else if (lightboxContent == 'post3') {
-                            return lightboxComments3;
-                        }
-                        else if (lightboxContent == 'profile-post1') {
-                            return profileLightbox1;
-                        }
-                        else if (lightboxContent == 'profile-post2') {
-                            return profileLightbox2;
-                        }
-                        else if (lightboxContent == 'profile-post3') {
-                            return profileLightbox3;
-                        }
-                        else if (lightboxContent == 'profile-post4') {
-                            return profileLightbox4;
-                        }
-
-                    },
-                    afterShow : function( instance, current ) {
-                        initDropdowns();
-
-                        initLightboxEmojis();
-
-                        if (env === 'development') {
-                            changeLightboxImages();
-                        }
-                        
-                    }
-                });
+    $('[data-fancybox]').each(function () {
+      if ($(this).attr('data-lightbox-type') == 'comments') {
+        var lightboxContent = $(this).attr('data-fancybox')
+        console.log(lightboxContent)
+        $(this).fancybox({
+          baseClass: 'fancybox-custom-layout',
+          keyboard: false,
+          infobar: false,
+          touch: {
+            vertical: false,
+          },
+          buttons: ['close', 'thumbs', 'share'],
+          animationEffect: 'fade',
+          transitionEffect: 'fade',
+          preventCaptionOverlap: false,
+          idleTime: false,
+          gutter: 0,
+          // Customize caption area
+          caption: function (instance) {
+            if (lightboxContent == 'post1') {
+              return lightboxComments1
+            } else if (lightboxContent == 'post2') {
+              return lightboxComments2
+            } else if (lightboxContent == 'post3') {
+              return lightboxComments3
+            } else if (lightboxContent == 'profile-post1') {
+              return profileLightbox1
+            } else if (lightboxContent == 'profile-post2') {
+              return profileLightbox2
+            } else if (lightboxContent == 'profile-post3') {
+              return profileLightbox3
+            } else if (lightboxContent == 'profile-post4') {
+              return profileLightbox4
             }
+          },
+          afterShow: function (instance, current) {
+            initDropdowns()
+
+            initLightboxEmojis()
+
+            if (env === 'development') {
+              changeLightboxImages()
+            }
+          },
         })
-
-    }
-
+      }
+    })
+  }
 })

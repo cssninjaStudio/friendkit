@@ -14,7 +14,9 @@
   },
   "scripts": {
     "dev": "gulp dev",
-    "build": "gulp build"
+    "build": "gulp build",
+    "lint": "prettier --write \"./src/**/*.(js|html|scss|md)\"",
+    "test:lint": "prettier --check \"./src/**/*.(js|html|scss|md)\""
   },
   "devDependencies": {
     "@babel/core": "7.22.11",
@@ -43,6 +45,7 @@
     "gulp-uglify-es": "3.0.0",
     "node-bourbon": "4.2.8",
     "panini": "1.7.2",
+    "prettier": "3.0.2",
     "run-sequence": "2.2.1",
     "sass": "1.66.1",
     "zoom-vanilla.js": "2.0.6"

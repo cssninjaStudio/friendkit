@@ -25,8 +25,15 @@ body {
   height: 100%;
   width: 100%;
   min-height: 100vh;
-  font-family: Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
-    "Helvetica Neue", Arial, sans-serif;
+  font-family:
+    Roboto,
+    -apple-system,
+    system-ui,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
   color: $sidebar;
   overflow: hidden;
 
@@ -225,7 +232,7 @@ body {
 
     .head-text {
       h3 {
-        font-family: "Montserrat", sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 1.6rem;
         color: $dark-text;
       }
@@ -264,7 +271,7 @@ body {
       padding-top: 20px;
 
       .column-header {
-        font-family: "Montserrat", sans-serif;
+        font-family: 'Montserrat', sans-serif;
         text-transform: uppercase;
         color: $dark-text;
         font-size: 0.9rem;
@@ -404,7 +411,8 @@ body {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .view-wrapper {
-    &.is-sidebar-v1, &.is-dashboard {
+    &.is-sidebar-v1,
+    &.is-dashboard {
       margin-left: 0 !important;
       width: 100% !important;
     }

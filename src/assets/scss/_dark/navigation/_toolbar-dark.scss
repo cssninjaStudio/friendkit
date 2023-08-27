@@ -14,13 +14,13 @@ Toolbar styles
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .toolbar-v1 {
-            h1 {
-                color: $white;
-            }
-        }
+  &.is-dark {
+    .toolbar-v1 {
+      h1 {
+        color: $white;
+      }
     }
+  }
 }
 
 /* ==========================================================================
@@ -28,12 +28,12 @@ body {
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .toolbar-v1-fixed-wrap {
-            .toolbar-v1 {
-                background: darken($dark, 6%);
-                border-color: darken($dark, 6%);
-            }
-        }
+  &.is-dark {
+    .toolbar-v1-fixed-wrap {
+      .toolbar-v1 {
+        background: darken($dark, 6%);
+        border-color: darken($dark, 6%);
+      }
     }
+  }
 }

@@ -15,34 +15,34 @@ Toolbar styles
 ========================================================================== */
 
 .toolbar-v1 {
-    position: relative;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto 1.5rem auto;
+  z-index: 9;
+
+  &.is-narrow {
+    margin: 0 auto;
+  }
+
+  .friendkit-hamburger {
+    margin-right: 1rem;
+  }
+
+  h1 {
+    font-family: $font-main;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $dark-text;
+  }
+
+  .controls {
+    margin-left: auto;
     display: flex;
     align-items: center;
-    width: 100%;
-    max-width: 1040px;
-    margin: 0 auto 1.5rem auto;
-    z-index: 9;
-
-    &.is-narrow {
-        margin: 0 auto;
-    }
-
-    .friendkit-hamburger {
-        margin-right: 1rem;
-    }
-
-    h1 {
-        font-family: $font-main;
-        font-size: 1.5rem;
-        font-weight: 700;
-        color: $dark-text;
-    }
-
-    .controls {
-        margin-left: auto;
-        display: flex;
-        align-items: center;
-    }
+  }
 }
 
 /* ==========================================================================
@@ -50,41 +50,41 @@ Toolbar styles
 ========================================================================== */
 
 .toolbar-v1-fixed-wrap {
-    position: fixed;
-    top: 10px;
-    left: 0;
+  position: fixed;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  margin-left: 280px;
+  width: calc(100% - 280px);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  transform: translateY(-100%) translateY(-15px);
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: 9;
+
+  &.is-fold {
     width: 100%;
-    margin-left: 280px;
-    width: calc(100% - 280px);
-    padding-left: 2rem;
-    padding-right: 2rem;
-    transform: translateY(-100%) translateY(-15px);
-    opacity: 0;
-    transition: all .3s;
-    z-index: 9;
+    margin-left: 0;
+  }
 
-    &.is-fold {
-        width: 100%;
-        margin-left: 0;
+  &.is-active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .toolbar-v1 {
+    background: $white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid darken($fade-grey, 3%);
+    box-shadow: $medium-box-shadow;
+    max-width: 940px;
+
+    h1 {
+      font-size: 1.25rem;
     }
-
-    &.is-active {
-        transform: translateY(0);
-        opacity: 1;
-    }
-
-    .toolbar-v1 {
-        background: $white;
-        padding: .5rem 1.5rem;
-        border-radius: 1rem;
-        border: 1px solid darken($fade-grey, 3%);
-        box-shadow: $medium-box-shadow;
-        max-width: 940px;
-
-        h1 {
-            font-size: 1.25rem;
-        }
-    }
+  }
 }
 
 /* ==========================================================================
@@ -92,21 +92,20 @@ Toolbar styles
 ========================================================================== */
 
 @media only screen and (max-width: 767px) {
+  .toolbar-v1-fixed-wrap {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
 
-    .toolbar-v1-fixed-wrap {
-        padding-left: .25rem;
-        padding-right: .25rem;
-        width: 100% !important;
-        margin-left: 0 !important;
+  .toolbar-v1 {
+    h1 {
+      display: none;
     }
+  }
 
-    .toolbar-v1 {
-        h1 {
-            display: none;
-        }
-    }
-
-    /*.toolbar-v1-fixed-wrap, .toolbar-v1 {
+  /*.toolbar-v1-fixed-wrap, .toolbar-v1 {
         .navbar-item {
 
             &.is-cart, &.is-account {
@@ -144,19 +143,19 @@ Toolbar styles
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-    .toolbar-v1-fixed-wrap {
-        padding-left: 2rem;
-        padding-right: 2rem;
-        width: 100% !important;
-        margin-left: 0 !important;
-    }
+  .toolbar-v1-fixed-wrap {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    .toolbar-v1-fixed-wrap {
-        margin-left: 250px;
-        width: calc(100% - 250px);
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
+  .toolbar-v1-fixed-wrap {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }

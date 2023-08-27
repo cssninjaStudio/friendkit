@@ -4,43 +4,40 @@
 Handles the pages popovers that appear when hovering a page avatar
 ========================================================================== */
 
-"use strict";
+'use strict'
 
 function getPagesPopovers() {
-    $('*[data-page-popover]').each(function () {
-        var e = $(this);
-        var pageRef = $(this).attr('data-page-popover');
+  $('*[data-page-popover]').each(function () {
+    var e = $(this)
+    var pageRef = $(this).attr('data-page-popover')
 
-        var messageIcon = feather.icons.mail.toSvg();
-        var profileIcon = feather.icons['more-horizontal'].toSvg();
-        var pinIcon = feather.icons['map-pin'].toSvg();
-        var usersIcon = feather.icons.users.toSvg();
-        var tagIcon = feather.icons.tag.toSvg();
-        var bookmarkIcon = feather.icons.bookmark.toSvg();
+    var messageIcon = feather.icons.mail.toSvg()
+    var profileIcon = feather.icons['more-horizontal'].toSvg()
+    var pinIcon = feather.icons['map-pin'].toSvg()
+    var usersIcon = feather.icons.users.toSvg()
+    var tagIcon = feather.icons.tag.toSvg()
+    var bookmarkIcon = feather.icons.bookmark.toSvg()
 
+    $.ajax({
+      url: 'assets/data/api/pages/pages.json',
+      async: true,
+      dataType: 'json',
+      success: function (data) {
+        e.webuiPopover({
+          trigger: 'hover',
+          placement: 'auto',
+          width: 300,
+          padding: false,
+          offsetLeft: 0,
+          offsetTop: 20,
+          animation: 'pop',
+          cache: false,
+          content: function () {
+            var destroyLoader = setTimeout(function () {
+              $('.loader-overlay').removeClass('is-active')
+            }, 1000)
 
-        $.ajax({
-            url: 'assets/data/api/pages/pages.json',
-            async: true,
-            dataType: 'json',
-            success: function (data) {
-                e.webuiPopover({
-                    trigger: 'hover',
-                    placement: 'auto',
-                    width: 300,
-                    padding: false,
-                    offsetLeft: 0,
-                    offsetTop: 20,
-                    animation: 'pop',
-                    cache: false,
-                    content: function () {
-
-                        var destroyLoader = setTimeout(function () {
-                            $('.loader-overlay').removeClass('is-active');
-                        }, 1000);
-
-
-                        var html = `
+            var html = `
                             <div class="profile-popover-block">
 
                                 <div class="loader-overlay is-active">
@@ -84,21 +81,19 @@ function getPagesPopovers() {
                                     </a>
                                 </div>
                             </div>
-                        `;
+                        `
 
-                        return html;
-                        return destroyLoader;
-
-                    }
-                });
-            }
-        });
-    });
+            return html
+            return destroyLoader
+          },
+        })
+      },
+    })
+  })
 }
 
 $(document).ready(function () {
-
-    /* Pages
+  /* Pages
 
         0. Fast Pizza
         1. Lonely Droid
@@ -117,6 +112,5 @@ $(document).ready(function () {
         16. Downtown Subs
     */
 
-    getPagesPopovers();
-
+  getPagesPopovers()
 })

@@ -13,244 +13,246 @@ Inbox styles
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .inbox-wrapper {
-            .inbox-wrapper-inner {
-                .inbox-left-sidebar {
-                    background: lighten($dark, 8%) !important;
-                    border-color: lighten($dark, 5%);
+  &.is-dark {
+    .inbox-wrapper {
+      .inbox-wrapper-inner {
+        .inbox-left-sidebar {
+          background: lighten($dark, 8%) !important;
+          border-color: lighten($dark, 5%);
 
-                    .compose {
-                        .button {
-                            background: darken($dark, 5%);
-                            border-color: lighten($dark, 5%);
-                            color: $white-light;
-                        }
-                    }
-
-                    .left-menu {
-                        .item {
-                            &:not(.is-active) {
-                                color: $light-text;
-                            }
-                        }
-                    }
-                }
-
-                .inbox-center-container {
-                    background: lighten($dark, 2%) !important;
-                    border-color: lighten($dark, 5%);
-
-                    .inbox-center-container-inner {
-                        .action-buttons {
-                            background: lighten($dark, 2%) !important;
-                            border-color: lighten($dark, 8%);
-
-                            .control {
-                                &.is-grouped {
-                                    .button {
-                                        background: lighten($dark, 10%) !important;
-                                        border-color: lighten($dark, 16%);
-                                    }
-                                }
-                            }
-                        }
-
-                        .inbox-messages {
-                            .inbox-messages-inner {
-                                .is-msg {
-                                    &:not(.is-active) {}
-
-                                    &.is-active {
-                                        background: lighten($dark, 10%) !important;
-                                        border-color: lighten($dark, 16%);
-
-                                        .card-content {
-                                            .msg-subject {
-                                                span {
-                                                    opacity: 1;
-                                                }
-                                            }
-
-                                            .msg-snippet {
-                                                opacity: 1;
-                                            }
-                                        }
-                                    }
-
-                                    .card-content {
-                                        .msg-header {
-                                            .msg-from, .msg-timestamp {
-                                                color: $light-text;
-                                            }
-                                        }
-
-                                        .msg-subject {
-                                            span {
-                                                color: $white-light;
-                                                opacity: .6;
-                                            }
-
-                                            svg {
-                                                stroke: $light-text;
-                                            }
-                                        }
-
-                                        .msg-snippet {
-                                            color: $light-text;
-                                            opacity: .6;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .inbox-message-container {
-                    background: darken($dark, 2%) !important;
-                    border-color: lighten($dark, 3%);
-
-                    .inbox-message-container-inner {
-                        .action-buttons {
-                            border-color: lighten($dark, 8%);
-
-                            .control {
-                                &.is-grouped {
-                                    .button {
-                                        background: lighten($dark, 10%) !important;
-                                        border-color: lighten($dark, 16%);
-                                    }
-                                }
-                            }
-                        }
-
-                        .message-body {
-                            .message-body-inner {
-                                .message-preview {
-                                    background: lighten($dark, 10%) !important;
-                                    border-color: lighten($dark, 16%);
-
-                                    .box-inner {
-                                        .header {
-                                            .meta {
-                                                .name {
-                                                    color: $white-light;
-                                                }
-
-                                                .date {
-                                                    color: $light-text;
-                                                }
-                                            }
-
-                                            .meta-right {
-                                                .tag {
-                                                    background: $accent;
-                                                    color: $white;
-                                                }
-
-                                                small {
-                                                    color: $light-text;
-                                                }
-                                            }
-                                        }
-
-                                        hr {
-                                            height: 1px;
-                                            background: lighten($dark, 18%);
-                                        }
-
-                                        .content {
-                                            p {
-                                                color: $light-text;
-                                            }
-                                        }
-
-                                        .has-text-right .button {
-                                            background: lighten($dark, 6%);
-                                            border-color: lighten($dark, 12%);
-                                            color: $white-light;
-                                        }
-                                    }
-                                }
-
-                                .attachments {
-                                    .attachments-header {
-                                        .paperclip {
-                                            background: lighten($dark, 10%);
-                                            border-color: lighten($dark, 16%);
-                                        }
-                                    }
-
-                                    .attachments-inner {
-                                        .has-file {
-                                            background: lighten($dark, 10%);
-                                            border-color: lighten($dark, 16%);
-
-                                            .box-inner {
-                                                svg {
-                                                    stroke: $light-text;
-                                                }
-
-                                                h5 {
-                                                    color: $white-light;
-                                                }
-                                            }
-
-                                            .actions-group {
-                                                border-color: lighten($dark, 16%);
-                                                overflow: hidden;
-
-                                                .action {
-                                                    border-color: lighten($dark, 16%) !important;
-                                                    overflow: hidden;
-
-                                                    &:hover {
-                                                        background: lighten($dark, 7%);
-
-                                                        svg {
-                                                            stroke: $white-light;
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-
-                                .reply-wrapper {
-                                    .reply-title {
-                                        color: $white-light;
-
-                                        svg {
-                                            stroke: $light-text;
-                                        }
-                                    }
-
-                                    .reply-wrapper-inner {
-                                        background: lighten($dark, 10%);
-                                        border-color: lighten($dark, 16%);
-
-                                        .flex-form {
-                                            .control {
-                                                .reply-textarea {
-                                                    .ql-editor {
-                                                        color: $white-light;
-
-                                                        &:before {
-                                                            color: lighten($dark, 34%);
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+          .compose {
+            .button {
+              background: darken($dark, 5%);
+              border-color: lighten($dark, 5%);
+              color: $white-light;
             }
+          }
+
+          .left-menu {
+            .item {
+              &:not(.is-active) {
+                color: $light-text;
+              }
+            }
+          }
         }
+
+        .inbox-center-container {
+          background: lighten($dark, 2%) !important;
+          border-color: lighten($dark, 5%);
+
+          .inbox-center-container-inner {
+            .action-buttons {
+              background: lighten($dark, 2%) !important;
+              border-color: lighten($dark, 8%);
+
+              .control {
+                &.is-grouped {
+                  .button {
+                    background: lighten($dark, 10%) !important;
+                    border-color: lighten($dark, 16%);
+                  }
+                }
+              }
+            }
+
+            .inbox-messages {
+              .inbox-messages-inner {
+                .is-msg {
+                  &:not(.is-active) {
+                  }
+
+                  &.is-active {
+                    background: lighten($dark, 10%) !important;
+                    border-color: lighten($dark, 16%);
+
+                    .card-content {
+                      .msg-subject {
+                        span {
+                          opacity: 1;
+                        }
+                      }
+
+                      .msg-snippet {
+                        opacity: 1;
+                      }
+                    }
+                  }
+
+                  .card-content {
+                    .msg-header {
+                      .msg-from,
+                      .msg-timestamp {
+                        color: $light-text;
+                      }
+                    }
+
+                    .msg-subject {
+                      span {
+                        color: $white-light;
+                        opacity: 0.6;
+                      }
+
+                      svg {
+                        stroke: $light-text;
+                      }
+                    }
+
+                    .msg-snippet {
+                      color: $light-text;
+                      opacity: 0.6;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .inbox-message-container {
+          background: darken($dark, 2%) !important;
+          border-color: lighten($dark, 3%);
+
+          .inbox-message-container-inner {
+            .action-buttons {
+              border-color: lighten($dark, 8%);
+
+              .control {
+                &.is-grouped {
+                  .button {
+                    background: lighten($dark, 10%) !important;
+                    border-color: lighten($dark, 16%);
+                  }
+                }
+              }
+            }
+
+            .message-body {
+              .message-body-inner {
+                .message-preview {
+                  background: lighten($dark, 10%) !important;
+                  border-color: lighten($dark, 16%);
+
+                  .box-inner {
+                    .header {
+                      .meta {
+                        .name {
+                          color: $white-light;
+                        }
+
+                        .date {
+                          color: $light-text;
+                        }
+                      }
+
+                      .meta-right {
+                        .tag {
+                          background: $accent;
+                          color: $white;
+                        }
+
+                        small {
+                          color: $light-text;
+                        }
+                      }
+                    }
+
+                    hr {
+                      height: 1px;
+                      background: lighten($dark, 18%);
+                    }
+
+                    .content {
+                      p {
+                        color: $light-text;
+                      }
+                    }
+
+                    .has-text-right .button {
+                      background: lighten($dark, 6%);
+                      border-color: lighten($dark, 12%);
+                      color: $white-light;
+                    }
+                  }
+                }
+
+                .attachments {
+                  .attachments-header {
+                    .paperclip {
+                      background: lighten($dark, 10%);
+                      border-color: lighten($dark, 16%);
+                    }
+                  }
+
+                  .attachments-inner {
+                    .has-file {
+                      background: lighten($dark, 10%);
+                      border-color: lighten($dark, 16%);
+
+                      .box-inner {
+                        svg {
+                          stroke: $light-text;
+                        }
+
+                        h5 {
+                          color: $white-light;
+                        }
+                      }
+
+                      .actions-group {
+                        border-color: lighten($dark, 16%);
+                        overflow: hidden;
+
+                        .action {
+                          border-color: lighten($dark, 16%) !important;
+                          overflow: hidden;
+
+                          &:hover {
+                            background: lighten($dark, 7%);
+
+                            svg {
+                              stroke: $white-light;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+
+                .reply-wrapper {
+                  .reply-title {
+                    color: $white-light;
+
+                    svg {
+                      stroke: $light-text;
+                    }
+                  }
+
+                  .reply-wrapper-inner {
+                    background: lighten($dark, 10%);
+                    border-color: lighten($dark, 16%);
+
+                    .flex-form {
+                      .control {
+                        .reply-textarea {
+                          .ql-editor {
+                            color: $white-light;
+
+                            &:before {
+                              color: lighten($dark, 34%);
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
+  }
 }

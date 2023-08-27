@@ -22,26 +22,26 @@ Questions dark styles
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .question-tabs {
-            background: lighten($dark, 4%);
-            border-color: lighten($dark, 12%);
+  &.is-dark {
+    .question-tabs {
+      background: lighten($dark, 4%);
+      border-color: lighten($dark, 12%);
 
-            ul li {
-                &:not(.is-active) {
-                    a {
-                        color: $light-text;
-                    }
+      ul li {
+        &:not(.is-active) {
+          a {
+            color: $light-text;
+          }
 
-                    &:hover {
-                        a {
-                            color: $white-light !important;
-                        }
-                    }
-                }
+          &:hover {
+            a {
+              color: $white-light !important;
             }
+          }
         }
+      }
     }
+  }
 }
 
 /* ==========================================================================
@@ -49,32 +49,33 @@ body {
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .questions-wrap, .questions-demo {
-            .questions-menu {
-                li {
-                    &:not(.is-active) {
-                        a {
-                            svg {
-                                stroke: $light-text;
-                            }
+  &.is-dark {
+    .questions-wrap,
+    .questions-demo {
+      .questions-menu {
+        li {
+          &:not(.is-active) {
+            a {
+              svg {
+                stroke: $light-text;
+              }
 
-                            span {
-                                color: $light-text;
-                            }
-                        }
-                    }
-
-                    &.is-active {
-                        a {
-                            background: lighten($dark, 4%);
-                            border-color: lighten($dark, 12%);
-                        }
-                    }
-                }
+              span {
+                color: $light-text;
+              }
             }
+          }
+
+          &.is-active {
+            a {
+              background: lighten($dark, 4%);
+              border-color: lighten($dark, 12%);
+            }
+          }
         }
+      }
     }
+  }
 }
 
 /* ==========================================================================
@@ -82,94 +83,100 @@ body {
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .question-content {
-            .question-block, .answer-block {
-                border-color: lighten($dark, 15%);
+  &.is-dark {
+    .question-content {
+      .question-block,
+      .answer-block {
+        border-color: lighten($dark, 15%);
 
-                &:not(.is-best) {
-                    .answer-footer {
-                        .upvote {
-                            .upvote-icon {
-                                background: lighten($dark, 4%);
-                                border-color: lighten($dark, 12%);
-                            }
-                        }
-                    }
-                }
-
-                .question-title {
-                    &.is-link {
-                        &:not(:hover) {
-                            color: $white-light;
-                        }
-                    }
-
-                    color: $white-light;
-                }
-
-                .question-author, .answer-author {
-                    .meta {
-                        span {
-                            &:first-child {
-                                color: $white-light;
-                            }
-
-                            &:nth-child(2) {
-                                color: $light-text;
-                            }
-                        }
-                    }
-                }
-
-                .question-text, .answer-text {
-                    > p {
-                        color: $light-text;
-
-                        &.code {
-                            background: lighten($dark, 4%);
-                        }
-                    }
-
-                    .tags {
-                        .tag {
-                            background: lighten($dark, 4%);
-                            border-color: lighten($dark, 12%);
-                            color: $white-light;
-                        }
-                    }
-                }
-
-                .question-footer, .answer-footer {
-                    .likes, .report, .upvote {
-                        .report-icon {
-                            background: lighten($dark, 4%);
-                            border-color: lighten($dark, 12%);
-                            color: $white-light;
-                        }
-
-                        span {
-                            color: $light-text;
-                        }
-                    }
-                }
-
-                .answers-count {
-                    span {
-                        color: $light-text;
-                    }
-                }
+        &:not(.is-best) {
+          .answer-footer {
+            .upvote {
+              .upvote-icon {
+                background: lighten($dark, 4%);
+                border-color: lighten($dark, 12%);
+              }
             }
-
-            .top-single-header {
-                .button {
-                    background: lighten($dark, 4%);
-                    border-color: lighten($dark, 12%);
-                    color: $white-light;
-                }
-            }
+          }
         }
+
+        .question-title {
+          &.is-link {
+            &:not(:hover) {
+              color: $white-light;
+            }
+          }
+
+          color: $white-light;
+        }
+
+        .question-author,
+        .answer-author {
+          .meta {
+            span {
+              &:first-child {
+                color: $white-light;
+              }
+
+              &:nth-child(2) {
+                color: $light-text;
+              }
+            }
+          }
+        }
+
+        .question-text,
+        .answer-text {
+          > p {
+            color: $light-text;
+
+            &.code {
+              background: lighten($dark, 4%);
+            }
+          }
+
+          .tags {
+            .tag {
+              background: lighten($dark, 4%);
+              border-color: lighten($dark, 12%);
+              color: $white-light;
+            }
+          }
+        }
+
+        .question-footer,
+        .answer-footer {
+          .likes,
+          .report,
+          .upvote {
+            .report-icon {
+              background: lighten($dark, 4%);
+              border-color: lighten($dark, 12%);
+              color: $white-light;
+            }
+
+            span {
+              color: $light-text;
+            }
+          }
+        }
+
+        .answers-count {
+          span {
+            color: $light-text;
+          }
+        }
+      }
+
+      .top-single-header {
+        .button {
+          background: lighten($dark, 4%);
+          border-color: lighten($dark, 12%);
+          color: $white-light;
+        }
+      }
     }
+  }
 }
 
 /* ==========================================================================
@@ -177,29 +184,29 @@ body {
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .other-questions {
-            .other-title {
-                color: $white-light;
+  &.is-dark {
+    .other-questions {
+      .other-title {
+        color: $white-light;
+      }
+
+      .other-question {
+        border-color: lighten($dark, 15%);
+
+        .meta {
+          a {
+            &:not(:hover) {
+              color: $white-light;
             }
+          }
 
-            .other-question {
-                border-color: lighten($dark, 15%);
-
-                .meta {
-                    a {
-                        &:not(:hover) {
-                            color: $white-light;
-                        }
-                    }
-
-                    span {
-                        color: $light-text;
-                    }
-                }
-            }
+          span {
+            color: $light-text;
+          }
         }
+      }
     }
+  }
 }
 
 /* ==========================================================================
@@ -207,59 +214,59 @@ body {
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .questions-nav {
-            background: darken($dark, 2%);
-            border-color: darken($dark, 2%);
+  &.is-dark {
+    .questions-nav {
+      background: darken($dark, 2%);
+      border-color: darken($dark, 2%);
 
-            .inner {
-                .questions-nav-menu {
-                    .menu-item {
-                        &.is-active {
-                            background: lighten($dark, 4%);
-                        }
-
-                        &:not(.is-active):not(:hover) {
-                            span {
-                                color: $light-text;
-                            }
-
-                            svg {
-                                stroke: $light-text;
-                            }
-                        }
-                    }
-                }
-
-                .question-summary {
-                    .meta {
-                        h4 {
-                            color: $white-light;
-                        }
-
-                        span {
-                            color: $light-text;
-                        }
-                    }
-
-                    .dropdown {
-                        &:hover {
-                            > div .button {
-                                svg {
-                                    stroke: $light-text;
-                                }
-                            }
-                        }
-
-                        > div .button {
-                            background: darken($dark, 2%);
-                            border-color: lighten($dark, 8%);
-                        }
-                    }
-                }
+      .inner {
+        .questions-nav-menu {
+          .menu-item {
+            &.is-active {
+              background: lighten($dark, 4%);
             }
+
+            &:not(.is-active):not(:hover) {
+              span {
+                color: $light-text;
+              }
+
+              svg {
+                stroke: $light-text;
+              }
+            }
+          }
         }
+
+        .question-summary {
+          .meta {
+            h4 {
+              color: $white-light;
+            }
+
+            span {
+              color: $light-text;
+            }
+          }
+
+          .dropdown {
+            &:hover {
+              > div .button {
+                svg {
+                  stroke: $light-text;
+                }
+              }
+            }
+
+            > div .button {
+              background: darken($dark, 2%);
+              border-color: lighten($dark, 8%);
+            }
+          }
+        }
+      }
     }
+  }
 }
 
 /* ==========================================================================
@@ -267,187 +274,187 @@ body {
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .categories-header {
-            border-color: lighten($dark, 15%);
+  &.is-dark {
+    .categories-header {
+      border-color: lighten($dark, 15%);
 
-            h2 {
-                color: $white-light;
-            }
+      h2 {
+        color: $white-light;
+      }
 
-            .control {
-                .input {
-                    &:focus {
-                        border-color: lighten($dark, 14%);
-                    }
-                }
-            }
-        }
-
-        .category-box {
-            background: $dark;
+      .control {
+        .input {
+          &:focus {
             border-color: lighten($dark, 14%);
-
-            &:hover {
-                .box-content {
-                    h3 {
-                        color: $accent;
-                    }
-                }
-            }
-
-            .box-content {
-                h3 {
-                    color: $white-light;
-                }
-
-                p {
-                    color: $light-text;
-                }
-            }
+          }
         }
+      }
     }
+
+    .category-box {
+      background: $dark;
+      border-color: lighten($dark, 14%);
+
+      &:hover {
+        .box-content {
+          h3 {
+            color: $accent;
+          }
+        }
+      }
+
+      .box-content {
+        h3 {
+          color: $white-light;
+        }
+
+        p {
+          color: $light-text;
+        }
+      }
+    }
+  }
 }
 
 /* ==========================================================================
 7. Questions Statistics
 ========================================================================== */
 body {
-    &.is-dark {
-        .stats-wrapper {
-            .stats-header {
-                background: $dark;
-                border-color: lighten($dark, 14%);
+  &.is-dark {
+    .stats-wrapper {
+      .stats-header {
+        background: $dark;
+        border-color: lighten($dark, 14%);
 
-                .avatar-wrapper {
-                    border-color: lighten($dark, 14%);
+        .avatar-wrapper {
+          border-color: lighten($dark, 14%);
 
-                    .badge {
-                        border-color: $dark;
-                    }
-                }
-
-                .user-info {
-                    h4 {
-                        color: $white-light;
-                    }
-
-                    p {
-                        color: $light-text;
-                    }
-
-                    .button {
-                        background: $dark;
-                    }
-                }
-
-                .main-stats {
-                    .stat-block {
-                        border-color: lighten($dark, 18%);
-
-                        h4 {
-                            color: $light-text;
-                        }
-
-                        p {
-                            color: $white-light;
-                        }
-                    }
-                }
-            }
-
-            .achievements {
-                .header {
-                    h3 {
-                        color: $white-light;
-                    }
-                }
-
-                .achievements-carousel-wrap {
-                    .achievements-loader {
-                        background: lighten($dark, 8%);
-                    }
-
-                    .achievement {
-                        background: $dark;
-                        border-color: lighten($dark, 14%);
-
-                        h3 {
-                            color: $white-light;
-                        }
-
-                        p {
-                            color: $light-text;
-                        }
-                    }
-                }
-            }
-
-            .quick-activity {
-                .header {
-                    border-color: lighten($dark, 14%);
-
-                    h3 {
-                        color: $white-light;
-                    }
-                }
-
-                .activity-list {
-                    .activity-item {
-                        border-color: lighten($dark, 14%);
-
-                        &.is-best {
-                            .avatar-wrap {
-                                border-color: $green;
-
-                                .badge {
-                                    border-color: lighten($dark, 8%);
-                                }
-                            }
-                        }
-
-                        .avatar-wrap {
-                            border-color: lighten($dark, 14%);
-                        }
-
-                        .meta {
-                            span {
-                                &:first-child {
-                                    color: $white-light;
-                                    font-weight: 500;
-                                }
-
-                                &:nth-child(2) {
-                                    color: $light-text;
-
-                                    a {
-                                        color: $accent;
-                                    }
-                                }
-                            }
-
-                            small {
-                                color: $light-text;
-                            }
-                        }
-                    }
-                }
-            }
+          .badge {
+            border-color: $dark;
+          }
         }
 
-        .questions-side-card {
+        .user-info {
+          h4 {
+            color: $white-light;
+          }
+
+          p {
+            color: $light-text;
+          }
+
+          .button {
             background: $dark;
-            border-color: lighten($dark, 14%);
+          }
+        }
+
+        .main-stats {
+          .stat-block {
+            border-color: lighten($dark, 18%);
 
             h4 {
-                color: $white-light;
+              color: $light-text;
             }
 
             p {
-                color: $light-text;
+              color: $white-light;
             }
+          }
         }
+      }
+
+      .achievements {
+        .header {
+          h3 {
+            color: $white-light;
+          }
+        }
+
+        .achievements-carousel-wrap {
+          .achievements-loader {
+            background: lighten($dark, 8%);
+          }
+
+          .achievement {
+            background: $dark;
+            border-color: lighten($dark, 14%);
+
+            h3 {
+              color: $white-light;
+            }
+
+            p {
+              color: $light-text;
+            }
+          }
+        }
+      }
+
+      .quick-activity {
+        .header {
+          border-color: lighten($dark, 14%);
+
+          h3 {
+            color: $white-light;
+          }
+        }
+
+        .activity-list {
+          .activity-item {
+            border-color: lighten($dark, 14%);
+
+            &.is-best {
+              .avatar-wrap {
+                border-color: $green;
+
+                .badge {
+                  border-color: lighten($dark, 8%);
+                }
+              }
+            }
+
+            .avatar-wrap {
+              border-color: lighten($dark, 14%);
+            }
+
+            .meta {
+              span {
+                &:first-child {
+                  color: $white-light;
+                  font-weight: 500;
+                }
+
+                &:nth-child(2) {
+                  color: $light-text;
+
+                  a {
+                    color: $accent;
+                  }
+                }
+              }
+
+              small {
+                color: $light-text;
+              }
+            }
+          }
+        }
+      }
     }
+
+    .questions-side-card {
+      background: $dark;
+      border-color: lighten($dark, 14%);
+
+      h4 {
+        color: $white-light;
+      }
+
+      p {
+        color: $light-text;
+      }
+    }
+  }
 }
 
 /* ==========================================================================
@@ -455,31 +462,31 @@ body {
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .questions-wrap {
-            .questions-settings {
-                .settings-header {
-                    border-color: lighten($dark, 15%);
+  &.is-dark {
+    .questions-wrap {
+      .questions-settings {
+        .settings-header {
+          border-color: lighten($dark, 15%);
 
-                    h2 {
-                        color: $white-light;
-                    }
-                }
-
-                .settings-body {
-                    .switch-block {
-                        span {
-                            &:first-child {
-                                color: $white-light;
-                            }
-        
-                            &:nth-child(2) {
-                                color: $light-text;
-                            }
-                        }
-                    }
-                }
-            }
+          h2 {
+            color: $white-light;
+          }
         }
+
+        .settings-body {
+          .switch-block {
+            span {
+              &:first-child {
+                color: $white-light;
+              }
+
+              &:nth-child(2) {
+                color: $light-text;
+              }
+            }
+          }
+        }
+      }
     }
+  }
 }

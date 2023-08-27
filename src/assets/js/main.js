@@ -4,7 +4,7 @@
 Main js file
 ========================================================================== */
 
-"use strict";
+'use strict'
 
 //Set environment variable (Used for development)
 
@@ -14,115 +14,111 @@ Main js file
     2. ''
 */
 
-var env = 'development';
+var env = 'development'
 
 //Pageloader
-initPageloader();
+initPageloader()
 
-$(document).ready(function(){
+$(document).ready(function () {
+  if (env === 'development') {
+    //Demo images
+    changeDemoHrefs()
 
-    if (env === 'development') {
-		//Demo images
-        changeDemoHrefs();
+    //Demo hrefs
+    changeDemoImages()
+  }
 
-        //Demo hrefs
-        changeDemoImages();
-    }
+  //Lazy Load
+  const el = document.querySelectorAll('[data-lazy-load]')
+  const observer = lozad(el, {
+    loaded: function (el) {
+      // Custom implementation on a loaded element
+      el.parentNode.classList.add('loaded')
+    },
+  })
 
-    //Lazy Load
-    const el = document.querySelectorAll('[data-lazy-load]');
-    const observer = lozad(el, {
-        loaded: function(el) {
-            // Custom implementation on a loaded element
-            el.parentNode.classList.add('loaded');
-        }
-	});
-	
-    observer.observe();
+  observer.observe()
 
-    //Demo links
-    $('.demo-link a').on('click', function(e){
-        e.preventDefault();
-        var theme = $(this).closest('.demo-link').attr('data-theme');
-        window.localStorage.setItem('theme', theme);
-        var href = $(this).attr('href');
-        
-        window.open(href);
-    });
-    
-    //Toggle Dark mode
-    toggleTheme(); 
+  //Demo links
+  $('.demo-link a').on('click', function (e) {
+    e.preventDefault()
+    var theme = $(this).closest('.demo-link').attr('data-theme')
+    window.localStorage.setItem('theme', theme)
+    var href = $(this).attr('href')
 
-    //Code highlight init
-    $('.highlight-block code').each(function (i, block) {
-        hljs.highlightBlock(block);
-    });
-    
-    //Init navbar v1
-    initNavbar();
+    window.open(href)
+  })
 
-    //Init navbar v2
-    initNavbarV2();
+  //Toggle Dark mode
+  toggleTheme()
 
-    //Init sidebar v1
-    initSidebarV1();
+  //Code highlight init
+  $('.highlight-block code').each(function (i, block) {
+    hljs.highlightBlock(block)
+  })
 
-    //Dashboard
-    linkCheck();
+  //Init navbar v1
+  initNavbar()
 
-    //Mobile menu toggle
-    initResponsiveMenu();
+  //Init navbar v2
+  initNavbarV2()
 
-    //Navbar dropdown
-    initNavDropdowns();
+  //Init sidebar v1
+  initSidebarV1()
 
-    //Navbar Cart
-    initNavbarCart();
+  //Dashboard
+  linkCheck()
 
-    //Common Dropdown
-    initDropdowns();
+  //Mobile menu toggle
+  initResponsiveMenu()
 
-    //Tabs
-    initTabs();
+  //Navbar dropdown
+  initNavDropdowns()
 
-    //Modals
-    initModals();
+  //Navbar Cart
+  initNavbarCart()
 
-    //Attribute background images
-    initBgImages();
+  //Common Dropdown
+  initDropdowns()
 
-    //Feather icons initialization
-    feather.replace();
+  //Tabs
+  initTabs()
 
-    //Emojis
-    initEmojiPicker();
+  //Modals
+  initModals()
 
-    initLightboxEmojis();
+  //Attribute background images
+  initBgImages()
 
-    //Video Embed
-    initVideoEmbed();
+  //Feather icons initialization
+  feather.replace()
 
-    //Load More
-    initLoadMore();
+  //Emojis
+  initEmojiPicker()
 
-    //Init tooltips
-    initTooltips();
+  initLightboxEmojis()
 
-    //Init Like Button
-    initLikeButton();
+  //Video Embed
+  initVideoEmbed()
 
-    //Init Simple Popover
-    initSimplePopover();
+  //Load More
+  initLoadMore()
 
-    //Share modal demo
-    initShareModal();   
+  //Init tooltips
+  initTooltips()
 
-    //Users autocomplete
-    initUsersAutocomplete();
+  //Init Like Button
+  initLikeButton()
 
-    //Init Tipuedrop
-    initSuggestionSearch();
-});
+  //Init Simple Popover
+  initSimplePopover()
 
+  //Share modal demo
+  initShareModal()
 
+  //Users autocomplete
+  initUsersAutocomplete()
 
+  //Init Tipuedrop
+  initSuggestionSearch()
+})

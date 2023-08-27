@@ -13,38 +13,38 @@ Tabs styles
 ========================================================================== */
 
 .nav-tabs-wrapper {
-    .tabs {
-        ul {
-            &.is-faded {
-                border-bottom-color: transparent !important;
-            }
-        }
-
-        ul li {
-            a {
-                color: $placeholder;
-                border-image-width: 2px;
-            }
-
-            &:hover a {
-                border-bottom-color: inherit;
-            }
-
-            &.is-active a {
-                color: $accent;
-                border-bottom-color: $accent;
-            }
-        }
+  .tabs {
+    ul {
+      &.is-faded {
+        border-bottom-color: transparent !important;
+      }
     }
 
-    .tab-content {
-        display: none;
-        overflow: hidden;
-        padding: 0 10px 10px 10px;
-        animation: fadeInLeft .5s;
+    ul li {
+      a {
+        color: $placeholder;
+        border-image-width: 2px;
+      }
 
-        &.is-active {
-            display: block;
-        }
+      &:hover a {
+        border-bottom-color: inherit;
+      }
+
+      &.is-active a {
+        color: $accent;
+        border-bottom-color: $accent;
+      }
     }
+  }
+
+  .tab-content {
+    display: none;
+    overflow: hidden;
+    padding: 0 10px 10px 10px;
+    animation: fadeInLeft 0.5s;
+
+    &.is-active {
+      display: block;
+    }
+  }
 }

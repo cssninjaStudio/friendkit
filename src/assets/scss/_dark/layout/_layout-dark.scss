@@ -13,39 +13,39 @@ Main layout dark styles
 ========================================================================== */
 
 body {
-    &.is-dark {
-        background: lighten($dark, 8%);
-
-        .light-image {
-            display: none !important;
-        }
-    
-        .dark-image {
-            display: block !important;
-        }
-    
-        .light-image-inline {
-            display: none !important;
-        }
-    
-        .dark-image-inline {
-            display: inline-block !important;
-        }
-    }
+  &.is-dark {
+    background: lighten($dark, 8%);
 
     .light-image {
-        display: block;
+      display: none !important;
     }
 
     .dark-image {
-        display: none !important;
+      display: block !important;
     }
 
     .light-image-inline {
-        display: inline-block;
+      display: none !important;
     }
 
     .dark-image-inline {
-        display: none !important;
+      display: inline-block !important;
     }
+  }
+
+  .light-image {
+    display: block;
+  }
+
+  .dark-image {
+    display: none !important;
+  }
+
+  .light-image-inline {
+    display: inline-block;
+  }
+
+  .dark-image-inline {
+    display: none !important;
+  }
 }

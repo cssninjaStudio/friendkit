@@ -17,59 +17,59 @@ Commerce styles
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .shop-wrapper {
-            .shop-header {
-                .header-inner {
-                    .store-block {
-                        .store-meta {
-                            h3 {
-                                color: $white-light;
-                            }
+  &.is-dark {
+    .shop-wrapper {
+      .shop-header {
+        .header-inner {
+          .store-block {
+            .store-meta {
+              h3 {
+                color: $white-light;
+              }
 
-                            span {
-                                color: $light-text;
-                            }
-                        }
-                    }
-
-                    .activity-block {
-                        h3 {
-                            color: $white-light;
-                        }
-
-                        .inner-wrap {
-                            .stat-block {
-                                border-color: lighten($dark, 18%);
-
-                                .stat-number {
-                                    color: $white-light;
-                                }
-                            }
-                        }
-                    }
-
-                    .about-block {
-                        h3 {
-                            color: $white-light;
-                        }
-
-                        .ellipse-text {
-                            color: $light-text;
-                        }
-                    }
-                }
-
-                .store-tabs {
-                    .tab-control {
-                        &.is-active {
-                            color: $white-light;
-                        }
-                    }
-                }
+              span {
+                color: $light-text;
+              }
             }
+          }
+
+          .activity-block {
+            h3 {
+              color: $white-light;
+            }
+
+            .inner-wrap {
+              .stat-block {
+                border-color: lighten($dark, 18%);
+
+                .stat-number {
+                  color: $white-light;
+                }
+              }
+            }
+          }
+
+          .about-block {
+            h3 {
+              color: $white-light;
+            }
+
+            .ellipse-text {
+              color: $light-text;
+            }
+          }
         }
+
+        .store-tabs {
+          .tab-control {
+            &.is-active {
+              color: $white-light;
+            }
+          }
+        }
+      }
     }
+  }
 }
 
 /* ==========================================================================
@@ -77,299 +77,301 @@ body {
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .products-navigation {
-            background: darken($dark, 2%);
-            border-color: darken($dark, 2%);
+  &.is-dark {
+    .products-navigation {
+      background: darken($dark, 2%);
+      border-color: darken($dark, 2%);
 
-            .navigation-inner {
-                .shop-info {
-                    h3 {
-                        color: $white-light;
-                    }
-                }
-
-                .shop-actions {
-                    .shop-action {
-                        background: lighten($dark, 5%);
-                        border-color: lighten($dark, 5%);
-
-                        span {
-                            color: $light-text;
-                        }
-
-                        svg {
-                            stroke: $light-text;
-                        }
-                    }
-                }
-            }
+      .navigation-inner {
+        .shop-info {
+          h3 {
+            color: $white-light;
+          }
         }
 
-        .navigation-panel {
+        .shop-actions {
+          .shop-action {
+            background: lighten($dark, 5%);
+            border-color: lighten($dark, 5%);
+
+            span {
+              color: $light-text;
+            }
+
+            svg {
+              stroke: $light-text;
+            }
+          }
+        }
+      }
+    }
+
+    .navigation-panel {
+      background: lighten($dark, 2%);
+      border-color: lighten($dark, 2%);
+
+      .navigation-panel-inner {
+        .panel-title {
+          h3 {
+            color: $white-light;
+          }
+        }
+
+        .shop-categories {
+          .category-item {
+            input {
+              &:checked {
+                + .item-inner {
+                  background: lighten($dark, 8%);
+                  border-color: lighten($dark, 18%);
+
+                  h4 {
+                    color: $white-light;
+                  }
+                }
+              }
+            }
+
+            .item-inner {
+              h4 {
+                color: lighten($dark, 24%);
+              }
+            }
+          }
+        }
+
+        .search-filter {
+          .input {
             background: lighten($dark, 2%);
             border-color: lighten($dark, 2%);
+            color: $white-light;
 
-            .navigation-panel-inner {
-                .panel-title {
-                    h3 {
-                        color: $white-light;
-                    }
-                }
-
-                .shop-categories {
-                    .category-item {
-                        input {
-                            &:checked {
-                                + .item-inner {
-                                    background: lighten($dark, 8%);
-                                    border-color: lighten($dark, 18%);
-
-                                    h4 {
-                                        color: $white-light;
-                                    }
-                                }
-                            }
-                        }
-
-                        .item-inner {
-                            h4 {
-                                color: lighten($dark, 24%);
-                            }
-                        }
-                    }
-                }
-
-                .search-filter {
-                    .input {
-                        background: lighten($dark, 2%);
-                        border-color: lighten($dark, 2%);
-                        color: $white-light;
-
-                        &::placeholder {
-                            color: lighten($dark, 24%);
-                        }
-                    }
-                }
-
-                .filter-group {
-                    .control {
-                        .combo-box {
-                            background: lighten($dark, 2%);
-                            border-color: lighten($dark, 2%);
-
-                            .box-inner {
-                                color: $white-light;
-
-                                .combo-item {
-                                    .selected-item {
-                                        color: $white-light;
-                                    }
-                                }
-                            }
-
-                            .box-chevron {
-                                svg {
-                                    stroke: $light-text;
-                                }
-                            }
-
-                            .box-dropdown {
-                                .dropdown-inner {
-                                    background: darken($dark, 4%);
-                                    border-color: lighten($dark, 4%);
-
-                                    ul {
-                                        li {
-                                            &:hover {
-                                                background: lighten($dark, 4%);
-                                            }
-
-                                            span {
-                                                color: $light-text;
-                                                font-weight: 400;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+            &::placeholder {
+              color: lighten($dark, 24%);
             }
+          }
         }
 
-        .store-sections {
-            .store-tab-pane {
-                .product-card {
-                    background: $dark;
-                    border-color: lighten($dark, 14%);
+        .filter-group {
+          .control {
+            .combo-box {
+              background: lighten($dark, 2%);
+              border-color: lighten($dark, 2%);
 
-                    .quickview-trigger {
-                        &:hover {
-                            background: lighten($dark, 4%);
+              .box-inner {
+                color: $white-light;
 
-                            svg {
-                                stroke: $light-text;
-                            }
-                        }
-                    }
-
-                    .product-info {
-                        h3 {
-                            color: $white-light;
-                        }
-
-                        p {
-                            color: $light-text;
-                        }
-                    }
-
-                    .product-actions {
-                        .left {
-                            span {
-                                color: $light-text;
-                            }
-                        }
-                    }
+                .combo-item {
+                  .selected-item {
+                    color: $white-light;
+                  }
                 }
+              }
 
-                .brand-card {
-                    background: $dark;
-                    border-color: lighten($dark, 14%);
-
-                    .meta {
-                        h3 {
-                            color: $white-light;
-                        }
-
-                        p {
-                            color: $light-text;
-                        }
-                    }
-
-                    .brand-stats {
-                        background: lighten($dark, 8%);
-                        border-color: lighten($dark, 14%);
-
-                        .brand-stat {
-                            border-color: lighten($dark, 14%);
-
-                            span {
-                                &:first-child {
-                                    color: $white-light;
-                                }
-
-                                &:nth-child(2) {
-                                    color: $light-text;
-                                }
-                            }
-                        }
-                    }
+              .box-chevron {
+                svg {
+                  stroke: $light-text;
                 }
+              }
 
-                .follower-block {
-                    .avatar-container {
-                        border-color: lighten($dark, 18%);
-                    }
+              .box-dropdown {
+                .dropdown-inner {
+                  background: darken($dark, 4%);
+                  border-color: lighten($dark, 4%);
 
-                    h3 {
-                        color: $white-light;
-                    }
+                  ul {
+                    li {
+                      &:hover {
+                        background: lighten($dark, 4%);
+                      }
 
-                    p {
+                      span {
                         color: $light-text;
+                        font-weight: 400;
+                      }
                     }
+                  }
                 }
+              }
             }
+          }
         }
-
-        .product-quickview {
-            .card {
-                overflow: hidden;
-
-                .quickview-loader {
-                    background: $dark;
-                }
-
-                .left {
-                    background: lighten($dark, 4%);
-                }
-
-                .right {
-                    .header {
-                        .product-info {
-                            h3 {
-                                color: $white-light;
-                            }
-
-                            p {
-                                color: $light-text;
-                            }
-                        }
-
-                        #quickview-price {
-                            color: $accent;
-                        }
-                    }
-
-                    .properties {
-                        h4 {
-                            color: $white-light;
-                        }
-
-                        .property-box {
-                            background: lighten($dark, 8%);
-                            border-color: lighten($dark, 14%);
-
-                            &.is-sizes, &.is-colors {
-                                .property-item {
-                                    border-color: lighten($dark, 14%) !important;
-
-                                    input {
-                                        &:checked {
-                                            + .item-inner {
-                                                span {
-                                                    &.size-label {
-                                                        color: $accent;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    .content {
-                        p {
-                            color: $light-text;
-                        }
-                    }
-
-                    .quickview-controls {
-                        .spinner {
-                            background: darken($dark, 4%);
-                            border-color: lighten($dark, 4%);
-
-                            .remove, .add {
-                                &:hover {
-                                    svg {
-                                        stroke: $accent;
-                                    }
-                                }
-                            }
-
-                            .value {
-                                color: $white-light;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
+
+    .store-sections {
+      .store-tab-pane {
+        .product-card {
+          background: $dark;
+          border-color: lighten($dark, 14%);
+
+          .quickview-trigger {
+            &:hover {
+              background: lighten($dark, 4%);
+
+              svg {
+                stroke: $light-text;
+              }
+            }
+          }
+
+          .product-info {
+            h3 {
+              color: $white-light;
+            }
+
+            p {
+              color: $light-text;
+            }
+          }
+
+          .product-actions {
+            .left {
+              span {
+                color: $light-text;
+              }
+            }
+          }
+        }
+
+        .brand-card {
+          background: $dark;
+          border-color: lighten($dark, 14%);
+
+          .meta {
+            h3 {
+              color: $white-light;
+            }
+
+            p {
+              color: $light-text;
+            }
+          }
+
+          .brand-stats {
+            background: lighten($dark, 8%);
+            border-color: lighten($dark, 14%);
+
+            .brand-stat {
+              border-color: lighten($dark, 14%);
+
+              span {
+                &:first-child {
+                  color: $white-light;
+                }
+
+                &:nth-child(2) {
+                  color: $light-text;
+                }
+              }
+            }
+          }
+        }
+
+        .follower-block {
+          .avatar-container {
+            border-color: lighten($dark, 18%);
+          }
+
+          h3 {
+            color: $white-light;
+          }
+
+          p {
+            color: $light-text;
+          }
+        }
+      }
+    }
+
+    .product-quickview {
+      .card {
+        overflow: hidden;
+
+        .quickview-loader {
+          background: $dark;
+        }
+
+        .left {
+          background: lighten($dark, 4%);
+        }
+
+        .right {
+          .header {
+            .product-info {
+              h3 {
+                color: $white-light;
+              }
+
+              p {
+                color: $light-text;
+              }
+            }
+
+            #quickview-price {
+              color: $accent;
+            }
+          }
+
+          .properties {
+            h4 {
+              color: $white-light;
+            }
+
+            .property-box {
+              background: lighten($dark, 8%);
+              border-color: lighten($dark, 14%);
+
+              &.is-sizes,
+              &.is-colors {
+                .property-item {
+                  border-color: lighten($dark, 14%) !important;
+
+                  input {
+                    &:checked {
+                      + .item-inner {
+                        span {
+                          &.size-label {
+                            color: $accent;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .content {
+            p {
+              color: $light-text;
+            }
+          }
+
+          .quickview-controls {
+            .spinner {
+              background: darken($dark, 4%);
+              border-color: lighten($dark, 4%);
+
+              .remove,
+              .add {
+                &:hover {
+                  svg {
+                    stroke: $accent;
+                  }
+                }
+              }
+
+              .value {
+                color: $white-light;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /* ==========================================================================
@@ -377,75 +379,76 @@ body {
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .shop-wrapper {
-            .cart-container {
-                .cart-header {
-                    .header-inner {
-                        h2 {
-                            color: $white-light;
-                        }
-
-                        .header-actions {
-                            .buttons {
-                                .button {
-                                    &:not(.accent-button) {
-                                        background: darken($dark, 6%);
-                                        border-color: lighten($dark, 4%);
-                                        color: $white;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .cart-content {
-                    .continue-shopping {
-                        a {
-                            background: darken($dark, 4%);
-
-                            &:not(:hover) {
-                                color: $light-text;
-                            }
-                        }
-                    }
-
-                    .cart-summary {
-                        .summary-header h3 {
-                            color: $white-light;
-                        }
-
-                        .summary-card {
-                            .order-line {
-                                span {
-                                    &:first-child {
-                                        color: $light-text;
-                                    }
-
-                                    &:nth-child(2) {
-                                        color: $white-light;
-
-                                        &.is-total {
-                                            color: $accent;
-                                        }
-                                    }
-                                }
-                            }
-
-                            > h4, > h3 {
-                                color: $white-light;
-                            }
-
-                            > p {
-                                color: $light-text !important;
-                            }
-                        }
-                    }
-                }
+  &.is-dark {
+    .shop-wrapper {
+      .cart-container {
+        .cart-header {
+          .header-inner {
+            h2 {
+              color: $white-light;
             }
+
+            .header-actions {
+              .buttons {
+                .button {
+                  &:not(.accent-button) {
+                    background: darken($dark, 6%);
+                    border-color: lighten($dark, 4%);
+                    color: $white;
+                  }
+                }
+              }
+            }
+          }
         }
+
+        .cart-content {
+          .continue-shopping {
+            a {
+              background: darken($dark, 4%);
+
+              &:not(:hover) {
+                color: $light-text;
+              }
+            }
+          }
+
+          .cart-summary {
+            .summary-header h3 {
+              color: $white-light;
+            }
+
+            .summary-card {
+              .order-line {
+                span {
+                  &:first-child {
+                    color: $light-text;
+                  }
+
+                  &:nth-child(2) {
+                    color: $white-light;
+
+                    &.is-total {
+                      color: $accent;
+                    }
+                  }
+                }
+              }
+
+              > h4,
+              > h3 {
+                color: $white-light;
+              }
+
+              > p {
+                color: $light-text !important;
+              }
+            }
+          }
+        }
+      }
     }
+  }
 }
 
 /* ==========================================================================
@@ -453,176 +456,178 @@ body {
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .ElementsApp {
-            .InputElement, input {
-                color: $white-light !important;
-            }
-        }
-
-        #card-errors {
-            font-size: .85rem;
-            color: #eb1c26;
-        }
-
-        .shop-wrapper {
-            .cart-container {
-                .cart-content {
-                    .checkout-section {
-                        .address-box {
-                            input {
-                                &:checked + .address-box-inner {
-                                    border-color: $accent;
-                                }
-                            }
-
-                            .address-box-inner {
-                                background: $dark;
-                                border-color: lighten($dark, 8%);
-
-                                p {
-                                    color: $light-text;
-
-                                    &:first-child {
-                                        color: $white-light;
-                                    }
-                                }
-                            }
-                        }
-
-                        .shipping-box {
-                            input {
-                                &:checked + .shipping-box-inner {
-                                    border-color: $accent;
-                                }
-                            }
-
-                            .shipping-box-inner {
-                                background: $dark;
-                                border-color: lighten($dark, 8%);
-                            }
-                        }
-                    }
-                }
-            }
-
-            .checkout-container {
-                .left {
-                    .left-header {
-                        background: $dark;
-                        border-color: lighten($dark, 8%);
-
-                        .header-inner {
-                            .title-wrap {
-                                h3 {
-                                    color: $white-light;
-                                }
-
-                                p {
-                                    color: $light-text;
-                                }
-                            }
-                        }
-
-                        .header-coupon {
-                            border-color: lighten($dark, 8%);
-
-                            .field {
-                                .control {
-                                    .input {
-                                        background: lighten($dark, 4%);
-                                        border-color: lighten($dark, 4%);
-                                        color: $white-light;
-
-                                        &::placeholder {
-                                            color: lighten($dark, 24%);
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                        .header-foot {
-                            border-color: lighten($dark, 8%);
-
-                            .label {
-                                color: $light-text;
-                            }
-
-                            .amount {
-                                &:before {
-                                    color: $light-text;
-                                }
-
-                                color: $accent;
-                            }
-                        }
-                    }
-                }
-
-                .right {
-                    .payment-form {
-                        background: $dark;
-                        border-color: lighten($dark, 8%);
-
-                        .provider-form {
-                            .form-section {
-                                .form-section-header {
-                                    h3 {
-                                        color: $white-light;
-                                    }
-                                }
-
-                                .field {
-                                    label {
-                                        color: $light-text;
-                                    }
-
-                                    .control {
-                                        #card-element {
-                                            background: lighten($dark, 4%);
-                                            border-color: lighten($dark, 4%);
-                                            color: $white-light;
-
-                                            &::placeholder {
-                                                color: lighten($dark, 24%);
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .confirmation-box {
-                    background: $dark;
-                    border-color: lighten($dark, 12%);
-
-                    h3 {
-                        color: $white-light;
-                    }
-
-                    p {
-                        color: $light-text;
-                        border-color: lighten($dark, 12%);
-                    }
-
-                    .order-summary {
-                        h4 {
-                            color: $white-light;
-                        }
-                        
-                        .order-line {
-                            .item, .amount {
-                                &.is-total span {
-                                    color: $accent !important;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+  &.is-dark {
+    .ElementsApp {
+      .InputElement,
+      input {
+        color: $white-light !important;
+      }
     }
+
+    #card-errors {
+      font-size: 0.85rem;
+      color: #eb1c26;
+    }
+
+    .shop-wrapper {
+      .cart-container {
+        .cart-content {
+          .checkout-section {
+            .address-box {
+              input {
+                &:checked + .address-box-inner {
+                  border-color: $accent;
+                }
+              }
+
+              .address-box-inner {
+                background: $dark;
+                border-color: lighten($dark, 8%);
+
+                p {
+                  color: $light-text;
+
+                  &:first-child {
+                    color: $white-light;
+                  }
+                }
+              }
+            }
+
+            .shipping-box {
+              input {
+                &:checked + .shipping-box-inner {
+                  border-color: $accent;
+                }
+              }
+
+              .shipping-box-inner {
+                background: $dark;
+                border-color: lighten($dark, 8%);
+              }
+            }
+          }
+        }
+      }
+
+      .checkout-container {
+        .left {
+          .left-header {
+            background: $dark;
+            border-color: lighten($dark, 8%);
+
+            .header-inner {
+              .title-wrap {
+                h3 {
+                  color: $white-light;
+                }
+
+                p {
+                  color: $light-text;
+                }
+              }
+            }
+
+            .header-coupon {
+              border-color: lighten($dark, 8%);
+
+              .field {
+                .control {
+                  .input {
+                    background: lighten($dark, 4%);
+                    border-color: lighten($dark, 4%);
+                    color: $white-light;
+
+                    &::placeholder {
+                      color: lighten($dark, 24%);
+                    }
+                  }
+                }
+              }
+            }
+
+            .header-foot {
+              border-color: lighten($dark, 8%);
+
+              .label {
+                color: $light-text;
+              }
+
+              .amount {
+                &:before {
+                  color: $light-text;
+                }
+
+                color: $accent;
+              }
+            }
+          }
+        }
+
+        .right {
+          .payment-form {
+            background: $dark;
+            border-color: lighten($dark, 8%);
+
+            .provider-form {
+              .form-section {
+                .form-section-header {
+                  h3 {
+                    color: $white-light;
+                  }
+                }
+
+                .field {
+                  label {
+                    color: $light-text;
+                  }
+
+                  .control {
+                    #card-element {
+                      background: lighten($dark, 4%);
+                      border-color: lighten($dark, 4%);
+                      color: $white-light;
+
+                      &::placeholder {
+                        color: lighten($dark, 24%);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .confirmation-box {
+          background: $dark;
+          border-color: lighten($dark, 12%);
+
+          h3 {
+            color: $white-light;
+          }
+
+          p {
+            color: $light-text;
+            border-color: lighten($dark, 12%);
+          }
+
+          .order-summary {
+            h4 {
+              color: $white-light;
+            }
+
+            .order-line {
+              .item,
+              .amount {
+                &.is-total span {
+                  color: $accent !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

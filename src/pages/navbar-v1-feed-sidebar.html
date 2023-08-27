@@ -5,188 +5,183 @@ title: Feed
 
 <!-- Container -->
 <div id="main-feed" class="container">
+  <!-- Content placeholders at page load -->
+  <!-- /html/partials/global/placeload/feed-page/feed-menu-shadow-dom.html -->
+  {{> feed-menu-shadow-dom}}
 
-    <!-- Content placeholders at page load -->
-    <!-- /html/partials/global/placeload/feed-page/feed-menu-shadow-dom.html -->
-    {{> feed-menu-shadow-dom}}
-
-    <!-- Feed page main wrapper -->
-    <div id="activity-feed" class="view-wrap true-dom is-hidden">
-        <div class="columns">
-            <!-- Left side column -->
-            <div class="column is-3 is-hidden-mobile">
-                <!-- Feed menu -->
-                <div class="feed-menu-v1">
-                    <ul class="main-menu">
-                        <li class="is-active">
-                            <a>
-                                <i data-feather="activity"></i>
-                                <span>Feed</span>
-                                <span class="close-icon">
-                                    <i data-feather="chevron-right"></i>
-                                </span>
-                            </a>
-                            <ul class="submenu">
-                                <li class="is-subactive">
-                                    <a>Trending <span class="tag">4</span></a>
-                                </li>
-                                <li>
-                                    <a>Popular</a>
-                                </li>
-                                <li>
-                                    <a>Following</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a>
-                                <i data-feather="help-circle"></i>
-                                <span>Questions</span>
-                                <span class="close-icon">
-                                    <i data-feather="chevron-right"></i>
-                                </span>
-                            </a>
-                            <ul class="submenu">
-                                <li>
-                                    <a>Home</a>
-                                </li>
-                                <li>
-                                    <a>My Questions</a>
-                                </li>
-                                <li>
-                                    <a>Popular</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a>
-                                <i data-feather="youtube"></i>
-                                <span>Videos</span>
-                                <span class="close-icon">
-                                    <i data-feather="chevron-right"></i>
-                                </span>
-                            </a>
-                            <ul class="submenu">
-                                <li>
-                                    <a>Home<span class="tag">7</span></a>
-                                </li>
-                                <li>
-                                    <a>Suggested</a>
-                                </li>
-                                <li>
-                                    <a>My Channel</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a>
-                                <i data-feather="shopping-cart"></i>
-                                <span>Shopping</span>
-                                <span class="close-icon">
-                                    <i data-feather="chevron-right"></i>
-                                </span>
-                            </a>
-                            <ul class="submenu">
-                                <li>
-                                    <a>Trending<span class="tag">2</span></a>
-                                </li>
-                                <li>
-                                    <a>Popular<span class="tag">5</span></a>
-                                </li>
-                                <li>
-                                    <a>My Products</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a>
-                                <i data-feather="music"></i>
-                                <span>Music</span>
-                                <span class="close-icon">
-                                    <i data-feather="chevron-right"></i>
-                                </span>
-                            </a>
-                            <ul class="submenu">
-                                <li>
-                                    <a>My Products</a>
-                                </li>
-                                <li>
-                                    <a>Trending<span class="tag">6</span></a>
-                                </li>
-                                <li>
-                                    <a>Popular</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- /Left side column -->
-
-            <!-- Middle column -->
-            <div class="column is-6">
-
-                <!-- Publishing Area -->
-                <!-- /partials/pages/feed/compose-card.html -->
-                {{> compose-card}}
-
-                <!-- Post 1 -->
-                <!-- /partials/pages/feed/posts/feed-post1.html -->
-                {{> feed-post1}}
-
-                <!-- Post 2 -->
-                <!-- /partials/pages/feed/posts/feed-post2.html -->
-                {{> feed-post2}}
-
-                <!-- Post 3 -->
-                <!-- /partials/pages/feed/posts/feed-post3.html -->
-                {{> feed-post3}}
-
-                <!-- Post 4 -->
-                <!-- /partials/pages/feed/posts/feed-post4.html -->
-                {{> feed-post4}}
-
-                <!-- Post 5 -->
-                <!-- /partials/pages/feed/posts/feed-post5.html -->
-                {{> feed-post5}}
-
-                <!-- Post 6 -->
-                <!-- /partials/pages/feed/posts/feed-post6.html -->
-                {{> feed-post6}}
-
-                <!-- Load more posts -->
-                <div class=" load-more-wrap has-text-centered">
-                    <a href="#" class="load-more-button">Load More</a>
-                </div>
-                <!-- /Load more posts -->
-
-            </div>
-            <!-- /Middle column -->
-
-            <!-- Right side column -->
-            <div class="column is-3">
-
-                <!-- Stories widget -->
-                <!-- /partials/widgets/stories-widget.html -->
-                {{> stories-widget}}
-
-                <!-- Birthday widget -->
-                <!-- /partials/widgets/birthday-widget.html -->
-                {{> birthday-widget}}
-
-                <!-- Suggested friends widget -->
-                <!-- /partials/widgets/suggested-friends-1-widget.html -->
-                {{> suggested-friends-1-widget}}
-
-                <!-- New job widget -->
-                <!-- /partials/widgets/new-job-widget.html -->
-                {{> new-job-widget}}
-
-            </div>
-            <!-- /Right side column -->
+  <!-- Feed page main wrapper -->
+  <div id="activity-feed" class="view-wrap true-dom is-hidden">
+    <div class="columns">
+      <!-- Left side column -->
+      <div class="column is-3 is-hidden-mobile">
+        <!-- Feed menu -->
+        <div class="feed-menu-v1">
+          <ul class="main-menu">
+            <li class="is-active">
+              <a>
+                <i data-feather="activity"></i>
+                <span>Feed</span>
+                <span class="close-icon">
+                  <i data-feather="chevron-right"></i>
+                </span>
+              </a>
+              <ul class="submenu">
+                <li class="is-subactive">
+                  <a>Trending <span class="tag">4</span></a>
+                </li>
+                <li>
+                  <a>Popular</a>
+                </li>
+                <li>
+                  <a>Following</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a>
+                <i data-feather="help-circle"></i>
+                <span>Questions</span>
+                <span class="close-icon">
+                  <i data-feather="chevron-right"></i>
+                </span>
+              </a>
+              <ul class="submenu">
+                <li>
+                  <a>Home</a>
+                </li>
+                <li>
+                  <a>My Questions</a>
+                </li>
+                <li>
+                  <a>Popular</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a>
+                <i data-feather="youtube"></i>
+                <span>Videos</span>
+                <span class="close-icon">
+                  <i data-feather="chevron-right"></i>
+                </span>
+              </a>
+              <ul class="submenu">
+                <li>
+                  <a>Home<span class="tag">7</span></a>
+                </li>
+                <li>
+                  <a>Suggested</a>
+                </li>
+                <li>
+                  <a>My Channel</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a>
+                <i data-feather="shopping-cart"></i>
+                <span>Shopping</span>
+                <span class="close-icon">
+                  <i data-feather="chevron-right"></i>
+                </span>
+              </a>
+              <ul class="submenu">
+                <li>
+                  <a>Trending<span class="tag">2</span></a>
+                </li>
+                <li>
+                  <a>Popular<span class="tag">5</span></a>
+                </li>
+                <li>
+                  <a>My Products</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a>
+                <i data-feather="music"></i>
+                <span>Music</span>
+                <span class="close-icon">
+                  <i data-feather="chevron-right"></i>
+                </span>
+              </a>
+              <ul class="submenu">
+                <li>
+                  <a>My Products</a>
+                </li>
+                <li>
+                  <a>Trending<span class="tag">6</span></a>
+                </li>
+                <li>
+                  <a>Popular</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
+      </div>
+      <!-- /Left side column -->
+
+      <!-- Middle column -->
+      <div class="column is-6">
+        <!-- Publishing Area -->
+        <!-- /partials/pages/feed/compose-card.html -->
+        {{> compose-card}}
+
+        <!-- Post 1 -->
+        <!-- /partials/pages/feed/posts/feed-post1.html -->
+        {{> feed-post1}}
+
+        <!-- Post 2 -->
+        <!-- /partials/pages/feed/posts/feed-post2.html -->
+        {{> feed-post2}}
+
+        <!-- Post 3 -->
+        <!-- /partials/pages/feed/posts/feed-post3.html -->
+        {{> feed-post3}}
+
+        <!-- Post 4 -->
+        <!-- /partials/pages/feed/posts/feed-post4.html -->
+        {{> feed-post4}}
+
+        <!-- Post 5 -->
+        <!-- /partials/pages/feed/posts/feed-post5.html -->
+        {{> feed-post5}}
+
+        <!-- Post 6 -->
+        <!-- /partials/pages/feed/posts/feed-post6.html -->
+        {{> feed-post6}}
+
+        <!-- Load more posts -->
+        <div class="load-more-wrap has-text-centered">
+          <a href="#" class="load-more-button">Load More</a>
+        </div>
+        <!-- /Load more posts -->
+      </div>
+      <!-- /Middle column -->
+
+      <!-- Right side column -->
+      <div class="column is-3">
+        <!-- Stories widget -->
+        <!-- /partials/widgets/stories-widget.html -->
+        {{> stories-widget}}
+
+        <!-- Birthday widget -->
+        <!-- /partials/widgets/birthday-widget.html -->
+        {{> birthday-widget}}
+
+        <!-- Suggested friends widget -->
+        <!-- /partials/widgets/suggested-friends-1-widget.html -->
+        {{> suggested-friends-1-widget}}
+
+        <!-- New job widget -->
+        <!-- /partials/widgets/new-job-widget.html -->
+        {{> new-job-widget}}
+      </div>
+      <!-- /Right side column -->
     </div>
-    <!-- /Feed page main wrapper -->
+  </div>
+  <!-- /Feed page main wrapper -->
 </div>
 <!-- /Container -->
 

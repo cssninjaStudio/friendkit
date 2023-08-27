@@ -18,39 +18,40 @@ Form controls dark styles
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .field {
-            > label {
-                color: $light-text;
-            }
-        }
-
-        .input, .textarea {
-            background: lighten($dark, 4%);
-            border-color: lighten($dark, 6%);
-            color: $white-light;
-
-            &::placeholder {
-                color: lighten($dark, 24%);
-            }
-
-            &:focus {
-                border-color: lighten($dark, 14%);
-            }
-        }
-
-        .select {
-            select {
-                background: lighten($dark, 2%);
-                border-color: lighten($dark, 2%);
-                color: $white-light;
-
-                &::placeholder {
-                    color: lighten($dark, 24%);
-                }
-            }
-        }
+  &.is-dark {
+    .field {
+      > label {
+        color: $light-text;
+      }
     }
+
+    .input,
+    .textarea {
+      background: lighten($dark, 4%);
+      border-color: lighten($dark, 6%);
+      color: $white-light;
+
+      &::placeholder {
+        color: lighten($dark, 24%);
+      }
+
+      &:focus {
+        border-color: lighten($dark, 14%);
+      }
+    }
+
+    .select {
+      select {
+        background: lighten($dark, 2%);
+        border-color: lighten($dark, 2%);
+        color: $white-light;
+
+        &::placeholder {
+          color: lighten($dark, 24%);
+        }
+      }
+    }
+  }
 }
 
 /* ==========================================================================
@@ -58,63 +59,63 @@ body {
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .datepicker-container {
-            background: darken($dark, 4%);
-            border-color: lighten($dark, 4%);
+  &.is-dark {
+    .datepicker-container {
+      background: darken($dark, 4%);
+      border-color: lighten($dark, 4%);
 
-            &:before {
-                border-bottom-color: lighten($dark, 4%);
-            }
+      &:before {
+        border-bottom-color: lighten($dark, 4%);
+      }
 
-            &:after {
-                border-bottom-color: darken($dark, 4%);
-            }
+      &:after {
+        border-bottom-color: darken($dark, 4%);
+      }
 
-            .datepicker-panel {
-                background: darken($dark, 4%);
+      .datepicker-panel {
+        background: darken($dark, 4%);
 
-                ul {
-                    &.days {
-                        li {
-                            &:not(.picked):not(.highlighted) {
-                                &:hover {
-                                    color: $white !important;
-                                    background: lighten($dark, 4%) !important;
-                                }
-                            }
-
-                            &:hover {
-                                color: $white !important;
-                                background: lighten($dark, 4%) !important;
-                            }
-                        }
-                    }
-
-                    li {
-                        &:not(.picked):not(.highlighted) {
-                            background: darken($dark, 4%);
-                        }
-
-                        &:hover {
-                            color: $white !important;
-                            background: lighten($dark, 4%) !important;
-                        }
-
-                        &.muted {
-                            color: lighten($dark, 12%) !important;
-                        }
-
-                        &.highlighted {
-                            background: lighten($dark, 4%) !important;
-                        }
-
-                        color: $white-light !important;
-                    }
+        ul {
+          &.days {
+            li {
+              &:not(.picked):not(.highlighted) {
+                &:hover {
+                  color: $white !important;
+                  background: lighten($dark, 4%) !important;
                 }
+              }
+
+              &:hover {
+                color: $white !important;
+                background: lighten($dark, 4%) !important;
+              }
             }
+          }
+
+          li {
+            &:not(.picked):not(.highlighted) {
+              background: darken($dark, 4%);
+            }
+
+            &:hover {
+              color: $white !important;
+              background: lighten($dark, 4%) !important;
+            }
+
+            &.muted {
+              color: lighten($dark, 12%) !important;
+            }
+
+            &.highlighted {
+              background: lighten($dark, 4%) !important;
+            }
+
+            color: $white-light !important;
+          }
         }
+      }
     }
+  }
 }
 
 /* ==========================================================================
@@ -122,52 +123,54 @@ body {
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .combo-box, .image-combo-box, .stacked-combo-box {
-            background: lighten($dark, 2%);
-            border-color: lighten($dark, 8%);
+  &.is-dark {
+    .combo-box,
+    .image-combo-box,
+    .stacked-combo-box {
+      background: lighten($dark, 2%);
+      border-color: lighten($dark, 8%);
 
-            &.is-active {
-                border-color: lighten($dark, 10%);
-            }
+      &.is-active {
+        border-color: lighten($dark, 10%);
+      }
 
-            .box-inner {
-                color: $white-light;
+      .box-inner {
+        color: $white-light;
 
-                .combo-item {
-                    .selected-item {
-                        color: $white-light;
-                    }
-                }
-            }
-
-            .box-chevron {
-                svg {
-                    stroke: $light-text;
-                }
-            }
-
-            .box-dropdown {
-                .dropdown-inner {
-                    background: darken($dark, 4%);
-                    border-color: lighten($dark, 4%);
-
-                    ul {
-                        li {
-                            &:hover {
-                                background: lighten($dark, 4%);
-                            }
-
-                            span {
-                                color: $light-text;
-                                font-weight: 400;
-                            }
-                        }
-                    }
-                }
-            }
+        .combo-item {
+          .selected-item {
+            color: $white-light;
+          }
         }
+      }
+
+      .box-chevron {
+        svg {
+          stroke: $light-text;
+        }
+      }
+
+      .box-dropdown {
+        .dropdown-inner {
+          background: darken($dark, 4%);
+          border-color: lighten($dark, 4%);
+
+          ul {
+            li {
+              &:hover {
+                background: lighten($dark, 4%);
+              }
+
+              span {
+                color: $light-text;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
     }
+  }
 }
 
 /* ==========================================================================
@@ -175,79 +178,79 @@ body {
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .f-switch {
-            &.is-primary {
-                input {
-                    &:checked + i {
-                        background-color: $primary !important;
+  &.is-dark {
+    .f-switch {
+      &.is-primary {
+        input {
+          &:checked + i {
+            background-color: $primary !important;
 
-                        &:after {
-                            background: $white !important;
-                        }
-                    }
-                }
+            &:after {
+              background: $white !important;
             }
-
-            &.is-accent {
-                input {
-                    &:checked + i {
-                        background-color: $accent !important;
-
-                        &:after {
-                            background: $white !important;
-                        }
-                    }
-                }
-            }
-
-            &.is-blue {
-                input {
-                    &:checked + i {
-                        background-color: $blue !important;
-
-                        &:after {
-                            background: $white !important;
-                        }
-                    }
-                }
-            }
-
-            &.is-red {
-                input {
-                    &:checked + i {
-                        background-color: $red !important;
-
-                        &:after {
-                            background: $white !important;
-                        }
-                    }
-                }
-            }
-
-            i {
-                background: lighten($dark, 10%);
-
-                &:before {
-                    background: $dark !important;
-                }
-
-                &:after {
-                    background: lighten($dark, 14%) !important;
-                }
-            }
-
-            input {
-                &:checked + i {
-                    background-color: $green;
-
-                    &:after {
-                        background: $white !important;
-                    }
-                }
-            }
+          }
         }
+      }
+
+      &.is-accent {
+        input {
+          &:checked + i {
+            background-color: $accent !important;
+
+            &:after {
+              background: $white !important;
+            }
+          }
+        }
+      }
+
+      &.is-blue {
+        input {
+          &:checked + i {
+            background-color: $blue !important;
+
+            &:after {
+              background: $white !important;
+            }
+          }
+        }
+      }
+
+      &.is-red {
+        input {
+          &:checked + i {
+            background-color: $red !important;
+
+            &:after {
+              background: $white !important;
+            }
+          }
+        }
+      }
+
+      i {
+        background: lighten($dark, 10%);
+
+        &:before {
+          background: $dark !important;
+        }
+
+        &:after {
+          background: lighten($dark, 14%) !important;
+        }
+      }
+
+      input {
+        &:checked + i {
+          background-color: $green;
+
+          &:after {
+            background: $white !important;
+          }
+        }
+      }
     }
+  }
 }
 
 /* ==========================================================================
@@ -255,17 +258,17 @@ body {
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .material-radio {
-            .radio-label {
-                color: $light-text;
-            }
+  &.is-dark {
+    .material-radio {
+      .radio-label {
+        color: $light-text;
+      }
 
-            input:not(:checked) {
-                border-color: lighten($dark, 16%);
-            }
-        }
+      input:not(:checked) {
+        border-color: lighten($dark, 16%);
+      }
     }
+  }
 }
 
 /* ==========================================================================
@@ -273,25 +276,25 @@ body {
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .round-checkbox {
-            input:not(:checked) {
-                + label {
-                    background: lighten($dark, 6%);
-                    border-color: lighten($dark, 16%);
-                }
-            }
+  &.is-dark {
+    .round-checkbox {
+      input:not(:checked) {
+        + label {
+          background: lighten($dark, 6%);
+          border-color: lighten($dark, 16%);
         }
-
-        .basic-checkbox {
-            .styled-checkbox:not(:checked) {
-                + label {
-                    &:before {
-                        background: lighten($dark, 6%);
-                        border-color: lighten($dark, 16%);
-                    }
-                }
-            }
-        }
+      }
     }
+
+    .basic-checkbox {
+      .styled-checkbox:not(:checked) {
+        + label {
+          &:before {
+            background: lighten($dark, 6%);
+            border-color: lighten($dark, 16%);
+          }
+        }
+      }
+    }
+  }
 }

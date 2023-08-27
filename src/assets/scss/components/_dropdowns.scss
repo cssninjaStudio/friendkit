@@ -15,7 +15,7 @@ Dropdown styles
 ========================================================================== */
 
 .dropdown-divider {
-    background-color: $fade-grey;
+  background-color: $fade-grey;
 }
 
 /* ==========================================================================
@@ -23,353 +23,352 @@ Dropdown styles
 ========================================================================== */
 
 .dropdown {
-    .avatar-button {
-        display: flex;
-        align-items: center;
-        cursor: pointer;
+  .avatar-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 
-        img {
-            height: 22px;
-            width: 22px;
-            display: block;
-            margin: 0 auto;
-            border-radius: 50%;
-        }
-
-        svg {
-            transform: rotate(180deg);
-            fill: $dark-text;
-            height: 8px;
-            width: 8px;
-            margin: 0 4px;
-        }
+    img {
+      height: 22px;
+      width: 22px;
+      display: block;
+      margin: 0 auto;
+      border-radius: 50%;
     }
+
+    svg {
+      transform: rotate(180deg);
+      fill: $dark-text;
+      height: 8px;
+      width: 8px;
+      margin: 0 4px;
+    }
+  }
 }
 
 /* ==========================================================================
 2. Spaced dropdown
 ========================================================================== */
 
-.card-heading, .about-card .header .actions {
-    .dropdown.is-spaced {
-        > div .button {
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 32px;
-            width: 32px;
-            border: none;
-            border-radius: 50%;
-            transition: all .3s;
+.card-heading,
+.about-card .header .actions {
+  .dropdown.is-spaced {
+    > div .button {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 32px;
+      width: 32px;
+      border: none;
+      border-radius: 50%;
+      transition: all 0.3s;
 
-            &:hover {
-                background: lighten($fade-grey, 5%);
-            }
+      &:hover {
+        background: lighten($fade-grey, 5%);
+      }
 
-            svg {
-                height: 20px;
-                width: 20px;
-                transition: all .3s;
-            }
-        }
+      svg {
+        height: 20px;
+        width: 20px;
+        transition: all 0.3s;
+      }
     }
+  }
 }
 
 .dropdown.is-spaced {
-    &.is-modern {
-        &.is-active {
-            .caret {
-                transform: rotate(180deg);
-            }
+  &.is-modern {
+    &.is-active {
+      .caret {
+        transform: rotate(180deg);
+      }
 
-            .main-icon {
-                transform: rotate(360deg);
-            }
-        }
+      .main-icon {
+        transform: rotate(360deg);
+      }
+    }
 
-        > div .button {
-            min-width: 110px;
-            border-radius: 100px;
+    > div .button {
+      min-width: 110px;
+      border-radius: 100px;
 
-            .caret, .main-icon {
-                transition: all .3s;
-            }
-        }
-
-        .dropdown-menu {
-            margin-top: 6px;
-        }
+      .caret,
+      .main-icon {
+        transition: all 0.3s;
+      }
     }
 
     .dropdown-menu {
-        box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.05);
-        border-color: $fade-grey;
-        padding-top: 0;
-        min-width: 280px;
-        border-radius: .65rem;
+      margin-top: 6px;
+    }
+  }
 
-        &.has-margin {
-            margin-top: 10px;
-        }
+  .dropdown-menu {
+    box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.05);
+    border-color: $fade-grey;
+    padding-top: 0;
+    min-width: 280px;
+    border-radius: 0.65rem;
 
-        .dropdown-content {
-            border: 1px solid $fade-grey;
-            box-shadow: none;
-            border-radius: .65rem;
-        }
+    &.has-margin {
+      margin-top: 10px;
     }
 
+    .dropdown-content {
+      border: 1px solid $fade-grey;
+      box-shadow: none;
+      border-radius: 0.65rem;
+    }
+  }
+
+  .dropdown-item {
+    padding-right: 1rem !important;
+    padding: 0.5rem 1rem;
+
+    &:hover {
+      background: lighten($fade-grey, 7%);
+
+      h3 {
+        color: $primary;
+      }
+
+      svg {
+        stroke: $primary;
+      }
+    }
+
+    &.is-selected {
+      .checkmark {
+        display: block !important;
+      }
+    }
+
+    &.is-header {
+      h5 {
+        font-weight: 500;
+        margin-bottom: 10px;
+        color: $medium-text;
+      }
+    }
+
+    .media {
+      align-items: center;
+
+      .media-content {
+        line-height: 1.2;
+      }
+
+      h3 {
+        font-weight: 500;
+        font-size: 0.85rem;
+        color: $dark-text;
+        transition: all 0.3s;
+        line-height: 1.2;
+      }
+
+      img {
+        display: block;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        margin-right: 20px;
+      }
+
+      svg {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+        stroke-width: 1px;
+        stroke: $medium-text;
+        transition: all 0.3s;
+      }
+
+      small {
+        color: $light-text;
+      }
+
+      .checkmark {
+        display: none;
+
+        svg {
+          margin-right: 0;
+          margin-left: auto;
+        }
+      }
+    }
+
+    &.is-title {
+      background-color: transparent;
+      margin-bottom: 10px;
+    }
+
+    &.is-active {
+      background: $blue;
+
+      svg {
+        stroke: $white;
+      }
+
+      small {
+        color: $white;
+      }
+    }
+  }
+
+  &.is-accent {
     .dropdown-item {
-        padding-right: 1rem !important;
-        padding: 0.5rem 1rem;
+      &:hover {
+        background: lighten($fade-grey, 7%);
 
-        &:hover {
-            background: lighten($fade-grey, 7%);
-
-            h3 {
-                color: $primary;
-            }
-
-            svg {
-                stroke: $primary;
-            }
+        h3 {
+          color: $accent !important;
         }
 
-        &.is-selected {
-            .checkmark {
-                display: block !important;
-            }
+        svg {
+          stroke: $accent !important;
         }
-
-        &.is-header {
-            h5 {
-                font-weight: 500;
-                margin-bottom: 10px;
-                color: $medium-text;
-            }
-        }
-
-        .media {
-            align-items: center;
-
-            .media-content {
-                line-height: 1.2;
-            }
-
-            h3 {
-                font-weight: 500;
-                font-size: .85rem;
-                color: $dark-text;
-                transition: all .3s;
-                line-height: 1.2;
-            }
-
-            img {
-                display: block;
-                width: 32px;
-                height: 32px;
-                border-radius: 50%;
-                margin-right: 20px;
-            }
-
-            svg {
-                width: 18px;
-                height: 18px;
-                margin-right: 10px;
-                stroke-width: 1px;
-                stroke: $medium-text;
-                transition: all .3s;
-            }
-
-            small {
-                color: $light-text;
-            }
-
-            .checkmark {
-                display: none;
-
-                svg {
-                    margin-right: 0;
-                    margin-left: auto;
-                }
-            }
-        }
-
-        &.is-title {
-            background-color: transparent;
-            margin-bottom: 10px;
-        }
-
-        &.is-active {
-            background: $blue;
-
-            svg {
-                stroke: $white;
-            }
-
-            small {
-                color: $white;
-            }
-        }
-
-        
+      }
     }
+  }
 
-    &.is-accent {
-        .dropdown-item {
-            &:hover {
-                background: lighten($fade-grey, 7%);
+  &.is-neutral {
+    .dropdown-item {
+      &:hover {
+        background: lighten($fade-grey, 7%);
 
-                h3 {
-                    color: $accent !important;
-                }
-
-                svg {
-                    stroke: $accent !important;
-                }
-            }
+        h3 {
+          color: $dark-text !important;
         }
-    }
 
-    &.is-neutral {
-        .dropdown-item {
-            &:hover {
-                background: lighten($fade-grey, 7%);
-
-                h3 {
-                    color: $dark-text !important;
-                }
-
-                svg {
-                    stroke: $medium-text !important;
-                }
-            }
+        svg {
+          stroke: $medium-text !important;
         }
+      }
     }
+  }
 }
 
-
 body {
-    &.is-dark {
+  &.is-dark {
+    .dropdown {
+      &.is-spaced {
+        &:hover,
+        &.is-active {
+          > div .button {
+            background: lighten($dark, 2%) !important;
 
-        .dropdown {
-            &.is-spaced {
-                &:hover, &.is-active {
-                    > div .button {
-                        background: lighten($dark, 2%) !important;
-
-                        svg {
-                            stroke: $white-light;
-                        }
-                    }
-                }
-
-                .dropdown-menu {
-                    .dropdown-content {
-                        background: darken($dark, 5%) !important;
-                        border-color: lighten($dark, 8%) !important;
-
-                        .heading {
-                            border-color: lighten($dark, 8%) !important;
-
-                            &:hover, *:hover {
-                                background: $dark !important;
-                            }
-
-                            .heading-right {
-                                .notification-link {
-                                    color: $accent !important;
-                                }
-                            }
-                        }
-                    }
-                }
+            svg {
+              stroke: $white-light;
             }
-
-            &.is-neutral {
-                .dropdown-menu {
-                    .dropdown-content {
-                        .dropdown-item {
-                            &:hover {
-                
-                                h3 {
-                                    color: $white-light !important;
-                                }
-                
-                                svg {
-                                    stroke: $white-light !important;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            .dropdown-menu {
-                .dropdown-content {
-                    background: $dark;
-                    border-color: lighten($dark, 8%) !important;
-
-                    .dropdown-item {
-                        color: $light-text;
-
-                        &.is-active {
-                            background: $accent !important;
-                        }
-
-                        &:hover {
-                            .media {
-                                .media-content {
-                                    h3 {
-                                        color: $primary;
-                                    }
-                                }
-                            }
-                        }
-
-                        .media {
-                            .media-content {
-                                h3 {
-                                    color: $white-light;
-                                }
-                            }
-                        }
-                    }
-
-                    .dropdown-divider {
-                        background: lighten($dark, 5%);
-                    }
-
-                    a:hover {
-                        background: lighten($dark, 3%) !important;
-                    }
-                }
-            }
+          }
         }
 
-        .child-dropdown {
-            .inner {
+        .dropdown-menu {
+          .dropdown-content {
+            background: darken($dark, 5%) !important;
+            border-color: lighten($dark, 8%) !important;
+
+            .heading {
+              border-color: lighten($dark, 8%) !important;
+
+              &:hover,
+              *:hover {
                 background: $dark !important;
-                border-color: lighten($dark, 4%) !important;
+              }
 
-                &:hover {
-                    background: $dark !important;
-                    border-color: lighten($dark, 4%) !important;
+              .heading-right {
+                .notification-link {
+                  color: $accent !important;
                 }
-
-                ul {
-                    li {
-                        .text {
-                            span {
-                                &:first-child {
-                                    color: $white-light !important;
-                                }
-                            }
-                        }
-                    }
-                }
+              }
             }
+          }
         }
+      }
+
+      &.is-neutral {
+        .dropdown-menu {
+          .dropdown-content {
+            .dropdown-item {
+              &:hover {
+                h3 {
+                  color: $white-light !important;
+                }
+
+                svg {
+                  stroke: $white-light !important;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .dropdown-menu {
+        .dropdown-content {
+          background: $dark;
+          border-color: lighten($dark, 8%) !important;
+
+          .dropdown-item {
+            color: $light-text;
+
+            &.is-active {
+              background: $accent !important;
+            }
+
+            &:hover {
+              .media {
+                .media-content {
+                  h3 {
+                    color: $primary;
+                  }
+                }
+              }
+            }
+
+            .media {
+              .media-content {
+                h3 {
+                  color: $white-light;
+                }
+              }
+            }
+          }
+
+          .dropdown-divider {
+            background: lighten($dark, 5%);
+          }
+
+          a:hover {
+            background: lighten($dark, 3%) !important;
+          }
+        }
+      }
     }
+
+    .child-dropdown {
+      .inner {
+        background: $dark !important;
+        border-color: lighten($dark, 4%) !important;
+
+        &:hover {
+          background: $dark !important;
+          border-color: lighten($dark, 4%) !important;
+        }
+
+        ul {
+          li {
+            .text {
+              span {
+                &:first-child {
+                  color: $white-light !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

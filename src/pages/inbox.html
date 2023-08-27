@@ -4,17 +4,15 @@ title: Inbox
 ---
 
 <div class="inbox-wrapper-inner">
+  <!-- Left sidebar -->
+  <!-- /partials/pages/inbox/inbox-sidebar.html -->
+  {{> inbox-sidebar}}
 
-    <!-- Left sidebar -->
-    <!-- /partials/pages/inbox/inbox-sidebar.html -->
-    {{> inbox-sidebar}}
+  <!-- Messages list container -->
+  <!-- /partials/pages/inbox/inbox-center-container.html -->
+  {{> inbox-center-container}}
 
-    <!-- Messages list container -->
-    <!-- /partials/pages/inbox/inbox-center-container.html -->
-    {{> inbox-center-container}}
-
-    <!-- Messages preview -->
-    <!-- /partials/pages/inbox/inbox-message-container.html -->
-    {{> inbox-message-container}}
-
+  <!-- Messages preview -->
+  <!-- /partials/pages/inbox/inbox-message-container.html -->
+  {{> inbox-message-container}}
 </div>

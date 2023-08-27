@@ -14,89 +14,90 @@ Popover styles
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .webui-popover {
-            background: darken($dark, 6%) !important;
-            color: $light-text !important;
+  &.is-dark {
+    .webui-popover {
+      background: darken($dark, 6%) !important;
+      color: $light-text !important;
 
-            &.top {
-                .webui-arrow {
-                    border-top-color: darken($dark, 6%) !important;
-                }
-            }
-
-            &.right {
-                .webui-arrow {
-                    border-top-color: transparent !important;
-                    border-right-color: darken($dark, 6%) !important;
-
-                    &:after {
-                        border-right-color: darken($dark, 6%) !important;
-                    }
-                }
-            }
-
-            &.left {
-                .webui-arrow {
-                    &:after {
-                        border-left-color: darken($dark, 6%) !important;
-                    }
-                }
-            }
-
-            &.bottom {
-                .webui-arrow {
-                    &:after {
-                        border-bottom-color: darken($dark, 6%) !important;
-                    }
-                }
-            }
-
-            &.bottom-right, &.bottom-left {
-                .webui-arrow {
-                    &:after {
-                        border-bottom-color: darken($dark, 6%) !important;
-                    }
-                }
-            }
-
-            &.top-right {
-                .webui-arrow {
-                    &:after {
-                        border-top-color: darken($dark, 6%) !important;
-                    }
-                }
-            }
-
-            &.top-left {
-                .webui-arrow {
-                    border-top-color: darken($dark, 6%) !important;
-                }
-            }
-
-            .webui-popover-content {
-                .popover-flex-block {
-                    .icon-block {
-                        svg {
-                            stroke: $light-text;
-                        }
-                    }
-
-                    .content-block {
-                        span {
-                            &:first-child {
-                                color: $white-light;
-                            }
-
-                            &:nth-child(2) {
-                                color: $light-text;
-                            }
-                        }
-                    }
-                }
-            }
+      &.top {
+        .webui-arrow {
+          border-top-color: darken($dark, 6%) !important;
         }
+      }
+
+      &.right {
+        .webui-arrow {
+          border-top-color: transparent !important;
+          border-right-color: darken($dark, 6%) !important;
+
+          &:after {
+            border-right-color: darken($dark, 6%) !important;
+          }
+        }
+      }
+
+      &.left {
+        .webui-arrow {
+          &:after {
+            border-left-color: darken($dark, 6%) !important;
+          }
+        }
+      }
+
+      &.bottom {
+        .webui-arrow {
+          &:after {
+            border-bottom-color: darken($dark, 6%) !important;
+          }
+        }
+      }
+
+      &.bottom-right,
+      &.bottom-left {
+        .webui-arrow {
+          &:after {
+            border-bottom-color: darken($dark, 6%) !important;
+          }
+        }
+      }
+
+      &.top-right {
+        .webui-arrow {
+          &:after {
+            border-top-color: darken($dark, 6%) !important;
+          }
+        }
+      }
+
+      &.top-left {
+        .webui-arrow {
+          border-top-color: darken($dark, 6%) !important;
+        }
+      }
+
+      .webui-popover-content {
+        .popover-flex-block {
+          .icon-block {
+            svg {
+              stroke: $light-text;
+            }
+          }
+
+          .content-block {
+            span {
+              &:first-child {
+                color: $white-light;
+              }
+
+              &:nth-child(2) {
+                color: $light-text;
+              }
+            }
+          }
+        }
+      }
     }
+  }
 }
 
 /* ==========================================================================
@@ -104,43 +105,45 @@ body {
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .profile-popover-block {
-            .profile-popover-wrapper {
-                .popover-cover {
-                    .popover-avatar {
-                        .avatar {
-                            border-color: darken($dark, 6%) !important;
-                        }
-                    }
-                }
-
-                .popover-meta {
-                    span {
-                        &.user-meta, &.page-meta {
-                            .username, .pagename {
-                                color: $white-light;
-                            }
-                        }
-                    }
-                }
+  &.is-dark {
+    .profile-popover-block {
+      .profile-popover-wrapper {
+        .popover-cover {
+          .popover-avatar {
+            .avatar {
+              border-color: darken($dark, 6%) !important;
             }
-
-            .loader-overlay {
-                background: darken($dark, 6%) !important;
-            }
+          }
         }
 
-        .ql-tooltip {
-            background: darken($dark, 6%) !important;
-
-            .ql-tooltip-arrow {
-                border-bottom-color:  darken($dark, 6%) !important;
+        .popover-meta {
+          span {
+            &.user-meta,
+            &.page-meta {
+              .username,
+              .pagename {
+                color: $white-light;
+              }
             }
-
-            .ql-picker-options {
-                background: darken($dark, 6%) !important;
-            }
+          }
         }
+      }
+
+      .loader-overlay {
+        background: darken($dark, 6%) !important;
+      }
     }
+
+    .ql-tooltip {
+      background: darken($dark, 6%) !important;
+
+      .ql-tooltip-arrow {
+        border-bottom-color: darken($dark, 6%) !important;
+      }
+
+      .ql-picker-options {
+        background: darken($dark, 6%) !important;
+      }
+    }
+  }
 }

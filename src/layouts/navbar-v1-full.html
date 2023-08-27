@@ -1,52 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-    <title> Friendkit | {{title}}</title>
+    <title>Friendkit | {{title}}</title>
     <link rel="icon" type="image/png" href="assets/img/favicon.png" />
-    
+
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KQHJPZP');</script>
+    <script>
+      ;(function (w, d, s, l, i) {
+        w[l] = w[l] || []
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : ''
+        j.async = true
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+        f.parentNode.insertBefore(j, f)
+      })(window, document, 'script', 'dataLayer', 'GTM-KQHJPZP')
+    </script>
     <!-- End Google Tag Manager -->
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500"
+      rel="stylesheet"
+    />
     <!-- Core CSS -->
-    <link rel="stylesheet" href="{{root}}assets/css/app.css">
-    <link rel="stylesheet" href="{{root}}assets/css/core.css">
-</head>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css" />
+    <link rel="stylesheet" href="{{root}}assets/css/core.css" />
+  </head>
 
-<body>
+  <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQHJPZP"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KQHJPZP"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     {{> pageloader}}
 
     <div class="app-overlay"></div>
 
-    {{> navbar}}
-    {{> mobile-navbar}}
+    {{> navbar}} {{> mobile-navbar}}
 
-    <div class="view-wrapper is-full">
-        {{> body}}
-    </div>
+    <div class="view-wrapper is-full">{{> body}}</div>
 
-    {{> chat-wrapper}}
-    {{> explorer-menu}}
-
-    {{> scripts}}
-</body>
-
+    {{> chat-wrapper}} {{> explorer-menu}} {{> scripts}}
+  </body>
 </html>

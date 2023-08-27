@@ -21,28 +21,45 @@ Placeholder dark styles
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .loads {
-            -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-            -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-            -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-            -webkit-animation-name: placeload;
-            animation-name: placeload;
-            -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
-            background: #191c26;
-            background: #31374a;
-            background: -webkit-gradient(linear, left top, right top, #31374a 8%, #191c26 18%, #31374a 33%);
-            background: -webkit-linear-gradient(left, #31374a 8%, #191c26 18%, #31374a 33%);
-            background: linear-gradient(to right, #31374a 8%, #191c26 18%, #31374a 33%);
-            -webkit-background-size: 800px 104px;
-            background-size: 1200px 104px;
-            position: relative;
-        }
+  &.is-dark {
+    .loads {
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-name: placeload;
+      animation-name: placeload;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      background: #191c26;
+      background: #31374a;
+      background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        #31374a 8%,
+        #191c26 18%,
+        #31374a 33%
+      );
+      background: -webkit-linear-gradient(
+        left,
+        #31374a 8%,
+        #191c26 18%,
+        #31374a 33%
+      );
+      background: linear-gradient(
+        to right,
+        #31374a 8%,
+        #191c26 18%,
+        #31374a 33%
+      );
+      -webkit-background-size: 800px 104px;
+      background-size: 1200px 104px;
+      position: relative;
     }
+  }
 }
 
 /* ==========================================================================
@@ -50,12 +67,12 @@ body {
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .compose-placeload {
-            border-color: lighten($dark, 4%);
-            background: $dark;
-        }
+  &.is-dark {
+    .compose-placeload {
+      border-color: lighten($dark, 4%);
+      background: $dark;
     }
+  }
 }
 
 /* ==========================================================================
@@ -63,12 +80,12 @@ body {
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .post-placeload {
-            border-color: lighten($dark, 4%) !important;
-            background: $dark !important;
-        }
+  &.is-dark {
+    .post-placeload {
+      border-color: lighten($dark, 4%) !important;
+      background: $dark !important;
     }
+  }
 }
 
 /* ==========================================================================
@@ -76,12 +93,13 @@ body {
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .stories-placeload, .list-placeload {
-            border-color: lighten($dark, 4%) !important;
-            background: $dark !important;
-        }
+  &.is-dark {
+    .stories-placeload,
+    .list-placeload {
+      border-color: lighten($dark, 4%) !important;
+      background: $dark !important;
     }
+  }
 }
 
 /* ==========================================================================
@@ -89,12 +107,12 @@ body {
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .mini-widget-placeload {
-            border-color: lighten($dark, 4%) !important;
-            background: $dark !important;
-        }
+  &.is-dark {
+    .mini-widget-placeload {
+      border-color: lighten($dark, 4%) !important;
+      background: $dark !important;
     }
+  }
 }
 
 /* ==========================================================================
@@ -102,12 +120,12 @@ body {
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .weather-widget-placeload {
-            border-color: lighten($dark, 4%) !important;
-            background: $dark !important;
-        }
+  &.is-dark {
+    .weather-widget-placeload {
+      border-color: lighten($dark, 4%) !important;
+      background: $dark !important;
     }
+  }
 }
 
 /* ==========================================================================
@@ -115,14 +133,14 @@ body {
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .questions-single-placeload {
-            &.is-card {
-                border-color: lighten($dark, 8%) !important;
-                background: lighten($dark, 8%) !important;
-            }
-        }
+  &.is-dark {
+    .questions-single-placeload {
+      &.is-card {
+        border-color: lighten($dark, 8%) !important;
+        background: lighten($dark, 8%) !important;
+      }
     }
+  }
 }
 
 /* ==========================================================================
@@ -130,14 +148,14 @@ body {
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .questions-categories-placeload {
-            .is-tile-placeload {
-                border-color: lighten($dark, 14%) !important;
-                background: $dark !important;
-            }
-        }
+  &.is-dark {
+    .questions-categories-placeload {
+      .is-tile-placeload {
+        border-color: lighten($dark, 14%) !important;
+        background: $dark !important;
+      }
     }
+  }
 }
 
 /* ==========================================================================
@@ -145,33 +163,33 @@ body {
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .questions-stats-placeload {
-            &.is-header {
-                border-color: lighten($dark, 14%) !important;
-                background: $dark !important;
-            }
+  &.is-dark {
+    .questions-stats-placeload {
+      &.is-header {
+        border-color: lighten($dark, 14%) !important;
+        background: $dark !important;
+      }
 
-            &.is-carousel {
-                .placeload-grid {
-                    .grid-item {
-                        border-color: lighten($dark, 14%) !important;
-                        background: $dark !important;
-                    }
-                }
-            }
-        }
-
-        .questions-side-placeload {
+      &.is-carousel {
+        .placeload-grid {
+          .grid-item {
             border-color: lighten($dark, 14%) !important;
             background: $dark !important;
+          }
         }
-
-        .questions-settings-placeload {
-            &.is-card {
-                border-color: lighten($dark, 14%) !important;
-                background: $dark !important;
-            }
-        }
+      }
     }
+
+    .questions-side-placeload {
+      border-color: lighten($dark, 14%) !important;
+      background: $dark !important;
+    }
+
+    .questions-settings-placeload {
+      &.is-card {
+        border-color: lighten($dark, 14%) !important;
+        background: $dark !important;
+      }
+    }
+  }
 }

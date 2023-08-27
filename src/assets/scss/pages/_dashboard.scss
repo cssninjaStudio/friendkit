@@ -33,7 +33,6 @@ Dashboard styles
   }
 }
 
-
 /* ==========================================================================
 1. Dashboard toolbar
 ========================================================================== */
@@ -513,14 +512,14 @@ Dashboard styles
                 line-height: 1.2;
 
                 &:first-child {
-                  font-family: "Montserrat", sans-serif;
+                  font-family: 'Montserrat', sans-serif;
                   font-weight: 600;
                   font-size: 0.85rem;
                   color: $dark-text;
                 }
 
                 &:last-child {
-                  font-family: "Roboto", sans-serif;
+                  font-family: 'Roboto', sans-serif;
                   font-size: 0.8rem;
                   color: $muted-grey;
                 }

@@ -3,87 +3,83 @@ layout: sidebar-v1
 title: Timeline
 ---
 
-<div class="toolbar-v1-fixed-wrap">
-	{{> toolbar-v1}}
-</div>
+<div class="toolbar-v1-fixed-wrap">{{> toolbar-v1}}</div>
 
 <!-- Container -->
-<div id="main-feed" class="container sidebar-boxed" data-open-sidebar data-page-title="Timeline">
+<div
+  id="main-feed"
+  class="container sidebar-boxed"
+  data-open-sidebar
+  data-page-title="Timeline"
+>
+  {{> toolbar-v1}}
 
-	{{> toolbar-v1}}
+  <!-- Content placeholders at page load -->
+  <!-- /html/partials/global/placeload/feed-page/feed-menu-shadow-dom.html -->
+  {{> sidebar-v1-feed-menu-shadow-dom}}
 
-	<!-- Content placeholders at page load -->
-    <!-- /html/partials/global/placeload/feed-page/feed-menu-shadow-dom.html -->
-    {{> sidebar-v1-feed-menu-shadow-dom}}
+  <!-- Feed page main wrapper -->
+  <div id="activity-feed" class="view-wrap true-dom is-hidden">
+    <div class="columns">
+      <!-- Middle column -->
+      <div class="column is-8">
+        <!-- Publishing Area -->
+        <!-- /partials/pages/feed/compose-card.html -->
+        {{> compose-card}}
 
-    <!-- Feed page main wrapper -->
-    <div id="activity-feed" class="view-wrap true-dom is-hidden">
-        <div class="columns">
+        <!-- Post 1 -->
+        <!-- /partials/pages/feed/posts/feed-post1.html -->
+        {{> feed-post1}}
 
-            <!-- Middle column -->
-            <div class="column is-8">
+        <!-- Post 2 -->
+        <!-- /partials/pages/feed/posts/feed-post2.html -->
+        {{> feed-post2}}
 
-                <!-- Publishing Area -->
-                <!-- /partials/pages/feed/compose-card.html -->
-                {{> compose-card}}
+        <!-- Post 3 -->
+        <!-- /partials/pages/feed/posts/feed-post3.html -->
+        {{> feed-post3}}
 
-                <!-- Post 1 -->
-                <!-- /partials/pages/feed/posts/feed-post1.html -->
-                {{> feed-post1}}
+        <!-- Post 4 -->
+        <!-- /partials/pages/feed/posts/feed-post4.html -->
+        {{> feed-post4}}
 
-                <!-- Post 2 -->
-                <!-- /partials/pages/feed/posts/feed-post2.html -->
-                {{> feed-post2}}
+        <!-- Post 5 -->
+        <!-- /partials/pages/feed/posts/feed-post5.html -->
+        {{> feed-post5}}
 
-                <!-- Post 3 -->
-                <!-- /partials/pages/feed/posts/feed-post3.html -->
-                {{> feed-post3}}
+        <!-- Post 6 -->
+        <!-- /partials/pages/feed/posts/feed-post6.html -->
+        {{> feed-post6}}
 
-                <!-- Post 4 -->
-                <!-- /partials/pages/feed/posts/feed-post4.html -->
-                {{> feed-post4}}
-
-                <!-- Post 5 -->
-                <!-- /partials/pages/feed/posts/feed-post5.html -->
-                {{> feed-post5}}
-
-                <!-- Post 6 -->
-                <!-- /partials/pages/feed/posts/feed-post6.html -->
-                {{> feed-post6}}
-
-                <!-- Load more posts -->
-                <div class=" load-more-wrap has-text-centered">
-                    <a href="#" class="load-more-button">Load More</a>
-                </div>
-                <!-- /Load more posts -->
-
-            </div>
-            <!-- /Middle column -->
-
-            <!-- Right side column -->
-            <div class="column is-4">
-
-                <!-- Stories widget -->
-                <!-- /partials/widgets/stories-widget.html -->
-                {{> stories-widget}}
-
-                <!-- Birthday widget -->
-                <!-- /partials/widgets/birthday-widget.html -->
-                {{> birthday-widget}}
-
-                <!-- Suggested friends widget -->
-                <!-- /partials/widgets/suggested-friends-1-widget.html -->
-                {{> suggested-friends-1-widget}}
-
-                <!-- New job widget -->
-                <!-- /partials/widgets/new-job-widget.html -->
-                {{> new-job-widget}}
-
-            </div>
-            <!-- /Right side column -->
+        <!-- Load more posts -->
+        <div class="load-more-wrap has-text-centered">
+          <a href="#" class="load-more-button">Load More</a>
         </div>
-    </div>
+        <!-- /Load more posts -->
+      </div>
+      <!-- /Middle column -->
 
+      <!-- Right side column -->
+      <div class="column is-4">
+        <!-- Stories widget -->
+        <!-- /partials/widgets/stories-widget.html -->
+        {{> stories-widget}}
+
+        <!-- Birthday widget -->
+        <!-- /partials/widgets/birthday-widget.html -->
+        {{> birthday-widget}}
+
+        <!-- Suggested friends widget -->
+        <!-- /partials/widgets/suggested-friends-1-widget.html -->
+        {{> suggested-friends-1-widget}}
+
+        <!-- New job widget -->
+        <!-- /partials/widgets/new-job-widget.html -->
+        {{> new-job-widget}}
+      </div>
+      <!-- /Right side column -->
+    </div>
+  </div>
 </div>
 
 <!-- Create group modal in compose card -->

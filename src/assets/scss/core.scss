@@ -13,37 +13,37 @@ Core SCSS file
 ========================================================================== */
 
 //Main variables
-@import "abstracts/variables";
+@import 'abstracts/variables';
 
 //Bulma source import
-@import "../sass/bulma";
+@import '../sass/bulma';
 
 //Layout imports
-@import "layout/all";
+@import 'layout/all';
 
 //Navigation imports
-@import "navigation/all";
+@import 'navigation/all';
 
 //Components imports
-@import "components/all";
+@import 'components/all';
 
 //Pages imports
-@import "pages/all";
+@import 'pages/all';
 
 //Layout imports dark
-@import "_dark/layout/all";
+@import '_dark/layout/all';
 
 //Navigation imports dark
-@import "_dark/navigation/all";
+@import '_dark/navigation/all';
 
 //Components imports dark
-@import "_dark/components/all";
+@import '_dark/components/all';
 
 //Pages imports dark
-@import "_dark/pages/all";
+@import '_dark/pages/all';
 
-$slick-font-path: "/assets/fonts/";
-$slick-loader-path: "/assets/fonts/";
+$slick-font-path: '/assets/fonts/';
+$slick-loader-path: '/assets/fonts/';
 
-@import "../../../node_modules/slick-carousel/slick/slick.scss";
-@import "../../../node_modules/slick-carousel/slick/slick-theme.scss";
+@import '../../../node_modules/slick-carousel/slick/slick.scss';
+@import '../../../node_modules/slick-carousel/slick/slick-theme.scss';

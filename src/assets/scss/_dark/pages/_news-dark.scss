@@ -13,91 +13,91 @@ News / Blogging layout styles
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .news-header {
-            .news-hero-menu {
-                background: lighten($dark, 2%);
-                border-color: lighten($dark, 2%);
+  &.is-dark {
+    .news-header {
+      .news-hero-menu {
+        background: lighten($dark, 2%);
+        border-color: lighten($dark, 2%);
 
-                .stories {
-                    .story {
-                        border-color: lighten($dark, 8%);
+        .stories {
+          .story {
+            border-color: lighten($dark, 8%);
 
-                        &:before {
-                            background: lighten($dark, 2%);
-                        }
-
-                        &:not(.is-active) {
-                            .avatar-wrap {
-                                border-color: lighten($dark, 14%);
-                            }
-                        }
-
-                        .meta {
-                            span {
-                                &:first-child {
-                                    color: $light-text;
-                                }
-
-                                &:nth-child(2) {
-                                    color: $white-light;
-                                }
-
-                                &:nth-child(3) {
-                                    color: $light-text;
-                                }
-                            }
-                        }
-                    }
-                }
+            &:before {
+              background: lighten($dark, 2%);
             }
-        }
 
-        .news-grid {
-            .news-card {
-                border-color: lighten($dark, 14%) !important;
-                background: $dark !important;
-
-                .tag {
-                    background: $accent !important;
-                    color: $white-light !important;
-                }
-
-                .news-content {
-                    h3 {
-                        color: $white-light !important;
-                    }
-
-                    p {
-                        color: $light-text !important;
-                    }
-
-                    .button-wrap {
-                        .button {
-                            background: darken($sidebar, 16%) !important;
-                            border-color: darken($sidebar, 16%) !important;
-                            color: $white !important;
-
-                            &:hover {
-                                background: $primary !important;
-                                border-color: $primary !important;
-                            }
-                        }
-
-                        .actions {
-                            .action {
-                                &:hover {
-                                    background: darken($sidebar, 4%) !important;
-
-                                    svg {
-                                        stroke: $white-smoke !important;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+            &:not(.is-active) {
+              .avatar-wrap {
+                border-color: lighten($dark, 14%);
+              }
             }
+
+            .meta {
+              span {
+                &:first-child {
+                  color: $light-text;
+                }
+
+                &:nth-child(2) {
+                  color: $white-light;
+                }
+
+                &:nth-child(3) {
+                  color: $light-text;
+                }
+              }
+            }
+          }
         }
+      }
     }
+
+    .news-grid {
+      .news-card {
+        border-color: lighten($dark, 14%) !important;
+        background: $dark !important;
+
+        .tag {
+          background: $accent !important;
+          color: $white-light !important;
+        }
+
+        .news-content {
+          h3 {
+            color: $white-light !important;
+          }
+
+          p {
+            color: $light-text !important;
+          }
+
+          .button-wrap {
+            .button {
+              background: darken($sidebar, 16%) !important;
+              border-color: darken($sidebar, 16%) !important;
+              color: $white !important;
+
+              &:hover {
+                background: $primary !important;
+                border-color: $primary !important;
+              }
+            }
+
+            .actions {
+              .action {
+                &:hover {
+                  background: darken($sidebar, 4%) !important;
+
+                  svg {
+                    stroke: $white-smoke !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

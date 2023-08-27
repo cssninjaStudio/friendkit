@@ -15,337 +15,338 @@ Dark feed styles
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .card {
-            &.is-new-content {
-                .tabs {
-                    background: lighten($dark, 4%);
+  &.is-dark {
+    .card {
+      &.is-new-content {
+        .tabs {
+          background: lighten($dark, 4%);
 
-                    ul {
-                        background: lighten($dark, 4%);
-                        border-color: lighten($dark, 4%);
-                    }
+          ul {
+            background: lighten($dark, 4%);
+            border-color: lighten($dark, 4%);
+          }
 
-                    li {
-                        background: lighten($dark, 4%);
+          li {
+            background: lighten($dark, 4%);
 
-                        &.close-wrap {
-                            .close-publish {
-                                &:hover {
-                                    background: $dark;
-                                }
-                            }
-                        }
-
-                        &.is-active {
-                            a {
-                                border-color: transparent !important;
-                                background: $dark;
-                            }
-                        }
-
-                        a {
-                            background: lighten($dark, 4%);
-                            border-color: lighten($dark, 4%) !important;
-                        }
-                    }
+            &.close-wrap {
+              .close-publish {
+                &:hover {
+                  background: $dark;
                 }
-
-                .compose {
-                    border-color: lighten($dark, 4%);
-
-                    .compose-form {
-                        .control {
-                            .textarea {
-                                border-color: $dark;
-                                background: $dark;
-                                color: $white-light;
-
-                                &::placeholder {
-                                    color: lighten($dark, 24%);
-                                }
-                            }
-                        }
-                    }
-
-                    .feed-upload {
-                        .upload-wrap {
-                            .remove-file {
-                                background: darken($dark, 4%);
-                            }
-                        }
-                    }
-
-                    .options-summary {
-                        background: lighten($dark, 4%);
-                    }
-                }
-
-                .compose-options {
-                    background: $dark;
-
-                    .compose-option {
-                        background: lighten($dark, 6%);
-
-                        &:hover {
-                            svg {
-                                stroke: $white-light;
-                            }
-                        }
-                    }
-                }
-
-                .hidden-options {
-                    background: $dark;
-                    border-color: lighten($dark, 4%);
-
-                    .target-channels {
-                        .channel {
-                            &:hover {
-                                background: lighten($dark, 6%);
-                            }
-
-                            .round-checkbox {
-                                input:not(:checked) + label {
-                                    background: darken($dark, 5%);
-                                    border-color: lighten($dark, 4%);
-                                }
-                            }
-
-                            .channel-icon, .story-icon {
-                                background: darken($dark, 5%);
-                                border-color: lighten($dark, 4%);
-
-                                .plus-icon {
-                                    border-color: darken($dark, 5%);
-                                }
-                            }
-
-                            .channel-name {
-                                color: $light-text;
-                            }
-
-                            .dropdown {
-                                > div .button {
-                                    background: darken($dark, 5%);
-                                    border-color: lighten($dark, 4%);
-                                    color: $light-text;
-                                }
-                            }
-                        }
-                    }
-
-                    .friends-list {
-                        background: $dark;
-                        border-color: lighten($dark, 4%);
-
-                        .list-header {
-                            .control {
-                                .input {
-                                    background: lighten($dark, 4%);
-                                    border-color: lighten($dark, 4%);
-                                    color: $white-light;
-
-                                    &::placeholder {
-                                        color: lighten($dark, 24%);
-                                    }
-
-                                    &:focus ~ .form-icon {
-                                        svg {
-                                            stroke: $primary !important;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                        .list-body {
-                            .friend-block {
-                                .round-checkbox {
-                                    input:not(:checked) + label {
-                                        background: darken($dark, 5%);
-                                        border-color: lighten($dark, 4%);
-                                    }
-                                }
-
-                                .friend-name {
-                                    color: $light-text;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .more-wrap {
-                    background: $dark;
-                    border-color: lighten($dark, 4%);
-
-                    .button {
-                        &.is-more {
-                            background: darken($dark, 5%);
-                            border-color: lighten($dark, 4%);
-                            color: $light-text;
-                        }
-                    }
-                }
+              }
             }
 
-            &.is-post {
-                .card-heading {
-                    .user-block {
-                        .user-info {
-                            a {
-                                color: $white-light;
-
-                                &:hover {
-                                    color: $accent;
-                                }
-                            }
-
-                            span {
-                                color: $light-text;
-                            }
-                        }
-                    }
-                }
-
-                .card-body {
-                    .post-text {
-                        p {
-                            color: $light-text;
-
-                            a {
-                                color: $accent;
-                            }
-                        }
-                    }
-
-                    .post-link {
-                        background: lighten($dark, 5%);
-                        border-color: lighten($dark, 12%);
-
-                        .link-content {
-                            h4 {
-                                a {
-                                    color: lighten($dark, 38%);
-                                }
-                            }
-
-                            p {
-                                color: $light-text;
-                            }
-                        }
-                    }
-
-                    .like-wrapper {
-                        .like-button {
-                            background: lighten($dark, 18%);
-
-                            i {
-                                color: $white-light;
-                            }
-                        }
-                    }
-                }
-
-                .card-footer {
-                    .likers-group {
-                        img {
-                            border-color: $dark;
-                        }
-                    }
-
-                    .likers-text {
-                        p {
-                            &:first-child {
-                                a {
-                                    &:not(:hover) {
-                                        color: $white-light;
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    .post-comment {
-                        .media-content {
-                            .field {
-                                .control {
-                                    .textarea {
-                                        background: lighten($dark, 4%);
-                                        border-color: lighten($dark, 10%);
-                                        color: $white-light;
-
-                                        &::placeholder {
-                                            color: lighten($dark, 24%);
-                                        }
-                                    }
-                                }
-                            }
-
-                            .actions {
-                                border-color: lighten($dark, 10%);
-                            }
-                        }
-                    }
-                }
-
-                .comments-wrap {
-                    .comments-heading {
-                        .close-comments {
-                            &:hover {
-                                background: lighten($dark, 4%);
-                            }
-                        }
-                    }
-
-                    .comments-body {
-                        .media {
-                            &.is-comment {
-                                border-color: lighten($dark, 10%);
-
-                                .media-content {
-                                    a:not(:hover) {
-                                        color: $white-light;
-                                    }
-
-                                    p {
-                                        color: $light-text;
-                                    }
-
-                                    .media {
-                                        &.is-comment {
-                                            .media-left {
-                                                &:before {
-                                                    background: lighten($dark, 8%);
-                                                    border-color: lighten($dark, 12%);
-                                                }
-
-                                                &:after {
-                                                    background: lighten($dark, 8%);
-                                                    border-color: lighten($dark, 12%);
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-
-                                .media-right {
-                                    .dropdown {
-                                        > div .button {
-                                            background: $dark;
-                                            border-color: lighten($dark, 4%);
-                                            color: $light-text;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+            &.is-active {
+              a {
+                border-color: transparent !important;
+                background: $dark;
+              }
             }
+
+            a {
+              background: lighten($dark, 4%);
+              border-color: lighten($dark, 4%) !important;
+            }
+          }
         }
+
+        .compose {
+          border-color: lighten($dark, 4%);
+
+          .compose-form {
+            .control {
+              .textarea {
+                border-color: $dark;
+                background: $dark;
+                color: $white-light;
+
+                &::placeholder {
+                  color: lighten($dark, 24%);
+                }
+              }
+            }
+          }
+
+          .feed-upload {
+            .upload-wrap {
+              .remove-file {
+                background: darken($dark, 4%);
+              }
+            }
+          }
+
+          .options-summary {
+            background: lighten($dark, 4%);
+          }
+        }
+
+        .compose-options {
+          background: $dark;
+
+          .compose-option {
+            background: lighten($dark, 6%);
+
+            &:hover {
+              svg {
+                stroke: $white-light;
+              }
+            }
+          }
+        }
+
+        .hidden-options {
+          background: $dark;
+          border-color: lighten($dark, 4%);
+
+          .target-channels {
+            .channel {
+              &:hover {
+                background: lighten($dark, 6%);
+              }
+
+              .round-checkbox {
+                input:not(:checked) + label {
+                  background: darken($dark, 5%);
+                  border-color: lighten($dark, 4%);
+                }
+              }
+
+              .channel-icon,
+              .story-icon {
+                background: darken($dark, 5%);
+                border-color: lighten($dark, 4%);
+
+                .plus-icon {
+                  border-color: darken($dark, 5%);
+                }
+              }
+
+              .channel-name {
+                color: $light-text;
+              }
+
+              .dropdown {
+                > div .button {
+                  background: darken($dark, 5%);
+                  border-color: lighten($dark, 4%);
+                  color: $light-text;
+                }
+              }
+            }
+          }
+
+          .friends-list {
+            background: $dark;
+            border-color: lighten($dark, 4%);
+
+            .list-header {
+              .control {
+                .input {
+                  background: lighten($dark, 4%);
+                  border-color: lighten($dark, 4%);
+                  color: $white-light;
+
+                  &::placeholder {
+                    color: lighten($dark, 24%);
+                  }
+
+                  &:focus ~ .form-icon {
+                    svg {
+                      stroke: $primary !important;
+                    }
+                  }
+                }
+              }
+            }
+
+            .list-body {
+              .friend-block {
+                .round-checkbox {
+                  input:not(:checked) + label {
+                    background: darken($dark, 5%);
+                    border-color: lighten($dark, 4%);
+                  }
+                }
+
+                .friend-name {
+                  color: $light-text;
+                }
+              }
+            }
+          }
+        }
+
+        .more-wrap {
+          background: $dark;
+          border-color: lighten($dark, 4%);
+
+          .button {
+            &.is-more {
+              background: darken($dark, 5%);
+              border-color: lighten($dark, 4%);
+              color: $light-text;
+            }
+          }
+        }
+      }
+
+      &.is-post {
+        .card-heading {
+          .user-block {
+            .user-info {
+              a {
+                color: $white-light;
+
+                &:hover {
+                  color: $accent;
+                }
+              }
+
+              span {
+                color: $light-text;
+              }
+            }
+          }
+        }
+
+        .card-body {
+          .post-text {
+            p {
+              color: $light-text;
+
+              a {
+                color: $accent;
+              }
+            }
+          }
+
+          .post-link {
+            background: lighten($dark, 5%);
+            border-color: lighten($dark, 12%);
+
+            .link-content {
+              h4 {
+                a {
+                  color: lighten($dark, 38%);
+                }
+              }
+
+              p {
+                color: $light-text;
+              }
+            }
+          }
+
+          .like-wrapper {
+            .like-button {
+              background: lighten($dark, 18%);
+
+              i {
+                color: $white-light;
+              }
+            }
+          }
+        }
+
+        .card-footer {
+          .likers-group {
+            img {
+              border-color: $dark;
+            }
+          }
+
+          .likers-text {
+            p {
+              &:first-child {
+                a {
+                  &:not(:hover) {
+                    color: $white-light;
+                  }
+                }
+              }
+            }
+          }
+
+          .post-comment {
+            .media-content {
+              .field {
+                .control {
+                  .textarea {
+                    background: lighten($dark, 4%);
+                    border-color: lighten($dark, 10%);
+                    color: $white-light;
+
+                    &::placeholder {
+                      color: lighten($dark, 24%);
+                    }
+                  }
+                }
+              }
+
+              .actions {
+                border-color: lighten($dark, 10%);
+              }
+            }
+          }
+        }
+
+        .comments-wrap {
+          .comments-heading {
+            .close-comments {
+              &:hover {
+                background: lighten($dark, 4%);
+              }
+            }
+          }
+
+          .comments-body {
+            .media {
+              &.is-comment {
+                border-color: lighten($dark, 10%);
+
+                .media-content {
+                  a:not(:hover) {
+                    color: $white-light;
+                  }
+
+                  p {
+                    color: $light-text;
+                  }
+
+                  .media {
+                    &.is-comment {
+                      .media-left {
+                        &:before {
+                          background: lighten($dark, 8%);
+                          border-color: lighten($dark, 12%);
+                        }
+
+                        &:after {
+                          background: lighten($dark, 8%);
+                          border-color: lighten($dark, 12%);
+                        }
+                      }
+                    }
+                  }
+                }
+
+                .media-right {
+                  .dropdown {
+                    > div .button {
+                      background: $dark;
+                      border-color: lighten($dark, 4%);
+                      color: $light-text;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
+  }
 }
 
 /* ==========================================================================
@@ -353,76 +354,76 @@ body {
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .is-autocomplete {
-            &.is-suboption {
-                .tag-list {
-                    .tag-control {
-                        .tags {
-                            .tag {
-                                &:first-child {
-                                    background: darken($dark, 3%) !important;
-                                }
-
-                                &:nth-child(2) {
-                                    background: lighten($dark, 6%) !important;
-                                }
-                            }
-                        }
-                    }
+  &.is-dark {
+    .is-autocomplete {
+      &.is-suboption {
+        .tag-list {
+          .tag-control {
+            .tags {
+              .tag {
+                &:first-child {
+                  background: darken($dark, 3%) !important;
                 }
+
+                &:nth-child(2) {
+                  background: lighten($dark, 6%) !important;
+                }
+              }
             }
+          }
+        }
+      }
 
-            .control {
-                .input {
-                    background: lighten($dark, 6%);
-                    border-color: lighten($dark, 12%);
-                }
-
-                .easy-autocomplete-container {
-                    ul {
-                        background: lighten($dark, 6%) !important;
-                        border-color: lighten($dark, 12%) !important;
-
-                        li {
-                            border-color: lighten($dark, 12%) !important;
-
-                            &.selected {
-                                background: lighten($dark, 4%);
-                            }
-
-                            .eac-item {
-                                .template-wrapper {
-                                    .avatar-wrapper {
-                                        .avatar-badge {
-                                            border-color: lighten($dark, 6%);
-                                        }
-                                    }
-
-                                    .entry-text {
-                                        color: $white-light;
-
-                                        span {
-                                            color: $light-text;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+      .control {
+        .input {
+          background: lighten($dark, 6%);
+          border-color: lighten($dark, 12%);
         }
 
-        .is-suboption {
-            .is-gif-wrapper {
-                .gif-dropdown {
-                    background: lighten($dark, 6%) !important;
-                    border-color: lighten($dark, 12%) !important;
+        .easy-autocomplete-container {
+          ul {
+            background: lighten($dark, 6%) !important;
+            border-color: lighten($dark, 12%) !important;
+
+            li {
+              border-color: lighten($dark, 12%) !important;
+
+              &.selected {
+                background: lighten($dark, 4%);
+              }
+
+              .eac-item {
+                .template-wrapper {
+                  .avatar-wrapper {
+                    .avatar-badge {
+                      border-color: lighten($dark, 6%);
+                    }
+                  }
+
+                  .entry-text {
+                    color: $white-light;
+
+                    span {
+                      color: $light-text;
+                    }
+                  }
                 }
+              }
             }
+          }
         }
+      }
     }
+
+    .is-suboption {
+      .is-gif-wrapper {
+        .gif-dropdown {
+          background: lighten($dark, 6%) !important;
+          border-color: lighten($dark, 12%) !important;
+        }
+      }
+    }
+  }
 }
 
 /* ==========================================================================
@@ -430,67 +431,66 @@ body {
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .feed-menu-v1 {
-            .main-menu {
-                li {
-                    &.is-active {
-                        a {
-                            > svg {
-                                stroke: $accent;
-                            }
+  &.is-dark {
+    .feed-menu-v1 {
+      .main-menu {
+        li {
+          &.is-active {
+            a {
+              > svg {
+                stroke: $accent;
+              }
 
-                            span {
-                                color: $white;
-                            }
+              span {
+                color: $white;
+              }
 
-                            .close-icon {
-                                background: lighten($dark, 2%);
-                                border-color: lighten($dark, 10%);
+              .close-icon {
+                background: lighten($dark, 2%);
+                border-color: lighten($dark, 10%);
 
-                                svg {
-                                    stroke: $light-text;
-                                }
-                            }
-                        }
-                    }
-
-                    &:hover {
-                        a {
-                            .close-icon {
-                                background: lighten($dark, 2%);
-
-                                svg {
-                                    stroke: $light-text;
-                                }
-                            }
-                        }
-                    }
-
-                    a {
-
-                        span {
-                            color: $light-text;
-                        }
-
-                        .close-icon {
-                            span {
-                                color: $light-text;
-                            }
-                        }
-                    }
-
-                    .submenu {
-                        li {
-                            &.is-subactive {
-                                a {
-                                    color: $white-light;
-                                }
-                            }
-                        }
-                    }
+                svg {
+                  stroke: $light-text;
                 }
+              }
             }
+          }
+
+          &:hover {
+            a {
+              .close-icon {
+                background: lighten($dark, 2%);
+
+                svg {
+                  stroke: $light-text;
+                }
+              }
+            }
+          }
+
+          a {
+            span {
+              color: $light-text;
+            }
+
+            .close-icon {
+              span {
+                color: $light-text;
+              }
+            }
+          }
+
+          .submenu {
+            li {
+              &.is-subactive {
+                a {
+                  color: $white-light;
+                }
+              }
+            }
+          }
         }
+      }
     }
+  }
 }
