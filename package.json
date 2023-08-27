@@ -15,6 +15,7 @@
   "scripts": {
     "dev": "gulp dev",
     "build": "gulp build",
+    "preview": "serve -p 5000 dist",
     "lint": "prettier --write \"./src/**/*.(js|html|scss|md)\"",
     "test:lint": "prettier --check \"./src/**/*.(js|html|scss|md)\""
   },
@@ -48,6 +49,7 @@
     "prettier": "3.0.2",
     "run-sequence": "2.2.1",
     "sass": "1.66.1",
+    "serve": "14.2.1",
     "zoom-vanilla.js": "2.0.6"
   },
   "dependencies": {
