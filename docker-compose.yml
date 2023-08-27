@@ -17,6 +17,8 @@ services:
       traefik.http.routers.friendkit-demo-https.tls: true
       traefik.http.routers.friendkit-demo-https.entrypoints: "https"
       traefik.http.routers.friendkit-demo-https.tls.certresolver: "http"
+      traefik.http.routers.friendkit-demo-https.middlewares: friendkit-demo-middleware@docker
+      traefik.http.middlewares.friendkit-demo-middleware.compress: true
 
 networks:
   cssninja-services:
