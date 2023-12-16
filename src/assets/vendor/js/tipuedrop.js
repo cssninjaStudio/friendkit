@@ -17,8 +17,7 @@ http://www.tipue.com/drop
                'speed'                  : 300,
                'newWindow'              : false,
                'mode'                   : 'static',
-               'contentLocation'        : 'assets/js/data/tipuedrop_content.json'
-               //'contentLocation'        : 'tipuedrop/tipuedrop_content.json'
+               'contentLocation'        : '/assets/js/data/tipuedrop_content.json'
           
           }, options);
           
