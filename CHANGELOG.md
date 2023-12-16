@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.6.1](https://github.com/cssninjaStudio/friendkit/compare/v2.6.0...v2.6.1) (2023-12-16)
+
+
+### Bug Fixes
+
+* update image paths in tipuedrop_content.json ([54ea64b](https://github.com/cssninjaStudio/friendkit/commit/54ea64bd633e719e35198e6fa0ccd1d407130ac4))
+
 ## [2.6.0](https://github.com/cssninjaStudio/friendkit/compare/v2.5.2...v2.6.0) (2023-08-27)
 
 
