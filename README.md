@@ -15,7 +15,7 @@ The template is built with Sass and Gulp build system with these features:
 
 To use this template, your computer needs:
 
-- Node.js (>= 16.x.x) is used to run the build processes. https://nodejs.org/en/download/
+- Node.js (>= 18.x.x) is used to run the build processes. https://nodejs.org/en/download/
 - Test: run `node -v` in the terminal
 
 ## 👌 Usage
