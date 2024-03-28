@@ -1,4 +1,6 @@
-version: "3.7"
+networks:
+  cssninja-services:
+    external: true
 
 services:
   friendkit-demo:
@@ -20,6 +22,3 @@ services:
       traefik.http.routers.friendkit-demo-https.middlewares: friendkit-demo-middleware@docker
       traefik.http.middlewares.friendkit-demo-middleware.compress: true
 
-networks:
-  cssninja-services:
-    external: true
