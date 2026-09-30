@@ -3,7 +3,7 @@
   "version": "2.6.3",
   "description": "Social media UI kit",
   "private": true,
-  "license": "See license in LICENSE.md",
+  "license": "MIT",
   "author": {
     "name": "cssninjaStudio <hello@cssninja.io> (https://cssninja.io)"
   },
