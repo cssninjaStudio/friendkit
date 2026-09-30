@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.7.0](https://github.com/cssninjaStudio/friendkit/compare/v2.6.3...v2.7.0) (2026-09-30)
+
+
+### ⚖️ License
+
+* relicense under MIT ([9aaef86](https://github.com/cssninjaStudio/friendkit/commit/9aaef86c336a68e307a032adb999f238e53f8d05))
+
 ### [2.6.3](https://github.com/cssninjaStudio/friendkit/compare/v2.6.2...v2.6.3) (2024-02-09)
 
 ### [2.6.2](https://github.com/cssninjaStudio/friendkit/compare/v2.6.1...v2.6.2) (2023-12-16)
